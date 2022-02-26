@@ -72,7 +72,7 @@ body {
 }
 
 
-project-image:hover {
+.project-image:hover {
     filter: brightness(.75);
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
     opacity: 1.0;
@@ -117,3 +117,7 @@ form input[type="submit"] {
 submit-button-wrapper {
     margin: 20px o;
 }
+* {
+    box-sizing: border-box;
+  }
+  

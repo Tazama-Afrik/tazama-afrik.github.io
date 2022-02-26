@@ -23,11 +23,11 @@ body {
 .topnav a {
     background-color: #ddd;
     color: black;
-    :hover {
+    /* :hover {
         background-color: white;
         color: black;
         text-emphasis: bold;
-    }
+    } */
 }
   
 .topnav a.active {
@@ -59,9 +59,9 @@ body {
     background-color: grey;
     margin-left: 500px;
     margin-right: 500px;
-:hover {
+/* :hover {
     background-color: red;
-}
+} */
 }
 .project-image {
     width: 600px;

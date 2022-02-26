@@ -20,7 +20,7 @@ body {
     font-size: 17px;
 }
   
-.topnav a:hover {
+.topnav a :hover {
     background-color: #ddd;
     color: black;
 }
@@ -50,6 +50,9 @@ body {
     }
 }
 
+.sign_up {
+    background-color: grey;
+}
 .project-image {
     width: 600px;
     display: grid;

@@ -20,9 +20,14 @@ body {
     font-size: 17px;
 }
   
-.topnav a:hover {
+.topnav a {
     background-color: #ddd;
     color: black;
+    /* :hover {
+        background-color: white;
+        color: black;
+        text-emphasis: bold;
+    } */
 }
   
 .topnav a.active {
@@ -50,6 +55,14 @@ body {
     }
 }
 
+.sign_up {
+    background-color: grey;
+    margin-left: 500px;
+    margin-right: 500px;
+/* :hover {
+    background-color: red;
+} */
+}
 .project-image {
     width: 600px;
     display: grid;

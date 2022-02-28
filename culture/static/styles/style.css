@@ -64,13 +64,7 @@ body {
 .welcome {
     position: relative;
     text-align: center;
-}
-
-.container {
-    display: grid;
-    grid-gap: 4em;
-    grid-column: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    color: darkblue;
 }
 
 .categories-grid {
@@ -90,9 +84,25 @@ body {
     margin-left: 500px;
     margin-right: 500px;
     flex-wrap: wrap;
-/* :hover {
-    background-color: red;
-} */
+    transition: ease-in;
+    visibility: hidden;
+}
+.signupshow:hover > .sign_up{
+    visibility: visible;
+}
+.comment {
+    background-color: darkblue;
+    color: #ffff;
+}
+
+
+              /************* IMAGES IN THE BODY ***************/
+
+    .container {
+    display: grid;
+    grid-gap: 4em;
+    grid-column: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .project-image {
     width: 600px;
@@ -110,10 +120,11 @@ body {
 
 }
 
-.project-image-wrapper:hover /*.project-image-wrapper:hover*/ > .project-image {
+.project-image-wrapper:hover > .project-image {
     filter: brightness(.75);
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
     opacity: 1.0;
+    width: 90%;
 }
 
 
@@ -140,7 +151,6 @@ body {
 .hover-text {
     position:absolute;
     top: 30%;
-    padding-left: 30px;
     transform: translate(-50%, -50%);
     color: yellow;
     visibility: hidden;
@@ -149,6 +159,8 @@ body {
     padding: 0%;
     padding-left: 100%;
 }
+
+         /****************** END OF IMAGES FORMATTING ****************/
 
 form input, textarea {
     padding: 5px;
@@ -176,7 +188,8 @@ form input[type="submit"] {
 submit-button-wrapper {
     margin: 20px o;
 }
-* {
+body {
     box-sizing: border-box;
+    background-color: none;
   }
   

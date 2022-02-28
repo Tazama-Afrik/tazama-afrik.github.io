@@ -14,9 +14,10 @@ body {
     background-color: #ddd;
     color: black;
   }
+
 /* BELOW, THE SEARCH BAR */
 .search {
-    float: right;
+  float: right;
   padding: 6px;
   border: none;
   margin-top: 8px;
@@ -105,7 +106,7 @@ body {
 
 }
 
-.project-image:hover, .project-image-wrapper:hover{
+.project-image:hover /*.project-image-wrapper:hover*/{
     filter: brightness(.75);
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
     opacity: 1.0;
@@ -113,7 +114,7 @@ body {
 
 .project-image-wrapper {
     justify-self: center;
-    padding: 4%;
+    padding: 10%;
     position: relative;
     display: grid;
 	justify-content: center;

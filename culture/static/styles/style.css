@@ -85,62 +85,49 @@ body {
     margin-right: 500px;
     flex-wrap: wrap;
     transition: ease-in;
-    visibility: hidden;
 }
-.signupshow:hover > .sign_up{
-    visibility: visible;
-}
-.comment {
-    background-color: darkblue;
-    color: #ffff;
-}
-
 
               /************* IMAGES IN THE BODY ***************/
 
-    .container {
-    display: grid;
+.container {
+    display: flex;
     grid-gap: 4em;
-    grid-column: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.project-image {
-    width: 600px;
-    display: grid;
-    border-radius: 5%;
-    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
-    transition: all ease-in-out .2s;
-    flex-direction: row;
-	align-content: flex-start;
-
-    /* display: flexbox;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px; */
+    padding: 20px;
 
 }
-
-.project-image-wrapper:hover > .project-image {
-    filter: brightness(.75);
-    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
-    opacity: 1.0;
-    width: 90%;
-}
-
 
 .project-image-wrapper {
     justify-self: center;
     padding: 0%;
     position: relative;
-    display: grid;
     grid-gap: 4em;
 	justify-content: center;
-	/*flex-wrap: wrap;*/
 	margin: 45px auto;
-	text-align: center;
     width: fit-content;
     height: fit-content;
-    font-size: 40px;
+
+    font-size: 300px;
+    float: left;
+    width: 40%;
+    padding-left: 50px;
+}
+
+.project-image {
+    width: 100%;
+    /* flex: 50%; */
+    border-radius: 10%;
+    transition: all ease-in-out .2s;
+    flex-direction: column-reverse;
+    padding: 5px;
+    min-height: 350px;
+
+}
+
+.project-image-wrapper:hover > .project-image {
+    filter: brightness(.75);
+    opacity: 1.0;
+    width: 90%;
+    box-shadow: hsla(158, 95%, 34%, 0.535);
 }
 
 .project-image-wrapper:hover > h1 {
@@ -156,8 +143,8 @@ body {
     visibility: hidden;
     z-index: 2;
     transition: all ease-in-out .2s;
-    padding: 0%;
-    padding-left: 100%;
+    padding-left: 90%;
+    font-size: 60px;
 }
 
          /****************** END OF IMAGES FORMATTING ****************/
@@ -167,14 +154,11 @@ form input, textarea {
     border-radius: 5px;
     width: 240px;
 }
-header {
+/* header {
     text-emphasis-style: bold;
     background-color: red;
-}
-/* a:focus {
-    text-shadow: #aa7004;
-    text-shadow: 5px;
 } */
+
 
 form {
     width: 250px;

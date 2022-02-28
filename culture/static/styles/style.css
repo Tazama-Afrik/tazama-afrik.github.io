@@ -67,12 +67,16 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    display: grid;
+    grid-gap: 4em;
+    grid-column: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .categories-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    
 }
 
 @media (max-width: 650px) {
@@ -106,40 +110,44 @@ body {
 
 }
 
-.project-image:hover /*.project-image-wrapper:hover*/{
+.project-image-wrapper:hover /*.project-image-wrapper:hover*/ > .project-image {
     filter: brightness(.75);
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
     opacity: 1.0;
 }
 
+
 .project-image-wrapper {
     justify-self: center;
-    padding: 10%;
+    padding: 0%;
     position: relative;
     display: grid;
+    grid-gap: 4em;
 	justify-content: center;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	margin: 45px auto;
 	text-align: center;
-    width: 300px;
+    width: fit-content;
+    height: fit-content;
     font-size: 40px;
-    position: relative;
-    background-color: red;
 }
 
 .project-image-wrapper:hover > h1 {
     visibility: visible;
+    text-align: unset;
 }
 
-.project-image-wrapper > h1 {
-    position: absolute;
+.hover-text {
+    position:absolute;
     top: 30%;
-    left: 25%;
+    padding-left: 30px;
     transform: translate(-50%, -50%);
-    color: rgb(114, 41, 182);
+    color: yellow;
     visibility: hidden;
     z-index: 2;
     transition: all ease-in-out .2s;
+    padding: 0%;
+    padding-left: 100%;
 }
 
 form input, textarea {

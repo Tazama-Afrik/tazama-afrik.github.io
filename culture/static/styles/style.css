@@ -7,6 +7,15 @@ body {
   background-image: url("../img/africa.jpg");
 }
 
+header {
+    color: darkred;
+    font: bold;
+    background-color: #333;
+    border-bottom: 14px;
+    width: fit-content;
+}
+
+
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -88,14 +97,13 @@ body {
 }
 
 .project-image-wrapper {
-  justify-self: center;
+  /* justify-self: center; */
   position: relative;
   grid-gap: 4em;
   justify-content: center;
   margin: 45px auto;
   width: fit-content;
   height: fit-content;
-  /* max-height: 450px; */
 
   font-size: 300px;
   float: left;

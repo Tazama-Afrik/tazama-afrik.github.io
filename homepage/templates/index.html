@@ -2,57 +2,70 @@
 <html>
     <head lang="en">
         <title>Tazama Afrik</title>
-        <link rel="stylesheet" href="../static/styles/style.css">
-        <link rel='shortcut icon' href="../static/img/tazama_afrik.png">
+
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel='shortcut icon' href="static/img/tazama_afrik.png">
+        
+        <header>
+          <a href="#Contact Us" class="topheader">TAZAMA AFRIK</a>
+        </header>
+        
         <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <a href="#about">about</a>
+            <a href="#about">About</a>
             <a href="#countries">Countries</a>
-            <a href=#contact>Contact Us</a>
+            <a href=#contact>Contact us</a>
+
+	    <!------     BEGINNING OF SEARCH BAR -------->
+            <div class="search" placeholder="Type here to search">
+                <input name="search bar" placeholder="Type here to search" rows="1" class="put"></input>
+                <button type="submitbutton" id="searchSubmit">Search</button>
+            </div> 
+	    <!------     END OF SEARCH BAR ------->
         </div>
     </head>
     <body>
+      
         <div class="welcome">
-            <h2>Welcome to Tazama Afrik</h2>
+            <h2>Welcome To Tazama Afrik</h2>
             <p>
                 Explore the world of Africa
             </p>
         </div>
         </div>
       <div class="container">
-          <div class"categories-grid">
+        <div class"categories-grid">
             <div class="project-image-wrapper">
-                <h1>Beaches</h1>
+                <h1 class="hover-text">BEACHES</h1>
                 <img class="project-image" src="../static/img/african_beach.jpg" alt="Image">
             </div>
             <div class="project-image-wrapper">
-                <h1>Reserves</h1>
+                <h1 class="hover-text">RESERVES</h1>
                 <img class="project-image" src="../static/img/african_wildlife_reserve.jpg" alt="Reserves">
             </div>
             <div class="project-image-wrapper">
-                <h1>Restaurants</h1>
+                <h1 class="hover-text">RESTAURANTS</h1>
                 <img class="project-image" src="../static/img/african_restaurant.jpg" alt="Restaurants">
             </div>
             <div class="project-image-wrapper">
-                <h1>Culture</h1>
+                <h1 class="hover-text">CULTURE</h1>
                 <img class="project-image" src="../static/img/african_culture.jpg" alt="Culture">
             </div>
-            </div>
-        </div>
+          </div>
+      </div>
         <div class="links-and-contact">
             <div class="links">
               <h3>Links</h3>
               <ul class="link-lists">
                 <li>
-                  <a href="https://github.com/Tazama-Afrik">Github</a>
+                  <a class="link-list" href="https://github.com/Tazama-Afrik">Github</a>
                 <li>
-                  <a href="https://twitter.com/tazama_afrik">Twitter</a>
+                  <a class="link-list" href="https://twitter.com/tazama_afrik">Twitter</a>
                 <li>
-                  <a href="https://linkedin.com/in/tazama-afrik">Linkedin</a>
+                  <a class="link-list" href="https://linkedin.com/in/tazama-afrik">Linkedin</a>
               </ul>
             </div>
-	    <center>
-            <div class="sign_up">
+            <div class="contact">
                 <h2>Contact Us</h2>
               <form action="#">
                 <label for="email">
@@ -69,8 +82,8 @@
               </form>
             </div>
           </div>
-	    </center>
+          <footer>
+            Copyright &copy; 2022 tazama-afrik.netlify.app
+          </footer>
       </body>
     </html>
-    </body>
-</html>

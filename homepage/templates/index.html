@@ -2,43 +2,50 @@
 <html>
     <head lang="en">
         <title>Tazama Afrik</title>
-        <link rel="stylesheet" href="../static/styles/styles.css">
+        <link rel="stylesheet" href="../static/styles/style.css">
         <link rel='shortcut icon' href="../static/img/tazama_afrik.png">
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#about">about</a>
             <a href="#countries">Countries</a>
             <a href=#contact>Contact Us</a>
+
+	    <!------     BEGINNING OF SEARCH BAR -------->
+            <div class="search" placeholder="Type here to search">
+                <input name="search bar" placeholder="Type here to search" rows="1" class="put"></input>
+                <button type="submitbutton" id="searchSubmit">Search</button>
+            </div> 
+	    <!------     END OF SEARCH BAR ------->
         </div>
     </head>
     <body>
         <div class="welcome">
-            <h2>Welcome to Tazama Afrik</h2>
+            <h2>Welcome To Tazama Afrik</h2>
             <p>
                 Explore the world of Africa
             </p>
         </div>
         </div>
       <div class="container">
-          <div class"categories-grid">
+        <div class"categories-grid">
             <div class="project-image-wrapper">
-                <h1>Beaches</h1>
+                <h1 class="hover-text">BEACHES</h1>
                 <img class="project-image" src="../static/img/african_beach.jpg" alt="Image">
             </div>
             <div class="project-image-wrapper">
-                <h1>Reserves</h1>
+                <h1 class="hover-text">RESERVES</h1>
                 <img class="project-image" src="../static/img/african_wildlife_reserve.jpg" alt="Reserves">
             </div>
             <div class="project-image-wrapper">
-                <h1>Restaurants</h1>
+                <h1 class="hover-text">RESTAURANTS</h1>
                 <img class="project-image" src="../static/img/african_restaurant.jpg" alt="Restaurants">
             </div>
             <div class="project-image-wrapper">
-                <h1>Culture</h1>
+                <h1 class="hover-text">CULTURE</h1>
                 <img class="project-image" src="../static/img/african_culture.jpg" alt="Culture">
             </div>
-            </div>
-        </div>
+          </div>
+      </div>
         <div class="links-and-contact">
             <div class="links">
               <h3>Links</h3>
@@ -52,7 +59,7 @@
               </ul>
             </div>
 	    <center>
-            <div class="sign_up">
+            <div class="contact">
                 <h2>Contact Us</h2>
               <form action="#">
                 <label for="email">
@@ -61,7 +68,7 @@
                 </label>
                 <label for="message">
                   <h4>Message</h4>
-		            <textarea id="message" placeholder="Your message goes here"></textarea>
+		   <textarea id="message" placeholder="Your message goes here"></textarea>
                 </label>
                 <div class="submit-button-wrapper">
                   <input type="submit" valid="Send Message" id="submitbutton" />
@@ -69,6 +76,8 @@
               </form>
             </div>
           </div>
-        </center>
-  </body>
+	    </center>
+      </body>
+    </html>
+    </body>
 </html>

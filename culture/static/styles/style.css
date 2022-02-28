@@ -4,6 +4,7 @@ body {
   background-color: #f3f7f35b;
   color: rgb(14, 3, 3);
   margin: 25px;
+  background-image: url("../img/africa.jpg");
 }
 
 .topnav {
@@ -111,6 +112,9 @@ body {
   padding: 5px;
   min-height: 350px;
 }
+.restaurants {
+    max-height: 20px;
+}
 
 .project-image-wrapper:hover > .project-image {
   filter: brightness(.75);
@@ -170,5 +174,5 @@ submit-button-wrapper {
 }
 body {
   box-sizing: border-box;
-  background-color: none;
+  background-image: url("../img/africa.jpg");
 }

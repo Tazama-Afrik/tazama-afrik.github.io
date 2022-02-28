@@ -84,6 +84,7 @@ body {
     background-color: grey;
     margin-left: 500px;
     margin-right: 500px;
+    flex-wrap: wrap;
 /* :hover {
     background-color: red;
 } */
@@ -116,11 +117,13 @@ body {
     position: relative;
     display: grid;
 	justify-content: center;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 	margin: 45px auto;
 	text-align: center;
     width: 300px;
     font-size: 40px;
+    position: relative;
+    background-color: red;
 }
 
 .project-image-wrapper:hover > h1 {
@@ -132,7 +135,7 @@ body {
     top: 30%;
     left: 25%;
     transform: translate(-50%, -50%);
-    color: blueviolet;
+    color: rgb(114, 41, 182);
     visibility: hidden;
     z-index: 2;
     transition: all ease-in-out .2s;

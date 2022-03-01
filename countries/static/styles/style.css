@@ -65,10 +65,7 @@
     padding: 0px;
 }
 .hide {
-    position: relative;
-    padding-top: 0px;
-    border-radius: 50%;
-    margin-right: 100px; */
+    position: static;
 }
 
 .regions-bar {

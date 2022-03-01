@@ -9,10 +9,10 @@ body {
   color: white;
   font: bold;
   background-color: darkblue;
-  padding: 10px;
+  padding: 8px;
   width: fit-content;
   height: fit-content;
-  font-size: 50px;
+  font-size: 60px;
   border-radius: 2%;
 }
 
@@ -122,11 +122,19 @@ body {
   padding: 5px;
   min-height: 350px;
 }
+.restaurants {
+  max-height: 300px;
+}
+
+.reserves {
+  max-height: 50px;
+}
 
 .project-image-wrapper:hover > .project-image {
   filter: brightness(.75);
   opacity: 1.0;
   width: 90%;
+  height: 340px;
   box-shadow: hsla(158, 95%, 34%, 0.535);
 }
 

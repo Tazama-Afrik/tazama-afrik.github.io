@@ -3,9 +3,14 @@ body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #f3f7f35b;
   color: rgb(14, 3, 3);
-  margin: 25px;
+  margin-top: 700px;
+  background: url(../img/sky-backgound.jpg);
+  overflow-x: hidden;
+  background-size: cover;
+  margin-top: 70px;
+
 }
-.topheader {
+/* .topheader {
   color: white;
   font: bold;
   background-color: darkblue;
@@ -14,16 +19,15 @@ body {
   height: fit-content;
   font-size: 50px;
   border-radius: 2%;
-}
+} */
 
-.topnav {
-  margin-top: 20px;
+#navtop { /*n*/
   background-color: #333;
   overflow: hidden;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  position:fixed;
+  width: 100%;
+  z-index: 10;
+  margin-top: 0px;
 }
 
 /* BELOW, THE SEARCH BAR */
@@ -40,10 +44,6 @@ body {
 }
 #searchSubmit {
   float: right;
-  /* padding: 6px; */
-  /* border: none;
-  box-sizing: border-box;
-  font-size: 17px; */
   background-color: blue;
   padding: 5.5px;
   color: yellow;
@@ -75,7 +75,7 @@ body {
 .welcome {
   position: relative;
   text-align: center;
-  color: darkblue;
+  color: lightyellow;
 }
 
 .categories-grid {
@@ -143,7 +143,7 @@ body {
   z-index: 2;
   transition: all ease-in-out .2s;
   padding-left: 82%;
-  font-size: 20%;
+  font-size: 15%;
 }
 
 /****************** END OF IMAGES FORMATTING ****************/
@@ -171,17 +171,23 @@ textarea {
   width: 240px;
 }
 
+.links-and-contact {
+  background-color: red;
+}
 .contact {
-    background-color: grey;
+    background-color: white;
     flex-wrap: wrap;
     width: fit-content;
     height: fit-content;
     border-radius: 4%;
     padding: 20px;
-    position: relative;
-    right: 50px;
-    /* margin-bottom: 50px; */
-    margin-left: 1120px;
+    position: absolute;
+    right: 33%;
+    bottom: 1em;
+    display: none;
+}
+.send-message:checked + .contact {
+  display: block;
 }
 
 form {
@@ -198,13 +204,12 @@ form input[type="submit"] {
 submit-button-wrapper {
   margin: 20px o;
 }
-body {
-  box-sizing: border-box;
-  background-color: none;
-}
+
 /************ END OF CONTACT *************/
+
 footer {
   background-color: gray;
   text-align: center;
   margin-top: 20px;
+  padding: 5px;
 }

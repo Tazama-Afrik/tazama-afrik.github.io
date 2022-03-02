@@ -18,7 +18,9 @@ header {
 
 .topnav {
   background-color: #333;
-  overflow: hidden;
+  position: fixed;
+  
+
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -164,6 +166,7 @@ textarea {
     width: 320px;
     height: 280px;
     border-radius: 4%;
+    position: absolute;
 }
 
 form {
@@ -182,5 +185,4 @@ submit-button-wrapper {
 }
 body {
   box-sizing: border-box;
-  background-image: url("../img/africa.jpg");
 }

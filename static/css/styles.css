@@ -130,7 +130,7 @@ body {
   box-shadow: hsla(158, 95%, 34%, 0.535);
 }
 
-.project-image-wrapper:hover > a {
+.project-image-wrapper:hover > a > .project-image, .project-image-wrapper:hover a + h1 {
   filter: brightness(.75);
   opacity: 1.0;
   width: 90%;

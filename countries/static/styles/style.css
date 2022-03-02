@@ -57,7 +57,7 @@
     color: white;
   }
 
-
+/************ SIDEBAR BEGINS *****************/
 
 .region-wrap {
     width: 100%;
@@ -116,7 +116,7 @@
   .regions-bar .region:hover {
     background-color: darkslategray;
   }
-  
+  /***************** SIDEBAR ENDS*******************/
   @media screen and (max-height: 450px) {
     .regions-bar {padding-top: 15px;}
     .regions-bar button {font-size: 18px;}

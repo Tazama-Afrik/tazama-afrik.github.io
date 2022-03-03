@@ -17,7 +17,7 @@ header {
     width: fit-content;
 }
 
-.topnav { /*n*/
+.topnav {
   background-color: #333;
   overflow: hidden;
   position:fixed;
@@ -25,9 +25,8 @@ header {
   max-height: 100%;
   z-index: 10;
   margin: auto;
-  overflow-y: scroll;
-  
 }
+
 .topnav > .nav {
   /* float: left; */
   color: #f2f2f2;

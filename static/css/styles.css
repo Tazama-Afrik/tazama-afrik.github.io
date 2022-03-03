@@ -29,8 +29,6 @@ body {
   max-height: 100%;
   z-index: 10;
   margin: auto;
-  overflow-y: scroll;
-  
 }
 .topnav > .nav {
   /* float: left; */

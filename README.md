@@ -1,3 +1,8 @@
 # Tazama Afrik
-This is a repository of our ALX Portfolio project
-Last pull request status: [![Netlify Status](https://api.netlify.com/api/v1/badges/c2e3f1fc-ffca-491d-8b9e-2243bd1f5413/deploy-status)](https://app.netlify.com/sites/tazama-afrik/deploys)
+This is where anyone looking for anything about africa should come to.  
+We have information about:  
+- [Countries](http://#countries)
+- [Beaches](http://#beaches)
+- [Restaurants](http://#restaurants)
+- [Reserves](http://#reserves)
+- [Check out the rest by yourself :)](http://#more)

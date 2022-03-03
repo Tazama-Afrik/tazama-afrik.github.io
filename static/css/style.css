@@ -17,16 +17,47 @@ header {
     width: fit-content;
 }
 
-
-.topnav {
+.topnav { /*n*/
   background-color: #333;
-  position: fixed;
+  overflow: hidden;
+  position:fixed;
+  width: 100%;
+  max-height: 100%;
+  z-index: 10;
+  margin: auto;
+  overflow-y: scroll;
   
-
 }
-.topnav a:hover {
+.topnav > .nav {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin: 3px;
+  float: left;
+}
+.topnav > .home > img {
+  max-height: 52px;
+  padding: 3px;
+  float: left;
+}
+.topnav > .home {
+  padding: 0ch;
+  margin-bottom: 0px;
+  margin-right: 5px;
+}
+
+.topnav .nav:hover {
   background-color: #ddd;
   color: black;
+}
+
+.topnav a.active {
+  background-color: hsla(158, 95%, 34%, 0.535);
+  color: white;
 }
 
 /* BELOW, THE SEARCH BAR */
@@ -55,25 +86,6 @@ header {
   background-color: green;
 }
 /* END OF SEARCH BAR */
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: hsla(158, 95%, 34%, 0.535);
-  color: white;
-}
 
 .welcome {
   position: relative;

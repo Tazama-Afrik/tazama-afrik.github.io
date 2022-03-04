@@ -1,99 +1,49 @@
+@import url(styles.css);
 * {
-    font-family: sans-serif
-}
-body {
-  background-color: rgb(92, 92, 78);
-}
-/************ SIDEBAR BEGINS *****************/
-.sidebar {
-  height:fit-content;
-  width: fit-content;
-}
-.region-wrap {
-    width: 100%;
-    height: fit-content;
-    padding: 0px;
-}
-.hide {
-    position: static;
+    box-sizing: border-box;
 }
 
-.regions-bar {
-    height: 550px;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    margin-right: 15px;
-    margin-top: 0px;
-    background-color: rgb(112, 106, 106);
-    overflow-y: scroll;
-  }
-
-#top {
-    background-color: rgb(36, 16, 163);
-    padding: 19px;
-    text-align: center;
-    color: #ffff;
-    font-family: Impact, sans-serif;
-    margin-top: 5px;
-    width: 210px;
-  }
-
- .region {
-    margin-bottom: 6px;
-    font-size: 20px;
-    color: lightgrey;
-    width: 100%;
-    font-weight: bold;
-    background: rgb(96, 15, 131);
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 6%;
-  }
-  .countries {
-      display: none;
-      transition:cubic-bezier(1, 0, 0, 1);
-      animation: forwards;
-  }
-  .hide:checked + .countries {
-      display: block;
-  }
-  
-  
-  .regions-bar .region:hover {
-    background-color: darkslategray;
-  }
-  /***************** SIDEBAR ENDS*******************/
-.semibody {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
-.description {
-  text-align: center;
-  font-stretch: expanded;
-  max-width: -140px;
-  width: 100%;
+.nav-list {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin: 0;
+  padding-right: 2%;
+  list-style: none;
+  color: white;
   height: 100%;
-  overflow-y: scroll;
-}
-.description > h1 {
-  background-color: darkslateblue;
-  font-family: sans-serif;
-  color: #ddd;
-  font-size: xxx-large;
-  padding: 10px;
-}
-.flag {
-  max-height: 35px;
-  padding-bottom: 0px;
-  font-size: x-small;
+  float: right;
 }
 
-  @media screen and (max-height: 450px) {
-    .regions-bar {padding-top: 15px;}
-    .regions-bar button {font-size: 18px;}
+.main-image {
+  display: none;
+}
+
+.loading {
+  animation: spin 2s infinite linear;
+  font-size: 50px;
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
   }
+}
+
+.show {
+  display: block;
+}

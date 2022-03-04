@@ -6,3 +6,4 @@ We have information about:
 - [Restaurants](http://#restaurants)
 - [Reserves](http://#reserves)
 - [Check out the rest by yourself :)](http://#more)
+- Stay in touch. You'll soon check your currency and Covid19 statistics at Tazama Afrik

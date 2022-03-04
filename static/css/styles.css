@@ -3,11 +3,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #f3f7f35b;
   color: rgb(14, 3, 3);
-  margin-top: 700px;
   background: url(../img/sky-backgound.jpg);
   overflow-x: hidden;
   background-size: cover;
-  margin-top: 70px;
+  margin: 0;
 
 }
 /* .topheader {
@@ -24,7 +23,7 @@ body {
 .topnav { /*n*/
   background-color: #333;
   overflow: hidden;
-  position:fixed;
+  position: relative;
   width: 100%;
   max-height: 100%;
   z-index: 10;

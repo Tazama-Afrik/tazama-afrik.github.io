@@ -19,7 +19,7 @@ body {
 .topnav { /*n*/
   background-color: #333;
   overflow: hidden;
-  position:fixed;
+  position: relative;
   width: 100%;
   max-height: 100%;
   z-index: 10;

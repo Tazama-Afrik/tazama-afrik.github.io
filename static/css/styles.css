@@ -8,15 +8,55 @@ body {
   margin: 0;
 }
 
-.hello {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url(../img/beautiful.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height: 400px;
-  margin: 0;
-  padding: 0;
-  color: rgb(4, 3, 51);
+/* .topheader {
+  color: white;
+  font: bold;
+  background-color: darkblue;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 50px;
+  border-radius: 2%;
+} */
+
+.topnav { /*n*/
+  background-color: #333;
+  position:fixed;
+  width: 100%;
+  max-height: 100%;
+  z-index: 10;
+  margin: auto;
+  /* margin-top: 0px; */
+}
+.topnav > .nav {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin: 3px;
+  float: left;
+}
+.topnav > .home > img {
+  max-height: 52px;
+  padding: 3px;
+}
+
+.topnav .nav:hover {
+  background-color: #ddd;
+}
+
+.topnav a.active {
+  background-color: hsla(158, 95%, 34%, 0.535);
+  color: white;
+}
+
+.topnav > .home {
+  padding: 0ch;
+  margin-bottom: 0px;
+  margin-right: 5px;
 }
 
 .nav {
@@ -74,14 +114,6 @@ body {
   background-color: green;
 }
 /* END OF SEARCH BAR */
-
-
-
-.welcome {
-  position: relative;
-  text-align: center;
-  color: lightyellow;
-}
 
 .categories-grid {
   display: grid;

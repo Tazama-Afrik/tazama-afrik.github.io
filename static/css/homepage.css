@@ -75,17 +75,16 @@ body {
   }
   /* END OF SEARCH BAR */
   
-  
+  .container {
+    display: grid;
+    grid-gap: 4em;
+    padding: 5px;
+  }
   
   .welcome {
     position: relative;
     text-align: center;
     color: lightyellow;
-  }
-  
-  .categories-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
   }
   
   @media (max-width: 650px) {
@@ -96,18 +95,12 @@ body {
   
   /************* IMAGES IN THE BODY ***************/
   
-  .container {
-    display: flex;
-    grid-gap: 4em;
-    padding: 20px;
-  }
-  
   .project-image-wrapper {
     justify-self: center;
     position: relative;
     grid-gap: 4em;
     justify-content: center;
-    margin: 45px auto;
+    margin: 0;
     width: fit-content;
     height: fit-content;
     /* max-height: 450px; */
@@ -117,15 +110,15 @@ body {
     width: 40%;
     padding-left: 50px;
   }
-  
+
   .project-image {
     width: 100%;
-    /* flex: 50%; */
+    object-fit: cover;
     border-radius: 10%;
     transition: all ease-in-out .2s;
     flex-direction: column-reverse;
     padding: 5px;
-    min-height: 350px;
+    max-height: 100%;
   }
   
   .project-image-wrapper:hover > .project-image {
@@ -159,6 +152,20 @@ body {
   
   /****************** END OF IMAGES FORMATTING ****************/
   
+.welcome {
+    font-size: larger;
+    text-align: center;
+    color: rgb(244, 244, 247);
+}
+
+.select {
+    font-size: larger;
+    text-align: center;
+    background-color: rgb(250, 255, 253);
+    color: rgb(54, 54, 117);
+    margin: 0;
+}
+
   .links-and-contact {
     /* background-color: red; */
     font: bold;

@@ -3,64 +3,55 @@ body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #f3f7f35b;
   color: rgb(14, 3, 3);
-  background: url(../img/sky-backgound.jpg);
   overflow-x: hidden;
   background-size: cover;
   margin: 0;
-
 }
-/* .topheader {
-  color: white;
-  font: bold;
-  background-color: darkblue;
-  padding: 10px;
-  width: fit-content;
-  height: fit-content;
-  font-size: 50px;
-  border-radius: 2%;
-} */
 
-.topnav { /*n*/
-  background-color: #333;
+.hello {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/beautiful.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 400px;
+  margin: 0;
+  padding: 0;
+  color: rgb(4, 3, 51);
+}
+
+nav {
+  background-color: rgb(10, 24, 24);
   overflow: hidden;
-  position:fixed;
-  width: 100%;
-  max-height: 100%;
-  z-index: 10;
-  margin: auto;
-  /* margin-top: 0px; */
-}
-.topnav > .nav {
-  /* float: left; */
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  margin-bottom: 5px;
-  margin: 3px;
-  float: left;
-}
-.topnav > .home > img {
-  max-height: 52px;
-  padding: 3px;
-  float: left;
-}
-.topnav > .home {
-  padding: 0ch;
-  margin-bottom: 0px;
-  margin-right: 5px;
 }
 
-.topnav .nav:hover {
-  background-color: #ddd;
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: rgb(156, 119, 165);
   color: black;
 }
 
-.topnav a.active {
-  background-color: hsla(158, 95%, 34%, 0.535);
-  color: white;
+.active {
+  background-color: rgb(59, 71, 71);
+  color: azure;
 }
+
+.welcome {
+  font-size: larger;
+}
+
 /* BELOW, THE SEARCH BAR */
 .search {
   float: right;

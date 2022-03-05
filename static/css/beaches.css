@@ -4,8 +4,10 @@ body {
 
 .hello {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/children_beach_image.jpg);
-    min-height: 400px;
+    background-image: url(../img/beach.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 380px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -47,11 +49,11 @@ body {
     text-decoration: solid;
     padding: 10px;
     color: blue;
-    background-color: rgb(211, 238, 229);
+    background-color: rgb(251, 253, 252);
 }
 
 .h {
-    color: rgb(12, 36, 66);
+    color: rgb(223, 66, 176);
 }
 
 .gallery {

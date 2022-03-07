@@ -15,6 +15,12 @@
 }
 .topnav .nav {
   background-color: none;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-style: bold;
+}
+.topnav .home {
+  margin: 0px;
 }
 .main-image {
   display: none;
@@ -32,7 +38,6 @@
   justify-content: center;
   height: 80vh;
   overflow: hidden;
-  /* margin-top: 5%; */
 }
 
 .container {

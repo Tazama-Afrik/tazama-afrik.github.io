@@ -45,6 +45,7 @@ body {
 
 .topnav .nav:hover {
   background-color: #ddd;
+  color: black;
 }
 
 .topnav a.active {

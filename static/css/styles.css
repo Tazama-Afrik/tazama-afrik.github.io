@@ -27,8 +27,7 @@ body {
   width: 100%;
   max-height: 100%;
   z-index: 10;
-  margin: auto;
-  /* margin-top: 0px; */
+  margin-top: 0px;
 }
 .topnav > .nav {
   /* float: left; */
@@ -119,7 +118,6 @@ body {
   margin: 45px auto;
   width: fit-content;
   height: fit-content;
-  /* max-height: 450px; */
 
   font-size: 300px;
   float: left;
@@ -129,7 +127,6 @@ body {
 
 .project-image {
   width: 100%;
-  /* flex: 50%; */
   border-radius: 10%;
   transition: all ease-in-out .2s;
   flex-direction: column-reverse;
@@ -234,88 +231,4 @@ footer {
   margin-top: 20px;
   padding: 5px;
 }
-                                                      /* FOR COUNTRIES AND THOSE USING SIDEBAR*/
-
-/************ SIDEBAR BEGINS *****************/
-.sidebar {
-  height:fit-content;
-  width: fit-content;
-}
-.region-wrap {
-    width: 100%;
-    height: fit-content;
-    padding: 0px;
-}
-.hide {
-    position: static;
-}
-
-.regions-bar {
-    height: 550px;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    margin-right: 15px;
-    margin-top: 0px;
-    background-color: rgb(112, 106, 106);
-    overflow-y: scroll;
-  }
-
-#top {
-    background-color: rgb(36, 16, 163);
-    padding: 19px;
-    text-align: center;
-    color: #ffff;
-    font-family: Impact, sans-serif;
-    margin-top: 5px;
-    width: 210px;
-  }
-
- .region {
-    margin-bottom: 6px;
-    font-size: 20px;
-    color: lightgrey;
-    width: 100%;
-    font-weight: bold;
-    background: rgb(96, 15, 131);
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 6%;
-  }
-  .countries {
-      display: none;
-      transition: ease-in-out;
-  }
-  .hide:checked + .countries {
-      display: block;
-  }
-  
-  
-  .regions-bar .region:hover {
-    background-color: darkslategray;
-  }
-  /***************** SIDEBAR ENDS*******************/
-.semibody {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
-.description {
-  text-align: center;
-  font-stretch: expanded;
-  max-width: -140px;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-}
-.description > h1 {
-  background-color: darkslateblue;
-  font-family: sans-serif;
-  color: #ddd;
-  margin-top: 5px;
-  padding: 10px;
-}
-                                                      
+                                          

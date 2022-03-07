@@ -14,13 +14,15 @@
   height: 100%;
   float: right;
 }
-
+.topnav .nav {
+  background-color: none;
+}
 .main-image {
   display: none;
 }
 
 .loading {
-  animation: spin 2s infinite linear;
+  animation: spin 3s infinite linear;
   font-size: 50px;
   display: none;
 }

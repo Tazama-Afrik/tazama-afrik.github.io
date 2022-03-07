@@ -3,10 +3,10 @@ body {
 }
 .hello {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/beach.png);
+    background-image: url(../img/reserve.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-height: 380px;
+    min-height: 480px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -22,7 +22,7 @@ body {
 
 .topnav a {
     float: left;
-    color: rgb(242, 240, 243);
+    color: rgb(8, 34, 8);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,7 +35,7 @@ body {
 }
 
 .topnav a.active {
-    background-color: blue;
+    background-color: rgb(14, 66, 16);
     color: aliceblue;
 }
 
@@ -47,12 +47,11 @@ body {
     text-align: center;
     text-decoration: solid;
     padding: 10px;
-    color: blue;
-    background-color: rgb(251, 253, 252);
+    color: rgb(44, 44, 58);
 }
 
 .h {
-    color: rgb(223, 66, 176);
+    color: rgb(62, 75, 70);
 }
 
 .gallery {

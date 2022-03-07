@@ -5,13 +5,12 @@
 
 .nav-list {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
   padding-right: 2%;
   list-style: none;
   color: white;
-  height: 100%;
   float: right;
 }
 
@@ -20,7 +19,7 @@
 }
 
 .loading {
-  animation: spin 2s infinite linear;
+  animation: spin 3s infinite linear;
   font-size: 50px;
   display: none;
 }
@@ -31,6 +30,7 @@
   justify-content: center;
   height: 80vh;
   overflow: hidden;
+  /* margin-top: 5%; */
 }
 
 .container {

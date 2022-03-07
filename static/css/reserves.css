@@ -1,0 +1,103 @@
+body {
+    background-color: aliceblue;
+}
+.hello {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/reserve.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 480px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: solid;
+    color: rgb(4, 3, 51);
+
+}
+
+.topnav {
+    overflow: hidden;
+    padding: 2px;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(8, 34, 8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(177, 153, 184);
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgb(14, 66, 16);
+    color: aliceblue;
+}
+
+.hello {
+    size: 5px;
+}
+
+.welcome {
+    text-align: center;
+    text-decoration: solid;
+    padding: 10px;
+    color: rgb(44, 44, 58);
+}
+
+.h {
+    color: rgb(62, 75, 70);
+}
+
+.gallery {
+    background-color: rgb(250, 255, 255);
+    margin: 0%;
+    text-align: center;
+    color: rgb(35, 35, 85);
+}
+
+.slide-wrapper {
+    display: none;
+}
+  
+.active {
+    display: block;
+}
+  
+.image-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.btn {
+    background-color: #0074d9;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.prev {
+    margin-right: 15px;
+}
+  
+.btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}

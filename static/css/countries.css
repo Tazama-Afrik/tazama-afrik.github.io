@@ -13,7 +13,9 @@
   color: white;
   float: right;
 }
-
+.topnav .nav {
+  background-color: none;
+}
 .main-image {
   display: none;
 }

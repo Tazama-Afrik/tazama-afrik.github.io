@@ -132,7 +132,12 @@ body {
     opacity: 1.0;
     width: 90%;
     box-shadow: hsla(158, 95%, 34%, 0.535);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(1.23);
+
   }
+
   .project-image-wrapper:hover > h1 {
     visibility: visible;
   }

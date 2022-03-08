@@ -161,8 +161,15 @@ body {
     font-size: larger;
     text-align: center;
     background-color: rgb(250, 255, 253);
-    color: rgb(54, 54, 117);
+    color: rgb(53, 53, 102);
     margin: 0;
+}
+
+#about {
+  background-color: azure;
+  text-align: center;
+  margin-bottom: 0;
+  color: rgb(67, 12, 129);
 }
 
   .links-and-contact {

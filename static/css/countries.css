@@ -5,17 +5,26 @@
 
 .nav-list {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
   padding-right: 2%;
   list-style: none;
   color: white;
-  height: 100%;
   float: right;
 }
+
 .topnav .nav {
-  background-color: none;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .home {
+  margin: 0px;
 }
 .main-image {
   display: none;

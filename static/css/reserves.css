@@ -1,5 +1,6 @@
 body {
     background-color: aliceblue;
+    margin: 0;
 }
 .hello {
     font-family: Arial, Helvetica, sans-serif;

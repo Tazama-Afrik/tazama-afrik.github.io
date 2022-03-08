@@ -2,6 +2,10 @@
     box-sizing: border-box;
     text-align: center;
 }
+body {
+    background-color: aliceblue;
+    margin: 0px;
+}
 .hello {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../img/beach.png);
@@ -40,7 +44,7 @@
   }
 
   .nav a.active {
-    background-color: hsla(158, 95%, 34%, 0.535);
+    background-color: rgb(14, 66, 16);
     color: white;
   }
 

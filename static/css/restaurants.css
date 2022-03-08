@@ -24,11 +24,19 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+.nav > .home > img {
+  max-height: 52px;
+  padding: 0px;
+}
+.nav .home {
+  padding: 3px 3px ;
+}
   
-.nav a:hover {
+.nav .b:hover {
     background-color: rgb(156, 119, 165);
     color: black;
 }
+
 /* BELOW, THE SEARCH BAR */
 .search {
     float: right;

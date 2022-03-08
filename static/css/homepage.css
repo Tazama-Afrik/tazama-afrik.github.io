@@ -10,10 +10,10 @@ body {
   
   .hello {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/beautiful.png);
+    background-image: url(../img/mountain-fog.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-height: 400px;
+    min-height: 450px;
     margin: 0;
     padding: 0;
     color: rgb(4, 3, 51);

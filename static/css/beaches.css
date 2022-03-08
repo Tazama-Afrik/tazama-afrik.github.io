@@ -3,6 +3,7 @@
 }
 body {
     background-color: aliceblue;
+    margin: 0;
 }
 .hello {
     font-family: Arial, Helvetica, sans-serif;
@@ -41,8 +42,8 @@ body {
       padding: 3px 3px ;
   }
 
-  .nav a.active {
-    background-color: hsla(158, 95%, 34%, 0.535);
+  .active {
+    background-color: rgb(14, 66, 16);
     color: white;
   }
 

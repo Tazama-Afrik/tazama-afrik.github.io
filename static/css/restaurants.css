@@ -29,7 +29,28 @@ body {
     background-color: rgb(156, 119, 165);
     color: black;
 }
-  
+/* BELOW, THE SEARCH BAR */
+.search {
+    float: right;
+    padding: 0px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .put {
+    padding: 5.5px;
+  }
+  #searchSubmit {
+    float: right;
+    background-color: blue;
+    padding: 5.5px;
+    color: yellow;
+  }
+  #searchSubmit:hover {
+    background-color: green;
+  }
+  /*END OF SEARCH BAR*/
 .active {
     background-color: rgb(142, 182, 182);
     color: azure;

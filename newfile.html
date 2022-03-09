@@ -39,21 +39,22 @@
     <img id="main" class="container" src="" alt="main viewer" />
 	<span id="loader" class="loading show">🌍Loading...</span>
   </div>
+  <button class="get">Getcountries</button>
 </body>
 </html>
 
 <script>
-    function (){
-        let $countries = $(.nav-list)
+    $(body .get).on('click', funtion getCountries() {
+        let $countries = $(.nav-list);
 
         $.ajax({
-            url: '/countries/regions',
+            url: 'https://restcountries.com/v3.1/region/africa',
             success: function(regions){
                 $.each(regions, function(i, region){
                     $countries.append('<li>' + region.name + '</li>')
                 });
-            }
+            },
             error: alert('Oops! There was an error.')
         });
-    }
+    });
 </script>

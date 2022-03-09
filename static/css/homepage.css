@@ -52,7 +52,8 @@ body {
     padding: 0px;
   }
   .nav .home {
-      padding: 3px 3px ;
+      padding: 3px;
+      padding-top: 0;
   }
   
   .welcome {

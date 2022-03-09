@@ -4,7 +4,6 @@ body {
 
 }
 
-
 .hello {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(../img/fine-jollof1.jpg);
@@ -35,7 +34,7 @@ body {
   padding: 3px;
   padding-top: 0;
 }
-  
+
 .nav .b:hover {
   background-color: rgb(156, 119, 165);
   color: black;

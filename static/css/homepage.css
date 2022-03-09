@@ -47,16 +47,13 @@ body {
   }
 
   
-  /* .active {
-    background-color: rgb(59, 71, 71);
-    color: azure;
-  } */
   .nav > .home > img {
     max-height: 52px;
     padding: 0px;
   }
   .nav .home {
-      padding: 3px 3px ;
+      padding: 3px;
+      padding-top: 0;
   }
   
   .welcome {
@@ -190,17 +187,14 @@ body {
 }
 
   .links-and-contact {
-    /* background-color: red; */
     font: bold;
     width: 100%;
     text-decoration: blink;
   }
   
   .link-list{
-  /* background: blueviolet; */
   width: fit-content;
   height: fit-content;
-  /* color: yellow; */
   padding: 4px;
   margin-bottom: 20px;
   }

@@ -41,12 +41,14 @@ body {
   }
   .nav .home {
       padding: 3px 3px ;
+      padding-top: 0;
   }
 
   .nav a.active {
     background-color: rgb(14, 66, 16);
     color: white;
   }
+
 
   .nav {
     overflow:visible;
@@ -67,7 +69,13 @@ body {
   .nav .b:hover {
     background-color: rgb(156, 119, 165);
     color: black;
+    font-weight: bold;
+    font-size: 16px;
   }
+  .nav .active:hover {
+    background-color: rgb(14, 66, 16);
+    color: white;
+}
    /* BELOW, THE SEARCH BAR */
    .search {
     float: right;

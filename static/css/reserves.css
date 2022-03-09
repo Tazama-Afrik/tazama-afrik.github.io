@@ -30,7 +30,7 @@ body {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav .b:hover {
     background-color: rgb(177, 153, 184);
     color: black;
 }
@@ -39,10 +39,49 @@ body {
     background-color: rgb(14, 66, 16);
     color: aliceblue;
 }
+.topnav .b:hover {
+    background-color: rgb(156, 119, 165);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+ .topnav .active:hover {
+    background-color: rgb(14, 66, 16);
+    color: white;
+  }
+.topnav > .home > img {
+    max-height: 52px;
+  }
+  .topnav .home {
+    padding: 3px 3px ;
+    padding-top: 0;
+  }
 
 .hello {
     size: 5px;
 }
+ /* BELOW, THE SEARCH BAR */
+ .search {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .put {
+    padding: 5.5px;
+  }
+  #searchSubmit {
+    float: right;
+    background-color: blue;
+    padding: 5.5px;
+    color: yellow;
+  }
+  #searchSubmit:hover {
+    background-color: green;
+  }
+  /* END OF SEARCH BAR */
 
 .welcome {
     text-align: center;

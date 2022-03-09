@@ -36,15 +36,27 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
-  
-  .nav a:hover {
+  .nav .b {
+    padding: 14px 16px;
+  }
+  .nav .b:hover {
     background-color: rgb(156, 119, 165);
     color: black;
+    font-weight: bold;
+    font-size: 16px;
   }
+
   
-  .active {
+  /* .active {
     background-color: rgb(59, 71, 71);
     color: azure;
+  } */
+  .nav > .home > img {
+    max-height: 52px;
+    padding: 0px;
+  }
+  .nav .home {
+      padding: 3px 3px ;
   }
   
   .welcome {

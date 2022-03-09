@@ -1,23 +1,10 @@
 body {
-  background: #333;
   font-family: 'Noto Sans', sans-serif;
-  background-color: #f3f7f35b;
   color: rgb(14, 3, 3);
   overflow-x: hidden;
   background-size: cover;
   margin: 0;
 }
-
-/* .topheader {
-  color: white;
-  font: bold;
-  background-color: darkblue;
-  padding: 10px;
-  width: fit-content;
-  height: fit-content;
-  font-size: 50px;
-  border-radius: 2%;
-} */
 
 .topnav { /*n*/
   background-color: #333;
@@ -42,17 +29,16 @@ body {
   max-height: 52px;
   padding: 3px;
 }
-
 .topnav .nav:hover {
-  background-color: #ddd;
+  background-color: rgb(156, 119, 165);
   color: black;
+  font-weight: bold;
+  font-size: 16px;
 }
-
-.topnav a.active {
-  background-color: rgb(13, 85, 15);
+.topnav .active:hover {
+  background-color: rgb(14, 66, 16);
   color: white;
 }
-
 .topnav > .home {
   padding: 0ch;
   margin-bottom: 0px;
@@ -73,7 +59,7 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 14px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -84,7 +70,7 @@ body {
 }
 
 .active {
-  background-color: rgb(59, 71, 71);
+  background-color: rgb(14, 66, 16);
   color: azure;
 }
 

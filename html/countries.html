@@ -83,7 +83,7 @@ async function handleBreedChange(event) {
   main.classList.remove("show");
   loader.classList.add("show");
 
-  const res = await fetch(` https://dog.ceo/api/breed/${breed}/images/random`);
+  const res = await fetch(`https://dog.ceo/api/breed/${breed}/images/random`);
   const resJson = await res.json();
 
   main.src = resJson.message;

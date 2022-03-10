@@ -1,38 +1,26 @@
-let currentlySelected = 0;
-const nodes = document.querySelectorAll('.slide-wrapper');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function previous () {
-  nextBtn.disabled = false;
-  nodes[currentlySelected].classList.remove('active');
-  currentlySelected--;
-  nodes[currentlySelected].classList.add('active');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  if (currentlySelected === 0) {
-    prevBtn.disabled = true;
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
-}
-
-function next () {
-  prevBtn.disabled = false;
-  nodes[currentlySelected].classList.remove('active');
-  currentlySelected++;
-  nodes[currentlySelected].classList.add('active');
-
-  if (currentlySelected + 1 === nodes.length) {
-    nextBtn.disabled = true;
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
-
-function init () {
-  prevBtn.addEventListener('click', function () {
-    previous();
-  });
-
-  nextBtn.addEventListener('click', function (e) {
-    next();
-  });
-}
-
-init();

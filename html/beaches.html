@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css"/>
         <link rel="stylesheet" href="../static/css/beaches.css">
         <link rel='shortcut icon' href="static/img/tazama_afrik.png">    
   </head>
@@ -39,46 +38,101 @@
       </p>
     </div>
 
-    <div class="gallery">
       <h2>Gallery</h2>
-    </div>
-      <div class="image-gallery">
-        <div class="img"></div>
-          <img class="slide-wrapper active" src="../static/img/family_beach_image.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/family_beach.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/baby_beach_image.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/baby_beach_image.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/teens_beach_image.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/solo_beach_image.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/sunkissed_beach_image.jpg" alt="Beach time">
-          <img class="slide-wrapper" src="../static/img/sunkissed_beach_image.jpg" alt="Beach time">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img src="../static/img/blue-sea.jpeg" style="width:100%">
+          <div class="text">Caption Text</div>
         </div>
-      </div>
-    </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img src="../static/img/lagos-beach1.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img src="../static/img/rock-beach.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
 
-    <div class="btns">
-      <button disabled="" class="btn prev">Prev</button>
-      <button class="btn next">Next</button>
-    </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img src="../static/img/lagos-beach.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
 
-    <h3>Links</h3>
-    <div>
-      <ul>
-        <li><a href="https://github.com/Tazama-Afrik">Github</a></li>
-        <li><a href="https://twitter.com/tazama_afrik">Twitter</a></li>
-        <li><a href="https://linkedin.com/in/tazama-afrik">Linkedin</a></li>
-      </ul>
-    </div>
-    <div class="container">	
-      <div class="social-icon">
-        <img src="../static/img/linkedin.png">
-        <img src="../static/img/facebook.png">
-        <img src="../static/img/tw.png">
-      </div>
-    </div>
-    <script src="https://unpkg.com/popmotion@8.5.0/dist/popmotion.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
-    <script src="../static/js/beaches.js"></script>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img src="../static/img/lagos-beach2.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img src="../static/img/lagos-beach3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img src="../static/img/rock-beach.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <div class="links-and-contact">
+          <div class="links">
+            <h4>Useful Links</h4>
+            <ul class="link-lists">
+              <li>
+                <a href="https://github.com/Tazama-Afrik">Github</a>
+              <li>
+                <img href="https://linkedin.com/in/tazama-afrik" src="../static/img/linkedin.png">
+              <li>
+                <img href="https://facebook.com/in/tazama-afrik" src="../static/img/facebook.png">
+              <li>
+                <img href="https://twitter.com/in/tazama-afrik" src="../static/img/tw.png">
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+          <input class="send-message" type="checkbox">Send message</input>
+          <div class="contact">
+              <h2>Contact Us</h2>
+            <form action="#">
+              <label for="email">
+                <h4>Email</h4>
+                <input type="email" id="email" placeholder="Enter your email" />
+              </label>
+              <label for="message">
+                <h4>Message</h4>
+     <textarea id="message" placeholder="Your message goes here"></textarea>
+              </label>
+              <div class="submit-button-wrapper">
+                <input type="submit" valid="Send Message" id="submitbutton" />
+              </div>
+            </form>
+          </div>
+        
+    </center>
+      <footer id="footer">Copyright &copy; Tazama Afrik</footer>
+      <script src="../static/js/beaches.js"></script>
+    </body>
+  </html>
   </body>
 </html>
-          

@@ -81,6 +81,14 @@ body {
   #searchSubmit:hover {
     background-color: green;
   }
+  li {
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    /* background-color: lightslategray; */
+    width: fit-content;
+    border: 1px white;
+  }
   /* END OF SEARCH BAR */
   
   .container {

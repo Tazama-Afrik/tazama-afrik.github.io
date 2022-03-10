@@ -23,7 +23,7 @@
 
     <!------     BEGINNING OF SEARCH BAR -------->
           <div class="search" placeholder="Type here to search">
-              <input name="search bar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
+              <input name="search bar" id="tags" placeholder="Type here to search" rows="1" class="put" type="search"></input>
               <button type="submitbutton" id="searchSubmit">Search</button>
           </div> 
     <!------     END OF SEARCH BAR ------->
@@ -118,6 +118,18 @@
 	    </center>
         <footer id="footer">Copyright &copy; Tazama Afrik</footer>
       </body>
-    </html>
-    </body>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+      <script>
+        $( function() {
+          var availableTags = [
+            "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa","Tazama",
+            "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
+            "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
+          ];
+          $( "#tags" ).autocomplete({
+            source: availableTags
+          });
+        } );
+        </script>
 </html>

@@ -41,7 +41,7 @@
     let $country = $('#get');
      let $title = $('#tit')
     $.ajax({
-      url: 'https://restcountries.com/v3.1/all',
+      url: 'https://restcountries.com/v3.1/region/africa',
       success: function(data){
         console.log(data)
         $.each(data, function(i, item){
@@ -50,7 +50,7 @@
         });
         $title.append('<br>250 Countries Avaialable')
       },
-      error: alert('Hey, There was an error. Check the URL and try again')
+      // error: alert('Hey, There was an error. Check the URL and try again')
     });
 
   });

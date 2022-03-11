@@ -1,0 +1,262 @@
+body {
+    background: #333;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f3f7f35b;
+    color: rgb(14, 3, 3);
+    overflow-x: hidden;
+    background-size: cover;
+    margin: 0;
+  }
+  
+  .hello {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/mountain-fog.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 450px;
+    margin: 0;
+    padding: 0;
+    color: rgb(4, 3, 51);
+  }
+  
+  .nav {
+    overflow: hidden;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav .b {
+    padding: 14px 16px;
+  }
+  .nav .b:hover {
+    background-color: rgb(156, 119, 165);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  
+  .nav > .home > img {
+    max-height: 52px;
+    padding: 0px;
+  }
+  .nav .home {
+      padding: 3px;
+      padding-top: 0;
+  }
+  
+  .welcome {
+    font-size: larger;
+  }
+  
+  /* BELOW, THE SEARCH BAR */
+  .search {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .put {
+    padding: 5.5px;
+  }
+  #searchSubmit {
+    float: right;
+    background-color: blue;
+    padding: 5.5px;
+    color: yellow;
+  }
+  #searchSubmit:hover {
+    background-color: green;
+  }
+  li {
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    /* background-color: lightslategray; */
+    width: fit-content;
+    border: 1px white;
+  }
+  /* END OF SEARCH BAR */
+  
+  .container {
+    display: grid;
+    grid-gap: 4em;
+    padding: 5px;
+  }
+  
+  .welcome {
+    position: relative;
+    text-align: center;
+    color: lightyellow;
+  }
+  
+  @media (max-width: 650px) {
+    .projects-grid {
+      grid-template-columns: 100%;
+    }
+  }
+  
+  /************* IMAGES IN THE BODY ***************/
+  
+  .project-image-wrapper {
+    justify-self: center;
+    position: relative;
+    grid-gap: 4em;
+    justify-content: center;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    /* max-height: 450px; */
+  
+    font-size: 300px;
+    float: left;
+    width: 40%;
+    padding-left: 50px;
+  }
+
+  .project-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    transition: all ease-in-out .2s;
+    flex-direction: column-reverse;
+    padding: 5px;
+    max-height: 100%;
+  }
+  
+  .project-image-wrapper:hover > .project-image {
+    filter: brightness(.75);
+    opacity: 1.0;
+    width: 90%;
+    box-shadow: hsla(158, 95%, 34%, 0.535);
+  }
+  
+  .project-image-wrapper:hover > a > .project-image, .project-image-wrapper:hover a + h1 {
+    filter: brightness(.75);
+    opacity: 1.0;
+    width: 90%;
+    box-shadow: hsla(158, 95%, 34%, 0.535);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(1.23);
+
+  }
+
+  .project-image-wrapper:hover > h1 {
+    visibility: visible;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+    padding-left: 82%;
+    font-size: 15%;
+  }
+  
+  /****************** END OF IMAGES FORMATTING ****************/
+  
+.welcome {
+    font-size: larger;
+    text-align: center;
+    color: rgb(244, 244, 247);
+}
+
+.select {
+    font-size: larger;
+    text-align: center;
+    background-color: rgb(250, 255, 253);
+    color: rgb(53, 53, 102);
+    margin: 0;
+}
+
+#about {
+  background-color: azure;
+  text-align: center;
+  margin-bottom: 0;
+  color: rgb(67, 12, 129);
+}
+
+  .links-and-contact {
+    font: bold;
+    width: 100%;
+    text-decoration: blink;
+  }
+  
+  .link-list{
+  width: fit-content;
+  height: fit-content;
+  padding: 4px;
+  margin-bottom: 20px;
+  }
+  
+  /****************** BEGINNGING OF CONTACT **************/
+  form input,
+  textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+  }
+  
+  .links-and-contact {
+    background-color: rgb(24, 19, 19);
+    color: aliceblue;
+    padding-top: 5px;
+  }
+  .contact {
+      background-color: white;
+      flex-wrap: wrap;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 4%;
+      padding: 20px;
+      position: absolute;
+      right: 33%;
+      bottom: 1em;
+      display: none;
+  }
+  .send-message:checked + .contact {
+    display: block;
+  }
+  
+  form {
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  form input[type="submit"] {
+    width: 250px;
+  }
+  #submitbutton:hover {
+      background-color: darkolivegreen;
+  }
+  submit-button-wrapper {
+    margin: 20px o;
+  }
+  
+  /************ END OF CONTACT *************/
+  
+  #footer {
+    background-color: rgb(248, 238, 238);
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    color: black;
+  }

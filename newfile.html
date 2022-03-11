@@ -30,9 +30,9 @@
 <body>
   <h1>Watch How I'm Doing It!</h1>
 
-  <h2 id="tit" >Countries Below</h2>
+  <h2 id="tit"></h2>
  <center> <ul id="get">
-    <li>Load countries</li>
+    <li>Loading...</li>
   </ul>
 </center>
 </body>
@@ -46,9 +46,10 @@
         console.log(data)
         $.each(data, function(i, item){
           // if 
-          $country.append('<li class="country">'+ item.name.official +'</li>')
+          $country.append('<li class="country">'+ item.name.official +': ' + item.population + ' Population</li>')
         });
-        $title.append('<br>250 Countries Avaialable')
+
+        $title.append(`<br><u>${Object.keys(data).length} Countries Available</u>`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });

@@ -1,0 +1,79 @@
+body {
+    background-color: aliceblue;
+    margin: 0px;
+
+}
+
+.hello {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fine-jollof1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 400px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 3px;
+    padding-top: 3px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav > .home > img {
+  max-height: 52px;
+  padding: 0px;
+}
+.nav .home {
+  padding: 3px;
+  padding-top: 0;
+}
+
+.nav .b:hover {
+  background-color: rgb(156, 119, 165);
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.nav .active:hover {
+  background-color: rgb(14, 66, 16);
+  color: white;
+}
+
+/* BELOW, THE SEARCH BAR */
+.search {
+    float: right;
+    padding: 0px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .put {
+    padding: 5.5px;
+  }
+  #searchSubmit {
+    float: right;
+    background-color: blue;
+    padding: 5.5px;
+    color: yellow;
+  }
+  #searchSubmit:hover {
+    background-color: green;
+  }
+  /*END OF SEARCH BAR*/
+.active {
+  background-color: rgb(14, 66, 16);
+  color: azure;
+}
+  
+.welcome {
+    font-size: larger;
+    text-align: center;
+}

@@ -1,0 +1,277 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+.hello {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/blue-sea.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 430px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: solid;
+    color: rgb(4, 3, 51);
+}
+
+.nav {
+    /* position:fixed; */
+    width: 100%;
+    z-index: 10;
+    margin-top: 0px;
+  }
+  .nav a {
+    color: #0b0c50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: sans-serif 17px bold;
+    margin-bottom: 5px;
+    margin: 3px;
+    float: left;
+  }
+  .nav > .home > img {
+    max-height: 52px;
+    padding: 0px;
+  }
+  .nav .home {
+      padding: 3px;
+      padding-top: 0;
+  }
+
+  .active {
+    background-color: rgb(4, 2, 34);
+    color: white;
+  }
+
+  .nav {
+    overflow:visible;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  
+  .nav .b:hover {
+    background-color: rgb(156, 119, 165);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav .active:hover {
+    background-color: rgb(14, 66, 16);
+    color: white;
+  }
+     /* BELOW, THE SEARCH BAR */
+     .search {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+      }
+      .put {
+        padding: 5.5px;
+      }
+      #searchSubmit {
+        float: right;
+        background-color: blue;
+        padding: 5.5px;
+        color: yellow;
+      }
+      #searchSubmit:hover {
+        background-color: green;
+      }
+      /* END OF SEARCH BAR */
+    
+
+.hello {
+    size: 5px;
+}
+
+.welcome {
+    text-align: center;
+    text-decoration: solid;
+    padding: 10px;
+    color: blue;
+    background-color: rgb(251, 253, 252);
+}
+
+.h {
+    color: rgb(33, 23, 56);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(28, 14, 37);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.mySlides > img {
+  max-height: 600px;
+}
+
+.links-and-contact {
+  font: bold;
+  width: 100%;
+  text-decoration: blink;
+}
+
+.link-list{
+width: fit-content;
+height: fit-content;
+padding: 4px;
+margin-bottom: 20px;
+}
+
+/****************** BEGINNGING OF CONTACT **************/
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.links-and-contact {
+  background-color: rgb(24, 19, 19);
+  color: aliceblue;
+  padding-top: 5px;
+}
+.contact {
+    background-color: white;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4%;
+    padding: 20px;
+    position: absolute;
+    right: 33%;
+    bottom: 1em;
+    display: none;
+}
+.send-message:checked + .contact {
+  display: block;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+#submitbutton:hover {
+    background-color: darkolivegreen;
+}
+submit-button-wrapper {
+  margin: 20px o;
+}
+
+/************ END OF CONTACT *************/
+
+#footer {
+  background-color: rgb(248, 238, 238);
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  color: black;
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Accordion - Default functionality</title>
+  <title>Testing COuntries list</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -11,36 +11,49 @@
   <script>
   $( function() {
     $( "#accordion" ).accordion({collapsible:true});
-    // $( "#accordion" ).sortable();
+    // $( "#accordion" ).resizeable();
   } );
 
   </script>
 <style>
-    #cover {
-        min-width: 5in;
-        background-color: red;
-        height: 100%;
+    body {
+      display: grid;
+      grid-template-columns: auto 1fr;
+    }
+    main {
+      /* width: 90%; */
+      text-align: center;
+    }
+    .list {
+      background-color: lightgrey;
+      overflow-y: scroll;
+      height: 2in;
+      max-height: 3in;
+    }
+    #accordion h3 {
+      border-radius: 0%;
+      font-style: bold;
     }
 
 </style>
 </head>
 <body>
- <cover id="cover">
+
 <div id="accordion">
-  <h3>WEST</h3>
-  <div>
+  <h3>Western Africa</h3>
+  <div class="list">
     <p>
     West List
     </p>
   </div>
-  <h3>SOUTH</h3>
-  <div>
+  <h3>Southern Africa</h3>
+  <div class="list">
     <p>
-    SOuth List
+    South List
     </p>
   </div>
-  <h3>NORTH</h3>
-  <div>
+  <h3>Northern Africa</h3>
+  <div class="list">
     <p>
     North List
     </p>
@@ -48,23 +61,26 @@
       <li>List item one</li>
       <li>List item two</li>
       <li>List item three</li>
+      <li>List item three</li><li>List<br> item <br>three</li><li>List <br>item <br></li><li>List <br>item<br> three</li>
     </ul>
   </div>
-  <h3>CENTRAL</h3>
-  <div>
+  <h3>Central Africa</h3>
+  <div class="list">
     <p>
     Central List
     </p>
   </div>
-  <h3>EAST</h3>
-  <div>
+  <h3>Eastern Africa</h3>
+  <div class="list">
     <p>
     East List
     </p>
   </div>
-</cover>
 </div>
- 
+
+ <main class="body">
+  The Country's Data Will Display Here!
+ </main>
  
 </body>
 </html>

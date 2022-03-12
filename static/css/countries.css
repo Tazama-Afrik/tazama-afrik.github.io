@@ -14,7 +14,7 @@
 #display {
   display: grid;
   position: absolute;
-  grid-template-columns:  auto 1fr;
+  grid-template-columns:  100% 100%;
   margin-top: 56px;
   width: 100%;
   background: red;
@@ -46,6 +46,8 @@
   max-width: 3in;
   border-right: grey 1px solid;
   height: fit-content;
+  position: relative;
+  width: 3in;
 }
 .list {
   background-color: lightgrey;
@@ -66,7 +68,7 @@
   color: white;
   background-color: rgb(52, 43, 107);
   list-style: none;
-  width: 100;
+  width: 100%;
   padding-top: 8%;
   padding-bottom: 8%;
   border: 1px solid black;

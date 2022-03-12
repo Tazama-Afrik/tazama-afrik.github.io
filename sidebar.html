@@ -145,10 +145,10 @@ The Countries will load now
       success: function(data){
         $country = $('#central')
         $title = $('#CA')
-        console.log(data)
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
+        console.log(data)
           $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
           num += 1;
           }
@@ -163,10 +163,10 @@ The Countries will load now
       success: function(data){
         $country = $('#east')
         $title = $('#EA')
-        console.log(data)
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
+            console.log(data)
           $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
           num += 1;
           }

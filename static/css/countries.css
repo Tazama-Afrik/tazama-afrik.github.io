@@ -13,7 +13,8 @@
 #display {
   display: grid;
   position: absolute;
-  grid-template-columns:  1fr auto;
+  grid-template-columns:  1fr 100%;
+  /* grid-auto-columns: max-content; */
   margin-top: 56px;
   width: 100%;
   background: red;

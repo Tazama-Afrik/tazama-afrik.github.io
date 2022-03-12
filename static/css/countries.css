@@ -3,18 +3,17 @@
     box-sizing: border-box;
     text-align: center;
 }
-/* body {
-  display
-} */
+
 .body {
   font: bold;
-  /* background-color: blue; */
+  background-color: blue;
   width: 100%;
+  text-align: center;
 }
 #display {
   display: grid;
   position: absolute;
-  grid-template-columns:   100%;
+  grid-template-columns:  1fr auto;
   margin-top: 56px;
   width: 100%;
   background: red;
@@ -29,10 +28,10 @@
   height: fit-content;
   color:aqua;
   font-weight: bold;
-  font-size: 100%;
   float: right;
   margin: 5px;
   padding: 10px;
+  border-radius: 1%;
   box-shadow: grey 10px top;
 }
 .nav-list {

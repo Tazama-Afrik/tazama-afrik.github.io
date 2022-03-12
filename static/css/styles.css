@@ -107,7 +107,7 @@ body {
 }
 
 @media (max-width: 650px) {
-  .projects-grid {
+  * {
     grid-template-columns: 100%;
   }
 }

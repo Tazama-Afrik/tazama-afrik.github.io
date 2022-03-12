@@ -29,11 +29,21 @@
       overflow-y: scroll;
       height: 2in;
       max-height: 3in;
+      /* align-self: center; */
     }
     #accordion h3 {
       border-radius: 0%;
       font-style: bold;
     }
+    .country {
+    color: white;
+    background-color: darkslateblue;
+    list-style: none;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+  }
 
 </style>
 </head>
@@ -42,44 +52,132 @@
 <div id="accordion">
   <h3>Western Africa</h3>
   <div class="list">
-    <p id="west">
-    West List
-    </p>
+    <h2 id="WA"></h2>
+    <center> <ul id="west">Loading... </ul></center>
   </div>
   <h3>Southern Africa</h3>
   <div class="list">
-    <p id="south">
-    South List
-    </p>
+    <h2 id="SA"></h2>
+    <center> <ul id="south">Loading... </ul></center>
   </div>
   <h3>Northern Africa</h3>
   <div class="list">
-    <p id="north">
-    North List
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-      <li>List item three</li><li>List<br> item <br>three</li><li>List <br>item <br></li><li>List <br>item<br> three</li>
-    </ul>
+    <h2 id="NA"></h2>
+    <center> <ul id="north">Loading... </ul></center>
   </div>
   <h3>Central Africa</h3>
   <div class="list">
-    <p id="central">
-    Central List
-    </p>
+    <h2 id="CA"></h2>
+    <center> <ul id="central">Loading... </ul></center>
   </div>
   <h3>Eastern Africa</h3>
   <div class="list">
-    <p id="east">
-    East List
-    </p>
+    <h2 id="EA"></h2>
+    <center> <ul id="east">Loading... </ul></center>
   </div>
 </div>
 
  <main class="body">
-  The Country's Data Will Display Here!
+  <h1>Watch How I'm Doing It!</h1>
+
+The Countries will load now
+</body>
+
+<!-------------------------Javascript below ------------------------------------->
+<script>
+  $(function (){
+    let $country = $('#west');
+     let $title = $('#WA')
+    $.ajax({
+      url: 'https://restcountries.com/v3.1/subregion/west',
+      success: function(data){
+        console.log(data)
+        let num = 0;
+        $.each(data, function(i, item){
+          if ( item.region === 'Africa' ) { 
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          num += 1;
+          }
+        });
+
+        $title.append(`<br>${num} Countries`)
+      },
+      // error: alert('Hey, There was an error. Check the URL and try again')
+    });
+    $.ajax({
+      url: 'https://restcountries.com/v3.1/subregion/south',
+      success: function(data){
+        $country = $('#south')
+        $title = $('#SA')
+        console.log(data)
+        let num = 0;
+        $.each(data, function(i, item){
+          if ( item.region === 'Africa' ) { 
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          num += 1;
+          }
+        });
+
+        $title.append(`<br>${num} Countries`)
+      },
+      // error: alert('Hey, There was an error. Check the URL and try again')
+    });
+    $.ajax({
+      url: 'https://restcountries.com/v3.1/subregion/north',
+      success: function(data){
+        $country = $('#north')
+        $title = $('#NA')
+        console.log(data)
+        let num = 0;
+        $.each(data, function(i, item){
+          if ( item.region === 'Africa' ) { 
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          num += 1;
+          }
+        });
+
+        $title.append(`<br>${num} Countries`)
+      },
+      // error: alert('Hey, There was an error. Check the URL and try again')
+    });
+    $.ajax({
+      url: 'https://restcountries.com/v3.1/subregion/central',
+      success: function(data){
+        $country = $('#central')
+        $title = $('#CA')
+        let num = 0;
+        $.each(data, function(i, item){
+          if ( item.region === 'Africa' ) { 
+        console.log(data)
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          num += 1;
+          }
+        });
+
+        $title.append(`<br>${num} Countries`)
+      },
+      // error: alert('Hey, There was an error. Check the URL and try again')
+    });
+    $.ajax({
+      url: 'https://restcountries.com/v3.1/subregion/east',
+      success: function(data){
+        $country = $('#east')
+        $title = $('#EA')
+        let num = 0;
+        $.each(data, function(i, item){
+          if ( item.region === 'Africa' ) { 
+            console.log(data)
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          num += 1;
+          }
+        });
+
+        $title.append(`<br>${num} Countries`)
+      },
+      // error: alert('Hey, There was an error. Check the URL and try again')
+    });
+  });
+</script>
  </main>
  
 </body>

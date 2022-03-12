@@ -11,6 +11,11 @@ export default function Home() {
       </Head>
 
       <h1 className="text-green-500 text-4xl">Tazama Afrik Application</h1>
+      <p> This Is a paragraph below whatever above
+      </p>
+      <p>
+        This Is a paragraph above whatever below
+      </p>
     </div>
   )
 }

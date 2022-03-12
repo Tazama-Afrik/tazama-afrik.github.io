@@ -16,23 +16,23 @@
     font-weight: bold;
   }
 
-  li {
+  .country {
     color: white;
-    background-color: darkslateblue;
+    background-color: rgb(52, 43, 107);
     list-style: none;
-    width: fit-content;
-    padding: 5px;
+    width: 100;
+    padding: 20px;
     border-radius: 5px;
     margin-bottom: 3px;
   }
 
 </style>
 <body>
-  <h1>Watch How I'm Doing It!</h1>
+  <h1>Countries Data Now Real!</h1>
 
-  <h2 id="tit" >Countries Below</h2>
+  <h2 id="tit"></h2>
  <center> <ul id="get">
-    <li>Subregion: West Africa, Country: Ghana</li>
+    <li>Loading...</li>
   </ul>
 </center>
 </body>
@@ -41,14 +41,18 @@
     let $country = $('#get');
      let $title = $('#tit')
     $.ajax({
-      url: 'https://restcountries.com/v3.1/region/africa',
+      url: 'https://restcountries.com/v3.1/subregion/west',
       success: function(data){
         console.log(data)
+        let num = 0;
         $.each(data, function(i, item){
-          // if 
-          $country.append('<li>'+ item.name.official +'</li>')
+          if ( item.region === 'Africa' ) { 
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          num += 1;
+          }
         });
-        $title.append('<br>250 Countries Avaialable')
+
+        $title.append(`<br><u>${num} Countries In West Africa</u>`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });

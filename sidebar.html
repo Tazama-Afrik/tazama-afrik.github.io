@@ -95,7 +95,7 @@ The Countries will load now
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
-          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population | ' + item.subregion+ '</li>')
           num += 1;
           }
         });
@@ -113,7 +113,7 @@ The Countries will load now
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
-          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+            $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population | ' + item.subregion+ '</li>')
           num += 1;
           }
         });
@@ -131,7 +131,7 @@ The Countries will load now
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
-          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+            $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population | ' + item.subregion+ '</li>')
           num += 1;
           }
         });
@@ -141,7 +141,7 @@ The Countries will load now
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
     $.ajax({
-      url: 'https://restcountries.com/v3.1/subregion/central',
+      url: 'https://restcountries.com/v3.1/subregion/central-africa',
       success: function(data){
         $country = $('#central')
         $title = $('#CA')
@@ -149,7 +149,7 @@ The Countries will load now
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
         console.log(data)
-          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+        $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population | ' + item.subregion+ '</li>')
           num += 1;
           }
         });
@@ -167,7 +167,7 @@ The Countries will load now
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
             console.log(data)
-          $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population</li>')
+            $country.append('<li class="country">'+ item.name.common +': ' + item.population + ' Population | ' + item.subregion+ '</li>')
           num += 1;
           }
         });

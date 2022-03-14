@@ -29,7 +29,7 @@
 <body>
 
 	    <!------     BEGINNING OF COUNTRIES LIST -------->
-      <container id="display">
+      <div id="display">
       <div id="accordion">
         <h3>Western Africa</h3>
         <div class="list">
@@ -65,7 +65,7 @@
       
       The Country Details Shows Here!
       </main>
-    </container>
+    </div>
     <div class="counter">
       Counted:
     </div>
@@ -85,7 +85,7 @@
       url: 'https://restcountries.com/v3.1/subregion/west',
       success: function(data){
         $country = $('#west')
-        $title = $('#WA')
+        $number = $('#WA')
         console.log(data)
         let num = 0;
         $.each(data, function(i, item){
@@ -95,7 +95,7 @@
           }
         });
 
-        $title.prepend(`${num} Countries`)
+        $number.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -103,7 +103,7 @@
       url: 'https://restcountries.com/v3.1/subregion/south',
       success: function(data){
         $country = $('#south')
-        $title = $('#SA')
+        $number = $('#SA')
         console.log(data)
         let num = 0;
         $.each(data, function(i, item){
@@ -113,7 +113,7 @@
           }
         });
 
-        $title.prepend(`${num} Countries`)
+        $number.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -141,7 +141,7 @@
       url: 'https://restcountries.com/v3.1/subregion/central',
       success: function(data){
         $country = $('#central')
-        $title = $('#CA')
+        $number = $('#CA')
         let num = 0;
         $.each(data, function(i, item){
           // if ( item.region === 'Africa' ) { 
@@ -151,7 +151,7 @@
           // }
         });
 
-        $title.prepend(`${num} Countries`)
+        $number.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -159,7 +159,7 @@
       url: 'https://restcountries.com/v3.1/subregion/east',
       success: function(data){
         $country = $('#east')
-        $title = $('#EA')
+        $number = $('#EA')
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
@@ -167,19 +167,25 @@
             $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
           }
+          item.flag = '<img src="https://flagcdn.com/h40/'+item.cca2.toLowerCase()+'.png"/>'
+          $('.country').click( function() {
+          $('#title').html(''+item.name.common.toUpperCase()+' '+item.flag+'')
+          });
         });
 
-        $title.prepend(`${num} Countries`)
+        $number.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
-  if ($('#accordion').css('display', 'none')) {
-    $('#display').css('grid-template-columns', '1fr 80%')
-    $('.body').css('background', 'white')
+  if ($('#accordion').css('display') == 'block') {
+    // $('#accordion').css('witdh', '20%')
+    // $('.body').css('witdh', '80%')
+    $('#display').css('grid-template-columns', 'auto 1fr')
+    $('.body').css('background', 'yellow')
   } else {
-    $('#display').css('grid-template-columns', '80%')
-    $('.body').css('background', 'black')
+    $('#display').css('grid-template-columns', '100% auto')
+    $('.body').css('background', 'blue')
   }
 
   $('.country').ready( function () {

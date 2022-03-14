@@ -19,7 +19,7 @@
   display: block;
 }
 #display {
-  display: flex;
+  display: grid;
   position: absolute;
   /* grid-template-columns:  1fr 80%; */
   /* grid-auto-columns: max-content; */

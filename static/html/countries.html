@@ -8,7 +8,6 @@
   <title>Countries | Tazama Afrik</title>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script> <!--For Allowing JQuery---->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -22,7 +21,7 @@
     <a class="nav" href="../html/culture.html">Culture</a>
     <a class="nav" href="../html/reserves.html">Reserves</a>
     <a class="nav" href="../html/restaurants.html">Restaurants</a>
-      <div id="select">Show countries</div>
+      <div id="select">Select Country</div>
   </div>
 </head>
 
@@ -61,7 +60,7 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title"> <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
+        <h1 id="title">Country Name <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
       
       
       The Country Details Shows Here!
@@ -75,11 +74,6 @@
 <!-------------------------Javascript below ------------------------------------->
   <script>
   $( function() {
-//     if !($('#accordion').css('display', 'none')) {
-//   $('#display').css('grid-template-columns', '1fr 100%')
-// } else {
-//   $('#display').css('grid-template-columns', '100%')
-// }
     $( "#accordion" ).accordion();
   } );
   $("#select").click(function(){
@@ -180,11 +174,13 @@
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
-  // if ($('#accordion').css('display', 'none')) {
-  //   $('#display').css('grid-template-columns', '1fr 80%')
-  // } else {
-  //   $('#display').css('grid-template-columns', '80%')
-  // }
+  if ($('#accordion').css('display', 'none')) {
+    $('#display').css('grid-template-columns', '1fr 80%')
+    $('.body').css('background', 'white')
+  } else {
+    $('#display').css('grid-template-columns', '80%')
+    $('.body').css('background', 'black')
+  }
 
   $('.country').ready( function () {
     $('.loading').removeClass('show');

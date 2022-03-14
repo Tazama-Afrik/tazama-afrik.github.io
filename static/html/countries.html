@@ -75,16 +75,16 @@
   <script>
   $( function() {
     $( "#accordion" ).accordion();
-  } );
-  while (true){
+  while (1){
   $("#select").click(function(){
   $("#accordion").slideToggle();
   if ($(this).text() == "Select Country") {
             $('#select').text("Hide Countrries")
-          } else {
-            $('#select').text("Select Countrries")
-          }
-        }
+  } else {
+    $('#select').text("Select Countrries")
+    }
+  })
+}
 });
 
   $(function (){

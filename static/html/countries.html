@@ -54,7 +54,7 @@
         <h3>Eastern Africa</h3>
         <div class="list">
           <h2 id="EA"></h2>
-          <center> <div id="east"><span class="loading">🌍</span></div></center>
+           <div id="east"><span class="loading">🌍</span></div>
         </div>
       </div>
 	    <!------     END OF COUNTRIES LIST ------->
@@ -76,8 +76,15 @@
   $( function() {
     $( "#accordion" ).accordion();
   } );
+  while (true){
   $("#select").click(function(){
   $("#accordion").slideToggle();
+  if ($(this).text() == "Select Country") {
+            $('#select').text("Hide Countrries")
+          } else {
+            $('#select').text("Select Countrries")
+          }
+        }
 });
 
   $(function (){
@@ -169,7 +176,7 @@
           }
           item.flag = `<img src="https://flagcdn.com/h20/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
           $('.country').click( function() {
-          $('#title').html(''+item.name.common.toUpperCase()+' '+item.flag+'')
+          $('#title').html(''+this.name.common.toUpperCase()+' '+item.flag+'')
           });
         });
 

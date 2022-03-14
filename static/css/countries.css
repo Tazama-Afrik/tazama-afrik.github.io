@@ -11,7 +11,7 @@
   text-align: center;
 }
 .body img {
-  margin-top: 0.6%;
+  margin-top: 1%;
 }
 .loading {
   display: block;
@@ -19,14 +19,12 @@
 #display {
   display: grid;
   position: absolute;
-  /* grid-template-columns:  1fr 80%; */
-  /* grid-auto-columns: max-content; */
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 56px;
   width: 100%;
-  /* background: red; */
   height: 100%;
+  overflow-x: hidden;
 }
 #WA, #SA, #NA, #CA, #EA {
   color: darkslateblue;
@@ -57,11 +55,10 @@
   max-width: 3in;
   border-right: grey 1px solid;
   height: fit-content;
-  position:inherit;
+  position:fixed;
   z-index: 20;
   width: 3in;
   float: right;
-  /* display: block; */
 }
 .list {
   background-color: grey;

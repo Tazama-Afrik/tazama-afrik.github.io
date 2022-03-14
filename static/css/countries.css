@@ -5,13 +5,16 @@
 }
 
 .body {
-  font: bold;
-  background-color: none;
+  font-size: 150%;
   min-width: 100%;
-  text-align: center;
+}
+body {
+  background-color: lightsteelblue;
 }
 .body img {
   margin-top: 1%;
+  margin-bottom: 0.5%;
+  height: 100%;
 }
 .loading {
   display: block;
@@ -23,8 +26,7 @@
   flex-direction: row;
   margin-top: 56px;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  /* height: 100%; */
 }
 #WA, #SA, #NA, #CA, #EA {
   color: darkslateblue;

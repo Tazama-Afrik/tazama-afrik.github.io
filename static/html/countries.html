@@ -21,7 +21,7 @@
     <a class="nav" href="../html/culture.html">Culture</a>
     <a class="nav" href="../html/reserves.html">Reserves</a>
     <a class="nav" href="../html/restaurants.html">Restaurants</a>
-      <div id="select">Select Country</div>
+      <div class="showc hidec" id="select">Show Countries</div>
   </div>
 </head>
 
@@ -60,7 +60,7 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title">Random Country <img src="https://flagcdn.com/h40/bn.png" alt="Flag"/></h1>
+        <h1 id="title" style="font-size:150%">Random Country <img src="https://flagcdn.com/h60/ng.png" alt="Flag"/></h1>
       
       
       The Country Details Shows Here!
@@ -73,19 +73,15 @@
 
 <!-------------------------Javascript below ------------------------------------->
   <script>
+    $('.hidec').text("Hide Countries");
+    $('.showc').text("Show Countries");
   $( function() {
     $( "#accordion" ).accordion();
-  while (1){
-  $("#select").click(function(){
-  $("#accordion").slideToggle();
-  if ($(this).text() == "Select Country") {
-            $('#select').text("Hide Countrries")
-  } else {
-    $('#select').text("Select Countrries")
-    }
-  })
-}
-});
+      $("#select").click(function(){
+        $("#accordion").slideToggle();
+      $('#select').toggleClass('hidec showc')
+      });
+  });
 
   $(function (){
     $.ajax({
@@ -134,8 +130,7 @@
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
             $country.append('<li class="country">'+ item.name.common +'</li>')
-            $('.body').append(item.flag)
-            
+            // $('.body').append(item.flag)
           num += 1;
           }
         });
@@ -176,7 +171,7 @@
           }
           item.flag = `<img src="https://flagcdn.com/h20/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
           $('.country').click( function() {
-          $('#title').html(''+this.name.common.toUpperCase()+' '+item.flag+'')
+          $('#title').html(''+item.name.common.toUpperCase()+' '+item.flag+'')
           });
         });
 
@@ -209,12 +204,6 @@
     checkCounts.innerHTML = message;
   }
   visits();
-
-  $( function() {
-    $( ".body" ).resizable({
-      containment: '#display'
-    });
-  } );
 
 </script>
 

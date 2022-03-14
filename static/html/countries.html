@@ -34,27 +34,27 @@
         <h3>Western Africa</h3>
         <div class="list">
           <h2 id="WA"></h2>
-          <center> <div id="west">Loading... </div></center>
+          <center> <div id="west"><span class="loading"> 🌍 </span></div></center>
         </div>
         <h3>Southern Africa</h3>
         <div class="list">
           <h2 id="SA"></h2>
-          <center> <div id="south">Loading... </div></center>
+          <center> <div id="south"><span class="loading"> Loading... </span></div></center>
         </div>
         <h3>Northern Africa</h3>
         <div class="list">
           <h2 id="NA"></h2>
-          <center> <div id="north">Loading... </div></center>
+          <center> <div id="north"><span class="loading"> Loading... </span></div></center>
         </div>
         <h3>Central Africa</h3>
         <div class="list">
           <h2 id="CA"></h2>
-          <center> <div id="central">Loading... </div></center>
+          <center> <div id="central"><span class="loading"> Loading... </span></div></center>
         </div>
         <h3>Eastern Africa</h3>
         <div class="list">
           <h2 id="EA"></h2>
-          <center> <div id="east">Loading... </div></center>
+          <center> <div id="east"><span class="loading"> Loading... </span></div></center>
         </div>
       </div>
 	    <!------     END OF COUNTRIES LIST ------->
@@ -178,6 +178,11 @@
   // } else {
   //   $('#display').css('grid-template-columns', '100%')
   // }
+
+  $('.country').ready( function () {
+    $('.loading').css('display', 'none');
+    $('.country').css('display', 'block')
+  });
 
 </script>
 

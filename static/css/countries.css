@@ -10,6 +10,9 @@
   width: 100%;
   text-align: center;
 }
+.loading {
+  display: block;
+}
 #display {
   display: grid;
   position: absolute;
@@ -75,6 +78,7 @@
   padding-top: 8%;
   padding-bottom: 8%;
   border: 1px solid black;
+  display: none;
 }
 .country:hover, #select:hover {
   opacity: 90%;
@@ -104,9 +108,9 @@
 }
 
 .loading {
-  animation: spin 3s infinite linear;
-  font-size: 50px;
-  display: none;
+  animation: spin 2s infinite linear;
+  font-size: 30px;
+  z-index: 0;
 }
 
 .container {

@@ -3,12 +3,10 @@
     box-sizing: border-box;
     text-align: center;
 }
-.show {
-  display: block;
-}
+
 .body {
   font: bold;
-  background-color: blue;
+  background-color: rgb(45, 45, 201)244, 244, 247)244, 244, 247);
   width: 100%;
   text-align: center;
 }
@@ -19,7 +17,7 @@
   display: block;
 }
 #display {
-  display: flex;
+  display: grid;
   position: absolute;
   /* grid-template-columns:  1fr 80%; */
   /* grid-auto-columns: max-content; */
@@ -61,6 +59,7 @@
   height: fit-content;
   position: relative;
   width: 3in;
+  /* display: block; */
 }
 .list {
   background-color: lightgrey;

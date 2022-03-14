@@ -7,14 +7,20 @@
 .body {
   font-size: 150%;
   min-width: 100%;
+  text-align: left;
 }
 body {
   background-color: lightsteelblue;
 }
 .body img {
   margin-top: 1%;
-  margin-bottom: 0.5%;
+  /* margin-bottom: 0.5%; */
   height: 100%;
+}
+.body > p {
+  padding-left: 20px;
+  font-size: 70%;
+  font-weight: bold;
 }
 .loading {
   display: block;

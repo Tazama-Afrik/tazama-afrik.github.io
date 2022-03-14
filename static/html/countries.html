@@ -8,6 +8,7 @@
   <title>Countries | Tazama Afrik</title>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script> <!--For Allowing JQuery---->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -21,7 +22,7 @@
     <a class="nav" href="../html/culture.html">Culture</a>
     <a class="nav" href="../html/reserves.html">Reserves</a>
     <a class="nav" href="../html/restaurants.html">Restaurants</a>
-      <div id="select">Select country</div>
+      <div id="select">Show countries</div>
   </div>
 </head>
 
@@ -34,7 +35,7 @@
         <h3>Western Africa</h3>
         <div class="list">
           <h2 id="WA"></h2>
-          <center> <div id="west"><span class="loading"> 🌍 </span></div></center>
+          <center> <div id="west"><span class="loading show"> 🌍 </span></div></center>
         </div>
         <h3>Southern Africa</h3>
         <div class="list">
@@ -60,11 +61,15 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title">The Country Details Shows Here!</h1>
+        <h1 id="title"> <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
       
-      The Countries will load now
+      
+      The Country Details Shows Here!
       </main>
     </container>
+    <div class="counter">
+      Counted:
+    </div>
 </body>
 
 <!-------------------------Javascript below ------------------------------------->
@@ -128,6 +133,8 @@
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
             $country.append('<li class="country">'+ item.name.common +'</li>')
+            $('.body').append(item.flag)
+            
           num += 1;
           }
         });
@@ -143,11 +150,11 @@
         $title = $('#CA')
         let num = 0;
         $.each(data, function(i, item){
-          if ( item.region === 'Africa' ) { 
+          // if ( item.region === 'Africa' ) { 
         console.log(data)
         $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
-          }
+          // }
         });
 
         $title.prepend(`${num} Countries`)
@@ -173,30 +180,35 @@
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
-  // if !($('#accordion').css('display', 'none')) {
-  //   $('#display').css('grid-template-columns', '1fr 100%')
+  // if ($('#accordion').css('display', 'none')) {
+  //   $('#display').css('grid-template-columns', '1fr 80%')
   // } else {
-  //   $('#display').css('grid-template-columns', '100%')
+  //   $('#display').css('grid-template-columns', '80%')
   // }
 
   $('.country').ready( function () {
-    $('.loading').css('display', 'block');
-    $('.country').css('display', 'none');
+    $('.loading').removeClass('show');
+    $('.country').addClass('show');
+  });
+  $('.country').click( function() {
+    $('#title').prepend(item.name.common)
   });
   //////////////////////////// Counting The Page Visits///////////////////////////////
 
   function visits() {
-  let count = localStorage.getItem("page_view");
-  if (count) {
-  count = Number(count) + 1;
-  localStorage.setItem("page_view", count);
-  } else {
-    count = 1;
-    localStorage.setItem("page_view", 1);
+    var checkCounts = document.querySelector(".counter");
+    let count = localStorage.getItem("page_view");
+    if (count) {
+    count = Number(count) + 1;
+    localStorage.setItem("page_view", count);
+    } else {
+      count = 1;
+      localStorage.setItem("page_view", 1);
+    }
+    message = `Number Of Visits: ${count}`;
+    checkCounts.innerHTML = message;
   }
-  console.log(count);
-}
-visits();
+  visits();
 </script>
 
 </html>

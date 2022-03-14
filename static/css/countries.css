@@ -3,21 +3,28 @@
     box-sizing: border-box;
     text-align: center;
 }
-
+.show {
+  display: block;
+}
 .body {
   font: bold;
   background-color: blue;
   width: 100%;
   text-align: center;
 }
+.body img {
+  margin-top: 0.6%;
+}
 .loading {
   display: block;
 }
 #display {
-  display: grid;
+  display: flex;
   position: absolute;
-  grid-template-columns:  1fr 80%;
+  /* grid-template-columns:  1fr 80%; */
   /* grid-auto-columns: max-content; */
+  flex-wrap: wrap;
+  flex-direction: row;
   margin-top: 56px;
   width: 100%;
   background: red;
@@ -61,15 +68,13 @@
   height: 2in;
   height: 3in;
   align-self: center;
+  display: block;
 }
 .list::-webkit-scrollbar {
   width: 1mm;
   color: black;
 }
-#accordion h3 {
-  border-radius: 0%;
-  font-style: bold;
-}
+
 .country {
   color: white;
   background-color: rgb(52, 43, 107);

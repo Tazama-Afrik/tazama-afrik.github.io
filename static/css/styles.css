@@ -2,6 +2,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   color: rgb(14, 3, 3);
   background-size: cover;
+  /* grid-template-columns: auto auto; */
   margin: 0;
 }
 

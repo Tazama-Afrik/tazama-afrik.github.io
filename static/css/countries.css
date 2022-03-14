@@ -16,7 +16,7 @@
 #display {
   display: grid;
   position: absolute;
-  grid-template-columns:  1fr 100%;
+  grid-template-columns:  1fr 80%;
   /* grid-auto-columns: max-content; */
   margin-top: 56px;
   width: 100%;
@@ -78,7 +78,7 @@
   padding-top: 8%;
   padding-bottom: 8%;
   border: 1px solid black;
-  display: none;
+  display: block;
 }
 .country:hover, #select:hover {
   opacity: 90%;
@@ -88,6 +88,7 @@
   opacity: 80%;
 }
 #title {
+  margin: 0;
   border-bottom: solid 2px gray;
 }
 
@@ -102,9 +103,6 @@
 }
 .topnav .home {
   margin: 0px;
-}
-.main-image {
-  display: none;
 }
 
 .loading {

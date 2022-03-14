@@ -39,22 +39,22 @@
         <h3>Southern Africa</h3>
         <div class="list">
           <h2 id="SA"></h2>
-          <center> <div id="south"><span class="loading"> Loading... </span></div></center>
+          <center> <div id="south" ><span class="loading">🌍</span></div></center>
         </div>
         <h3>Northern Africa</h3>
         <div class="list">
           <h2 id="NA"></h2>
-          <center> <div id="north"><span class="loading"> Loading... </span></div></center>
+          <center> <div id="north"><span class="loading">🌍</span></div></center>
         </div>
         <h3>Central Africa</h3>
         <div class="list">
           <h2 id="CA"></h2>
-          <center> <div id="central"><span class="loading"> Loading... </span></div></center>
+          <center> <div id="central"><span class="loading">🌍</span></div></center>
         </div>
         <h3>Eastern Africa</h3>
         <div class="list">
           <h2 id="EA"></h2>
-          <center> <div id="east"><span class="loading"> Loading... </span></div></center>
+          <center> <div id="east"><span class="loading">🌍</span></div></center>
         </div>
       </div>
 	    <!------     END OF COUNTRIES LIST ------->
@@ -82,11 +82,11 @@
 });
 
   $(function (){
-    let $country = $('#west');
-     let $title = $('#WA')
     $.ajax({
       url: 'https://restcountries.com/v3.1/subregion/west',
       success: function(data){
+        $country = $('#west')
+        $title = $('#WA')
         console.log(data)
         let num = 0;
         $.each(data, function(i, item){
@@ -96,7 +96,7 @@
           }
         });
 
-        $title.append(`<br>${num} Countries`)
+        $title.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -114,7 +114,7 @@
           }
         });
 
-        $title.append(`<br>${num} Countries`)
+        $title.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -132,7 +132,7 @@
           }
         });
 
-        $title.append(`<br>${num} Countries`)
+        $title.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -150,7 +150,7 @@
           }
         });
 
-        $title.append(`<br>${num} Countries`)
+        $title.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -168,7 +168,7 @@
           }
         });
 
-        $title.append(`<br>${num} Countries`)
+        $title.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -180,10 +180,23 @@
   // }
 
   $('.country').ready( function () {
-    $('.loading').css('display', 'none');
-    $('.country').css('display', 'block')
+    $('.loading').css('display', 'block');
+    $('.country').css('display', 'none');
   });
+  //////////////////////////// Counting The Page Visits///////////////////////////////
 
+  function visits() {
+  let count = localStorage.getItem("page_view");
+  if (count) {
+  count = Number(count) + 1;
+  localStorage.setItem("page_view", count);
+  } else {
+    count = 1;
+    localStorage.setItem("page_view", 1);
+  }
+  console.log(count);
+}
+visits();
 </script>
 
 </html>

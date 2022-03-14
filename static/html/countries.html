@@ -60,7 +60,7 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title">Country Name <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
+        <h1 id="title">Random Country <img src="https://flagcdn.com/h40/bn.png" alt="Flag"/></h1>
       
       
       The Country Details Shows Here!
@@ -121,7 +121,7 @@
       url: 'https://restcountries.com/v3.1/subregion/north',
       success: function(data){
         $country = $('#north')
-        $title = $('#NA')
+        $number = $('#NA')
         console.log(data)
         let num = 0;
         $.each(data, function(i, item){
@@ -133,7 +133,7 @@
           }
         });
 
-        $title.prepend(`${num} Countries`)
+        $number.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -167,7 +167,7 @@
             $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
           }
-          item.flag = '<img src="https://flagcdn.com/h40/'+item.cca2.toLowerCase()+'.png"/>'
+          item.flag = `<img src="https://flagcdn.com/h20/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
           $('.country').click( function() {
           $('#title').html(''+item.name.common.toUpperCase()+' '+item.flag+'')
           });
@@ -178,15 +178,6 @@
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
-  if ($('#accordion').css('display') == 'block') {
-    // $('#accordion').css('witdh', '20%')
-    // $('.body').css('witdh', '80%')
-    $('#display').css('grid-template-columns', 'auto 1fr')
-    $('.body').css('background', 'yellow')
-  } else {
-    $('#display').css('grid-template-columns', '100% auto')
-    $('.body').css('background', 'blue')
-  }
 
   $('.country').ready( function () {
     $('.loading').removeClass('show');
@@ -211,6 +202,13 @@
     checkCounts.innerHTML = message;
   }
   visits();
+
+  $( function() {
+    $( ".body" ).resizable({
+      containment: '#display'
+    });
+  } );
+
 </script>
 
 </html>

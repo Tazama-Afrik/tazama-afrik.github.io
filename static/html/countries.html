@@ -21,7 +21,7 @@
     <a class="nav" href="../html/culture.html">Culture</a>
     <a class="nav" href="../html/reserves.html">Reserves</a>
     <a class="nav" href="../html/restaurants.html">Restaurants</a>
-      <div id="select">Select Country</div>
+      <div class="showc hidec" id="select">Show Countries</div>
   </div>
 </head>
 
@@ -54,17 +54,24 @@
         <h3>Eastern Africa</h3>
         <div class="list">
           <h2 id="EA"></h2>
-          <center> <div id="east"><span class="loading">🌍</span></div></center>
+           <div id="east"><span class="loading">🌍</span></div>
         </div>
       </div>
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title">Country Name <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
+        <h1 id="title" style="font-size:150%">RANDOM COUNTRY <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
+      <div class="data" style="sans- serif; color: darkblue"><b>Official Name: Fake | Population: Fake | Subregion: Fake</b></div>
       
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
+      <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel dolore, molestiae officiis mollitia nesciunt, harum cumque quis ea doloribus, deleniti cum! Voluptatibus eos, porro deleniti quasi beatae earum exercitationem distinctio ab maxime.</p>
       
-      The Country Details Shows Here!
-      </main>
+    </main>
     </div>
     <div class="counter">
       Counted:
@@ -73,12 +80,15 @@
 
 <!-------------------------Javascript below ------------------------------------->
   <script>
+    $('.hidec').text("Hide Countries");
+    $('.showc').text("Show Countries");
   $( function() {
     $( "#accordion" ).accordion();
-  } );
-  $("#select").click(function(){
-  $("#accordion").slideToggle();
-});
+      $("#select").click(function(){
+        $("#accordion").slideToggle();
+      $('#select').toggleClass('hidec showc')
+      });
+  });
 
   $(function (){
     $.ajax({
@@ -121,19 +131,18 @@
       url: 'https://restcountries.com/v3.1/subregion/north',
       success: function(data){
         $country = $('#north')
-        $title = $('#NA')
+        $number = $('#NA')
         console.log(data)
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
             $country.append('<li class="country">'+ item.name.common +'</li>')
-            $('.body').append(item.flag)
-            
+            // $('.body').append(item.flag)
           num += 1;
           }
         });
 
-        $title.prepend(`${num} Countries`)
+        $number.prepend(`${num} Countries`)
       },
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
@@ -167,9 +176,9 @@
             $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
           }
-          item.flag = '<img src="https://flagcdn.com/h40/'+item.cca2.toLowerCase()+'.png"/>'
+          item.flag = `<img src="https://flagcdn.com/h40/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
           $('.country').click( function() {
-          $('#title').html(''+item.name.common.toUpperCase()+' '+item.flag+'')
+          $('#title').html(''+item.name.common.toUpperCase()+'  '+item.flag+'')
           });
         });
 
@@ -178,15 +187,6 @@
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
-  if ($('#accordion').css('display') == 'block') {
-    // $('#accordion').css('witdh', '20%')
-    // $('.body').css('witdh', '80%')
-    $('#display').css('grid-template-columns', 'auto 1fr')
-    $('.body').css('background', 'yellow')
-  } else {
-    $('#display').css('grid-template-columns', '100% auto')
-    $('.body').css('background', 'blue')
-  }
 
   $('.country').ready( function () {
     $('.loading').removeClass('show');
@@ -211,6 +211,7 @@
     checkCounts.innerHTML = message;
   }
   visits();
+
 </script>
 
 </html>

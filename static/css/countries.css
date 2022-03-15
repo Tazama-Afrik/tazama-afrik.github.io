@@ -37,6 +37,14 @@ body {
 #WA, #SA, #NA, #CA, #EA {
   color: darkslateblue;
 }
+/* .show:before {
+  content: none;
+  content: 'Show Countries';
+}
+.hide:after {
+  content: none;
+  content: 'SHow Countries';
+} */
 #select {
   background-color: darkslateblue;
   width: 15%;

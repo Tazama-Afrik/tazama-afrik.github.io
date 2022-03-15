@@ -20,7 +20,7 @@ body {
 .body > p {
   padding-left: 20px;
   font-size: 70%;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .loading {
   display: block;

@@ -29,7 +29,7 @@
 <body>
 
 	    <!------     BEGINNING OF COUNTRIES LIST -------->
-      <div id="display">
+    <div id="display">
       <div id="accordion">
         <h3>Western Africa</h3>
         <div class="list">
@@ -102,8 +102,13 @@
         let num = 0;
         $.each(data, function(i, item){
           if ( item.region === 'Africa' ) { 
-          $country.append('<li class="country">'+ item.name.common +'</li>')
-          num += 1;
+            $country.append('<li class="country">'+ item.name.common +'</li>')
+            num += 1;
+            item.flag = `<img src="https://flagcdn.com/h40/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
+            $('.country').click( function() {
+              $('#title').html(''+item.name.common.toUpperCase()+'  '+item.flag+'')
+              $('.data').text("Official Name: "+item.name.official+" | Population: "+item.population+" | Subregion: "+item.subregion+"")
+            });
           }
         });
 
@@ -122,6 +127,11 @@
           if ( item.region === 'Africa' ) { 
             $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
+          item.flag = `<img src="https://flagcdn.com/h40/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
+          $('.country').click( function() {
+          $('#title').html(''+item.name.common.toUpperCase()+'  '+item.flag+'')
+            $('.data').text("Official Name: "+item.name.official+" | Population: "+item.population+" | Subregion: "+item.subregion+"")
+          });
           }
         });
 
@@ -140,6 +150,11 @@
           if ( item.region === 'Africa' ) { 
             $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
+          item.flag = `<img src="https://flagcdn.com/h40/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
+          $('.country').click( function() {
+          $('#title').html(''+item.name.common.toUpperCase()+'  '+item.flag+'')
+            $('.data').text("Official Name: "+item.name.official+" | Population: "+item.population+" | Subregion: "+item.subregion+"")
+          });
           }
         });
 
@@ -148,17 +163,22 @@
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
     $.ajax({
-      url: 'https://restcountries.com/v3.1/subregion/central',
+      url: 'https://restcountries.com/v3.1/subregion/middl',
       success: function(data){
         $country = $('#central')
         $number = $('#CA')
         let num = 0;
         $.each(data, function(i, item){
-          // if ( item.region === 'Africa' ) { 
+          if ( item.region === 'Africa' ) { 
         console.log(data)
         $country.append('<li class="country">'+ item.name.common +'</li>')
           num += 1;
-          // }
+          item.flag = `<img src="https://flagcdn.com/h40/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
+          $('.country').click( function() {
+          $('#title').html(''+item.name.common.toUpperCase()+'  '+item.flag+'')
+            $('.data').text("Official Name: "+item.name.official+" | Population: "+item.population+" | Subregion: "+item.subregion+"")
+          });
+          }
         });
 
         $number.prepend(`${num} Countries`)
@@ -189,6 +209,7 @@
       // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
+
 
   $('.country').ready( function () {
     $('.loading').removeClass('show');

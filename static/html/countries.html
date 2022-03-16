@@ -60,7 +60,7 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title" style="font-size:150%">NIGERIA <img src="https://flagcdn.com/h40/ng.png" alt="Flag"/></h1>
+        <h1 id="title" style="font-size:150%"></h1>
       <div class="data" style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%;">
         Official Name: Fake | Population: Fake | Subregion: Fake</div>
       
@@ -91,10 +91,18 @@
         }
       });
   });
-////////////////////////////// CLick handler//////////////////////////////////////////////
 
-
-
+  $.ajax({
+      url: `https://restcountries.com/v3.1/name/nigeria`,
+      success: function(data) {
+        data[0].flag = `<img src="https://flagcdn.com/h40/ng.png"/>`
+        countryName = 'NIGERIA';
+        $('#title').html(''+countryName+' '+ data[0].flag +'');
+        $('.data').html("Official Name: <u>"+data[0].name.official+"</u> | Population: <u>"+data[0].population+"</u> | Region: <u>"+data[0].subregion+
+        "</u><br> Curency: <u>"+data[0].name.common+"'s Currency</u> | Languages: <u>"+data[0].languages[0]+"</u>")
+        return false;
+      }
+    });
 
   $(function (){
     $.ajax({
@@ -214,9 +222,10 @@
     message = `Number Of Visits: ${count}`;
     checkCounts.innerHTML = message;
   }
+////////////////////////////// CLick handler//////////////////////////////////////////////
 
   function clicked(){
-    $name = $(this).text().toLowerCase().split(" ")[0];
+    $(this).text() !== "Western Sahara" ? $name = $(this).text().toLowerCase().split(" ")[0] : $name = "west";
     $.ajax({
       url: `https://restcountries.com/v3.1/name/${$name}`,
       success: function(data) {
@@ -226,7 +235,7 @@
         $('.data').html("Official Name: <u>"+data[0].name.official+"</u> | Population: <u>"+data[0].population+"</u> | Region: <u>"+data[0].subregion+
         "</u><br> Curency: <u>"+data[0].name.common+"'s Currency</u> | Languages: <u>"+data[0].languages[0]+"</u>")
         return false;
-      },
+      }
     });
   }
 

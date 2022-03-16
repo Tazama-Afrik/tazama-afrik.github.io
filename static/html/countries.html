@@ -60,9 +60,9 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title" style="font-size:150%"></h1>
+        <h1 id="title" style="font-size:150%">Country And Flag</h1>
       <div class="data" style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%;">
-        Official Name: Fake | Population: Fake | Subregion: Fake</div>
+        Official Name: Connect to the internet | Population: Connect to the internet | Subregion: Connect to the internet</div>
       
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
@@ -95,12 +95,12 @@
   $.ajax({
       url: `https://restcountries.com/v3.1/name/nigeria`,
       success: function(data) {
-        data[0].flag = `<img src="https://flagcdn.com/h40/ng.png"/>`
-        countryName = 'NIGERIA';
-        $('#title').html(''+countryName+' '+ data[0].flag +'');
-        $('.data').html("Official Name: <u>"+data[0].name.official+"</u> | Population: <u>"+data[0].population+"</u> | Region: <u>"+data[0].subregion+
-        "</u><br> Curency: <u>"+data[0].name.common+"'s Currency</u> | Languages: <u>"+data[0].languages[0]+"</u>")
-        return false;
+        data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
+        countryName = 'NIGER';
+        data = data[0];
+        $('#title').html(''+countryName+' '+ data.flag +'');
+        $('.data').html("Official Name: <u>"+data.name.official+"</u> | Population: <u>"+data.population+"</u> | Region: <u>"+data.subregion+
+        "</u><br> Curency: <u>"+data.name.common+"'s Currency</u> | Languages: <u>"+data.languages[0]+"</u>")
       }
     });
 
@@ -201,12 +201,6 @@
     });
   });
 
-
-  $('.country').ready( function () {
-    $('.loading').removeClass('show');
-    $('.country').addClass('show');
-  });
-
   //////////////////////////// Counting The Page Visits///////////////////////////////
 
   function visits() {
@@ -230,10 +224,11 @@
       url: `https://restcountries.com/v3.1/name/${$name}`,
       success: function(data) {
         data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
-        countryName = data[0].name.common.toUpperCase();
-        $('#title').html(''+countryName+' '+ data[0].flag +'');
-        $('.data').html("Official Name: <u>"+data[0].name.official+"</u> | Population: <u>"+data[0].population+"</u> | Region: <u>"+data[0].subregion+
-        "</u><br> Curency: <u>"+data[0].name.common+"'s Currency</u> | Languages: <u>"+data[0].languages[0]+"</u>")
+        data = data[0];
+        countryName = data.name.common.toUpperCase();
+        $('#title').html(''+countryName+' '+ data.flag +'');
+        $('.data').html("Official Name: <u>"+data.name.official+"</u> | Population: <u>"+data.population+"</u> | Region: <u>"+data.subregion+
+        "</u><br> Curency: <u>"+data.currencies.ghs.name+"</u> | Languages: <u>"+data.languages[0]+"</u>")
         return false;
       }
     });

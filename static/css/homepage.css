@@ -55,10 +55,7 @@ body {
       padding: 3px;
       padding-top: 0;
   }
-  
-  .welcome {
-    font-size: larger;
-  }
+
   
   /* BELOW, THE SEARCH BAR */
   .search {
@@ -96,13 +93,7 @@ body {
     grid-gap: 4em;
     padding: 5px;
   }
-  
-  .welcome {
-    position: relative;
-    text-align: center;
-    color: lightyellow;
-  }
-  
+
   @media (max-width: 650px) {
     .projects-grid {
       grid-template-columns: 100%;
@@ -174,7 +165,7 @@ body {
   /****************** END OF IMAGES FORMATTING ****************/
   
 .welcome {
-    font-size: larger;
+    font-size: 250%;
     text-align: center;
     color: rgb(244, 244, 247);
 }

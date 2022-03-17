@@ -28,7 +28,7 @@
     <!------     BEGINNING OF SEARCH BAR -------->
           <div class="search">
               <input name="search bar" id="searchbar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
-              <button type="submitbutton" id="searchSubmit">Search</button>
+              <button type="submitbutton" id="searchSubmit" >Search</button>
           </div> 
     <!------     END OF SEARCH BAR ------->
         </div>
@@ -40,7 +40,7 @@
           </h4>
         </div>
       </div>
-      
+
        <!---------------------------------- NAVIGATION BAR ENDS --------------------------------->
       <div class="select">
         <h2>Destination Africa</h2>
@@ -67,7 +67,7 @@
             </div>
             <div class="project-image-wrapper">
                 <h1 class="hover-text">CULTURE</h1>
-                <a href="html/culture.html"><img class="project-image" src="img/calabar-carnival.jpg" alt="Culture"></a>
+                <a class="project-image" href="html/culture.html"><img class="project-image" src="img/calabar-carnival.jpg" alt="Culture"></a>
             </div>
           </div>
       </div>
@@ -151,5 +151,16 @@
           $count.html($message);
         }
         visits();
+////////////////////////////  SEARCH BAR ///////////////////////////
+        $searchdiv = $("#searchbar");
+        $('body').ready(function(){
+          $("#searchbar").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("body").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+
   </script>
 </html>

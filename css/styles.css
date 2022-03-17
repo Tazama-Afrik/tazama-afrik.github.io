@@ -107,6 +107,9 @@ body {
     * {
       font-size: smaller;
     }
+    .project-image-wrapper > a {
+      max-height: 20px;
+    }
   }
   
   /************* IMAGES IN THE BODY ***************/
@@ -118,7 +121,7 @@ body {
     justify-content: center;
     margin: 0;
     width: fit-content;
-    height: fit-content;
+    max-height: fit-content;
     /* max-height: 450px; */
   
     font-size: 300px;
@@ -141,7 +144,8 @@ body {
     filter: brightness(.75);
     opacity: 1.0;
     width: 90%;
-    box-shadow: hsla(158, 95%, 34%, 0.535);
+    box-shadow: hsla(158, 55%, 60%, 0.535);
+    margin: 2px;
   }
   
   .project-image-wrapper:hover > a > .project-image, .project-image-wrapper:hover a + h1 {
@@ -152,11 +156,11 @@ body {
     -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
     transform: scale(1.23);
-
   }
 
   .project-image-wrapper:hover > h1 {
     visibility: visible;
+    height:70px;
   }
   .project-image-wrapper > h1 + .project-image-wrapper {
     height: fit-content;
@@ -170,7 +174,7 @@ body {
     transform: translate(-50%, -50%);
     color: yellow;
     visibility: hidden;
-    z-index: 2;
+    z-index: 3;
     transition: all ease-in-out .2s;
     padding-left: 82%;
     font-size: 15%;

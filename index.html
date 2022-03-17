@@ -120,7 +120,7 @@
             </div>
           
 	    </center>
-        <footer id="footer">Copyright &copy; Tazama Afrik</footer>
+        <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
       </body>
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
       <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -135,6 +135,21 @@
             source: availableTags
           });
         } );
-        
-        </script>
+
+        function visits() {
+          $count = $(".counter");
+          console.log($count.text());
+          $views = localStorage.getItem("page_view");
+          if ($views) {
+            $views = Number($views) + 1;
+            localStorage.setItem("page_view", $views);
+          } else {
+            $views = 1;
+            localStorage.setItem("page_view", 1);
+          }
+          $message = `Total Visits(Since March 2022): ${$views}`;
+          $count.html($message);
+        }
+        visits();
+  </script>
 </html>

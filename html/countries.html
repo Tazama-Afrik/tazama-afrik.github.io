@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles1.css"/>
   <link rel="stylesheet" href="../css/countries.css"/>
   <link rel='shortcut icon' href="../img/tazama_afrik.png"/>
@@ -207,9 +210,10 @@
       $views = 1;
       localStorage.setItem("page_view", 1);
     }
-    $message = `Number Of Visits: ${$views}`;
-    $count.text() = $message;
+    $message = `Number Of Visits(Since March 2022): ${$views}`;
+    $count.html($message);
   }
+  visits();
 ////////////////////////////// CLick handler//////////////////////////////////////////////
 
   function clicked(){

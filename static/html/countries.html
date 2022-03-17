@@ -217,7 +217,7 @@
 ////////////////////////////// CLick handler//////////////////////////////////////////////
 
   function clicked(){
-    $(this).text() !== "Western Sahara" ? $name = $(this).text().toLowerCase().split(" ")[0] : $name = "west";
+    $name = $(this).text().toLowerCase().split(" ")[0];
     $.ajax({
       url: `https://restcountries.com/v3.1/name/${$name}`,
       success: function(data) {

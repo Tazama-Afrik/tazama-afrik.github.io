@@ -148,6 +148,24 @@ body {
     transform: rotateZ(360deg);
   }
 }
+@media (max-width: 650px) {
+  .projects-grid {
+    grid-template-columns: 100%;
+  }
+  .topnav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  * {
+    font-size: small;
+  }
+  #select {
+    z-index: 10;
+  }
+  #display {
+    margin-top:2in;
+  }
+}
 
 .show {
   display: block;

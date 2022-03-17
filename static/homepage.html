@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="static/css/homepage.css">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-        <!---- <link rel="stylesheet" href="static/css/style1.css"> --->
-        <link rel='shortcut icon' href="static/img/tazama_afrik.png">
-        
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+        <link rel='shortcut icon' href="img/tazama_afrik.png">
+        <title>Tazama Afrik</title>
     </head>
     <body>
       
       <div class="hello">
         <div class="nav">
-          <a class="home" href="homepage.html"><img src="static/img/tazama.jpg" alt="Home"></a>
+          <a class="home" href="homepage.html"><img src="img/tazama.jpg" alt="Home"></a>
           <a class="b" href="#about">About</a>
           <a class="b" href="html/countries.html">Countries</a>
           <a class="b" href="html/beaches.html">Beaches</a>
@@ -24,7 +24,7 @@
 
     <!------     BEGINNING OF SEARCH BAR -------->
           <div class="search" placeholder="Type here to search">
-              <input name="search bar" id="tags" placeholder="Type here to search" rows="1" class="put" type="search"></input>
+              <input name="search bar" id="searchbar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
               <button type="submitbutton" id="searchSubmit">Search</button>
           </div> 
     <!------     END OF SEARCH BAR ------->
@@ -41,18 +41,18 @@
        <!---------------------------------- NAVIGATION BAR ENDS --------------------------------->
       <div class="select">
         <h2>Destination Africa</h2>
-        <h4>Make a selection below to survey our recommendations</h4>
+        <h4 style="color:darkslateblue;">Make a selection below to survey our recommendations</h4>
       </div>
        
       <div class="container">
         <div class="categories-grid">
             <div class="project-image-wrapper">
                 <h1 class="hover-text">BEACHES</h1>
-                <a href="html/beaches.html"><img class="project-image" src="static/img/blue-sea.jpeg" alt="Image"></a>
+                <a href="html/beaches.html"><img class="project-image" src="img/blue-sea.jpeg" alt="Image"></a>
             </div>
             <div class="project-image-wrapper">
                 <h1 class="hover-text">RESERVES</h1>
-                <a href="html/reserves.html"><img class="project-image" src="static/img/zebras.jpeg" alt="Reserves"></a>
+                <a href="html/reserves.html"><img class="project-image" src="img/zebras.jpeg" alt="Reserves"></a>
             </div>
           </div>
         </div>
@@ -60,11 +60,11 @@
         <div class="categories-grid">
             <div class="project-image-wrapper">
                 <h1 class="hover-text">RESTAURANTS</h1>
-                <a href="html/restaurants.html"><img class="project-image" src="static/img/fine-jollof1.jpg" alt="Restaurants"></a>
+                <a href="html/restaurants.html"><img class="project-image" src="img/fine-jollof1.jpg" alt="Restaurants"></a>
             </div>
             <div class="project-image-wrapper">
                 <h1 class="hover-text">CULTURE</h1>
-                <a href="html/culture.html"><img class="project-image" src="static/img/calabar-carnival.jpg" alt="Culture"></a>
+                <a href="html/culture.html"><img class="project-image" src="img/calabar-carnival.jpg" alt="Culture"></a>
             </div>
           </div>
       </div>
@@ -89,11 +89,11 @@
                 <li>
                   <a href="https://github.com/Tazama-Afrik">Github</a>
                 <li>
-                  <img href="https://linkedin.com/in/tazama-afrik" src="static/img/linkedin.png">
+                  <img href="https://linkedin.com/in/tazama-afrik" src="img/linkedin.png">
                 <li>
-                  <img href="https://facebook.com/in/tazama-afrik" src="static/img/facebook.png">
+                  <img href="https://facebook.com/in/tazama-afrik" src="img/facebook.png">
                 <li>
-                  <img href="https://twitter.com/in/tazama-afrik" src="static/img/tw.png">
+                  <img href="https://twitter.com/in/tazama-afrik" src="img/tw.png">
                 </li>
               </ul>
             </div>
@@ -128,7 +128,7 @@
             "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
             "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
           ];
-          $( "#tags" ).autocomplete({
+          $( "#searchbar" ).autocomplete({
             source: availableTags
           });
         } );

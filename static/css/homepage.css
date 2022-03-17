@@ -80,12 +80,14 @@ body {
   }
   li {
     list-style: none;
-    color: white;
+    color: black;
     font-family: sans-serif;
-    /* background-color: lightslategray; */
-    width: fit-content;
+    /* width: fit-content; */
     border: 1px white;
+    cursor: pointer;
   }
+
+
   /* END OF SEARCH BAR */
   
   .container {
@@ -94,7 +96,7 @@ body {
     padding: 5px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 720px) {
     .projects-grid {
       grid-template-columns: 100%;
     }
@@ -156,6 +158,11 @@ body {
   .project-image-wrapper:hover > h1 {
     visibility: visible;
   }
+  .project-image-wrapper > h1 + .project-image-wrapper {
+    height: fit-content;
+    margin: 1%;
+    padding: 1%;
+  }
   
   .hover-text {
     position: absolute;
@@ -174,7 +181,7 @@ body {
 .welcome {
     font-size: 250%;
     text-align: center;
-    color: rgb(244, 244, 247);
+    color: white
 }
 
 .select {

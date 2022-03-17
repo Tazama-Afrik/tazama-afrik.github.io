@@ -11,16 +11,19 @@
   <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles1.css"/>
   <link rel="stylesheet" href="../css/countries.css"/>
   <link rel='shortcut icon' href="../img/tazama_afrik.png"/>
   <div class="topnav" id="navtop">
     <a class="home" href="../index.html"><img src="../img/tazama.jpg" alt="Home"></a>
-    <a class="nav active" href="../html/countries.html">Countries</a>
-    <a class="nav" href="../html/beaches.html">Beaches</a>
-    <a class="nav" href="../html/culture.html">Culture</a>
-    <a class="nav" href="../html/reserves.html">Reserves</a>
-    <a class="nav" href="../html/restaurants.html">Restaurants</a>
+    <a class="nav active" href="countries.html">Countries</a>
+    <a class="nav" href="beaches.html">Beaches</a>
+    <a class="nav" href="culture.html">Culture</a>
+    <a class="nav" href="reserves.html">Reserves</a>
+    <a class="nav" href="cuisine.html">Restaurants</a>
       <div id="select">Hide Countries</div>
   </div>
 </head>
@@ -68,12 +71,12 @@
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
-      
+      <div class="counter">
+        Counted:
+      </div>
     </main>
     </div>
-    <div class="counter">
-      Counted:
-    </div>
+    
 </body>
 
 <!-------------------------Javascript below ------------------------------------->
@@ -113,11 +116,6 @@
           if ( item.region === 'Africa' ) { 
             $country.append('<li class="country">'+ item.name.common +'</li>')
             num += 1;
-            // item.flag = `<img src="https://flagcdn.com/h40/${item.cca2.toLowerCase()}.png" alt="${item.name.commom}\'s Flag"/>`
-            // $('.country').click( function() {
-            //   $('#title').html(''+item.name.common.toUpperCase()+'  '+item.flag+'')
-            //   $('.data').text("Official Name: "+item.name.official+" | Population: "+item.population+" | Subregion: "+item.subregion+"")
-            // });
           }
         });
 
@@ -202,18 +200,20 @@
   //////////////////////////// Counting The Page Visits///////////////////////////////
 
   function visits() {
-    var checkCounts = document.querySelector(".counter");
-    let count = localStorage.getItem("page_view");
-    if (count) {
-    count = Number(count) + 1;
-    localStorage.setItem("page_view", count);
+    $count = $(".counter");
+    console.log($count.text());
+    $views = localStorage.getItem("page_view");
+    if ($views) {
+    $views = Number($views) + 1;
+    localStorage.setItem("page_view", $views);
     } else {
-      count = 1;
+      $views = 1;
       localStorage.setItem("page_view", 1);
     }
-    message = `Number Of Visits: ${count}`;
-    checkCounts.innerHTML = message;
+    $message = `Number Of Visits(Since March 2022): ${$views}`;
+    $count.html($message);
   }
+  visits();
 ////////////////////////////// CLick handler//////////////////////////////////////////////
 
   function clicked(){

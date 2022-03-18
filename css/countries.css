@@ -14,13 +14,11 @@ body {
 }
 .body img {
   margin-top: 1%;
-  /* margin-bottom: 0.5%; */
   height: 100%;
 }
 .body > p {
   padding-left: 20px;
   font-size: 70%;
-  /* font-weight: bold; */
 }
 .loading {
   display: block;

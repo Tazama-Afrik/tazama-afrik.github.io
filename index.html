@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
         <link rel='shortcut icon' href="img/tazama_afrik.png">
-        <script type="module" src="scripts/home.js"></script>
+        <!-- <script type="module" src="scripts/home.mjs"></script> -->
         <title>Tazama Afrik</title>
     </head>
     <body>
@@ -123,7 +123,7 @@
 		              <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
                 </label>
                 <div class="submit-button-wrapper">
-                  <input type="submit" valid="Send Message" id="submitbutton" />
+                  <input type="submit" title  ="Send Message"  id="submitbutton" />
                 </div>
                 <div id="close" title="Close" >&times; </div>
               </form>
@@ -178,7 +178,14 @@
     $('#propose').click( function () {
       $('.contact').css('display', 'block');
     })
+  </script>
+  <script type="module" >
     ////////////////////// WRITE MESSAGE AND SAVE ///////////////////
-  
+    $('#submitbutton').click(function(){
+      $('.contact').css('display', 'none');
+      let submitted = import('./scripts/home.js');
+      submitted;
+    });
+
   </script>
 </html>

@@ -296,9 +296,11 @@ body {
   /************ END OF CONTACT *************/
   
   #success {
+    background-color: cornflowerblue;
     display: none;
     border: #333 solid 20px;
     width: 3in;
+    color: lightgreen;
     height: 1in;
     font-weight: bold;
     font-size: 70px;

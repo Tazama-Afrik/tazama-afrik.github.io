@@ -28,7 +28,7 @@
     <!------     BEGINNING OF SEARCH BAR -------->
           <div class="search">
               <input name="search bar" id="searchbar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
-              <button type="submitbutton" id="searchSubmit">Search</button>
+              <button type="submitbutton" id="searchSubmit" >Search</button>
           </div> 
     <!------     END OF SEARCH BAR ------->
         </div>
@@ -40,7 +40,7 @@
           </h4>
         </div>
       </div>
-      
+
        <!---------------------------------- NAVIGATION BAR ENDS --------------------------------->
       <div class="select">
         <h2>Destination Africa</h2>
@@ -67,7 +67,7 @@
             </div>
             <div class="project-image-wrapper">
                 <h1 class="hover-text">CULTURE</h1>
-                <a href="html/culture.html"><img class="project-image" src="img/calabar-carnival.jpg" alt="Culture"></a>
+                <a class="project-image" href="html/culture.html"><img class="project-image" src="img/calabar-carnival.jpg" alt="Culture"></a>
             </div>
           </div>
       </div>
@@ -85,41 +85,48 @@
         </p> <br> Already an African? Learn more about <a href="html/countries.html" style="color: red; text-decoration: none;">your country!</a>
 
       </div>
+      
         <div class="links-and-contact">
+          <send class="send-message" id="propose">Send us a message</send>
+
             <div class="links">
-              <h4>Useful Links</h4>
+              <h4>Connect With Us!</h4>
               <ul class="link-lists">
                 <li>
-                  <a href="https://github.com/Tazama-Afrik">Github</a>
+                  <a style="width: fit-content; color: white;" href="https://github.com/Tazama-Afrik">Github</a>
                 <li>
-                  <img href="https://linkedin.com/in/tazama-afrik" src="img/linkedin.png">
+                  <img style="width: fit-content;" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik" src="img/linkedin.png">
                 <li>
-                  <img href="https://facebook.com/in/tazama-afrik" src="img/facebook.png">
+                  <img style="width: fit-content;" title="Facebook" href="https://facebook.com/in/tazama-afrik" src="img/facebook.png">
                 <li>
-                  <img href="https://twitter.com/in/tazama-afrik" src="img/tw.png">
+                  <img style="width: fit-content;" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="img/tw.png">
                 </li>
               </ul>
             </div>
             <!-- </div> -->
-            <input class="send-message" type="checkbox">Send message</input>
+            
             <div class="contact">
-                <h2>Contact Us</h2>
+                <h2>Feel free to <br>tell us something</h2>
               <form action="#">
+                <label for="name">
+                  <h4>Name:</h4>
+                  <input type=first-name id="first-name" placeholder="John Doe" required/>
+                </label>
                 <label for="email">
-                  <h4>Email</h4>
-                  <input type="email" id="email" placeholder="Enter your email" />
+                  <h4>Email:</h4>
+                  <input type="email" id="email" placeholder="Enter your email" required/>
                 </label>
                 <label for="message">
-                  <h4>Message</h4>
-		   <textarea id="message" placeholder="Your message goes here"></textarea>
+                  <h4>Your Message:</h4>
+		              <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
                 </label>
                 <div class="submit-button-wrapper">
                   <input type="submit" valid="Send Message" id="submitbutton" />
                 </div>
+                <div id="close" title="Close" >&times; </div>
               </form>
             </div>
           
-	    </center>
         <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
       </body>
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -135,6 +142,7 @@
             source: availableTags
           });
         } );
+        
 
         function visits() {
           $count = $(".counter");
@@ -151,5 +159,22 @@
           $count.html($message);
         }
         visits();
+////////////////////////////  SEARCH BAR ///////////////////////////
+        $searchdiv = $("#searchbar");
+        $('body').ready(function(){
+          $("#searchbar").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $filtered = $("body").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+            console.log($filtered);
+          });
+        });
+    $('#close').click(function(){
+      $('.contact').css('display', 'none'); 
+    });
+    $('#propose').click( function () {
+      $('.contact').css('display', 'block');
+    })
   </script>
 </html>

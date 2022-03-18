@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
         <link rel='shortcut icon' href="img/tazama_afrik.png">
+        <script type="module" src="scripts/home.js"></script>
         <title>Tazama Afrik</title>
     </head>
     <body>
@@ -104,13 +105,14 @@
               </ul>
             </div>
             <!-- </div> -->
+            <div id="success"></div>
             
             <div class="contact">
                 <h2>Feel free to <br>tell us something</h2>
               <form action="#">
                 <label for="name">
                   <h4>Name:</h4>
-                  <input type=first-name id="first-name" placeholder="John Doe" required/>
+                  <input type=name id="name" placeholder="John Doe" required/>
                 </label>
                 <label for="email">
                   <h4>Email:</h4>
@@ -132,16 +134,16 @@
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
       <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
       <script>
-        $( function() {
-          var availableTags = [
-            "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa","Tazama",
-            "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
-            "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
-          ];
-          $( "#searchbar" ).autocomplete({
-            source: availableTags
-          });
-        } );
+        // $( function() {
+        //   var availableTags = [
+        //     "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa","Tazama",
+        //     "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
+        //     "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
+        //   ];
+        //   $( "#searchbar" ).autocomplete({
+        //     source: availableTags
+        //   });
+        // } );
         
 
         function visits() {
@@ -176,5 +178,7 @@
     $('#propose').click( function () {
       $('.contact').css('display', 'block');
     })
+    ////////////////////// WRITE MESSAGE AND SAVE ///////////////////
+  
   </script>
 </html>

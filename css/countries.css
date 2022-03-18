@@ -18,6 +18,9 @@ body {
   margin-top: 1%;
   height: 100%;
 }
+.contact {
+  border: 10px steelblue solid;
+}
 .body > p {
   padding-left: 20px;
   font-size: 70%;
@@ -75,7 +78,7 @@ body {
 .list {
   background-color: grey;
   overflow-y: scroll;
-  height: 2in;
+  height: 200%;
   height: 3in;
   align-self: center;
   display: block;
@@ -84,7 +87,9 @@ body {
   width: 1mm;
   color: black;
 }
-
+.left {
+  text-align: left;
+}
 .country {
   color: white;
   background-color: rgb(52, 43, 107);
@@ -103,7 +108,7 @@ body {
   opacity: 80%;
 }
 #title {
-  /* margin-top: 4%; */
+  margin-top: 60px;
   border-bottom: solid 2px gray;
 }
 
@@ -146,9 +151,7 @@ body {
   #select {
     z-index: 10;
   }
-  #display {
-    margin-top:2in;
-  }
+
 }
 
 .show {

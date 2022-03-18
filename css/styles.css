@@ -295,6 +295,17 @@ body {
   
   /************ END OF CONTACT *************/
   
+  #success {
+    display: none;
+    border: #333 solid 20px;
+    width: 3in;
+    height: 1in;
+    font-weight: bold;
+    font-size: 70px;
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+  }
   #footer {
     background-color: rgb(248, 238, 238);
     text-align: center;

@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+
+}
+
+.hello {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/couscous/couscous2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 400px;
+    color: #f8faf9;
+    text-align: center;
+    padding: 3px;
+    padding-top: 3px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.nav a {
+    float: left;
+    color: #15530f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav > .home > img {
+  max-height: 52px;
+  padding: 0px;
+}
+.nav .home {
+  padding: 3px;
+  padding-top: 0;
+}
+
+.nav .b:hover {
+  background-color: rgb(39, 180, 46);
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav .active {
+  background-color: #163114;
+  color: #f8faf9;
+}
+
+.nav .active:hover {
+  background-color: rgb(223, 235, 223);
+  color: white;
+}
+
+/* BELOW, THE SEARCH BAR */
+.search {
+    float: right;
+    padding: 0px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .put {
+    padding: 5.5px;
+  }
+  #searchSubmit {
+    float: right;
+    background-color: blue;
+    padding: 5.5px;
+    color: yellow;
+  }
+  #searchSubmit:hover {
+    background-color: green;
+  }
+  /*END OF SEARCH BAR*/
+.active {
+  background-color: rgb(14, 66, 16);
+  color: azure;
+}
+  
+.welcome {
+    font-size: larger;
+    text-align: center;
+}
+
+#li-img {
+  width: 80em; 
+  align-self: center;
+}
+
+.links-and-contact {
+  font: bold;
+  width: 100%;
+  text-decoration: blink;
+}
+
+.link-list{
+width: fit-content;
+height: fit-content;
+padding: 4px;
+margin-bottom: 20px;
+}
+
+/****************** BEGINNGING OF CONTACT **************/
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.links-and-contact {
+  background-color: rgb(24, 19, 19);
+  color: aliceblue;
+  padding-top: 5px;
+}
+.contact {
+    background-color: white;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4%;
+    padding: 20px;
+    position: absolute;
+    right: 33%;
+    bottom: 1em;
+    display: none;
+}
+.send-message:checked + .contact {
+  display: block;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+#submitbutton:hover {
+    background-color: darkolivegreen;
+}
+submit-button-wrapper {
+  margin: 20px o;
+}
+
+/************ END OF CONTACT *************/
+
+#footer {
+  background-color: rgb(248, 238, 238);
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  color: black;
+}

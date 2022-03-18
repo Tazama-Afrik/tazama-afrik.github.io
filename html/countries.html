@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="../css/styles1.css"/>
   <link rel="stylesheet" href="../css/countries.css"/>
   <link rel='shortcut icon' href="../img/tazama_afrik.png"/>
+
+</head>
+
+<body>
   <div class="topnav" id="navtop">
     <a class="home" href="../index.html"><img src="../img/tazama.jpg" alt="Home"></a>
     <a class="nav active" href="countries.html">Countries</a>
@@ -26,11 +30,8 @@
     <a class="nav" href="cuisine.html">Restaurants</a>
       <div id="select">Hide Countries</div>
   </div>
-</head>
-
-<body>
 	    <!------     BEGINNING OF COUNTRIES LIST -------->
-    <div id="display">
+    
       <div id="accordion">
         <h3>Western Africa</h3>
         <div class="list">
@@ -75,8 +76,49 @@
         Counted:
       </div>
     </main>
-    </div>
     
+    <div class="links-and-contact">
+      <send class="send-message" id="propose">Send us a message</send>
+
+        <div class="links">
+          <h4>Connect With Us!</h4>
+          <ul class="link-lists">
+            <li>
+              <a style="width: fit-content; color: white;" href="https://github.com/Tazama-Afrik">Github</a>
+            <li>
+              <img style="width: fit-content;" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
+            <li>
+              <img style="width: fit-content;" title="Facebook" href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
+            <li>
+              <img style="width: fit-content;" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+        
+        <div class="contact">
+            <h2>Feel Free To Tell Us <br>Something</h2>
+          <form action="#">
+            <label for="name">
+              <h4 class="left" >Name:</h4>
+              <input class="left" type=first-name id="first-name" placeholder="John Doe" required/>
+            </label>
+            <label for="email">
+              <h4 class="left" >Email:</h4>
+              <input type="email" id="email" class="left" placeholder="Enter your email" required/>
+            </label>
+            <label for="message">
+              <h4 class="left" >Your Message:</h4>
+              <textarea class="left" id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
+            </label>
+            <div class="submit-button-wrapper">
+              <input type="submit" valid="Send Message" id="submitbutton" />
+            </div>
+            <div id="close" title="Close" >&times; </div>
+          </form>
+        </div>
+      </div>
+    <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
 </body>
 
 <!-------------------------Javascript below ------------------------------------->
@@ -210,7 +252,7 @@
       $views = 1;
       localStorage.setItem("page_view", 1);
     }
-    $message = `Number Of Visits(Since March 2022): ${$views}`;
+    $message = `Total Visits(Since March 2022): ${$views}`;
     $count.html($message);
   }
   visits();
@@ -231,6 +273,13 @@
       }
     });
   }
+  ///////////////////////// SEND A MESSAGE ///////////////////////
+  $('#close').click(function(){
+      $('.contact').css('display', 'none'); 
+  });
+  $('#propose').click( function () {
+    $('.contact').css('display', 'block');
+  })
 </script>
 
 </html>

@@ -107,6 +107,9 @@ body {
     * {
       font-size: smaller;
     }
+    .project-image-wrapper > a {
+      max-height: 20px;
+    }
   }
   
   /************* IMAGES IN THE BODY ***************/
@@ -118,7 +121,7 @@ body {
     justify-content: center;
     margin: 0;
     width: fit-content;
-    height: fit-content;
+    max-height: fit-content;
     /* max-height: 450px; */
   
     font-size: 300px;
@@ -141,7 +144,8 @@ body {
     filter: brightness(.75);
     opacity: 1.0;
     width: 90%;
-    box-shadow: hsla(158, 95%, 34%, 0.535);
+    box-shadow: hsla(158, 55%, 60%, 0.535);
+    margin: 2px;
   }
   
   .project-image-wrapper:hover > a > .project-image, .project-image-wrapper:hover a + h1 {
@@ -152,11 +156,11 @@ body {
     -ms-transform: scale(0.5);
     -webkit-transform: scale(0.5);
     transform: scale(1.23);
-
   }
 
   .project-image-wrapper:hover > h1 {
     visibility: visible;
+    height:70px;
   }
   .project-image-wrapper > h1 + .project-image-wrapper {
     height: fit-content;
@@ -170,7 +174,7 @@ body {
     transform: translate(-50%, -50%);
     color: yellow;
     visibility: hidden;
-    z-index: 2;
+    z-index: 3;
     transition: all ease-in-out .2s;
     padding-left: 82%;
     font-size: 15%;
@@ -229,21 +233,45 @@ body {
     background-color: rgb(24, 19, 19);
     color: aliceblue;
     padding-top: 5px;
+    text-align: left;
   }
   .contact {
-      background-color: white;
-      flex-wrap: wrap;
-      width: fit-content;
-      height: fit-content;
+      background-color: rgb(68, 71, 78);
+      z-index: 5;
+      width: calc(1px + fit-content);
+      height: calc(1px + fit-content);
       border-radius: 4%;
-      padding: 20px;
-      position: absolute;
-      right: 33%;
-      bottom: 1em;
+      padding: 2%;
+      position: fixed;
+      left: 23%;
+      bottom: 10%;
       display: none;
+      align-self: center;
+      border: 10px grey solid;
   }
-  .send-message:checked + .contact {
-    display: block;
+
+  #email, #message {
+    margin-top: 0;
+  }
+  #propose {
+    background-color: rgb(94, 8, 134);
+    box-shadow: inset 10px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5%;
+    /* margin-top: 2px; */
+  }
+  #close {
+    background-color: darkred;
+    border-radius: 0;
+    width: fit-content;
+    margin: 2px;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    float:right;
   }
   
   form {
@@ -253,6 +281,10 @@ body {
   
   form input[type="submit"] {
     width: 250px;
+    background-color: rgb(15, 58, 15);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
   }
   #submitbutton:hover {
       background-color: darkolivegreen;
@@ -263,10 +295,24 @@ body {
   
   /************ END OF CONTACT *************/
   
+  #success {
+    background-color: cornflowerblue;
+    display: none;
+    border: #333 solid 20px;
+    width: 3in;
+    color: lightgreen;
+    height: 1in;
+    font-weight: bold;
+    font-size: 70px;
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+  }
   #footer {
     background-color: rgb(248, 238, 238);
     text-align: center;
     margin-top: 20px;
     padding: 5px;
     color: black;
+    bottom: 0;
   }

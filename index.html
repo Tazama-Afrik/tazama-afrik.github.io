@@ -85,7 +85,10 @@
         </p> <br> Already an African? Learn more about <a href="html/countries.html" style="color: red; text-decoration: none;">your country!</a>
 
       </div>
+      
         <div class="links-and-contact">
+          <send class="send-message" id="propose">Send us a message</send>
+
             <div class="links">
               <h4>Useful Links</h4>
               <ul class="link-lists">
@@ -101,21 +104,22 @@
               </ul>
             </div>
             <!-- </div> -->
-            <input class="send-message" type="checkbox">Send message</input>
+            
             <div class="contact">
-                <h2>Contact Us</h2>
+                <h2>Feel free to <br>tell us something</h2>
               <form action="#">
                 <label for="email">
-                  <h4>Email</h4>
-                  <input type="email" id="email" placeholder="Enter your email" />
+                  <h4>Email:</h4>
+                  <input type="email" id="email" placeholder="Enter your email" required/>
                 </label>
                 <label for="message">
-                  <h4>Message</h4>
-		   <textarea id="message" placeholder="Your message goes here"></textarea>
+                  <h4>Your Message:</h4>
+		   <textarea id="message" placeholder="Enter your message here" minlength="2" required></textarea>
                 </label>
                 <div class="submit-button-wrapper">
                   <input type="submit" valid="Send Message" id="submitbutton" />
                 </div>
+                <div id="close">Close</div>
               </form>
             </div>
           
@@ -135,6 +139,9 @@
             source: availableTags
           });
         } );
+        $('#close').click(function(){
+          $('.contact').css('display', 'none'); 
+        });
 
         function visits() {
           $count = $(".counter");
@@ -156,11 +163,14 @@
         $('body').ready(function(){
           $("#searchbar").on("keyup", function() {
             var value = $(this).val().toLowerCase();
-            $("body").filter(function() {
+            $filtered = $("body").filter(function() {
               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
+            console.log($filtered);
           });
         });
-
+    $('#propose').click( function () {
+      $('.contact').toggle();
+    })
   </script>
 </html>

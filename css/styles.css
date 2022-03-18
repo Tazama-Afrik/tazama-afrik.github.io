@@ -233,6 +233,7 @@ body {
     background-color: rgb(24, 19, 19);
     color: aliceblue;
     padding-top: 5px;
+    text-align: left;
   }
   .contact {
       background-color: rgb(68, 71, 78);
@@ -300,4 +301,5 @@ body {
     margin-top: 20px;
     padding: 5px;
     color: black;
+    bottom: 0;
   }

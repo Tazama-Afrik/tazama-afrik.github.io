@@ -11,6 +11,8 @@
 }
 body {
   background-color: lightsteelblue;
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 .body img {
   margin-top: 1%;
@@ -26,10 +28,12 @@ body {
 #display {
   display: grid;
   position: absolute;
+  background-color: blue;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 56px;
   width: 100%;
+  height:fit-content;
   /* height: 100%; */
 }
 #WA, #SA, #NA, #CA, #EA {
@@ -63,6 +67,7 @@ body {
   border-right: grey 1px solid;
   height: fit-content;
   position:fixed;
+  /* margin-top: 4%; */
   z-index: 20;
   width: 3in;
   float: right;
@@ -98,7 +103,7 @@ body {
   opacity: 80%;
 }
 #title {
-  margin: 0;
+  /* margin-top: 4%; */
   border-bottom: solid 2px gray;
 }
 
@@ -121,18 +126,6 @@ body {
   z-index: 0;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  overflow: hidden;
-}
-
-.container {
-  max-width: 100%;
-  max-height: 80vh;
-}
 
 @keyframes spin {
   to {

@@ -108,18 +108,22 @@
             <div class="contact">
                 <h2>Feel free to <br>tell us something</h2>
               <form action="#">
+                <label for="name">
+                  <h4>Name:</h4>
+                  <input type=first-name id="first-name" placeholder="John Doe" required/>
+                </label>
                 <label for="email">
                   <h4>Email:</h4>
                   <input type="email" id="email" placeholder="Enter your email" required/>
                 </label>
                 <label for="message">
                   <h4>Your Message:</h4>
-		   <textarea id="message" placeholder="Enter your message here" minlength="2" required></textarea>
+		   <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
                 </label>
                 <div class="submit-button-wrapper">
                   <input type="submit" valid="Send Message" id="submitbutton" />
                 </div>
-                <div id="close">Close</div>
+                <div id="close">&times; </div>
               </form>
             </div>
           

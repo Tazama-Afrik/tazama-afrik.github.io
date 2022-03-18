@@ -237,10 +237,10 @@ body {
   .contact {
       background-color: rgb(68, 71, 78);
       z-index: 5;
-      width: fit-content;
-      height: fit-content;
+      width: calc(1px + fit-content);
+      height: calc(1px + fit-content);
       border-radius: 4%;
-      padding: 20px;
+      padding: 2%;
       position: fixed;
       left: 23%;
       bottom: 10%;
@@ -263,13 +263,13 @@ body {
   #close {
     background-color: darkred;
     border-radius: 0;
-    width: 20%;
+    width: fit-content;
     margin: 2px;
-    padding: 2%;
-    text-align: center;
-    font-weight: bold;
-    margin-right: 38%;
-    cursor: default;
+    padding: 0 2%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
     float:right;
   }
   

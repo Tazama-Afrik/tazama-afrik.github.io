@@ -343,6 +343,26 @@ body {
   .red {
     color: red;
   }
+  .back-to-top-icon {
+    width: 1rem;
+    height: 1rem;
+    color: white;
+  }
+  .back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #7ac9f9;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+  .back-to-top:hover {
+    opacity: 60%;
+  }
   #footer {
     background-color: rgb(248, 238, 238);
     text-align: center;

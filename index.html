@@ -137,7 +137,24 @@
         <div id="close" title="Close">&times; </div>
       </form>
     </div>
-
+    <!----------------- Back To Top ----------------->
+    <button class="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 11l5-5m0 0l5 5m-5-5v12"
+        />
+      </svg>
+    </button>
+    <!----------------- End Of Back To Top ----------------------->
     <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -222,6 +239,35 @@
     localStorage.setItem(item, old + data);
   }
 
-</script>
 
+
+
+
+////////////Scroll To Top///////////
+
+$toTop = $(".back-to-top");
+$showOnPx = 100;
+// $pageProgressBar = $(".progress-bar");
+
+const scrollContainer = () => {
+  return $('html');
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > $showOnPx) {
+      $toTop.hide();
+    } else {
+      $toTop.show();
+    }
+});
+
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth"
+  });
+  $toTop.hide()
+};
+$toTop.click(goToTop);
+
+</script>
 </html>

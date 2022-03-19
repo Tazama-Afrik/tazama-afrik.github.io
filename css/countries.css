@@ -11,6 +11,7 @@
 }
 body {
   background-color: lightsteelblue;
+  background: linear-gradient(white, lightsteelblue);
   display: grid;
   grid-template-rows: auto auto auto;
 }

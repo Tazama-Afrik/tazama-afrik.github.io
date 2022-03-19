@@ -145,6 +145,7 @@
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
+        title='Scroll To Top'
       >
         <path
           stroke-linecap="round"
@@ -243,18 +244,18 @@
 ////////////Scroll To Top///////////
 
 $toTop = $(".back-to-top");
-$showOnPx = 100;
+let showOnPx = 100;
 // $pageProgressBar = $(".progress-bar");
 
 const scrollContainer = () => {
-  return $('html');
+  return document.documentElement || document.body;
 };
 
 document.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > $showOnPx) {
-      $toTop.hide();
-    } else {
+  if (scrollContainer().scrollTop > showOnPx) {
       $toTop.show();
+    } else {
+      $toTop.hide();
     }
 });
 
@@ -262,7 +263,7 @@ const goToTop = () => {
   document.body.scrollIntoView({
     behavior: "smooth"
   });
-  $toTop.hide()
+  // $toTop.hide()
 };
 $toTop.click(goToTop);
 

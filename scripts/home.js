@@ -14,15 +14,16 @@ function submitted() {
     };
     let usr = user;
     let data = JSON.stringify(usr, null, 4);
-    let read = fs.readFileSync("users.json","utf-8");
+    let read = fs.readFileSync("./users.json","utf-8");
     let users = JSON.parse(read);
     users.push(usr);
     users = JSON.stringify(users);
+    console.log(users_);
+    $('#success').css('display', 'block');
     // try {
-      fs.writeFile('users.json', users, function () {
-        $('#success').html("Message Submitted Successfully! &times;");
-        $('#success').css('display', 'block');
-      });
+    fs.writeFileSync('./users.json', users);
+    $('#success').html("Message Submitted Successfully! &times;");
+    $('#success').css('display', 'block');
     // } catch (error) {
     //   $('#success').html(err);
     // }
@@ -30,5 +31,5 @@ function submitted() {
   
   $('#submitbutton').click(function () {
     $('.contact').css('display', 'none');
-    submitted;
+    submitted();
   });

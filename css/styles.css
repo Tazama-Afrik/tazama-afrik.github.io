@@ -286,6 +286,13 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
+  #submitbutton {
+    text-align: center;
+    background-color: darkgreen;
+    font-weight: bold;
+    padding: 1%;
+    cursor: pointer;
+  }
   #submitbutton:hover {
       background-color: darkolivegreen;
   }
@@ -299,14 +306,40 @@ body {
     background-color: cornflowerblue;
     display: none;
     border: #333 solid 20px;
-    width: 3in;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 1%;
     color: lightgreen;
     height: 1in;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     position: fixed;
-    bottom: 10%;
-    right: 20%;
+    top: 10%;
+    right: 25%;
+    text-align: center;
+  }
+  #user-messages {
+    background-color: cornflowerblue;
+    display: none;
+    border: #333 solid 2px;
+    width: 3in;
+    padding: 1%;
+    color: lightgreen;
+    height: 4in;
+    font-weight: bold;
+    font-size: 20px;
+    position: fixed;
+    top: 10%;
+    right: 25%;
+    align-content: center;
+    overflow-y: scroll;
+  }
+  #user-messages::-webkit-scrollbar {
+    width: 1mm;
+    color: black;
+  }
+  .red {
+    color: red;
   }
   #footer {
     background-color: rgb(248, 238, 238);

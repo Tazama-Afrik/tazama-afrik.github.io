@@ -113,11 +113,12 @@
       </ul>
     </div>
     <!-- </div> -->
-    <div id="success"></div>
+    <div id="success" >Thank You!<br>Message Sent Successfully</div>
+    <div class="hideable" id="user-messages"></div>
 
     <div class="contact">
       <h2>Feel free to <br>tell us something</h2>
-      <form action="#">
+      <form>
         <label for="name">
           <h4>Name:</h4>
           <input type=name id="name" placeholder="John Doe" required />
@@ -131,7 +132,7 @@
           <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
         </label>
         <div class="submit-button-wrapper">
-          <input type="submit" title="Send Message" id="submitbutton" />
+          <div title="Send Message" id="submitbutton">Submit</div>
         </div>
         <div id="close" title="Close">&times; </div>
       </form>
@@ -142,16 +143,16 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script>
-  // $( function() {
-  //   var availableTags = [
-  //     "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa","Tazama",
-  //     "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
-  //     "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
-  //   ];
-  //   $( "#searchbar" ).autocomplete({
-  //     source: availableTags
-  //   });
-  // } );
+  $( function() {
+    var availableTags = [
+      "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa","Tazama",
+      "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
+      "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
+    ];
+    $( "#searchbar" ).autocomplete({
+      source: availableTags
+    });
+  } );
 
 
   function visits() {
@@ -170,31 +171,56 @@
   }
   visits();
   ////////////////////////////  SEARCH BAR ///////////////////////////
-  $searchdiv = $("#searchbar");
-  $('body').ready(function () {
-    $("#searchbar").on("keyup", function () {
-      var value = $(this).val().toLowerCase();
-      $filtered = $("body").filter(function () {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-      console.log($filtered);
-    });
-  });
+  // $searchdiv = $("#searchbar");
+  // $('body').ready(function () {
+  //   $("#searchbar").on("keyup", function () {
+  //     var value = $(this).val().toLowerCase();
+  //     $filtered = $("body").filter(function () {
+  //       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  //     });
+  //     console.log($filtered);
+  //   });
+  // });
   $('#close').click(function () {
     $('.contact').css('display', 'none');
   });
   $('#propose').click(function () {
     $('.contact').css('display', 'block');
   })
-</script>
-<script type="module" src="scripts/home.js"></script>
-<script type="module">
+
+  // $(document).on('click', function (e) {
+  //   if ($(e.target).closest(".hideable").length === 0) {
+  //       // $(".hideable").css('display', 'none');
+  //       $("#success").hide();
+  //   }
+// });
   ////////////////////// WRITE MESSAGE AND SAVE ///////////////////
-  // $('#submitbutton').click(function () {
-  //   $('.contact').css('display', 'none');
-  //   // import submitted from './scripts/home.js';
-  //   submitted();
-  // });
+  $('#submitbutton').click(function () {
+    if ($('#message').val()) {
+    $('.contact').css('display', 'none');
+    $name = $('#name').val();
+    $email = $('#email').val();
+    $message = $('#message').val() + " ";
+    $info = $('#user-messages');
+    $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
+    $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
+    $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
+    $info.append("<br>_____________________________________");
+    updateItem('user-messages', $info.text());
+    $info.css('display', 'block');
+    $('#success').css('display', 'block');
+    // $info.css('display', 'block');
+    // console.log($info.text());
+    updateItem('user-messages', $info.text());
+    let check = localStorage.getItem('user-messages');
+    console.log(check);
+  }
+  });
+  function updateItem(item, data){
+    var old = localStorage.getItem(item);
+    if(old === null) {localStorage.setItem(old, "")}
+    localStorage.setItem(item, old + data);
+  }
 
 </script>
 

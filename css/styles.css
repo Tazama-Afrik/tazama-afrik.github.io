@@ -317,11 +317,13 @@ body {
     top: 10%;
     right: 25%;
     text-align: center;
+    z-index: 5;
+    box-sizing: content-box;
   }
   #user-messages {
     background-color: cornflowerblue;
     display: none;
-    border: #333 solid 2px;
+    border: #333 solid 5px;
     width: 3in;
     padding: 1%;
     color: lightgreen;

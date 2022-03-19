@@ -209,7 +209,7 @@
     updateItem('user-messages', $info.text());
     $info.css('display', 'block');
     $('#success').css('display', 'block');
-    // $info.css('display', 'block');
+    $("#success").show().delay(3000).fadeOut();
     // console.log($info.text());
     updateItem('user-messages', $info.text());
     let check = localStorage.getItem('user-messages');

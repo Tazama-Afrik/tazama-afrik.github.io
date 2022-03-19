@@ -153,6 +153,13 @@ body {
   }
 
 }
+@media (min-width: 575px) {
+  p {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .show {
   display: block;

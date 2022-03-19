@@ -283,9 +283,9 @@
     $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
     $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
     $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
-    $info.append("<br>_____________________________________");
+    $info.append("<br>____________________________________");
     updateItem('user-messages', $info.text());
-    $info.css('display', 'block');
+    // $info.css('display', 'block');
     $('#success').css('display', 'block');
     $("#success").show().delay(4000).fadeOut();
     // console.log($info.text());

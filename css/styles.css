@@ -358,6 +358,7 @@ body {
     border: none;
     cursor: pointer;
     opacity: 100%;
+    display: none;
     transition: opacity 0.5s;
   }
   .back-to-top:hover {

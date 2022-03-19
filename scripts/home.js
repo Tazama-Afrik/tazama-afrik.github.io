@@ -1,5 +1,5 @@
 #!/usr/bin/node
-export default function submitted() {
+function submitted() {
     let email = $('#email').val();
     let name = $('#name').val();
     let message = $('#message').val();
@@ -17,12 +17,18 @@ export default function submitted() {
     let read = fs.readFileSync("users.json","utf-8");
     let users = JSON.parse(read);
     users.push(usr);
-    read = JSON.stringify(users);
-    try {
-      fs.writeFileSync('users.json', users);
-      $('#success').html("Message Submitted Successfully! &times;");
-      $('#success').css('display', 'block');
-    } catch (error) {
-      $('#success').html(err);
-    }
+    users = JSON.stringify(users);
+    // try {
+      fs.writeFile('users.json', users, function () {
+        $('#success').html("Message Submitted Successfully! &times;");
+        $('#success').css('display', 'block');
+      });
+    // } catch (error) {
+    //   $('#success').html(err);
+    // }
   }
+  
+  $('#submitbutton').click(function () {
+    $('.contact').css('display', 'none');
+    submitted;
+  });

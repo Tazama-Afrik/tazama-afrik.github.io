@@ -224,7 +224,7 @@
     $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
     $info.append("<br>_____________________________________");
     updateItem('user-messages', $info.text());
-    $info.css('display', 'block');
+    // $info.show().delay(10).fadeOut();
     $('#success').css('display', 'block');
     $("#success").show().delay(3000).fadeOut();
     // console.log($info.text());
@@ -238,10 +238,6 @@
     if(old === null) {localStorage.setItem(old, "")}
     localStorage.setItem(item, old + data);
   }
-
-
-<<<<<<< HEAD
-
 
 
 ////////////Scroll To Top///////////
@@ -272,6 +268,4 @@ $toTop.click(goToTop);
 
 </script>
 </html>
-=======
-</html>
->>>>>>> beddcfbc28613e817f61d3e3e3f7a3216b589af9
+

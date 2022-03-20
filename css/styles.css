@@ -358,10 +358,12 @@ body {
     border: none;
     cursor: pointer;
     opacity: 100%;
+    display: none;
     transition: opacity 0.5s;
   }
   .back-to-top:hover {
-    opacity: 60%;
+    opacity: 80%;
+    background: blue;
   }
   #footer {
     background-color: rgb(248, 238, 238);

@@ -113,7 +113,7 @@
       </ul>
     </div>
     <!-- </div> -->
-    <div id="success" >Thank You!<br>Message Sent Successfully</div>
+    <div id="success">Thank You!<br>Message Sent Successfully</div>
     <div class="hideable" id="user-messages"></div>
 
     <div class="contact">
@@ -139,19 +139,9 @@
     </div>
     <!----------------- Back To Top ----------------->
     <button class="back-to-top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="back-to-top-icon"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M7 11l5-5m0 0l5 5m-5-5v12"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor"  title="Scroll To Top" >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
       </svg>
     </button>
     <!----------------- End Of Back To Top ----------------------->
@@ -160,16 +150,16 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script>
-  $( function() {
+  $(function () {
     var availableTags = [
-      "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa","Tazama",
+      "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa", "Tazama",
       "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
       "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
     ];
-    $( "#searchbar" ).autocomplete({
+    $("#searchbar").autocomplete({
       source: availableTags
     });
-  } );
+  });
 
 
   function visits() {
@@ -210,68 +200,61 @@
   //       // $(".hideable").css('display', 'none');
   //       $("#success").hide();
   //   }
-// });
+  // });
   ////////////////////// WRITE MESSAGE AND SAVE ///////////////////
   $('#submitbutton').click(function () {
     if ($('#message').val()) {
-    $('.contact').css('display', 'none');
-    $name = $('#name').val();
-    $email = $('#email').val();
-    $message = $('#message').val() + " ";
-    $info = $('#user-messages');
-    $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
-    $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
-    $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
-    $info.append("<br>_____________________________________");
-    updateItem('user-messages', $info.text());
-    $info.css('display', 'block');
-    $('#success').css('display', 'block');
-    $("#success").show().delay(3000).fadeOut();
-    // console.log($info.text());
-    updateItem('user-messages', $info.text());
-    let check = localStorage.getItem('user-messages');
-    console.log(check);
-  }
+      $('.contact').css('display', 'none');
+      $name = $('#name').val();
+      $email = $('#email').val();
+      $message = $('#message').val() + " ";
+      $info = $('#user-messages');
+      $info.append("<br> <span class='red'>Name:</span><br> " + $name + "");
+      $info.append("<br><span class='red'>Email:</span><br> " + $email + "");
+      $info.append("<br> <span class='red'>Message:</span><br> " + $message + "");
+      $info.append("<br>_____________________________________");
+      updateItem('user-messages', $info.text());
+      // $info.show().delay(10).fadeOut();
+      $('#success').css('display', 'block');
+      $("#success").show().delay(3000).fadeOut();
+      // console.log($info.text());
+      updateItem('user-messages', $info.text());
+      let check = localStorage.getItem('user-messages');
+      console.log(check);
+    }
   });
-  function updateItem(item, data){
+  function updateItem(item, data) {
     var old = localStorage.getItem(item);
-    if(old === null) {localStorage.setItem(old, "")}
+    if (old === null) { localStorage.setItem(old, "") }
     localStorage.setItem(item, old + data);
   }
 
 
-<<<<<<< HEAD
+  ////////////Scroll To Top///////////
 
+  $toTop = $(".back-to-top");
+  let showOnPx = 100;
+  // $pageProgressBar = $(".progress-bar"); // DOn't remove this line
 
+  const scrollContainer = () => {
+    return document.documentElement || document.body;
+  };
 
-////////////Scroll To Top///////////
-
-$toTop = $(".back-to-top");
-$showOnPx = 100;
-// $pageProgressBar = $(".progress-bar");
-
-const scrollContainer = () => {
-  return $('html');
-};
-
-document.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > $showOnPx) {
-      $toTop.hide();
-    } else {
+  document.addEventListener("scroll", () => {
+    if (scrollContainer().scrollTop > showOnPx) {
       $toTop.show();
+    } else {
+      $toTop.slideUp();
     }
-});
-
-const goToTop = () => {
-  document.body.scrollIntoView({
-    behavior: "smooth"
   });
-  $toTop.hide()
-};
-$toTop.click(goToTop);
+
+  const goToTop = () => {
+    document.body.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+  $toTop.click(goToTop);
 
 </script>
+
 </html>
-=======
-</html>
->>>>>>> beddcfbc28613e817f61d3e3e3f7a3216b589af9

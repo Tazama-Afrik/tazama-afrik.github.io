@@ -114,8 +114,7 @@ body {
       display: flex;
       flex-wrap: wrap;
     }
-    .search>.put{ /*width: 50%;*/margin-left: 0px;}
-    .search{width: fit-content;}
+    .search{display:none;}
     .nav .b{
       display: none;
     }

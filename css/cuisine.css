@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     margin: 0px;
 
 }
@@ -17,10 +17,14 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-  
+
+h3 {
+  text-align: center;
+}
+
 .nav a {
     float: left;
-    color: #196b11;
+    color: #15530f;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -43,7 +47,7 @@ body {
 }
 
 .nav .active {
-  background-color: #30b923;
+  background-color: #163114;
   color: #f8faf9;
 }
 
@@ -82,6 +86,11 @@ body {
 .welcome {
     font-size: larger;
     text-align: center;
+}
+
+#li-img {
+  width: 80em; 
+  align-self: center;
 }
 
 /* Slideshow container */
@@ -179,4 +188,71 @@ body {
 
 .mySlides > img {
   max-height: 600px;
+}
+
+.links-and-contact {
+  font: bold;
+  width: 100%;
+  text-decoration: blink;
+}
+
+.link-list{
+width: fit-content;
+height: fit-content;
+padding: 4px;
+margin-bottom: 20px;
+}
+
+/****************** BEGINNGING OF CONTACT **************/
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.links-and-contact {
+  background-color: rgb(24, 19, 19);
+  color: aliceblue;
+  padding-top: 5px;
+}
+.contact {
+    background-color: white;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4%;
+    padding: 20px;
+    position: absolute;
+    right: 33%;
+    bottom: 1em;
+    display: none;
+}
+.send-message:checked + .contact {
+  display: block;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+#submitbutton:hover {
+    background-color: darkolivegreen;
+}
+submit-button-wrapper {
+  margin: 20px o;
+}
+
+/************ END OF CONTACT *************/
+
+#footer {
+  background-color: rgb(248, 238, 238);
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  color: black;
 }

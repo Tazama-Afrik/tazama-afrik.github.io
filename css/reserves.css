@@ -4,7 +4,7 @@ body {
 }
 .hello {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/zebras.jpeg);
+    background-image: url(../img/reserves/fine-serengeti.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 480px;
@@ -91,12 +91,18 @@ body {
 }
 
 .h {
-    color: rgb(62, 75, 70);
+    color: rgb(34, 70, 56);
+    text-align: center;
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     color:rgb(12, 41, 13)
+}
+
+p {
+  font-family: sans-serif Verdana, Geneva, Tahoma;
+  color: rgb(36, 14, 65);
 }
 
 /* Slideshow container */
@@ -106,159 +112,159 @@ h2 {
     margin: auto;
   }
   
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
-  
-  .mySlides > img {
-    max-height: 600px;
-  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-  .links-and-contact {
-    font: bold;
-    width: 100%;
-    text-decoration: blink;
-  }
-  
-  .link-list{
-  width: fit-content;
-  height: fit-content;
-  padding: 4px;
-  margin-bottom: 20px;
-  }
-  
-  /****************** BEGINNGING OF CONTACT **************/
-  form input,
-  textarea {
-    padding: 5px;
-    border-radius: 5px;
-    width: 240px;
-  }
-  
-  .links-and-contact {
-    background-color: rgb(24, 19, 19);
-    color: aliceblue;
-    padding-top: 5px;
-  }
-  .contact {
-      background-color: white;
-      flex-wrap: wrap;
-      width: fit-content;
-      height: fit-content;
-      border-radius: 4%;
-      padding: 20px;
-      position: absolute;
-      right: 33%;
-      bottom: 1em;
-      display: none;
-  }
-  .send-message:checked + .contact {
-    display: block;
-  }
-  
-  form {
-    width: 250px;
-    margin: 0 auto;
-  }
-  
-  form input[type="submit"] {
-    width: 250px;
-  }
-  #submitbutton:hover {
-      background-color: darkolivegreen;
-  }
-  submit-button-wrapper {
-    margin: 20px o;
-  }
-  
-  /************ END OF CONTACT *************/
-  
-  #footer {
-    background-color: rgb(248, 238, 238);
-    text-align: center;
-    margin-top: 20px;
-    padding: 5px;
-    color: black;
-  }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.mySlides > img {
+  max-height: 600px;
+}
+
+.links-and-contact {
+  font: bold;
+  width: 100%;
+  text-decoration: blink;
+}
+
+.link-list{
+width: fit-content;
+height: fit-content;
+padding: 4px;
+margin-bottom: 20px;
+}
+
+/****************** BEGINNGING OF CONTACT **************/
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+.links-and-contact {
+  background-color: rgb(24, 19, 19);
+  color: aliceblue;
+  padding-top: 5px;
+}
+.contact {
+    background-color: white;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4%;
+    padding: 20px;
+    position: absolute;
+    right: 33%;
+    bottom: 1em;
+    display: none;
+}
+.send-message:checked + .contact {
+  display: block;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+#submitbutton:hover {
+    background-color: darkolivegreen;
+}
+submit-button-wrapper {
+  margin: 20px o;
+}
+
+/************ END OF CONTACT *************/
+
+#footer {
+  background-color: rgb(248, 238, 238);
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  color: black;
+}

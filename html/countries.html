@@ -17,20 +17,21 @@
   <link rel="stylesheet" href="../css/styles1.css"/>
   <link rel="stylesheet" href="../css/countries.css"/>
   <link rel='shortcut icon' href="../img/tazama_afrik.png"/>
+
+</head>
+
+<body>
   <div class="topnav" id="navtop">
     <a class="home" href="../index.html"><img src="../img/tazama.jpg" alt="Home"></a>
     <a class="nav active" href="countries.html">Countries</a>
     <a class="nav" href="beaches.html">Beaches</a>
     <a class="nav" href="culture.html">Culture</a>
     <a class="nav" href="reserves.html">Reserves</a>
-    <a class="nav" href="cuisine.html">Restaurants</a>
+    <a class="nav" href="cuisine.html">Cuisine</a>
       <div id="select">Hide Countries</div>
   </div>
-</head>
-
-<body>
 	    <!------     BEGINNING OF COUNTRIES LIST -------->
-    <div id="display">
+    
       <div id="accordion">
         <h3>Western Africa</h3>
         <div class="list">
@@ -61,7 +62,7 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title" style="font-size:150%">Country And Flag</h1>
+        <h1 id="title" style="font-size:150%">NIGER</h1>
       <div class="data" style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%;">
         Official Name: Connect to the internet | Population: Connect to the internet | Subregion: Connect to the internet</div>
       
@@ -71,12 +72,53 @@
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
-      <div class="counter">
-        Counted:
-      </div>
+
     </main>
-    </div>
     
+    <div class="links-and-contact">
+      <send class="send-message" id="propose">Send us a message</send>
+
+        <div class="links">
+          <h4>Connect With Us!</h4>
+          <ul class="link-lists">
+            <li>
+              <a style="width: fit-content; color: white;" href="https://github.com/Tazama-Afrik">Github</a>
+            <li>
+              <img style="width: fit-content;" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png"/>
+            <li>
+              <img style="width: fit-content;" title="Facebook" href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png"/>
+            <li>
+              <img style="width: fit-content;" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="../img/tw.png"/>
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+        
+        <div id="success" >Thank You!<br>Message Sent Successfully</div>
+
+
+    <div class="contact">
+      <h2>Feel free to <br>tell us something</h2>
+      <form>
+        <label for="name">
+          <h4>Name:</h4>
+          <input type=name id="name" placeholder="John Doe" required />
+        </label>
+        <label for="email">
+          <h4>Email:</h4>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+        <label for="message">
+          <h4>Your Message:</h4>
+          <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
+        </label>
+        <div class="submit-button-wrapper">
+          <div title="Send Message" id="submitbutton">Submit</div>
+        </div>
+        <div id="close" title="Close">&times; </div>
+      </form>
+    </div>
+    <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
 </body>
 
 <!-------------------------Javascript below ------------------------------------->
@@ -201,7 +243,6 @@
 
   function visits() {
     $count = $(".counter");
-    console.log($count.text());
     $views = localStorage.getItem("page_view");
     if ($views) {
     $views = Number($views) + 1;
@@ -231,6 +272,41 @@
       }
     });
   }
+  ///////////////////////// SEND A MESSAGE AND SAVE ///////////////////////
+  // $('#submitbutton').click(function () {
+  //   if ($('#message').val()) {
+  //   $('.contact').css('display', 'none');
+  //   $name = $('#name').val();
+  //   $email = $('#email').val();
+  //   $message = $('#message').val() + " ";
+  //   $info = $('#user-messages');
+  //   $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
+  //   $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
+  //   $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
+  //   $info.append("<br>____________________________________");
+  //   updateItem('user-messages', $info.text());
+  //   // $info.css('display', 'block');
+  //   $('#success').css('display', 'block');
+  //   $("#success").show().delay(4000).fadeOut();
+  //   // console.log($info.text());
+  //   updateItem('user-messages', $info.text());
+  //   let check = localStorage.getItem('user-messages');
+  //   console.log(check);
+  // }
+  // });
+  // function updateItem(item, data){
+  //   var old = localStorage.getItem(item);
+  //   if(old === null) {localStorage.setItem(old, "")}
+  //   localStorage.setItem(item, old + data);
+  // }
+
+
+  $('#close').click(function () {
+    $('.contact').css('display', 'none');
+  });
+  $('#propose').click(function () {
+    $('.contact').css('display', 'block');
+  })
 </script>
 
 </html>

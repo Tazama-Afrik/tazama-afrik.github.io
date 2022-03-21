@@ -148,6 +148,11 @@ body {
     padding: 4px;
     /* background-color: lightsteelblue */
   }
+  .ui-widget-header {
+    /* font-weight: bold;  */
+    font-family: Impact, sans-serif;
+    font-stretch: expanded;
+  }
   
   
   

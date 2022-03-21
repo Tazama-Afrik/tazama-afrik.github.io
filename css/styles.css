@@ -132,7 +132,10 @@ body {
     .project-image-wrapper > a {max-height: 20px;}
     #menu-icon { display:block;}
     .ui-widget-header {
-      font: expanded 20px 'impact';
+      font-size: 100%;
+      width: fit-content;
+      padding: 0.5%;
+      font-stretch: semi-expanded;
     }
   }
   #menu {

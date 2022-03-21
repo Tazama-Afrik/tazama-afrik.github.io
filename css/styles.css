@@ -131,6 +131,9 @@ body {
     .welcome{font-size: 2%;}
     .project-image-wrapper > a {max-height: 20px;}
     #menu-icon { display:block;}
+    .ui-widget-header {
+      font: expanded 20px 'impact';
+    }
   }
   #menu {
     width:100%;
@@ -154,10 +157,7 @@ body {
     padding: 4px;
     /* background-color: lightsteelblue */
   }
-  .ui-widget-header {
-    cursor: default;
-    font: expanded 20px 'impact';
-  }
+  
   
   
   

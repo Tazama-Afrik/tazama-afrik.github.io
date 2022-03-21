@@ -157,10 +157,10 @@ body {
     float:right;
     position:absolute;
     right:0.5%;
-    font-size: 8px;
+    font-size: 10px;
     width:fit-content;
   }
-
+  #accordion {width: 50%;}
 }
 @media (min-width: 575px) {
   p {

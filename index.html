@@ -35,6 +35,16 @@
         <button type="submitbutton" id="searchSubmit">Search</button>
       </div>
       <!------     END OF SEARCH BAR ------->
+      <img src="img/menu.png" alt="Menu" id="menu-icon"/>
+    </div>
+    <div id="menu">
+      <!-- <li class="ui-widget-header"><div>Select From This List</div></li> -->
+      <a class="b" href="#about">About</a><br>
+      <a class="b" href="html/countries.html">Countries</a><br>
+      <a class="b" href="html/beaches.html">Beaches</a><br>
+      <a class="b" href="html/culture.html">Culture</a><br>
+      <a class="b" href="html/reserves.html">Reserves</a><br>
+      <a class="b" href="html/cuisine.html">Cuisine</a>
     </div>
 
     <div class="welcome">
@@ -150,6 +160,15 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script>
+  // $( function() {
+  //   $( "#menu" ).menu({
+  //     items: "> :not(.ui-widget-header)"
+  //   });
+  // });
+  $('#menu-icon').click(function(){
+    $('#menu').toggle();
+  });
+
   $(function () {
     var availableTags = [
       "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa", "Tazama",

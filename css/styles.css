@@ -45,8 +45,19 @@ body {
     font-weight: bold;
     font-size: 16px;
   }
-
-  
+  #menu-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 4px;
+    margin-top: 5px;
+    background-color: gray;
+    display: block;
+  }
+  #menu-icon:active {
+    background-color: black;
+  }
+    
   .nav > .home > img {
     max-height: 52px;
     padding: 0px;
@@ -97,20 +108,56 @@ body {
   }
 
   @media (max-width: 650px) {
-    .projects-grid {
-      grid-template-columns: 100%;
-    }
+    .projects-grid {display: flex;}
+    div.project-image-wrapper { width: 80%;}
     .nav {
       display: flex;
       flex-wrap: wrap;
     }
+    .nav .b{
+      display: none;
+    }
+    .nav .search {
+      position:absolute;
+      right: 5%;
+    }
     * {
-      font-size: smaller;
+      font-size: small;
     }
     .project-image-wrapper > a {
       max-height: 20px;
     }
+    #menu-icon {
+      display:block;
+    }
   }
+  #menu {
+    width:100%;
+    height: fit-content;
+    padding: 5%;
+    padding-top: 1%;
+    background-color: white;
+    position: fixed;
+    top: 65px;
+    font-size: 30px;
+    z-index: 10;
+    display: none;
+  }
+  #menu > ul {
+    width: 100%;
+  }
+  #menu > .b {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color:rgb(14, 14, 94);
+    margin-right: 10px;
+    padding: 6px;
+    background-color: lightsteelblue
+  }
+  
+  
   
   /************* IMAGES IN THE BODY ***************/
   

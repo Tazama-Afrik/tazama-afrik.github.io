@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>  
+</head>
+<style>
+    @media (max-width: 620px) {
+    #menu {
+        width:fit-content;
+        padding: 0.5%;
+        background-color: lightslategray;
+        font-weight: bold;
+    }
+    li > .b {
+        text-decoration: none;
+        width: 100%;
+        color:white;
+        margin-top: 5px!important;
+    }
+}
+</style>
+<body>
+    <ul id="menu">
+        <li class="ui-widget-header"><div>Select From This List</div></li>
+        <li><a class="b" href="#about">About</a></li>
+        <li><a class="b" href="html/countries.html">Countries</a></li>
+        <li><a class="b" href="html/beaches.html">Beaches</a></li>
+        <li><a class="b" href="html/culture.html">Culture</a></li>
+        <li><a class="b" href="html/reserves.html">Reserves</a></li>
+        <li><a class="b" href="html/cuisine.html">Cuisine</a></li>
+      </ul>
+</body>
+<script>
+    $( function() {
+        $( "#menu" ).menu({
+            items: "> :not(.ui-widget-header)"
+        });
+    });
+</script>
+</html>

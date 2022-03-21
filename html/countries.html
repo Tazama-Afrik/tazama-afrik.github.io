@@ -62,7 +62,7 @@
 	    <!------     END OF COUNTRIES LIST ------->
 
       <main class="body">
-        <h1 id="title" style="font-size:150%">Country And Flag</h1>
+        <h1 id="title" style="font-size:150%">NIGER</h1>
       <div class="data" style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%;">
         Official Name: Connect to the internet | Population: Connect to the internet | Subregion: Connect to the internet</div>
       
@@ -84,18 +84,18 @@
             <li>
               <a style="width: fit-content; color: white;" href="https://github.com/Tazama-Afrik">Github</a>
             <li>
-              <img style="width: fit-content;" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
+              <img style="width: fit-content;" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png"/>
             <li>
-              <img style="width: fit-content;" title="Facebook" href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
+              <img style="width: fit-content;" title="Facebook" href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png"/>
             <li>
-              <img style="width: fit-content;" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
+              <img style="width: fit-content;" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="../img/tw.png"/>
             </li>
           </ul>
         </div>
         <!-- </div> -->
         
         <div id="success" >Thank You!<br>Message Sent Successfully</div>
-    <div class="hideable" id="user-messages"></div>
+
 
     <div class="contact">
       <h2>Feel free to <br>tell us something</h2>
@@ -273,32 +273,32 @@
     });
   }
   ///////////////////////// SEND A MESSAGE AND SAVE ///////////////////////
-  $('#submitbutton').click(function () {
-    if ($('#message').val()) {
-    $('.contact').css('display', 'none');
-    $name = $('#name').val();
-    $email = $('#email').val();
-    $message = $('#message').val() + " ";
-    $info = $('#user-messages');
-    $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
-    $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
-    $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
-    $info.append("<br>____________________________________");
-    updateItem('user-messages', $info.text());
-    // $info.css('display', 'block');
-    $('#success').css('display', 'block');
-    $("#success").show().delay(4000).fadeOut();
-    // console.log($info.text());
-    updateItem('user-messages', $info.text());
-    let check = localStorage.getItem('user-messages');
-    console.log(check);
-  }
-  });
-  function updateItem(item, data){
-    var old = localStorage.getItem(item);
-    if(old === null) {localStorage.setItem(old, "")}
-    localStorage.setItem(item, old + data);
-  }
+  // $('#submitbutton').click(function () {
+  //   if ($('#message').val()) {
+  //   $('.contact').css('display', 'none');
+  //   $name = $('#name').val();
+  //   $email = $('#email').val();
+  //   $message = $('#message').val() + " ";
+  //   $info = $('#user-messages');
+  //   $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
+  //   $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
+  //   $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
+  //   $info.append("<br>____________________________________");
+  //   updateItem('user-messages', $info.text());
+  //   // $info.css('display', 'block');
+  //   $('#success').css('display', 'block');
+  //   $("#success").show().delay(4000).fadeOut();
+  //   // console.log($info.text());
+  //   updateItem('user-messages', $info.text());
+  //   let check = localStorage.getItem('user-messages');
+  //   console.log(check);
+  // }
+  // });
+  // function updateItem(item, data){
+  //   var old = localStorage.getItem(item);
+  //   if(old === null) {localStorage.setItem(old, "")}
+  //   localStorage.setItem(item, old + data);
+  // }
 
 
   $('#close').click(function () {

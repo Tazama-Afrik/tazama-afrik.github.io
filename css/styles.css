@@ -360,22 +360,7 @@ body {
     z-index: 20;
     box-sizing: content-box;
   }
-  #user-messages {
-    background-color: cornflowerblue;
-    display: none;
-    border: #333 solid 5px;
-    width: 3in;
-    padding: 1%;
-    color: lightgreen;
-    height: 4in;
-    font-weight: bold;
-    font-size: 20px;
-    position: fixed;
-    top: 10%;
-    right: 25%;
-    align-content: center;
-    overflow-y: scroll;
-  }
+
   #user-messages::-webkit-scrollbar {
     width: 1mm;
     color: black;

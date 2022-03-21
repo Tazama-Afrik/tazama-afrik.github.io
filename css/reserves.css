@@ -91,12 +91,18 @@ body {
 }
 
 .h {
-    color: rgb(62, 75, 70);
+    color: rgb(34, 70, 56);
+    text-align: center;
 }
 
 h2 {
     text-align: left;
     color:rgb(12, 41, 13)
+}
+
+p {
+  font-family: sans-serif Verdana, Geneva, Tahoma;
+  color: rgb(36, 14, 65);
 }
 
 /* Slideshow container */

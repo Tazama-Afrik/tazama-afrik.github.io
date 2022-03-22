@@ -160,7 +160,10 @@ body {
     margin: 3px;
     padding: 4px;
   }
-  
+  #bch-icon, #cult-icon, #res-icon, #fud-icon {
+    width: 30px;
+    height: 30px;
+  }
   
   
   

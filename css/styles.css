@@ -375,14 +375,19 @@ form input[type="submit"] {
       display: block;
       width: 100%;
     }
+    .project-image {
+      border-radius: 0;
+
+    }
     #tabs{  /*** For Those Using Tabs****/
       max-width: 80%; 
       overflow: visible;
       display: none;
     }
     a .hover-text {
-      font-size: small;
+      font-size: 25px;
       visibility: visible;
+      top: 47%;
     }
     .container {
       display: flex;

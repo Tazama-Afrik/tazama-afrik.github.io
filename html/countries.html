@@ -268,7 +268,8 @@
         $('#title').html(''+countryName+' '+ data.flag +'');
         $('.data').html("Official Name: <u>"+data.name.official+"</u> | Population: <u>"+data.population+"</u> | Region: <u>"+data.subregion+
         "</u><br> Curency: <u>"+data.currencies+"</u> | Languages: <u>"+data.languages[0]+"</u>")
-        return false;
+        $('#accordion').slideUp();
+        $('#select').text('Show Countries');
       }
     });
   }

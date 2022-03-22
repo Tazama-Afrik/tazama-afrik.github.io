@@ -36,18 +36,19 @@
       </div>
       <!------     END OF SEARCH BAR ------->
       <img src="img/menu.png" alt="Menu" id="menu-icon"/>
+      <div id="closer-icon">&times;</div>
     </div>
     <div id="menu">
       <li class="ui-widget-header"><div>Make Your Selection</div></li>
-      <a class="b" href="#about">About</a>
-      <a class="b" href="html/countries.html">Countries</a>
-      <a class="b" href="html/beaches.html">Beaches</a>
-      <a class="b" href="html/culture.html">Culture</a>
-      <a class="b" href="html/reserves.html">Reserves</a>
-      <a class="b" href="html/cuisine.html">Cuisine</a>
+      <a class="b" href="#about">🧑 About</a>
+      <a class="b" href="html/countries.html">🌍  Countries</a>
+      <a class="b" href="html/beaches.html"><img id="bch-icon" src="img/beaches-icon.png"/>&nbsp; Beaches</a>
+      <a class="b" href="html/culture.html"><img id="cult-icon" src="img/cult-icon.png"/>&nbsp; Culture</a>
+      <a class="b" href="html/reserves.html"><img id="res-icon" src="img/res-icon.png"/> &nbsp;Reserves</a>
+      <a class="b" href="html/cuisine.html"><img id="fud-icon" src="img/fud-icon.jpg"/>&nbsp; Cuisine</a>
     </div>
 
-    <div class="welcome">
+    <div class="welcome" id="welcome">
       <h2>Welcome To Tazama Afrik</h2>
       <h4>
         Explore the world of Africa
@@ -62,30 +63,23 @@
   </div>
 
   <div class="container">
-    <div class="categories-grid">
+
       <div class="project-image-wrapper">
-        <h1 class="hover-text">BEACHES</h1>
-        <a href="html/beaches.html"><img class="project-image" src="img/blue-sea.jpeg" alt="Image"></a>
+        <a href="html/beaches.html"><h1 class="hover-text">BEACHES</h1><img class="project-image" src="img/blue-sea.jpeg" alt="Image"></a>
       </div>
       <div class="project-image-wrapper">
-        <h1 class="hover-text">RESERVES</h1>
-        <a href="html/reserves.html"><img class="project-image" src="img/zebras.jpeg" alt="Reserves"></a>
+        <a href="html/reserves.html"><h1 class="hover-text">RESERVES</h1><img class="project-image" src="img/zebras.jpeg" alt="Reserves"></a>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="categories-grid">
+
+
       <div class="project-image-wrapper">
-        <h1 class="hover-text">CUISINE</h1>
-        <a href="html/cuisine.html"><img class="project-image" src="img/jollof-rice/fine-jollof1.jpg"
+        <a href="html/cuisine.html"><h1 class="hover-text">CUISINE</h1><img class="project-image" src="img/jollof-rice/fine-jollof1.jpg"
             alt="Restaurants"></a>
       </div>
       <div class="project-image-wrapper">
-        <h1 class="hover-text">CULTURE</h1>
-        <a class="project-image" href="html/culture.html"><img class="project-image" src="img/calabar-carnival.jpg"
+        <a href="html/culture.html"><h1 class="hover-text">CULTURE</h1><img class="project-image" src="img/calabar-carnival.jpg"
             alt="Culture"></a>
       </div>
-    </div>
   </div>
 
   <div id="about">
@@ -163,6 +157,16 @@
 
   $('#menu-icon').click(function(){
     $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#closer-icon').fadeIn();
+  });
+  $('#closer-icon').click(function(){
+    $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#menu-icon').fadeIn();
+  });
+  $('.b').click(function(){
+    $('#menu').slideToggle();
   });
 
   $(function () {
@@ -188,7 +192,7 @@
       $views = 1;
       localStorage.setItem("page_view", 1);
     }
-    $message = `Total Visits(Since March 2022): ${$views}`;
+    $message = `| You've Visited This Site ${$views} Times`;
     $count.html($message);
   }
   visits();

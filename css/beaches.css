@@ -244,9 +244,6 @@ textarea {
     bottom: 1em;
     display: none;
 }
-.send-message:checked + .contact {
-  display: block;
-}
 
 form {
   width: 250px;

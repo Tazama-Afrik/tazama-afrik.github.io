@@ -24,3 +24,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
+$('#menu-icon').click(function(){
+$('#menu').slideToggle();
+$(this).fadeOut();
+$('#closer-icon').fadeIn();
+});
+$('#closer-icon').click(function(){
+$('#menu').slideToggle();
+$(this).fadeOut();
+$('#menu-icon').fadeIn();
+});
+$('.b').click(function(){
+$('#menu').slideToggle();
+});

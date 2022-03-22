@@ -10,7 +10,7 @@ body {
 
 .hello {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(../img/mountain-fog.jpeg);
+  background-image: url(../img/home-image.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 450px;
@@ -353,7 +353,7 @@ form input[type="submit"] {
 #submitbutton:hover {
   background-color: darkolivegreen;
 }
-submit-button-wrapper {
+.submit-button-wrapper {
   margin: 20px o;
 }
 

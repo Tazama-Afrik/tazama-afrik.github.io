@@ -98,7 +98,7 @@
 
 
     <div class="contact">
-      <h2>Feel free to <br>tell us something</h2>
+      <h2>Feel Free To <br>Tell Us Something</h2>
       <form>
         <label for="name">
           <h4>Name:</h4>
@@ -264,7 +264,7 @@
       success: function(data) {
         data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
         data = data[0];
-        countryName = data.name.common.toUpperCase();
+        countryName = data.name.common;
         $('#title').html(''+countryName+' '+ data.flag +'');
         $('.data').html("Official Name: <u>"+data.name.official+"</u> | Population: <u>"+data.population+"</u> | Region: <u>"+data.subregion+
         "</u><br> Curency: <u>"+data.currencies+"</u> | Languages: <u>"+data.languages[0]+"</u>")

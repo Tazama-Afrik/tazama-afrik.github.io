@@ -110,6 +110,7 @@ body {
 }
 #title {
   margin-top: 60px;
+  text-transform: uppercase;
   border-bottom: solid 2px gray;
 }
 

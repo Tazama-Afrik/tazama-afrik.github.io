@@ -387,7 +387,7 @@ form input[type="submit"] {
     a .hover-text {
       font-size: 35px;
       visibility: visible;
-      top: 47%;
+      top: 40%;
     }
     .container {
       display: flex;

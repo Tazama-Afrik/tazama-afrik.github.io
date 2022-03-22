@@ -39,8 +39,8 @@
     </div>
     <div id="menu">
       <li class="ui-widget-header"><div>Make Your Selection</div></li>
-      <a class="b" href="#about">About</a>
-      <a class="b" href="html/countries.html">🌍 Countries</a>
+      <a class="b" href="#about">🧑 About</a>
+      <a class="b" href="html/countries.html">🌍  Countries</a>
       <a class="b" href="html/beaches.html"><img id="bch-icon" src="img/beaches-icon.png"/>&nbsp; Beaches</a>
       <a class="b" href="html/culture.html"><img id="cult-icon" src="img/cult-icon.png"/>&nbsp; Culture</a>
       <a class="b" href="html/reserves.html"><img id="res-icon" src="img/res-icon.png"/> &nbsp;Reserves</a>
@@ -184,7 +184,7 @@
       $views = 1;
       localStorage.setItem("page_view", 1);
     }
-    $message = `Total Visits(Since March 2022): ${$views}`;
+    $message = `| You've Visited This Site ${$views} Times`;
     $count.html($message);
   }
   visits();

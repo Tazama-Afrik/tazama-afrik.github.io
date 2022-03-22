@@ -115,7 +115,7 @@ body {
 
   @media (max-width: 650px) {
     /* .projects-grid {display: flex;} */
-    .container .project-image { display:block; width:100%;}
+    .project-image-wrapper { display:block; width:100%;}
     a .hover-text {font-size: small; visibility: visible;}
     .container {display:flex; flex-wrap: wrap;}
 

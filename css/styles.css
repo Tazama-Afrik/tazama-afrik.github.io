@@ -50,12 +50,14 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+/*******************NAVIGATION MENU***************/
 #menu-icon {
   width: 40px;
   height: 40px;
-  position: absolute;
+  position: fixed;
   right: 4px;
   margin-top: 5px;
+  z-index: 10;
   display: none;
 }
 #closer-icon {
@@ -65,9 +67,9 @@ body {
   color: red;
   font-weight: 700;
   font-size: 50px;
-  right: 6px;
+  right: 10px;
   top: 9px;
-  z-index: 6;
+  z-index: 10;
   display: none;
   cursor: default;
 }
@@ -104,50 +106,6 @@ body {
 
 /* END OF SEARCH BAR */
 
-
-@media (max-width: 650px) {
-  .project-image-wrapper {
-    display: block;
-    width: 100%;
-  }
-  a .hover-text {
-    font-size: small;
-    visibility: visible;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .search {
-    display: none;
-  }
-  .nav .b {
-    display: none;
-  }
-  .nav .search {
-    position: absolute;
-    right: 5%;
-  }
-  body {
-    font-size: small;
-  }
-
-  .welcome {
-    font-size: larger !important;
-  }
-
-  .project-image-wrapper > a {
-    max-height: 20px;
-  }
-  #menu-icon {
-    display: block;
-  }
-}
 #menu {
   width: 100%;
   height: fit-content;
@@ -175,10 +133,7 @@ body {
   text-decoration: underline;
   text-decoration-style: double;
 }
-#bch-icon,
-#cult-icon,
-#res-icon,
-#fud-icon {
+.slide-icon {
   width: 30px;
   height: 30px;
 }
@@ -192,7 +147,6 @@ body {
   margin: auto;
   width: fit-content;
   height: fit-content;
-  /* float: left; */
   width: 40%;
 }
 .container {
@@ -415,3 +369,50 @@ form input[type="submit"] {
   color: black;
   bottom: 0;
 }
+/***************** HOMEPAGE SMALL STYLES BEGIN *****************/
+@media (max-width: 650px) {
+    .project-image-wrapper {
+      display: block;
+      width: 100%;
+    }
+    #tabs{  /*** For Those Using Tabs****/
+      max-width: 80%; 
+      overflow: visible;
+      display: none;
+    }
+    a .hover-text {
+      font-size: small;
+      visibility: visible;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .search {
+      display: none;
+    }
+    .nav .b {
+      display: none;
+    }
+    .nav .search {
+      position: absolute;
+      right: 5%;
+    }
+    body {
+      font-size: small;
+    }
+    .welcome {
+      font-size: larger !important;
+    }
+    .project-image-wrapper > a {
+      max-height: 20px;
+    }
+    #menu-icon {
+      display: block;
+    }
+  }
+  /***************** HOMEPAGE SMALL MEDIA STYLES END *****************/

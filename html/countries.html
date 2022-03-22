@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="../css/styles1.css"/>
   <link rel="stylesheet" href="../css/countries.css"/>
   <link rel='shortcut icon' href="../img/tazama_afrik.png"/>
-
 </head>
 
 <body>
@@ -30,6 +29,18 @@
     <a class="nav" href="cuisine.html">Cuisine</a>
       <div id="select">Hide Countries</div>
   </div>
+  <!---------For Small Size Media--------------->
+  <img src="../img/menu.png" alt="Menu" id="menu-icon"/>
+  <div id="closer-icon">&times;</div>
+  <div id="menu">
+    <above class="widget-header"><div>Make Your Selection Here</div></above>
+    <a class="b active" href="countries.html">🌍  Countries</a>
+    <a class="b" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png"/>&nbsp; Beaches</a>
+    <a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png"/>&nbsp; Culture</a>
+    <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
+    <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
+  </div>
+
 	    <!------     BEGINNING OF COUNTRIES LIST -------->
     
       <div id="accordion">
@@ -63,7 +74,7 @@
 
       <main class="body">
         <h1 id="title" style="font-size:150%">NIGER</h1>
-      <div class="data" style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%;">
+      <div class="data" style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%; text-align: center;">
         Official Name: Connect to the internet | Population: Connect to the internet | Subregion: Connect to the internet</div>
       
       <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi quibusdam voluptatibus!</p>
@@ -123,6 +134,7 @@
 
 <!-------------------------Javascript below ------------------------------------->
   <script>
+    ///////////////THE ACORDION ////////////////////
   $( function() {
     $( "#accordion" ).accordion();
       $("#select").click(function(){
@@ -134,7 +146,20 @@
         }
       });
   });
-
+////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
+$('#menu-icon').click(function(){
+    $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#closer-icon').fadeIn();
+  });
+  $('#closer-icon').click(function(){
+    $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#menu-icon').fadeIn();
+  });
+  $('.b').click(function(){
+    $('#menu').slideToggle();
+  });
   $.ajax({
       url: `https://restcountries.com/v3.1/name/nigeria`,
       success: function(data) {
@@ -164,7 +189,6 @@
         $number.append(`${num} Countries`);
         $('.country').click(clicked);
       },
-      // error: alert('Hey, There was an error. Check the URL and try again')
     });
     $.ajax({
       url: 'https://restcountries.com/v3.1/subregion/south',
@@ -182,7 +206,6 @@
         $number.prepend(`${num} Countries`);
         $('.country').click(clicked);
       },
-      // error: alert('Hey, There was an error. Check the URL and try again')
     });
     $.ajax({
       url: 'https://restcountries.com/v3.1/subregion/north',
@@ -200,7 +223,6 @@
         $number.prepend(`${num} Countries`);
         $('.country').click(clicked);
       },
-      // error: alert('Hey, There was an error. Check the URL and try again')
     });
     $.ajax({
       url: 'https://restcountries.com/v3.1/subregion/middle',
@@ -218,7 +240,6 @@
         $number.prepend(`${num} Countries`);
         $('.country').click(clicked);
       },
-      // error: alert('Hey, There was an error. Check the URL and try again')
     });
     $.ajax({
       url: 'https://restcountries.com/v3.1/subregion/east',

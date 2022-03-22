@@ -44,8 +44,20 @@
             <button type="submitbutton" id="searchSubmit">Search</button>
         </div> 
   <!------     END OF SEARCH BAR ------->
+        <img src="../img/menu.png" alt="Menu" id="menu-icon"/>
+        <div id="closer-icon">&times;</div>
       </div>
     </div>
+  <!---------For Small Size Media--------------->
+
+  <div id="menu">
+    <above class="widget-header"><div>Make Your Selection Here</div></above>
+    <a class="b" href="countries.html">🌍  Countries</a>
+    <a class="b active" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png"/>&nbsp; Beaches</a>
+    <a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png"/>&nbsp; Culture</a>
+    <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
+    <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
+  </div>
 
     <div class="welcome">
       <h2 class="h">Hello Beach Lovers!</h2>
@@ -141,4 +153,20 @@
     </center>
     <footer id="footer">Copyright &copy; Tazama Afrik</footer>
   </body>
+  <script>
+    ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
+  $('#menu-icon').click(function(){
+    $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#closer-icon').fadeIn();
+  });
+  $('#closer-icon').click(function(){
+    $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#menu-icon').fadeIn();
+  });
+  $('.b').click(function(){
+    $('#menu').slideToggle();
+  });
+  </script>
 </html>

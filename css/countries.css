@@ -1,7 +1,6 @@
 @import url(styles.css);
 * {
     box-sizing: border-box;
-    text-align: center;
 }
 
 .body {
@@ -38,7 +37,6 @@ body {
   margin-top: 56px;
   width: 100%;
   height:fit-content;
-  /* height: 100%; */
 }
 #WA, #SA, #NA, #CA, #EA {
   color: darkslateblue;
@@ -112,6 +110,7 @@ body {
   margin-top: 60px;
   text-transform: uppercase;
   border-bottom: solid 2px gray;
+  text-align: center;
 }
 
 .topnav .nav {
@@ -154,14 +153,24 @@ body {
     font-size: small;
   }
   #select {
-    z-index: 10;
+    z-index: 5;
     float:right;
     position:absolute;
-    right:0.5%;
-    font-size: 10px;
+    right:30px;
+    font-size: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 20px;
     width:fit-content;
   }
   #accordion {width: 80%;}
+  #menu-icon{
+    position: fixed;
+    top: 10px;
+  }
+  #menu {
+    text-align: left;
+  }
 }
 @media (min-width: 575px) {
   p {

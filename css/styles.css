@@ -166,7 +166,7 @@ body {
     padding: 4px;
   }
   .ui-widget-header {
-    cursor:default;
+    /* cursor:default; */
     width: fit-content;
     padding: 2px;
     font-size: larger;

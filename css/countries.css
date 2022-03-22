@@ -160,7 +160,7 @@ body {
     font-size: 10px;
     width:fit-content;
   }
-  #accordion {width: 50%;}
+  #accordion {width: 80%;}
 }
 @media (min-width: 575px) {
   p {

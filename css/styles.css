@@ -59,10 +59,18 @@ body {
     /* background-color: gray; */
     display: none;
   }
-  #menu-icon:active {
-    background-color: black;
+  #closer-icon {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    color: red;
+    font-weight: 700;
+    font-size: 50px;
+    right: 4%;
+    top: 9px;
+    display: none;
+    cursor: default;
   }
-    
   .nav > .home > img {
     max-height: 52px;
     padding: 0px;
@@ -137,9 +145,6 @@ body {
 
     .project-image-wrapper > a {max-height: 20px;}
     #menu-icon { display:block;}
-    .ui-widget-header {
-      cursor:default;
-    }
   }
   #menu {
     width:100%;
@@ -159,6 +164,14 @@ body {
     text-decoration: none;
     margin: 3px;
     padding: 4px;
+  }
+  .ui-widget-header {
+    cursor:default;
+    width: fit-content;
+    padding: 2px;
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-style: double;
   }
   #bch-icon, #cult-icon, #res-icon, #fud-icon {
     width: 30px;

@@ -36,6 +36,7 @@
       </div>
       <!------     END OF SEARCH BAR ------->
       <img src="img/menu.png" alt="Menu" id="menu-icon"/>
+      <div id="closer-icon">&times;</div>
     </div>
     <div id="menu">
       <li class="ui-widget-header"><div>Make Your Selection</div></li>
@@ -156,6 +157,13 @@
 
   $('#menu-icon').click(function(){
     $('#menu').slideToggle();
+    $(this).fadeOut();
+    $('#closer-icon').fadeIn();
+  });
+  $('#closer-icon').click(function(){
+    $('#menu').slideToggle();
+    $(this).hide();
+    $('#menu-icon').show();
   });
   $('.b').click(function(){
     $('#menu').slideToggle();

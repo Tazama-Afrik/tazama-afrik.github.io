@@ -313,6 +313,7 @@ form input[type="submit"] {
 
 /************ END OF CONTACT *************/
 
+/************ POP UP MESSAGE BEGINS **************/
 #success {
   background-color: cornflowerblue;
   display: none;
@@ -339,6 +340,7 @@ form input[type="submit"] {
 .red {
   color: red;
 }
+/********** BACK TO TOP BUTTON *************/
 .back-to-top-icon {
   width: 1rem;
   height: 1rem;
@@ -373,7 +375,7 @@ form input[type="submit"] {
 @media (max-width: 650px) {
     .project-image-wrapper {
       display: block;
-      width: 100%;
+      width: 98%;
     }
     .project-image {
       border-radius: 0;
@@ -392,6 +394,7 @@ form input[type="submit"] {
     .container {
       display: flex;
       flex-wrap: wrap;
+      max-width: 98%;
     }
     .nav {
       display: flex;
@@ -409,6 +412,7 @@ form input[type="submit"] {
     }
     body {
       font-size: small;
+      max-width: 99%;
     }
     .welcome {
       font-size: larger !important;

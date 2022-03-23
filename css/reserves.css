@@ -116,11 +116,13 @@ h2 {
 
 .preview, #ul {
   text-align: left;
+  margin-left: 3%;
   color: red;
   list-style: none;
-  padding: 2px;
+  padding: 3px;
   text-decoration: none;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 p {

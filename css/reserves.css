@@ -113,20 +113,6 @@ p {
   color: rgb(36, 14, 65);
 }
 
-/* For small screens */
-@media only screen and (max-width: 600px) {
-  .tabs {
-    text-align: left;
-    margin-left: 10px;
-  }
-  ul {
-    text-align: left;
-  }
-  h2 .h {
-    text-align: center;
-  }
-}
-
 /* Slideshow container 
 .slideshow-container {
     max-width: 1000px;
@@ -255,18 +241,6 @@ textarea {
   padding-top: 5px;
 }
 
-.contact {
-  background-color: white;
-  flex-wrap: wrap;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 4%;
-  padding: 20px;
-  position: absolute;
-  right: 33%;
-  bottom: 1em;
-  display: none;
-}
 
 form {
   width: 250px;
@@ -279,7 +253,7 @@ form input[type="submit"] {
 #submitbutton:hover {
   background-color: darkolivegreen;
 }
-submit-button-wrapper {
+.submit-button-wrapper {
   margin: 20px o;
 }
 

@@ -39,3 +39,27 @@ $('#menu-icon').fadeIn();
 $('.b').click(function(){
 $('#menu').slideUp();
 });
+  ////////////Scroll To Top///////////
+
+$toTop = $(".back-to-top");
+let showOnPx = 100;
+// $pageProgressBar = $(".progress-bar"); // DOn't remove this line
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    $toTop.show();
+  } else {
+    $toTop.slideUp();
+  }
+});
+
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth"
+  });
+};
+$toTop.click(goToTop);

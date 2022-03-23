@@ -160,18 +160,19 @@ $('#menu-icon').click(function(){
   $('.b').click(function(){
     $('#menu').slideToggle();
   });
+  ////////////////////// API QUERY FOR DEFAULT COUNTRY ///////////////
   $.ajax({
-      url: `https://restcountries.com/v3.1/name/nigeria`,
+      url: `https://restcountries.com/v3.1/name/benin`,
       success: function(data) {
         data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
-        countryName = 'NIGER';
+        countryName = 'benin';
         data = data[0];
         $('#title').html(''+countryName+' '+ data.flag +'');
         $('.data').html("Official Name: <u>"+data.name.official+"</u> | Population: <u>"+data.population+"</u> | Region: <u>"+data.subregion+
         "</u><br> Curency: <u>"+data.name.common+"'s Currency</u> | Languages: <u>"+data.languages[0]+"</u>")
       }
     });
-
+    /////////////////// API QUERY FOR ALL SUBREGIONS ///////////////////
   $(function (){
     $.ajax({
       url: 'https://restcountries.com/v3.1/subregion/west',
@@ -276,7 +277,7 @@ $('#menu-icon').click(function(){
     $count.html($message);
   }
   visits();
-////////////////////////////// CLick handler//////////////////////////////////////////////
+////////////////////////////  COUNTRY CLICK HANDLER //////////////////////////////////////////////
 
   function clicked(){
     $name = $(this).text().toLowerCase().split(" ")[0];
@@ -294,7 +295,7 @@ $('#menu-icon').click(function(){
       }
     });
   }
-  ///////////////////////// SEND A MESSAGE AND SAVE ///////////////////////
+  ///////////////////////// SEND A MESSAGE AND SAVE (Will Be Implemented Later)///////////////////////
   // $('#submitbutton').click(function () {
   //   if ($('#message').val()) {
   //   $('.contact').css('display', 'none');
@@ -327,7 +328,7 @@ $('#menu-icon').click(function(){
     $('.contact').css('display', 'none');
   });
   $('#propose').click(function () {
-    $('.contact').css('display', 'block');
+    $('.contact').show().delay(400).fadeOut();
   })
 </script>
 

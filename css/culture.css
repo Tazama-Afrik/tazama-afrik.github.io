@@ -38,7 +38,7 @@ body {
   float: left;
 }
 .nav > .home > img {
-  max-height: 52px;
+  max-height: 45px;
   padding: 0px;
 }
 .nav .home {
@@ -61,7 +61,7 @@ body {
 
 .nav a {
   float: left;
-  color: #f2f2f2;
+  color: #fafdfa;
   text-align: center;
   text-decoration: none;
   font-size: 17px;

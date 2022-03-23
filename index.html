@@ -12,12 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
   <link rel='shortcut icon' href="img/tazama_afrik.png">
-  <!-- <script type="module" src="scripts/home.mjs"></script> -->
   <title>Tazama Afrik</title>
 </head>
 
 <body>
-
+                      <!---------- TOP NAVIGATION BAR ------------->
   <div class="hello">
     <div class="nav">
       <a class="home" href="index.html"><img src="img/tazama.jpg" alt="Home"></a>
@@ -38,6 +37,7 @@
       <img src="img/menu.png" alt="Menu" id="menu-icon"/>
       <div id="closer-icon">&times;</div>
     </div>
+                        <!-- MENU FOR SMALL SIZE MEDIA -->
     <div id="menu">
       <above class="widget-header"><div>Make Your Selection Here</div></above>
       <a class="b" href="#about">🧑 About</a>
@@ -81,7 +81,7 @@
             alt="Culture"></a>
       </div>
   </div>
-
+          <!----------------- ABOUT US -------------->
   <div id="about">
     <h3>About Us</h3>
     <p>Are you searching for a nice place to spend your vacation? We've got you covered.</p>
@@ -96,7 +96,7 @@
       style="color: red; text-decoration: none;">your country!</a>
 
   </div>
-
+        <!-- LINKS, AUTHURS AND CONTACT -->
   <div class="links-and-contact">
     <send class="send-message" id="propose">Send us a message</send>
 
@@ -116,10 +116,10 @@
         </li>
       </ul>
     </div>
-    <!-- </div> -->
+                <!-- POP UP MESSAGE  -->
     <div id="success">Thank You!<br>Message Sent Successfully</div>
     <div class="hideable" id="user-messages"></div>
-
+                <!-- POP UP FORM -->
     <div class="contact">
       <h2>Feel Free To <br>Tell Us Something</h2>
       <form>
@@ -141,8 +141,8 @@
         <div id="close" title="Close">&times; </div>
       </form>
     </div>
-    <!----------------- Back To Top ----------------->
-    <button class="back-to-top">
+    <!----------------- Back To Top Button ----------------->
+    <button class="back-to-top" title="Back To Top">
       <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
         stroke="currentColor"  title="Scroll To Top" >
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
@@ -170,7 +170,7 @@
     $('#menu-icon').show();
     $('#closer-icon').fadeOut();
   });
-
+              ////////////// LIST OF RECOMMENDED SEARCH ITEMS /////////////
   $(function () {
     var availableTags = [
       "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa", "Tazama",
@@ -198,7 +198,7 @@
     $count.html($message);
   }
   visits();
-  ////////////////////////////  SEARCH BAR ///////////////////////////
+  ////////////////////////////  SEARCH BAR FUNCTION ///////////////////////////
   // $searchdiv = $("#searchbar");
   // $('body').ready(function () {
   //   $("#searchbar").on("keyup", function () {

@@ -82,7 +82,7 @@ body {
   padding-top: 0;
 }
 
-/* BELOW, THE SEARCH BAR */
+/************** BELOW, THE SEARCH BAR *************/
 .search {
   float: right;
   padding: 6px;
@@ -104,7 +104,7 @@ body {
   background-color: green;
 }
 
-/* END OF SEARCH BAR */
+/*************** MENU FOR SMALL MEDIA QUERY *****************/
 
 #menu {
   width: 100%;
@@ -311,8 +311,6 @@ form input[type="submit"] {
   margin: 20px o;
 }
 
-/************ END OF CONTACT *************/
-
 /************ POP UP MESSAGE BEGINS **************/
 #success {
   background-color: cornflowerblue;
@@ -371,7 +369,19 @@ form input[type="submit"] {
   color: black;
   bottom: 0;
 }
-/***************** HOMEPAGE SMALL STYLES BEGIN *****************/
+/***************** SMALL MEDIA STYLES BEGIN *****************/
+@media (max-width: 900px) {
+  .search {
+    display: none;
+  }
+  .nav .b {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    background-color: lightslategrey;
+  }
+
 @media (max-width: 650px) {
     .project-image-wrapper {
       display: block;
@@ -400,12 +410,6 @@ form input[type="submit"] {
       display: flex;
       flex-wrap: wrap;
     }
-    .search {
-      display: none;
-    }
-    .nav .b {
-      display: none;
-    }
     .nav .search {
       position: absolute;
       right: 5%;
@@ -420,8 +424,6 @@ form input[type="submit"] {
     .project-image-wrapper > a {
       max-height: 20px;
     }
-    #menu-icon {
-      display: block;
-    }
+
   }
-  /***************** HOMEPAGE SMALL MEDIA STYLES END *****************/
+}

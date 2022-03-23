@@ -49,6 +49,7 @@ body {
   color:aqua;
   font-weight: bold;
   float: right;
+  text-align: center;
   margin: 5px;
   padding: 10px;
   border-radius: 1%;
@@ -73,6 +74,7 @@ body {
   z-index: 20;
   width: 30%;
   float: right;
+  text-align: center;
 }
 .list {
   background-color: grey;

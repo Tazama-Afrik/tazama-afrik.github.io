@@ -5,27 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>African Reserves</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="../css/reserves.css">
-    <link rel='shortcut icon' href="../img/tazama_afrik.png">    
-
-    <script>
-      $( function() {
-        $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-        $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-      } );
-    </script>
-    <style>
-      .ui-tabs-vertical { width: 80em; }
-      .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 17em; }
-      .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-      .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-      .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
-      .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 55em; margin-right: 25px;}
-    </style>
+    <link rel='shortcut icon' href="../img/tazama_afrik.png">
   </head>
 
   <body>
@@ -47,6 +29,14 @@
         </div>
       </div>
     </div>
+    <div id="menu">
+      <above class="widget-header"><div>Make Your Selection Here</div></above>
+      <a class="b" href="countries.html">🌍  Countries</a>
+      <a class="b" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png"/>&nbsp; Beaches</a>
+      <a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png"/>&nbsp; Culture</a>
+      <a class="b active" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
+      <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
+    </div>
 
     <div class="welcome">
       <h3 class="h">If you love the Safari, hiking or any fun nature activity, then Africa is awaiting your visit</h3>
@@ -55,8 +45,11 @@
         take nature walks and and have a life changing experience.</blockquote></p>
     </div>
 
-    <div id="tabs">
-      <ul>
+   
+    <div class="tabs">
+      <h4>We have put together a list of recommended reserves that will give you the best vacation experience.</h4>
+    
+      <ul id="ul">
         <li><a href="#tabs-1">Maasai Mara Reserve</a></li>
         <li><a href="#tabs-2">Serengeti National Park</a></li>
         <li><a href="#tabs-3">Chobe National Park</a></li>
@@ -123,19 +116,19 @@
 
     <div class="links-and-contact">
       <div class="links">
-        <h4>Useful Links</h4>
+        <h4>Links</h4>
         <ul class="link-lists">
           <li>
-            <a href="https://github.com/Tazama-Afrik">Github</a>
+              <a href="https://github.com/Tazama-Afrik">Github</a>
           <li>
-            <img href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
+              <img href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
           <li>
-            <img href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
+              <img href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
           <li>
-            <img href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
+              <img href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
           </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
       <!-- </div> -->
       <input class="send-message" type="checkbox">Send message</input>
       <div class="contact">
@@ -157,7 +150,22 @@
     
     </center>
     <footer id="footer">Copyright &copy; Tazama Afrik</footer>
+  
+    <script>
+      ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
+    $('#menu-icon').click(function(){
+      $('#menu').slideToggle();
+      $(this).fadeOut();
+      $('#closer-icon').fadeIn();
+    });
+    $('#closer-icon').click(function(){
+      $('#menu').slideToggle();
+      $(this).fadeOut();
+      $('#menu-icon').fadeIn();
+    });
+    $('.b').click(function(){
+      $('#menu').slideToggle();
+    });
+    </script>
   </body>
 </html>
-     
-    

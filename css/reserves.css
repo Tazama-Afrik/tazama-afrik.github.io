@@ -107,24 +107,6 @@ h2 {
   margin: 5px;
 }
 
-#li-img > img {
-  width: 100%;
-  max-width: 75em;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.preview,
-#ul {
-  text-align: left;
-  margin-left: 3%;
-  color: red;
-  list-style: none;
-  padding: 3px;
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-}
 
 p {
   font-family: sans-serif Verdana, Geneva, Tahoma;

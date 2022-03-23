@@ -112,26 +112,7 @@ h2 {
   margin: 5px;
 }
 
-#li-img {
-  display: block;
-  width: 50%;
-  height: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.preview,
-#ul {
-  text-align: left;
-  margin-left: 3%;
-  color: red;
-  list-style: none;
-  padding: 3px;
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-}
 
 .p {
   font-family: sans-serif Verdana, Geneva, Tahoma;
@@ -146,17 +127,14 @@ h2 {
     text-align: left;
     margin-left: 10px;
   }
-  .li-img {
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
   ul {
     text-align: left;
   }
   h2 .h {
     text-align: center;
+  }
+  .hello-beach {
+    min-height: 2.9in;
   }
 }
 

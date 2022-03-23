@@ -23,18 +23,25 @@ h3 {
   text-align: center;
 }
 
-.nav a {
-    float: left;
-    color: #15530f;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.nav {
+  overflow: hidden;
+  padding: 2px;
 }
+
+.nav a {
+  float: left;
+  color: rgb(12, 88, 12);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px
+}
+
 .nav > .home > img {
   max-height: 45px;
   padding: 0px;
 }
+
 .nav .home {
   padding: 3px;
   padding-top: 0;

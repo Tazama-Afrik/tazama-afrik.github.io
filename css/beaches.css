@@ -20,20 +20,16 @@ body {
 }
 
 .nav {
-  /* position:fixed; */
-  max-width: 100%;
-  z-index: 10;
-  margin-top: 0px;
-  }
+  overflow: hidden;
+  padding: 2px;
+}
 .nav a {
-  color: #2222ce;
+  float: left;
+  color: rgb(14, 38, 90);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font: sans-serif 17px bold;
-  margin-bottom: 5px;
-  margin: 3px;
-  float: left;
+  font-size: 17px
 }
 .nav > .home > img {
   max-height: 45px;
@@ -97,21 +93,75 @@ body {
 /* END OF SEARCH BAR */
 
 
-.hello {
-    size: 5px;
+/* pictures and descriptions */
+.h {
+  color: rgb(63, 141, 128);
+  text-align: center;
+  margin: 1%;
 }
+
+h2 {
+  text-align: center;
+  color: rgb(12, 41, 13);
+}
+
+/* pictures and descriptions */
+.tabs {
+  max-width: 80em;
+  text-align: left;
+  margin: 5px;
+}
+
+#li-img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview,
+#ul {
+  text-align: left;
+  margin-left: 3%;
+  color: red;
+  list-style: none;
+  padding: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.p {
+  font-family: sans-serif Verdana, Geneva, Tahoma;
+  color: rgb(36, 14, 65);
+  font-size: medium;
+  margin: 1%;
+}
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+  .tabs {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  ul {
+    text-align: left;
+  }
+  h2 .h {
+    text-align: center;
+  }
+}
+
 
 .welcome {
-    text-align: center;
-    text-decoration: solid;
-    padding: 10px;
-    color: blue;
-    background-color: rgb(251, 253, 252);
-}
-
-.h {
   text-align: center;
-  color: rgb(28, 14, 37);
+  text-decoration: solid;
+  padding: 10px;
+  color: blue;
+  background-color: rgb(251, 253, 252);
 }
 
 /* Slideshow container */

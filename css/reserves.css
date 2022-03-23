@@ -101,6 +101,7 @@ h2 {
     color:rgb(12, 41, 13)
 }
 
+/* pictures and descriptions */
 .tabs {
   max-width: 80em;
   text-align: left;
@@ -122,6 +123,7 @@ p {
   color: rgb(36, 14, 65);
 }
 
+/* For small screens */
 @media only screen and (max-width: 400px) {
   .tabs {
     text-align: left;

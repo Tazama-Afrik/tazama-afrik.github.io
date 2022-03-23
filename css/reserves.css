@@ -123,13 +123,18 @@ p {
 @media only screen and (max-width: 300px) {
   .tabs {
     text-align: left;
-    margin-left: 1em;
+    margin: 0;
   }
   #li-img {
     max-width: 250px;
     height: auto;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0;
+  }
+  ul {
+    text-align: left;
+  }
+  h2 .h {
+    text-align: center;
   }
 }
 

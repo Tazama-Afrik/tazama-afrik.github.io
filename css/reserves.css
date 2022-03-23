@@ -103,7 +103,7 @@ h2 {
 .tabs {
   max-width: 70em;
   text-align: left;
-  margin-left: 7em;
+  margin: 5em;
 }
 
 #li-img {

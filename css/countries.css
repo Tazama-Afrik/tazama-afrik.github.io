@@ -140,7 +140,7 @@ body {
     transform: rotateZ(360deg);
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .projects-grid {
     grid-template-columns: 100%;
   }

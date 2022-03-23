@@ -402,6 +402,9 @@ form input[type="submit"] {
     margin-left: auto;
     max-width: 90%;
   }
+  #menu-icon, #closer-icon {
+    display: none;
+  }
 }
 /***************** SMALL MEDIA STYLES BEGIN *****************/
 @media (max-width: 900px) and (min-width: 650px) {
@@ -409,8 +412,14 @@ form input[type="submit"] {
     display: none;
   }
   .nav .b,
-  .topnav .b {
+  .topnav .b, .topnav .nav {
     display: none;
+  }
+  #select {
+    position:absolute;
+    right:50px;
+    font-size: 12px;
+    min-width: fit-content;
   }
   #menu-icon {
     display: block;

@@ -101,13 +101,14 @@ h2 {
 }
 
 .tabs {
-  max-width: 70em;
+  max-width: 80em;
   text-align: left;
-  margin: 5em;
+  margin: 5px;
 }
 
 #li-img {
   width: 100%;
+  max-width: 75em;
   height: auto;
 }
 

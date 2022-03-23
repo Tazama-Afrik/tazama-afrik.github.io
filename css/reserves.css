@@ -114,8 +114,13 @@ h2 {
   height: auto;
 }
 
-#ul {
+.preview, #ul {
   text-align: left;
+  color: red;
+  list-style: none;
+  padding: 2px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 p {

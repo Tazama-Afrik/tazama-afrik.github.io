@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>African Reserves</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="../css/reserves.css">
     <link rel='shortcut icon' href="../img/tazama_afrik.png">
@@ -25,10 +28,13 @@
         <div class="search" placeholder="Type here to search">
           <input name="search bar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
           <button type="submitbutton" id="searchSubmit">Search</button>
-      <!------     END OF SEARCH BAR ------->
         </div>
-      </div>
-    </div>
+    <!------     MENU ICON ------->
+    <img src="../img/menu.png" alt="Menu" id="menu-icon"/>
+    <div id="closer-icon">&times;</div>
+  </div>
+</div>
+                <!-- Menu For Small Size Media -->
     <div id="menu">
       <above class="widget-header"><div>Make Your Selection Here</div></above>
       <a class="b" href="countries.html">🌍  Countries</a>
@@ -37,7 +43,7 @@
       <a class="b active" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
       <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
     </div>
-
+              <!-- Welcome message -->
     <div class="welcome">
       <h3 class="h">If you love the Safari, hiking or any fun nature activity, then Africa is awaiting your visit</h3>
       <p><blockquote>Come and explore the different nature and game reserves, 
@@ -50,14 +56,14 @@
       <h4>We have put together a list of recommended reserves that will give you the best vacation experience.</h4>
     
       <ul id="ul">
-        <li><a href="#tabs-1">Maasai Mara Reserve</a></li>
-        <li><a href="#tabs-2">Serengeti National Park</a></li>
-        <li><a href="#tabs-3">Chobe National Park</a></li>
-        <li><a href="#tabs-4">Kruger National Park</a></li>
-        <li><a href="#tabs-5">Etosha National Park</a></li>
-        <li><a href="#tabs-6">Volcanoes National Park</a></li>
-        <li><a href="#tabs-7">Ngorongoro Conservation Area</a></li>
-        <li><a href="#tabs-8">Tarangire Park</a></li>
+        <li class="preview"><a href="#tabs-1">Maasai Mara Reserve</a></li>
+        <li class="preview"><a href="#tabs-2">Serengeti National Park</a></li>
+        <li class="preview"><a href="#tabs-3">Chobe National Park</a></li>
+        <li class="preview"><a href="#tabs-4">Kruger National Park</a></li>
+        <li class="preview"><a href="#tabs-5">Etosha National Park</a></li>
+        <li class="preview"><a href="#tabs-6">Volcanoes National Park</a></li>
+        <li class="preview"><a href="#tabs-7">Ngorongoro Conservation Area</a></li>
+        <li class="preview"><a href="#tabs-8">Tarangire Park</a></li>
       </ul>
       <div id="tabs-1">
         <h2>Maasai Mara National Reserve Kenya</h2> 
@@ -130,7 +136,6 @@
       </ul>
     </div>
       <!-- </div> -->
-      <input class="send-message" type="checkbox">Send message</input>
       <div class="contact">
           <h2>Contact Us</h2>
         <form action="#">
@@ -164,7 +169,7 @@
       $('#menu-icon').fadeIn();
     });
     $('.b').click(function(){
-      $('#menu').slideToggle();
+      $('#menu').slideUp();
     });
     </script>
   </body>

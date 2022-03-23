@@ -370,12 +370,19 @@ form input[type="submit"] {
   color: black;
   bottom: 0;
 }
+@media (min-width: 900px){
+  p {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /***************** SMALL MEDIA STYLES BEGIN *****************/
 @media (max-width: 900px) {
   .search {
     display: none;
   }
-  .nav .b {
+  .nav .b, .topnav .b {
     display: none;
   }
   #menu-icon {

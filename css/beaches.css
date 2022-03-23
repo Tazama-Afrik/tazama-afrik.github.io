@@ -147,8 +147,10 @@ h2 {
     margin-left: 10px;
   }
   .li-img {
-    max-width: 250px;
+    width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   ul {
     text-align: left;

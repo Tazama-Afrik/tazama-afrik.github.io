@@ -37,5 +37,5 @@ $(this).fadeOut();
 $('#menu-icon').fadeIn();
 });
 $('.b').click(function(){
-$('#menu').slideToggle();
+$('#menu').slideUp();
 });

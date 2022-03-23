@@ -52,11 +52,8 @@ body {
 }
 
 .nav {
-  overflow: visible;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
+  overflow: hidden;
+  padding: 2px;
 }
 
 .nav a {

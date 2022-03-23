@@ -121,7 +121,7 @@ p {
   color: rgb(36, 14, 65);
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 450px) {
   .tabs {
     text-align: left;
     margin: 0;

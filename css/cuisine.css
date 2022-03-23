@@ -91,15 +91,50 @@ h3 {
     color: black;
 }
 
+/* pictures and descriptions */
+.tabs {
+  max-width: 80em;
+  text-align: center;
+  margin: 5px;
+}
+
 #li-img {
-  width: 80em; 
-  align-self: center;
-  max-width: 90%;
+  width: 100%;
+  max-width: 75em;
+  height: auto;
+}
+
+#ul {
+  text-align: left;
+}
+
+p {
+  font-family: sans-serif Verdana, Geneva, Tahoma;
+  color: rgb(36, 14, 65);
+}
+
+/* For small screens */
+@media only screen and (max-width: 400px) {
+  .tabs {
+    text-align: left;
+    margin-left: 10px;
+  }
+  #li-img {
+    max-width: 350px;
+    height: auto;
+    margin: 0;
+  }
+  ul {
+    text-align: left;
+  }
+  h2 .h {
+    text-align: center;
+  }
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 98%;
+  max-width: 80%;
   position: relative;
   margin: auto;
 }

@@ -5,29 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>African Cuisine</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="../css/cuisine.css">
-    <link rel='shortcut icon' href="../img/tazama_afrik.png">    
-    
-    <script>
-      $( function() {
-        $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-        $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-      } );
-    </script>
-    <!-------style for tabs-------->
-    <style>
-      .ui-tabs-vertical { width: 80em; }
-      .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 17em; }
-      .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-      .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-      .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
-      .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 55em; margin-right: 25px;}
-    </style>
+    <link rel='shortcut icon' href="../img/tazama_afrik.png">
   </head>
 
   <body>
@@ -47,20 +27,20 @@
               <button type="submitbutton" id="searchSubmit">Search</button>
           </div> 
     <!------     MENU ICON ------->
-    <img src="../img/menu.png" alt="Menu" id="menu-icon"/>
-    <div id="closer-icon">&times;</div>
-  </div>
-</div>
+        <img src="../img/menu.png" alt="Menu" id="menu-icon"/>
+        <div id="closer-icon">&times;</div>
+      </div>
+    </div>
 <!---------For Small Size Media--------------->
 
-<div id="menu">
-<above class="widget-header"><div>Make Your Selection Here</div></above>
-<a class="b" href="countries.html">🌍  Countries</a>
-<a class="b" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png"/>&nbsp; Beaches</a>
-<a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png"/>&nbsp; Culture</a>
-<a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
-<a class="b active" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
-</div>
+    <div id="menu">
+      <above class="widget-header"><div>Make Your Selection Here</div></above>
+      <a class="b" href="countries.html">🌍  Countries</a>
+      <a class="b" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png"/>&nbsp; Beaches</a>
+      <a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png"/>&nbsp; Culture</a>
+      <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
+      <a class="b active" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
+    </div>
                           <!-- WELCOME MESSAGE -->
     <div class="welcome">
       <h2 class="h">We all love food!</h2>
@@ -70,8 +50,8 @@
       <p><blockquote>We have put together a list of African delicacies that is a must try whenever you are within that region. That vacation would not be complete without trying some local dishes.</blockquote></p>
     </div>
                       <!-- TABS AND THEIR DESCRIPTIONS -->
-    <div id="tabs">
-      <ul>
+    <div class="tabs">
+      <ul id="ul">
         <li><a href="#tabs-1">Couscous</a></li>
         <li><a href="#tabs-2">Jollof Rice</a></li>
         <li><a href="#tabs-3">Chakalaka</a></li>
@@ -83,51 +63,51 @@
       </ul>
       <div id="tabs-1">
         <h2>Couscous</h2>
-        <div id="li-img"><img src="../img/couscous/couscous6.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/couscous/couscous6.jpg" style="width:100%" /></div>
         <p>Couscous is a North African dish of small steamed granules of rolled durum wheat semolina that is traditionally served with a stew spooned on top. Pearl millet, sorghum, Bulgur and other cereals can be cooked in a similar way in other regions and the resulting dishes are also sometimes called couscous.</p>
         <p>Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya. It is also widely consumed in France, where it was introduced by Maghreb immigrants. In 2020 it was inscribed in UNESCO Intangible Cultural Heritage Lists.</p>
       </div>
       <div id="tabs-2">
         <h2>Jollof Rice</h2>
-        <div id="li-img"><img src="../img/jollof-rice/fine-jollof.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/jollof-rice/fine-jollof.jpg" style="width:100%" /></div>
         <p>jollof rice, is a rice dish from West Africa. The dish is typically made with long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its ingredients and preparation methods vary across different regions.</p>
         <p>Jollof rice traditionally consists of rice, cooking oil, vegetables such as tomato, onion, red pepper, garlic, ginger and Scotch bonnet chilli peppers. To enhance the colour of the dish, tomato paste (purée) is added. As seasoning, spices, salt, stock cubes (a blend of flavour enhancers, salt, nutmeg and herbs), curry powder and dried thyme are used. To complement the dish, chicken, turkey, beef or fish are often served with the dish.</p>
       </div>
       <div id="tabs-3">
         <h2>Chakalaka</h2>
-        <div id="li-img"><img src="../img/chakalaka/chakalaaka.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/chakalaka/chakalaaka.jpg" style="width:100%" /></div>
         <p>Chakalaka is a South African vegetable relish,[1] usually spicy, that is traditionally served with bread, pap, samp, stews, or curries. Chakalaka may have originated in the townships of Johannesburg or on the gold mines surrounding Johannesburg, when Mozambican mineworkers coming off shift cooked tinned produce (tomatoes, beans) with chili to produce a spicy relish with a Portuguese flair to accompany pap.</p>
         <p>Many variations of chakalaka exist, depending on region and family tradition. Some versions include beans, cabbage and butternut. For example, canned baked beans, canned tomatoes, onion, garlic, and curry paste can be used to make the dish.</p>
         <p>It is one of South Africa's most popular salads, frequently served at a braai or with Sunday lunch. It can be served cold or at room temperature.</p>
       </div>
       <div id="tabs-4">
         <h2>Biltong</h2>
-        <div id="li-img"><img src="../img/biltong/biltong3.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/biltong/biltong3.jpg" style="width:100%" /></div>
         <p>Biltong is a form of dried, cured meat that originated in Southern African countries (South Africa, Zimbabwe, Malawi, Namibia, Botswana and Zambia). Various types of meat are used to produce it, ranging from beef to game meats such as ostrich or kudu. The cut may also vary, either fillets of meat cut into strips following the grain of the muscle, or flat pieces sliced across the grain. It is related to beef jerky in that they are both spiced, dried meats; however, the typical ingredients, taste and production processes may differ.</p>
       </div>
       <div id="tabs-5">
         <h2>Chermoula</h2>
-        <div id="li-img"><img src="../img/chermoula/chermoula3.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/chermoula/chermoula3.jpg" style="width:100%" /></div>
         <p>Chermoula (Berber: tacermult or tacermilt, Arabic: شرمولة) or charmoula is a marinade and relish used in Algerian, Libyan, Moroccan and Tunisian cooking. It is traditionally used to flavor fish or seafood, but it can be used on other meats or vegetables.</p>
         <p>Common ingredients include garlic, cumin, coriander, oil, lemon juice, and salt. Regional variations may also include preserved lemons, onion, ground chili peppers, black pepper, saffron, and other herbs</p>
       </div>
       <div id="tabs-6">
         <h2>Fufu</h2>
-        <div id="li-img"><img src="../img/fufu/fufu.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/fufu/fufu.jpg" style="width:100%" /></div>
         <p>Fufu (or fufuo, foofoo, foufou) is a dough-like food found in West African cuisine. It is found in Nigeria, Ghana, Sierra Leone, Guinea, Liberia, Cote D'Ivoire, Benin, Togo, Cameroon, the Democratic Republic of Congo, the Central African Republic, the Republic of Congo, Angola and Gabon.</p>
         <p>It is often made in the traditional Ghanaian, Ivorian, Liberian, and Cuban method of separately mixing and pounding equal portions of boiled cassava with green plantain or cocoyam, or by mixing cassava/plantains or cocoyam flour with water and stirring it on a stove. The viscosity is then adjusted based on personal preference and eaten with broth-like soups.</p>
         <p>Some countries, particularly Nigeria, have a version of fufu made from fermented Cassava dough (called akpu by Nigerians) that is eaten with thick textured stews. Other flours, such as semolina, maize flour, or mashed plantains may take the place of cassava flour. Fufu is eaten with the fingers, and a small ball of it can be dipped into an accompanying soup or sauce.</p>
       </div>
       <div id="tabs-7">
         <h2>Tajine</h2>
-        <div id="li-img"><img src="../img/tajine/tajine1.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/tajine/tajine1.jpg" style="width:100%" /></div>
         <p>A tajine or tagine is a North African dish, named after the earthenware pot in which it is cooked. It is also called maraq or marqa.</p>
         <p>There are many descriptions of how to prepare a tajine from Arab scholars. A famous description is the one from ibn al-Adim (1192–1262): <blockquote>Boil the meat and fry with fresh coriander, onions and hot spices and a little garlic. Then pick out the fennel hearts and cut in half. Put over the meat. Put back some of the broth on it along with sheep's tail. Boil until cooked and the broth has been absorbed. Remove [from the heat].</blockquote>
         <p><blockquote>— Ibn al-Adim, Kitab Al Wuslah il Al-Habib fi wasf al tayyibat wa Al-Tib</blockquote></p>
       </div>
       <div id="tabs-8">
         <h2>Yassa</h2>
-        <div id="li-img"><img src="../img/yassa/yassa.jpg" style="width:65%" /></div>
+        <div id="li-img"><img src="../img/yassa/yassa.jpg" style="width:100%" /></div>
         <p>Yassa is a spicy dish prepared with onions and either marinated poultry or marinated fish. Originally from Senegal, yassa has become popular throughout West Africa. Chicken yassa (known as yassa au poulet), prepared with onions, lemon or mustard, is a specialty from the Casamance region in the south of Senegal. Other meats used for yassa are lamb and fish.</p>
       </div>
     </div>

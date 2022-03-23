@@ -107,7 +107,8 @@ h2 {
 }
 
 #li-img {
-  width: 68em;
+  width: 100%;
+  height: auto;
 }
 
 #ul {
@@ -119,11 +120,13 @@ p {
   color: rgb(36, 14, 65);
 }
 
-@media (max-width: 650px) {
-  .tabs > img {
-    width: 100%;
+@media only screen and (max-width: 300px) {
+  #li-img {
+    max-width: 250px;
+    height: auto;
   }
 }
+
 /* Slideshow container 
 .slideshow-container {
     max-width: 1000px;

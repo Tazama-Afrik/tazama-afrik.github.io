@@ -343,6 +343,7 @@ form input[type="submit"] {
   width: 1rem;
   height: 1rem;
   color: white;
+  display: block;
 }
 .back-to-top {
   position: fixed;

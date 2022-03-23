@@ -190,8 +190,7 @@ body {
   transition: all ease-in-out .2s;
   margin-left: 52%;
   width: fit-content;
-  text-shadow: 1.4px 2px 3px #000,
-   0.9px 0.9px 10px black;
+  text-shadow: 1.4px 2px 3px #000, 0.9px 0.9px 10px black;
   font-size: 50px;
   text-align: center;
 }
@@ -370,7 +369,7 @@ form input[type="submit"] {
   color: black;
   bottom: 0;
 }
-@media (min-width: 900px){
+@media (min-width: 900px) {
   p {
     max-width: 90%;
     margin-right: auto;
@@ -382,7 +381,8 @@ form input[type="submit"] {
   .search {
     display: none;
   }
-  .nav .b, .topnav .b {
+  .nav .b,
+  .topnav .b {
     display: none;
   }
   #menu-icon {
@@ -390,17 +390,17 @@ form input[type="submit"] {
     background-color: lightslategrey;
   }
 
-@media (max-width: 650px) {
+  @media (max-width: 650px) {
     .project-image-wrapper {
       display: block;
       width: 98%;
     }
     .project-image {
       border-radius: 0;
-
     }
-    #tabs{  /*** For Those Using Tabs****/
-      max-width: 80%; 
+    #tabs {
+      /*** For Those Using Tabs****/
+      max-width: 80%;
       overflow: visible;
       display: none;
     }
@@ -432,6 +432,5 @@ form input[type="submit"] {
     .project-image-wrapper > a {
       max-height: 20px;
     }
-
   }
 }

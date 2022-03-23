@@ -1,172 +1,204 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>African Beaches</title>
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="../css/beaches.css">
-        <link rel='shortcut icon' href="../img/tazama_afrik.png">    
-    
-        <script>
-        $( function() {
-            $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-            $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-        } );
-        </script>
-        <style>
-          .ui-tabs-vertical { width: 75em; }
-          .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
-          .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-          .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-          .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
-          .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 55em;}
-        </style>
-    </head>
 
-  <body>
-    <div class="hello">
-      <div class="nav">
-        <a class="home" href="../index.html"><img src="../img/tazama.jpg" alt="Home"></a>
-        <a class="b" href="../html/countries.html">Countries</a>
-        <a class="b active" href="../html/beaches.html">Beaches</a>
-        <a class="b" href="../html/culture.html">Culture</a>
-        <a class="b" href="../html/reserves.html">Reserves</a>
-        <a class="b" href="../html/cuisine.html">Cuisine</a>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>African Beaches</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../css/beaches.css">
+  <link rel='shortcut icon' href="../img/tazama_afrik.png">
 
-  <!------     BEGINNING OF SEARCH BAR -------->
-        <div class="search" placeholder="Type here to search">
-            <input name="search bar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
-            <button type="submitbutton" id="searchSubmit">Search</button>
-        </div> 
-  <!------     END OF SEARCH BAR ------->
-        <img src="../img/menu.png" alt="Menu" id="menu-icon"/>
-        <div id="closer-icon">&times;</div>
+  <script>
+    $(function () {
+      $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+      $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+    });
+  </script>
+  <style>
+    .ui-tabs-vertical {
+      width: 75em;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav {
+      padding: .2em .1em .2em .2em;
+      float: left;
+      width: 12em;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav li {
+      clear: left;
+      width: 100%;
+      border-bottom-width: 1px !important;
+      border-right-width: 0 !important;
+      margin: 0 -1px .2em 0;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav li a {
+      display: block;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+      padding-bottom: 0;
+      padding-right: .1em;
+      border-right-width: 1px;
+    }
+
+    .ui-tabs-vertical .ui-tabs-panel {
+      padding: 1em;
+      float: right;
+      width: 55em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hello">
+    <div class="nav">
+      <a class="home" href="../index.html"><img src="../img/tazama.jpg" alt="Home"></a>
+      <a class="b" href="../html/countries.html">Countries</a>
+      <a class="b active" href="../html/beaches.html">Beaches</a>
+      <a class="b" href="../html/culture.html">Culture</a>
+      <a class="b" href="../html/reserves.html">Reserves</a>
+      <a class="b" href="../html/cuisine.html">Cuisine</a>
+
+      <!------     BEGINNING OF SEARCH BAR -------->
+      <div class="search" placeholder="Type here to search">
+        <input name="search bar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
+        <button type="submitbutton" id="searchSubmit">Search</button>
       </div>
+      <!------     END OF SEARCH BAR ------->
+      <img src="../img/menu.png" alt="Menu" id="menu-icon" />
+      <div id="closer-icon">&times;</div>
     </div>
+  </div>
   <!---------For Small Size Media--------------->
 
   <div id="menu">
-    <above class="widget-header"><div>Make Your Selection Here</div></above>
-    <a class="b" href="countries.html">🌍  Countries</a>
-    <a class="b active" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png"/>&nbsp; Beaches</a>
-    <a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png"/>&nbsp; Culture</a>
-    <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png"/> &nbsp;Reserves</a>
-    <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg"/>&nbsp; Cuisine</a>
+    <above class="widget-header">
+      <div>Make Your Selection Here</div>
+    </above>
+    <a class="b" href="countries.html">🌍 Countries</a>
+    <a class="b active" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png" />&nbsp; Beaches</a>
+    <a class="b" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png" />&nbsp; Culture</a>
+    <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png" /> &nbsp;Reserves</a>
+    <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg" />&nbsp; Cuisine</a>
   </div>
 
-    <div class="welcome">
-      <h2 class="h">Hello Beach Lovers!</h2>
-      <h3 class="h">Welcome to the beach view</h3>
-      <p>
-        Are you planning your next big vacation?
-      </p>
-      <p>
-        You can choose to a visit any of the beautiful beaches around Africa, and whatever your choice is, we've got you covered
-        <br><br>Here's our top selection<br> Which of these places would you like to visit?
-      </p>
+  <div class="welcome">
+    <h2 class="h">Hello Beach Lovers!</h2>
+    <h3 class="h">Welcome to the beach view</h3>
+    <p>
+      Are you planning your next big vacation?
+    </p>
+    <p>
+      You can choose to a visit any of the beautiful beaches around Africa, and whatever your choice is, we've got you
+      covered
+      <br><br>Here's our top selection<br> Which of these places would you like to visit?
+    </p>
+  </div>
+
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Belle Mare Beach</a></li>
+      <li><a href="#tabs-2">Anse Lazio Beach</a></li>
+      <li><a href="#tabs-3">Camps Bay Beach</a></li>
+      <li><a href="#tabs-4">Diani Beach</a></li>
+      <li><a href="#tabs-5">Boulders Beach</a></li>
+      <li><a href="#tabs-6">Bazaruto Island</a></li>
+      <li><a href="#tabs-7">Idyllic Beach</a></li>
+      <li><a href="#tabs-8">Lekki Beach</a></li>
+    </ul>
+    <div id="tabs-1">
+      <h2>Belle Mare Beach Mauritius</h2>
+      <div id="li-img"><img src="../img/beach/belle-mare-mauritius.jpg" /></div>
+    </div>
+    <div id="tabs-2">
+      <h2>Anse Lazio Beach Sychelles</h2>
+      <div id="li-img"><img src="../img/beach/anse-lazio-sychelles.jpg" /></div>
+    </div>
+    <div id="tabs-3">
+      <h2>Camps Bay Beach South Africa</h2>
+      <div id="li-img"><img src="../img/beach/camps-bay-sa.jpg" /></div>
+    </div>
+    <div id="tabs-4">
+      <h2>Diani Beach Kenya</h2>
+      <div id="li-img"><img src="../img/beach/diani-beach-kenya.jpg" /></div>
+    </div>
+    <div id="tabs-5">
+      <h2>Boulders Beach South Africa</h2>
+      <div id="li-img"><img src="../img/beach/boulders-beach-sa.jpg" /></div>
+    </div>
+    <div id="tabs-6">
+      <h2>Bazaruto Beach Mozambique</h2>
+      <div id="li-img"><img src="../img/beach/bazaruto-island-mozambique.jpg" /></div>
+    </div>
+    <div id="tabs-7">
+      <h2>Idyllic Beach Gambia</h2>
+      <div id="li-img"><img src="../img/beach/idyllic-beach-ghambia.jpg" /></div>
+    </div>
+    <div id="tabs-8">
+      <h2>Lekki Beach Nigeria</h2>
+      <div id="li-img"><img src="../img/beach/lekki-beach.jpg"></div>
+    </div>
+  </div>
+
+  <div class="links-and-contact">
+    <div class="links">
+      <h4>Useful Links</h4>
+      <ul class="link-lists">
+        <li>
+          <a href="https://github.com/Tazama-Afrik">Github</a>
+        <li>
+          <img href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
+        <li>
+          <img href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
+        <li>
+          <img href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
+        </li>
+      </ul>
+    </div>
+    <!-- </div> -->
+    <input class="send-message" type="checkbox">Send message</input>
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <label for="email">
+          <h4>Email</h4>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </label>
+        <label for="message">
+          <h4>Message</h4>
+          <textarea id="message" placeholder="Your message goes here"></textarea>
+        </label>
+        <div class="submit-button-wrapper">
+          <input type="submit" valid="Send Message" id="submitbutton" />
+        </div>
+      </form>
     </div>
 
-    <div id="tabs">
-      <ul>
-        <li><a href="#tabs-1">Belle Mare Beach</a></li>
-        <li><a href="#tabs-2">Anse Lazio Beach</a></li>
-        <li><a href="#tabs-3">Camps Bay Beach</a></li>
-        <li><a href="#tabs-4">Diani Beach</a></li>
-        <li><a href="#tabs-5">Boulders Beach</a></li>
-        <li><a href="#tabs-6">Bazaruto Island</a></li>
-        <li><a href="#tabs-7">Idyllic Beach</a></li>
-        <li><a href="#tabs-8">Lekki Beach</a></li>
-      </ul>
-      <div id="tabs-1">
-        <h2>Belle Mare Beach Mauritius</h2>
-        <div id="li-img"><img src="../img/beach/belle-mare-mauritius.jpg" /></div>
-      </div>
-      <div id="tabs-2">
-        <h2>Anse Lazio Beach Sychelles</h2>
-        <div id="li-img"><img src="../img/beach/anse-lazio-sychelles.jpg" /></div>
-      </div>
-      <div id="tabs-3">
-        <h2>Camps Bay Beach South Africa</h2>
-        <div id="li-img"><img src="../img/beach/camps-bay-sa.jpg" /></div>
-      </div>
-      <div id="tabs-4">
-        <h2>Diani Beach Kenya</h2>
-        <div id="li-img"><img src="../img/beach/diani-beach-kenya.jpg" /></div>
-      </div>
-      <div id="tabs-5">
-        <h2>Boulders Beach South Africa</h2>
-        <div id="li-img"><img src="../img/beach/boulders-beach-sa.jpg" /></div>
-      </div>
-      <div id="tabs-6">
-        <h2>Bazaruto Beach Mozambique</h2>
-        <div id="li-img"><img src="../img/beach/bazaruto-island-mozambique.jpg"/></div>
-      </div>
-      <div id="tabs-7">
-        <h2>Idyllic Beach Gambia</h2>
-        <div id="li-img"><img src="../img/beach/idyllic-beach-ghambia.jpg" /></div>
-      </div>
-      <div id="tabs-8">
-        <h2>Lekki Beach Nigeria</h2>
-        <div id="li-img"><img src="../img/beach/lekki-beach.jpg"></div>
-      </div>
-    </div>
-
-    <div class="links-and-contact">
-      <div class="links">
-        <h4>Useful Links</h4>
-        <ul class="link-lists">
-          <li>
-              <a href="https://github.com/Tazama-Afrik">Github</a>
-          <li>
-              <img href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
-          <li>
-              <img href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
-          <li>
-              <img href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
-          </li>
-      </ul>
-    </div>
-      <!-- </div> -->
-      <input class="send-message" type="checkbox">Send message</input>
-      <div class="contact">
-          <h2>Contact Us</h2>
-        <form action="#">
-          <label for="email">
-            <h4>Email</h4>
-            <input type="email" id="email" placeholder="Enter your email" />
-          </label>
-          <label for="message">
-            <h4>Message</h4>
-            <textarea id="message" placeholder="Your message goes here"></textarea>
-          </label>
-          <div class="submit-button-wrapper">
-            <input type="submit" valid="Send Message" id="submitbutton" />
-          </div>
-        </form>
-      </div>
-    
     </center>
     <footer id="footer">Copyright &copy; Tazama Afrik</footer>
-  </body>
-  <script>
-    ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
-  $('#menu-icon').click(function(){
+</body>
+<script>
+  ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
+  $('#menu-icon').click(function () {
     $('#menu').slideToggle();
     $(this).fadeOut();
     $('#closer-icon').fadeIn();
   });
-  $('#closer-icon').click(function(){
+  $('#closer-icon').click(function () {
     $('#menu').slideToggle();
     $(this).fadeOut();
     $('#menu-icon').fadeIn();
   });
-  $('.b').click(function(){
+  $('.b').click(function () {
     $('#menu').slideUp();
   });
-  </script>
+</script>
+
 </html>

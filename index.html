@@ -110,60 +110,119 @@
 
   </div>
   <!-- LINKS, AUTHURS AND CONTACT -->
+  <send class="send-message" id="propose">Send us a message</send>
+  <send class="send-message" id="fork">Fork On Github</send>
   <div class="links-and-contact">
-    <send class="send-message" id="propose">Send us a message</send>
 
-    <div class="links">
-      <h4>Connect With Us!</h4>
-      <ul class="link-lists">
-        <li>
-          <a style="width: fit-content; color: white;" href="https://github.com/Tazama-Afrik">Github</a>
-        <li>
-          <img style="width: fit-content;" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik"
-            src="img/linkedin.png">
-        <li>
-          <img style="width: fit-content;" title="Facebook" href="https://facebook.com/in/tazama-afrik"
-            src="img/facebook.png">
-        <li>
-          <img style="width: fit-content;" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="img/tw.png">
-        </li>
-      </ul>
+    <div class="connect">
+      <h4 class="navtopic">Connect With Us!</h4>
+      <div class="links">
+        <one>
+          <a id="github" title="Github" href="https://github.com/Tazama-Afrik"></a>
+        404</one>
+        <one>
+          <a id="linkedin" title="LinkedIn" href="https://linkedin.com/in/tazama-afrik" src="img/linkedin.png"></a>
+        404</one>
+        <one>
+          <a id="facebook" title="Facebook" href="https://facebook.com/in/tazama-afrik" src="img/facebook.png"></a>
+        404</one>
+        <one>
+          <a id="twitter" title="Twitter" href="https://twitter.com/in/tazama-afrik" src="img/tw.png"></a>
+        404</one>
+      </div>
     </div>
-    <!-- POP UP MESSAGE  -->
-    <div id="success">Thank You!<br>Message Sent Successfully</div>
-    <div class="hideable" id="user-messages"></div>
-    <!-- POP UP FORM -->
-    <div class="contact">
-      <h2>Feel Free To <br>Tell Us Something</h2>
-      <form>
-        <label for="name">
-          <h4>Name:</h4>
-          <input type=name id="name" placeholder="John Doe" required />
-        </label>
-        <label for="email">
-          <h4>Email:</h4>
-          <input type="email" id="email" placeholder="Enter your email" required />
-        </label>
-        <label for="message">
-          <h4>Your Message:</h4>
-          <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
-        </label>
-        <div class="submit-button-wrapper">
-          <div title="Send Message" id="submitbutton">Submit</div>
-        </div>
-        <div id="close" title="Close">&times; </div>
-      </form>
+    <!------------------- NAVIGATION PANE ABOVE THE FOOTER --------------->
+    <div class="navigate">
+      <h4 class="navtopic">Walk Around</h4>
+      <a class="two" href>Countries</a>
+      <a class="two" href>Beaches</a>
+      <a class="two" href>Culture</a>
+      <a class="two" href>Reserves</a>
+      <a class="two" href>Cuisine</a>
     </div>
-    <!----------------- Back To Top Button ----------------->
-    <button class="back-to-top" title="Back To Top">
-      <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor" title="Scroll To Top">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-      </svg>
-    </button>
-    <!----------------- End Of Back To Top ----------------------->
-    <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
+    <!--Class Navigate Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Beaches<br>To View</h4>
+      <a class="two" href="/html/beaches.html#tabs-1">Belle Mare</a>
+      <a class="two" href="html/beaches.html#tabs-2">Anse Lazio</a>
+      <a class="two" href="html/beaches.html#tabs-3">Camps Bay</a>
+      <a class="two" href="html/beaches.html#tabs-4">Diani</a>
+      <a class="two" href="html/beaches.html#tabs-5">Boulders</a>
+      <a class="two" href="html/beaches.html#tabs-6">Bazaruto</a>
+      <a class="two" href="html/beaches.html#tabs-7">Idyllic</a>
+      <a class="two" href="html/beaches.html#tabs-8">Lekki</a>
+    </div>
+    <!--Class Navigate Beaches Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Reserve Places<br>To View</h4>
+      <a class="two" href="/html/reserves.html#tabs-1">Maasai Mara</a>
+      <a class="two" href="html/reserves.html#tabs-2">Serengeti</a>
+      <a class="two" href="html/reserves.html#tabs-3">Chobe</a>
+      <a class="two" href="html/reserves.html#tabs-4">Kruger</a>
+      <a class="two" href="html/reserves.html#tabs-5">Etosha</a>
+      <a class="two" href="html/reserves.html#tabs-6">Volcanoes</a>
+      <a class="two" href="html/reserves.html#tabs-7">Ngorongo</a>
+      <a class="two" href="html/reserves.html#tabs-8">Tarangire</a>
+    </div>
+    <!--Class Navigate Reserves Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Meals And Cuisine<br>To Check out</h4>
+      <a class="two" href="/html/reserves.html#tabs-1">Couscous</a>
+      <a class="two" href="html/reserves.html#tabs-2">Jollof Rice</a>
+      <a class="two" href="html/reserves.html#tabs-7">Chakalaka</a>
+      <a class="two" href="html/reserves.html#tabs-3">Biltong</a>
+      <a class="two" href="html/reserves.html#tabs-4">Chermoula</a>
+      <a class="two" href="html/reserves.html#tabs-5">Fufu</a>
+      <a class="two" href="html/reserves.html#tabs-6">Tajine</a>
+      <a class="two" href="html/reserves.html#tabs-8">Yassa</a>
+    </div>
+    <div class="navigate">
+      <h4 class="navtopic">Engineers</h4>
+      <a class="two" href="#">Obed Amoako</a>
+      <a class="two" href="#">Faith Ikhidero</a>
+    </div>
   </div>
+  </div>
+  <!--Class Navigate Cuisine Ends-->
+  </div>
+  <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
+
+
+  </div>
+  <!-- POP UP MESSAGE  -->
+  <div id="success">Thank You!<br>Message Sent Successfully</div>
+  <div class="hideable" id="user-messages"></div>
+  <!-- POP UP FORM -->
+  <div class="contact">
+    <h2>Feel Free To <br>Tell Us Something</h2>
+    <form>
+      <label for="name">
+        <h4>Name:</h4>
+        <input type=name id="name" placeholder="John Doe" required />
+      </label>
+      <label for="email">
+        <h4>Email:</h4>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="message">
+        <h4>Your Message:</h4>
+        <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
+      </label>
+      <div class="submit-button-wrapper">
+        <div title="Send Message" id="submitbutton">Submit</div>
+      </div>
+      <div id="close" title="Close">&times; </div>
+    </form>
+  </div>
+  <!----------------- Back To Top Button ----------------->
+  <button class="back-to-top" title="Back To Top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor" title="Scroll To Top">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+    </svg>
+  </button>
+  <!----------------- End Of Back To Top ----------------------->
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>

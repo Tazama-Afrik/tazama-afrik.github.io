@@ -218,18 +218,8 @@ body {
 #footer {
   font-family: 'Fredoka', sans-serif;
 }
-.links-and-contact {
-  font: bold;
-  width: 100%;
-  text-decoration: blink;
-}
 
-.link-list {
-  width: fit-content;
-  height: fit-content;
-  padding: 4px;
-  margin-bottom: 20px;
-}
+
 
 /****************** BEGINNGING OF CONTACT **************/
 form input,
@@ -240,10 +230,58 @@ textarea {
 }
 
 .links-and-contact {
-  background-color: rgb(24, 19, 19);
-  color: aliceblue;
-  padding-top: 5px;
-  text-align: left;
+  background-color: rgb(70, 60, 60);
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: left;
+}
+.navtopic{
+  margin-top: 2px;
+  text-align: center;
+  color: antiquewhite;
+}
+/* The Boxes In The Links */
+.navigate, .connect {
+  width: 1.5in;
+  box-shadow: 0px 1px 5px yellow;
+  height: fit-content;
+  margin: 4px;
+}
+/* Each Link Item Below */
+.two {
+  display: block;
+  text-align: center;
+  color: yellowgreen;
+  font-family: 'Fredoka', sans-serif;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-stretch: extra-expanded;
+  text-decoration: none;
+}
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.links > * {
+  width: 48%px;
+  height: 50px;
+  background-color: red;
+  margin: 3px;
+  z-index: 5;
+}
+#facebook {
+  background: url(/img/facebook.png), url(/img/facebook.png);
+}
+#github {
+  background: url('/img/github.png');
+}
+#twitter {
+  background: url('/img/tw.png');
+}
+#linkedin {
+  background: url('/img/linkedin.png');
 }
 .contact {
   background-color: rgb(68, 71, 78);
@@ -264,13 +302,16 @@ textarea {
 #message {
   margin-top: 0;
 }
-#propose {
+#propose, #fork {
   background-color: rgb(94, 8, 134);
-  box-shadow: inset 10px;
+  /* border: inset 10px yellowgreen; */
   color: white;
   cursor: pointer;
   padding: 0.5%;
-  /* margin-top: 2px; */
+}
+#fork {
+  position: absolute;
+  right: 1px;
 }
 #close {
   background-color: darkred;
@@ -384,6 +425,7 @@ form input[type="submit"] {
   text-transform: uppercase;
 }
 
+
 .li-img > img {
   width: 100%;
   max-width: 75em;
@@ -412,7 +454,7 @@ form input[type="submit"] {
   }
 }
 /***************** SMALL MEDIA STYLES BEGIN *****************/
-@media (max-width: 900px) and (min-width: 650px) {
+@media (max-width: 800px) and (min-width: 650px) {
   .search,
   .nav .b,
   .topnav .b,
@@ -448,7 +490,20 @@ form input[type="submit"] {
     display: block;
     width: 98%;
   }
-
+  .links-and-contact {
+    flex-wrap: wrap;
+  }
+  .navigate, .connect {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .two {
+    font-size: larger;
+  }
+  .navtopic {
+    margin-bottom: 2px;
+  }
   #menu-icon {
     display: block;
   }

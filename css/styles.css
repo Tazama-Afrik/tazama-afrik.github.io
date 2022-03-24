@@ -263,13 +263,14 @@ textarea {
 .links{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 3px;
 }
 .links > * {
   width: 48%px;
   height: 50px;
   background-color: red;
   margin: 3px;
-  z-index: 5;
+  /* z-index: 5; */
 }
 #facebook {
   background: url(/img/facebook.png), url(/img/facebook.png);

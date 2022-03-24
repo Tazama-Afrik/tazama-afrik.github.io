@@ -389,6 +389,7 @@ form input[type="submit"] {
   max-width: 75em;
   height: auto;
   margin-bottom: 20px;
+  right: auto;
 }
 
 /* For Larger Screens */
@@ -402,6 +403,7 @@ form input[type="submit"] {
   .li-img > img {
     right: auto;
     margin-left: auto;
+    margin-right: auto;
     max-width: 90%;
   }
   #menu-icon,
@@ -434,7 +436,7 @@ form input[type="submit"] {
   }
   .li-img,
   .li-img > img {
-    right: auto;
+    margin-right: auto;
     margin-left: auto;
     max-width: 90%;
   }
@@ -445,6 +447,7 @@ form input[type="submit"] {
     display: block;
     width: 98%;
   }
+
   #menu-icon {
     display: block;
   }
@@ -467,9 +470,8 @@ form input[type="submit"] {
     flex-wrap: wrap;
     max-width: 98%;
   }
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
+  .hello, .hello-beach {
+    max-height: 3.5in;
   }
   .nav .search {
     position: absolute;

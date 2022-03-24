@@ -230,7 +230,7 @@ textarea {
 }
 
 .links-and-contact {
-  background-color: rgb(70, 60, 60);
+  background-color: rgb(15, 8, 8);
   padding: 5px;
   display: flex;
   flex-wrap: nowrap;
@@ -265,25 +265,15 @@ textarea {
   grid-template-columns: 1fr 1fr;
   padding: 3px;
 }
+
+
 .links > * {
-  width: 48%px;
-  height: 50px;
-  background-color: red;
+  width: 55%;
+  height: auto;
   margin: 3px;
   /* z-index: 5; */
 }
-#facebook {
-  background: url(/img/facebook.png), url(/img/facebook.png);
-}
-#github {
-  background: url('/img/github.png');
-}
-#twitter {
-  background: url('/img/tw.png');
-}
-#linkedin {
-  background: url('/img/linkedin.png');
-}
+
 .contact {
   background-color: rgb(68, 71, 78);
   z-index: 5;

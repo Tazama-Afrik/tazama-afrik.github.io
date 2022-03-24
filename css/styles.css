@@ -230,7 +230,7 @@ textarea {
 }
 
 .links-and-contact {
-  background-color: rgb(15, 8, 8);
+  background-color: rgb(41, 38, 38);
   padding: 5px;
   display: flex;
   flex-wrap: nowrap;
@@ -248,6 +248,8 @@ textarea {
   box-shadow: 0px 1px 5px yellow;
   height: fit-content;
   margin: 4px;
+  padding: 3px;
+  background-color: rgb(29, 25, 25);
 }
 /* Each Link Item Below */
 .two {
@@ -271,7 +273,11 @@ textarea {
   width: 55%;
   height: auto;
   margin: 3px;
-  /* z-index: 5; */
+  /* background-color: #000; */
+}
+.connect {
+  width: fit-content;
+
 }
 
 .contact {
@@ -303,6 +309,10 @@ textarea {
 #fork {
   position: absolute;
   right: 1px;
+  bottom: auto;
+  text-decoration: none;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 }
 #close {
   background-color: darkred;
@@ -460,7 +470,6 @@ form input[type="submit"] {
   }
   #menu-icon {
     display: block;
-    background-color: lightslategrey;
   }
   p {
     max-width: 90%;

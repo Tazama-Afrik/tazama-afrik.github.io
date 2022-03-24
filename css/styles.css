@@ -438,6 +438,7 @@ form input[type="submit"] {
   .li-img > img {
     margin-right: auto;
     margin-left: auto;
+    height: auto;
     max-width: 90%;
   }
 }
@@ -488,7 +489,7 @@ form input[type="submit"] {
     max-height: 20px;
   }
   .li-img > img {
-    height: 4cm;
+    height: auto;
     max-width: 100%;
   }
 }

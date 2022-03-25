@@ -437,7 +437,7 @@ form input[type="submit"] {
 
 /* For Larger Screens */
 @media (min-width: 900px) {
-  p {
+  p, .description {
     max-width: 90%;
     margin-right: auto;
     margin-left: auto;

@@ -2,11 +2,17 @@
 * {
     box-sizing: border-box;
 }
-
+.description {
+  margin-top: 3%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .body {
   font-size: 150%;
   min-width: 100%;
   text-align: left;
+  min-height: 900px;
 }
 body {
   background-color: lightsteelblue;

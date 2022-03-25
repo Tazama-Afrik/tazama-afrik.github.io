@@ -357,11 +357,11 @@
               found = desc[$name].join('\n');
               $('.description').html(found);
             } else {
-              $('.description').html("No description For "+ $unchanged+"");
+              $('.description').html("No description found for "+ $unchanged+"");
             }
           },
           error: function(err){
-            console.log("Error Is: "+err.statusText+" and "+err.responseText)
+            console.log("Error is: "+err.statusText+" and "+err.responseText)
           }
         });
       }

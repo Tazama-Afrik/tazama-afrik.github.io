@@ -86,49 +86,17 @@
   <!------     END OF COUNTRIES LIST ------->
 
   <main class="body">
-    <h1 id="title" style="font-size:150%">NIGER</h1>
+    <h1 id="title" style="font-size:150%">BENIN</h1>
     <div class="data"
       style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%; text-align: center;">
-      Official Name: Connect to the internet | Population: Connect to the internet | Subregion: Connect to the internet
+      Official Name: None | Population: None | Subregion: None
     </div>
     <div class="description">
-    <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora
-      cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur
-      voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem
-      quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat
-      quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi
-      quibusdam voluptatibus!</p>
-    <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora
-      cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur
-      voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem
-      quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat
-      quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi
-      quibusdam voluptatibus!</p>
-    <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora
-      cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur
-      voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem
-      quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat
-      quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi
-      quibusdam voluptatibus!</p>
-    <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora
-      cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur
-      voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem
-      quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat
-      quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi
-      quibusdam voluptatibus!</p>
-    <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora
-      cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur
-      voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem
-      quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat
-      quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi
-      quibusdam voluptatibus!</p>
-    <p style="text-align: left;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nobis tempora
-      cumque quisquam eligendi ratione quis repudiandae harum quia, voluptatibus neque expedita recusandae consequuntur
-      voluptatum non cum inventore iusto nulla similique laboriosam delectus nesciunt. Voluptatum odio assumenda rem
-      quasi asperiores porro hic ducimus aspernatur tempora minus debitis accusantium ab voluptate, eius harum fugiat
-      quae veniam deleniti architecto temporibus magnam perferendis at doloremque! Fugiat, ipsa ea aliquid dolorum modi
-      quibusdam voluptatibus!</p>
+    <p style="text-align: left;">Please Select a Country To View It's Description</p>
     </div>
+          <!-- wait dialog that pops up -->
+          <div id="wait">Loading in few seconds...</div>
+          <div id="oops">Oops! There was an Error. Please try again</div>
   </main>
   <!---------------- THE NAVIGATION WITH THE BLACK BACKGROUND -------------->
   <div class="links-and-contact">
@@ -225,7 +193,7 @@
       data = data[0];
       $('#title').html('' + countryName + ' ' + data.flag + '');
       $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>" + data.population + "</u> | Region: <u>" + data.subregion +
-        "</u><br> Curency: <u>" + data.name.common + "'s Currency</u> | Languages: <u>" + data.languages[0] + "</u>")
+        "</u><br> Curency: <u>" + data.name.common + "'s Currency</u> | Languages: <u>" + data.languages[0] + "</u>");
     }
   });
   /////////////////// API QUERY FOR ALL SUBREGIONS ///////////////////
@@ -338,6 +306,7 @@
   function clicked() {
     $unchanged = $(this).text();
     $name = $(this).text().toLowerCase().split(" ")[0];
+    $('#wait').show();
     $.ajax({
       url: `https://restcountries.com/v3.1/name/${$name}`,
       success: function (data) {
@@ -347,8 +316,10 @@
         $('#title').html('' + countryName + ' ' + data.flag + '');
         $('.data').html("Official Name: <u>" + data.name.official + "</u> <br>Population: <u>" + data.population + "</u> <br>Region: <u>" + data.subregion +
           "</u><br>Curency: <u>" + data.currencies + "</u> <br>Languages: <u>" + data.languages[0] + "</u>")
-        $('#accordion').slideUp();
+          $('#wait').fadeOut();
+          $('#accordion').slideUp();
         $('#select').text('Show Countries');
+        
         $.ajax({
           url: '/west-africa.json',
           success: function (desc) {
@@ -357,13 +328,17 @@
               found = desc[$name].join('\n');
               $('.description').html(found);
             } else {
-              $('.description').html("No description found for "+ $unchanged+"");
+              $('.description').html("No description found for <b>"+ $unchanged+"</b>");
             }
           },
           error: function(err){
             console.log("Error is: "+err.statusText+" and "+err.responseText)
           }
         });
+      },
+      error: function() {
+        $('#wait').hide();
+        $('#oops').show().delay(1000).fadeOut();
       }
     });
 

@@ -526,6 +526,10 @@ form input[type="submit"] {
     flex-wrap: wrap;
     max-width: 98%;
   }
+  .description {
+    font-weight: 600;
+    font-size: larger;
+  }
   .hello, .hello-beach {
     max-height: 3.5in;
   }

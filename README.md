@@ -6,11 +6,14 @@ We have all you need about:
 - [🌅Beaches🏔](http://tazama-afrik.github.io/html/beaches.html)
 - [🍽Cuicine🍔](http://tazama-afrik.github.io/html/cuisine.html)
 - [🗻Reserves🌄](http://tazama-afrik.github.io/html/reserves.html)
+- [👑Culture💎](http://tazama-afrik.github.io/html/culture.html)
 - [🎶🎵🌺Check out the rest by yourself 🤗](http://tazama-afrik.github.io)  
  Stay in touch. You'll soon convert your currency, and Covid19 statistics, and read the most popular news in reliable detail at Tazama Afrik
 
 #### The site is still under construction. But you can yet still [grab something fishy](https://tazama-afrik.github.io) 😉  
 
 #### Engineers are:  
-- [Obed Amoako](https://github.com/Obed101) - Full Stack Developer 
+
 - [Faith Ikhidero](https://github.com/faitholo) - Full Stack Developer  
+
+- [Obed Amoako](https://github.com/Obed101) - Full Stack Developer  

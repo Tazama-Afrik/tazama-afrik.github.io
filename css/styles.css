@@ -538,7 +538,7 @@ form input[type="submit"] {
     right: 5%;
   }
   body {
-    font-size: small;
+    /* font-size: small; */
     max-width: 99%;
   }
   .welcome {

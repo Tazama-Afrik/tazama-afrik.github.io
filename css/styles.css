@@ -528,7 +528,7 @@ form input[type="submit"] {
   }
   .description {
     font-weight: 600;
-    font-size: larger;
+    font-size: 17px;
   }
   .hello, .hello-beach {
     max-height: 3.5in;
@@ -538,7 +538,7 @@ form input[type="submit"] {
     right: 5%;
   }
   body {
-    /* font-size: small; */
+    font-size: small;
     max-width: 99%;
   }
   .welcome {

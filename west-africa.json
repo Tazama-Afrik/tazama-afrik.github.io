@@ -721,7 +721,251 @@
             "Libyan population being Sunni Muslims.</p>"
         ],
         "egypt": [
-            "hello"
+            "<p>Egypt, officially the Arab Republic of Egypt, is a transcontinental country spanning the ",
+            "northeast corner of Africa and southwest corner of Asia by a land bridge formed by the Sinai ",
+            "Peninsula. It is bordered by the Mediterranean Sea to the north, the Gaza Strip (Palestine) ",
+            "and Israel to the northeast, the Red Sea to the east, Sudan to the south, and Libya to the ",
+            "west. The Gulf of Aqaba in the northeast, whose maximum width is 24 km (15 miles), separates ",
+            "Egypt from Jordan and Saudi Arabia. Cairo is the country's capital and largest city.</p>",
+
+            "<p>Egypt has one of the longest histories of any country, tracing its heritage along the Nile ",
+            "Delta back to the 6th–4th millennia BCE. Considered a cradle of civilisation, Ancient Egypt ",
+            "saw some of the earliest developments of writing, agriculture, urbanisation, organised religion ",
+            "and central government. Iconic monuments such as the Giza Necropolis and its Great Sphinx, ",
+            "as well the ruins of Memphis, Thebes, Karnak, and the Valley of the Kings, reflect this legacy ",
+            "and remain a significant focus of scientific and popular interest. Egypt's long and rich cultural ",
+            "heritage is an integral part of its national identity, which reflects its unique transcontinental ",
+            "location being simultaneously Mediterranean, Middle Eastern and North African. Egypt was an early ",
+            "and important centre of Christianity, but was largely Islamised in the seventh century and remains ",
+            "a predominantly Muslim country, albeit with a significant Christian minority.</p>",
+
+            "<p>Modern Egypt dates back to 1922, when it gained independence from the British Empire as a monarchy",
+            ". Following the 1952 revolution, Egypt declared itself a republic, and in 1958 it merged with Syria ",
+            "to form the United Arab Republic, which dissolved in 1961. Throughout the second half of the 20th ",
+            "century, Egypt endured social and religious strife and political instability, fighting several ",
+            "armed conflicts with Israel in 1948, 1956, 1967 and 1973, and occupying the Gaza Strip intermittently ",
+            "until 1967. In 1978, Egypt signed the Camp David Accords, officially withdrawing from the Gaza Strip ",
+            "and recognising Israel. The country continues to face challenges, from political unrest, including ",
+            "the recent 2011 revolution and its aftermath, to terrorism and economic underdevelopment. Egypt's ",
+            "current government, a semi-presidential republic led by Abdel Fattah el-Sisi, has been described by ",
+            "a number of watchdogs as authoritarian or heading an authoritarian regime, responsible for perpetuating ",
+            "the country's problematic human rights record.</p>",
+
+            "<p>Islam is the official religion of Egypt and Arabic is its official language. With over 100 million ",
+            "inhabitants, Egypt is the most populous country in North Africa, the Middle East, and the Arab world, ",
+            "the third-most populous in Africa (after Nigeria and Ethiopia), and the fourteenth-most populous in ",
+            "the world. The great majority of its people live near the banks of the Nile River, an area of about ",
+            "40,000 square kilometres (15,000 square miles), where the only arable land is found. The large regions ",
+            "of the Sahara desert, which constitute most of Egypt's territory, are sparsely inhabited. About half ",
+            "of Egypt's residents live in urban areas, with most spread across the densely populated centres of ",
+            "greater Cairo, Alexandria and other major cities in the Nile Delta.</p>",
+
+            "<p>Egypt is considered to be a regional power in North Africa, the Middle East and the Muslim world",
+            ", and a middle power worldwide. It is a developing country, ranking 116th on the Human Development ",
+            "Index. It has a diversified economy, which is the second-largest in Africa, the 33rd-largest economy ",
+            "by nominal GDP, and the 20th-largest globally by PPP. Egypt is a founding member of the United Nations",
+            ", the Non-Aligned Movement, the Arab League, the African Union, Organisation of Islamic ",
+            "Cooperation and the World Youth Forum.</p>"
+        ],
+        "algeria": [
+            "<p>Algeria, officially the People's Democratic Republic of Algeria, is a country in the Maghreb region ",
+            "of North Africa. The country is the largest country by total area in Africa and in the Arab world",
+            ", and is bordered to the northeast by Tunisia; to the east by Libya; to the southeast by Niger; to ",
+            "the southwest by Mali, Mauritania, and Western Sahara; to the west by Morocco; and to the north by ",
+            "the Mediterranean Sea. It has a semi-arid geography, with most of the population living in the fertile ",
+            "north and the Sahara dominating the geography of the south. Algeria covers an area of 2,381,741 square ",
+            "kilometres (919,595 square miles), making it the world's tenth largest nation by area, and the largest ",
+            "nation in Africa. With a population of 44 million, Algeria is the ninth-most populous country in Africa",
+            ", and the 32nd-most populous country in the world. The capital and largest city is Algiers, located in ",
+            "the far north on the Mediterranean coast.</p>",
+
+            "<p>Pre-1962 Algeria has seen many empires and dynasties, including ancient Numidians, Phoenicians, Cartha",
+            "ginians, Romans, Vandals, Byzantines, Umayyads, Abbasids, Rustamids, Idrisids, Aghlabids, Fatimids, ",
+            "Zirids, Hammadids, Almoravids, Almohads, Zayyanids, Spaniards, Ottomans and finally, the French coloni",
+            "al empire. The vast majority of Algeria's population is Arab-Berber, practicing Islam, and using the ",
+            "official languages of Arabic and Berber. However, French serves as an administrative and educational ",
+            "language in some contexts. The main spoken language is Algerian Arabic.</p>",
+
+            "<p>Algeria is a semi-presidential republic, with local constituencies consisting of 58 provinces and 1,541 ",
+            "communes. Algeria is a regional power in North Africa, and a middle power in global affairs. It has the ",
+            "highest Human Development Index of all non-island African countries and one of the largest economies on ",
+            "the continent, based largely on energy exports. Algeria has the world's sixteenth-largest oil reserves ",
+            "and the ninth-largest reserves of natural gas. Sonatrach, the national oil company, is the largest company ",
+            "in Africa, supplying large amounts of natural gas to Europe. Algeria's military is one of the largest in ",
+            "Africa, and has the largest defence budget on the continent. It is a member of the African Union, the Arab ",
+            "League, the OIC, OPEC, the United Nations, and the Arab Maghreb Union, of which it is a founding member.</p>"
+        ],
+        "tunisia": [
+            "<p>Tunisia, officially the Republic of Tunisia, is the northernmost country in Africa. It is a part ",
+            "of the Maghreb region of North Africa, and is bordered by Algeria to the west and southwest, ",
+            "Libya to the southeast, and the Mediterranean Sea to the north and east; covering 163,610 km2 (6",
+            "3,170 square miles), with a population of 11 million. It contains the eastern end of the Atlas ",
+            "Mountains and the northern reaches of the Sahara desert, with much of its remaining territory ",
+            "arable land. Its 1,300 km (810 miles) of coastline include the African conjunction of the western ",
+            "and eastern parts of the Mediterranean Basin. Tunisia is home to Africa's northernmost point, ",
+            "Cape Angela; and its capital and largest city is Tunis, located on its northeastern coast, which ",
+            "lends the country its name.</p>",
+
+            "<p>From early antiquity, Tunisia was inhabited by the indigenous Berbers. Phoenicians began to ",
+            "arrive in the 12th century BC, establishing several settlements, of which Carthage emerged as ",
+            "the most powerful by the 7th century BC. A major mercantile empire and a military rival of ",
+            "the Roman Republic, Carthage was defeated by the Romans in 146 BC, who occupied Tunisia for ",
+            "most of the next 800 years, introducing Christianity and leaving architectural legacies like ",
+            "the amphitheatre of El Jem. After several attempts starting in 647, Muslims conquered all of ",
+            "Tunisia by 697, bringing Islam and Arab culture to the local inhabitants. The Ottoman Empire ",
+            "established control in 1574 and held sway for over 300 years, until the French conquered Tuni",
+            "sia in 1881. Tunisia gained independence under the leadership of Habib Bourguiba, who declared ",
+            "the Tunisian Republic in 1957. Today, Tunisia is the smallest nation in North Africa, and its cul",
+            "ture and identity are rooted in this centuries-long intersection of different cultures and ethnicities.</p>",
+
+            "<p>In 2011, the Tunisian Revolution, triggered by the lack of freedom and democracy under the 24-",
+            "year rule of president Zine El Abidine Ben Ali, overthrew his regime and catalyzed the broader ",
+            "Arab Spring across the region. Free multiparty parliamentary elections were held shortly after",
+            "; the country again voted for parliament on 26 October 2014,[20] and for president on 23 Novem",
+            "ber 2014. Tunisia remains a unitary semi-presidential representative democratic republic; ",
+            "and is the only North African country classified as 'Free' by Freedom House. From 2014 to ",
+            "2020, it was considered the only democratic state in the Arab World, according to the Econom",
+            "ist Intelligence Unit's Democracy Index, and was rated a hybrid regime in the 2021 Index. It ",
+            "is one of the few countries in Africa ranking high in the Human Development Index, with one ",
+            "of the highest per capita incomes in the continent.</p>",
+
+            "<p>Tunisia is well integrated into the international community. It is a member of the United ",
+            ", La Francophonie, the Arab League, the OIC, the African Union, the Non-Aligned Movement, ",
+            "the International Criminal Court, and the Group of 77, among others. It maintains close ",
+            "economic and political relations with some European countries, particularly with France, ",
+            "and Italy, which geographically lie very close to it. Tunisia also has an association ",
+            "agreement with the European Union, and has also attained the status of a major non-NATO ",
+            "ally of the United States.</p>"
+        ],
+        "sudan": [
+            "<p>Sudan, officially the Republic of the Sudan and simply known as North Sudan, is a country in ",
+            "Northeast Africa. It borders the countries of Central African Republic, Chad, Egypt, Eritrea",
+            ", Ethiopia, Libya, South Sudan, and the Red Sea. It has a population of 44.91 million people ",
+            "as of 2021 and occupies 1,886,068 square kilometres (728,215 square miles), making it Africa'",
+            "s third-largest country by area, and the third-largest by area in the Arab League. It was the ",
+            "largest country by area in Africa and the Arab League until the secession of South Sudan in 2011",
+            ", since which both titles have been held by Algeria. Its capital is Khartoum and its most ",
+            "populated city is Omdurman (part of metro Khartoum).</p>",
+
+            "<p>During the Mamluk and Ottoman periods, slave trade played a big role and was demanded from the ",
+            "Sudanese Kashif than the regular remittance of tribute. In 1811, these Mamluks established a ",
+            "state at Dunqulah as a base for their slave trading. Under Turco-Egyptian rule of Sudan begi",
+            "nning in the 1820s, slave trading practice was entrenched along a north-south axis, with sla",
+            "ve raids taking place in southern part of the country and slaves were transported to Egypt ",
+            "and the Ottoman empire.</p>",
+
+            "<p>Ottoman Turks controlled some of its territory for a short period of time. After Sudan became ",
+            "independent, the Jaafar Nimeiry regime began Islamist rule. This exacerbated the rift between ",
+            "the Islamic north, the seat of the government, and the Animists and Christians in the south.</p>",
+
+            "<p>Sudan's history goes back to the Pharaonic period, witnessing the Kingdom of Kerma (c. 2500–",
+            "1500 BC), the subsequent rule of the Egyptian New Kingdom (c. 1500 BC–1070 BC) and the ri",
+            "se of the Kingdom of Kush (c. 785 BC–350 AD), which would in turn control Egypt itself for ",
+            "nearly a century. After the fall of Kush, the Nubians formed the three Christian kingdoms of ",
+            "Nobatia, Makuria, and Alodia, with the latter two lasting until around 1500. Between the ",
+            "14th and 15th centuries, most of Sudan was settled by Arab nomads. From the 16th–19th cent",
+            "uries, central and eastern Sudan were dominated by the Funj sultanate, while Darfur ruled ",
+            "the west and the Ottomans the east. From the 19th century, the entirety of Sudan was conq",
+            "uered by Egypt under the Muhammad Ali dynasty. It was under Egyptian rule that Sudan acqui",
+            "red its modern borders, and began the process of political, agricultural, and economic deve",
+            "lopment. In 1881, nationalist sentiment in Egypt led to the Orabi Revolt, 'weakening' the ",
+            "power of the Egyptian monarchy, and eventually leading to the occupation of Egypt by the ",
+            "United Kingdom. At the same time, religious-nationalist fervour in Sudan erupted in the ",
+            "Mahdist Revolt led by the self-proclaimed Mahdi Muhammad Ahmad, resulting in the establi",
+            "shment of the rebel Caliphate of Omdurman. The Mahdist forces were eventually defeated by ",
+            "a joint Egyptian-British military force, restoring the authority of the Egyptian monarch. ",
+            "However, Egyptian sovereignty in Sudan would henceforth be somewhat nominal, as the true ",
+            "power in both Egypt and Sudan was now the United Kingdom. In 1899, under British pressure, ",
+            "Egypt agreed to share sovereignty over Sudan with the United Kingdom as a condominium. In ",
+            "effect, Sudan was governed as a British possession. The 20th century saw the growth of bo",
+            "th Egyptian and Sudanese nationalism focusing on ending the United Kingdom's occupation. ",
+            "The Egyptian Revolution of 1952 toppled the monarchy, and demanded the withdrawal of Bri",
+            "tish forces from all of Egypt and Sudan. Muhammad Naguib, one of the two co-leaders of ",
+            "the revolution, and Egypt's first President, who was half-Sudanese and raised in Sudan, made ",
+            "securing Sudanese independence a priority of the revolutionary government. The following year, ",
+            "under Egyptian and Sudanese pressure, the United Kingdom agreed to Egypt's demand for both ",
+            "governments to terminate their shared sovereignty over Sudan, and to grant Sudan independence",
+            ". On 1 January 1956, Sudan was duly declared an independent state.</p>"
+        ],
+
+        "NORTHERN AFRICA": "Completed... CENTRAL AFRICA Begins.........................................",
+
+        "gabon": [
+            "<p>Gabon, officially the Gabonese Republic, is a country on the west coast of Central Africa",
+            ". Located on the equator, Gabon is bordered by Equatorial Guinea to the northwest, Camero",
+            "on to the north, the Republic of the Congo on the east and south, and the Gulf of Guinea ",
+            "to the west. It has an area of nearly 270,000 square kilometres (100,000 square miles) and ",
+            "its population is estimated at 2.1 million people. There are three distinct regions: the ",
+            "coastal plains, the mountains (the Cristal Mountains and the Chaillu Massif in the centre)",
+            ", and the savanna in the east. Gabon's capital and largest city is Libreville. The official ",
+            "language is <em>French</em>.</p>",
+
+            "<p>Originally settled by Pygmy peoples, they were largely replaced and absorbed by Bantu tribes ",
+            "as they migrated. By the 18th century, a Myeni-speaking kingdom known as the Kingdom of Orungu ",
+            "formed in Gabon. It was able to become a powerful trading center mainly due to its ability ",
+            "to purchase and sell slaves. The kingdom fell with the demise of the slave trade in the 187",
+            "0s. Since its independence from France in 1960, the sovereign state of Gabon has had three ",
+            "presidents. In the early 1990s, Gabon introduced a multi-party system and a new democratic ",
+            "constitution that allowed for a more transparent electoral process and reformed many govern",
+            "mental institutions.</p>",
+
+            "<p>Abundant petroleum and foreign private investment have helped make Gabon one of the most ",
+            "prosperous countries in Sub-Saharan Africa, with the fifth highest HDI in the region (af",
+            "ter Mauritius, Seychelles, Botswana and South Africa) and the fifth highest GDP per cap",
+            "ita (PPP) in all of Africa (after Seychelles, Mauritius, Equatorial Guinea and Botswana)",
+            ". Its GDP grew by more than 6% per year from 2010 to 2012. However, because of inequality ",
+            "in income distribution, a significant proportion of the population remains poor.</p>",
+
+            "<p>Gabon is rich in folklore and mythology. 'Raconteurs' keep traditions alive such as the mv",
+            "ett among the Fangs and the ingwala among the Nzebis. Gabon is also known for its masks, ",
+            "such as the n'goltang (Fang) and the reliquary figures of the Kota.</p>"
+        ],
+        "dr": [
+            "<p>The Democratic Republic of the Congo, also known as Congo-Kinshasa, DR Congo, the DRC, ",
+            "the DROC, or the Congo, and formerly Zaire, is a country in Central Africa. It is, by ",
+            "area, the second largest country in Africa (after Algeria), and the 11th-largest in ",
+            "the world. With a population of around 92 million, the Democratic Republic of the Congo ",
+            "is the most populous officially Francophone country in the world. It is a member of the ",
+            "United Nations, Non-Aligned Movement, African Union, and COMESA. Since 2015, the Eastern ",
+            "DR Congo has been the site of an ongoing military conflict in Kivu. The capital and lar",
+            "gest city is Kinshasa, which is also the world's most populous Francophone city.</p>",
+
+            "<p>Centered on the Congo Basin, the territory of the DRC was first inhabited by Central Afr",
+            "ican foragers around 90,000 years ago and was reached by the Bantu expansion about 3,000 ",
+            "years ago. In the west, the Kingdom of Kongo ruled around the mouth of the Congo River ",
+            "from the 14th to 19th centuries. In the northeast, center and east, the kingdoms of Azande, ",
+            "Luba and Lunda ruled from the 16th and 17th centuries to the 19th century.</p>",
+
+            "<p>In the 1870s, just before the onset of the Scramble for Africa, European exploration of ",
+            "the Congo Basin was carried out, first led by Henry Morton Stanley under the sponsorship ",
+            "of Leopold II of Belgium. Leopold formally acquired rights to the Congo territory at the ",
+            "Berlin Conference in 1885 and declared the land his private property, naming it the Congo ",
+            "Free State. During the Free State, his colonial military unit, the Force Publique, forced ",
+            "the local population to produce rubber. In 1908, Leopold, despite his initial ",
+            "reluctance, ceded to Belgium the so-called Free State, which thus became known as the Belgian Congo.</p>",
+
+
+
+            "<p>The Democratic Republic of the Congo is extremely rich in natural resources but ",
+            "has suffered from political instability, a lack of infrastructure, and centuries of both ",
+            "commercial and colonial extraction and exploitation with little widespread development. ",
+            "Besides the capital Kinshasa, the two next largest cities, Lubumbashi and Mbuji-Mayi, ",
+            "are both mining communities. The DRC's largest export is raw minerals, with China accep",
+            "ting over 50% of its exports in 2019.</p>"
         ]
     }
 ]
+
+
+
+
+
+
+
+
+SOUTH SUDAN..........
+Sudan, officially known as the Republic of South Sudan,[19] is a landlocked country in east/central Africa.[20][21] It is bordered by Ethiopia, Sudan, Central African Republic, Democratic Republic of the Congo, Uganda and Kenya. Its population was estimated as 12,778,250 in 2019. Juba is the capital and largest city.[citation needed] The nation is sometimes informally referred to as the Nilotic Republic (as the supposed place of origin of the Nilotic peoples).[22][23]
+
+It gained independence from Sudan in 2011, making it the most recent sovereign state or country with widespread recognition as of 2022.[24] It includes the vast swamp region of the Sudd, formed by the White Nile and known locally as the Bahr al Jabal meaning "Mountain River".[25] Sudan was occupied by Egypt under the Muhammad Ali dynasty and was governed as an Anglo-Egyptian condominium until Sudanese independence in 1956. Following the First Sudanese Civil War, the Southern Sudan Autonomous Region was formed in 1972 and lasted until 1983. A second Sudanese civil war soon broke out in 1983 and ending in 2005 with the Comprehensive Peace Agreement. Later that year, southern autonomy was restored when an Autonomous Government of Southern Sudan was formed. South Sudan became an independent state on 9 July 2011, following 98.83% support for independence in a January 2011 referendum.[26][27] It has suffered ethnic violence and endured a civil war characterised by rampant human rights abuses, including various ethnic massacres and killings of journalists by various parties to the conflict from December 2013 until February 2020, when competing combat leaders Salva Kiir Mayardit and Riek Machar struck a unity deal and formed a coalition government,[28] paving the way for refugees to return home.[29]
+
+The South Sudanese population is composed mostly of Nilotic peoples, and it is demographically among the youngest nations in the world, with roughly half under 18 years old.[30] The majority of inhabitants adhere to Christianity or various Indigenous faiths. The country is a member of the United Nations,[31][32] the African Union,[33] the East African Community[34] the Intergovernmental Authority on Development[35] and is a party to the Geneva Conventions.[36] As of 2019, South Sudan ranks third-lowest in the latest UN World Happiness Report,[37] third lowest on the Global Peace Index, and has the fourth-highest score on the American Fund for Peace's Fragile States Index.

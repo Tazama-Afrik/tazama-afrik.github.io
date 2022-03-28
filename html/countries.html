@@ -391,7 +391,7 @@
 
   document.addEventListener("scroll", () => {
     if (scrollContainer().scrollTop > showOnPx) {
-      $toTop.show();
+      $toTop.fadeIn();
     } else {
       $toTop.slideUp();
     }

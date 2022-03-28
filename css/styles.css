@@ -389,19 +389,19 @@ form input[type="submit"] {
 }
 .back-to-top {
   position: fixed;
-  right: 2rem;
+  right: 3rem;
   bottom: 2rem;
   border-radius: 100%;
-  background: #7ac9f9;
+  background: #895499;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
-  opacity: 100%;
+  opacity: 80%;
   display: none;
+  z-index: 5;
   transition: opacity 0.5s;
 }
 .back-to-top:hover {
-  opacity: 80%;
   background: blue;
 }
 #footer {

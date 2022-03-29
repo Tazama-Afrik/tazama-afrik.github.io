@@ -19,9 +19,8 @@
 body {
   background-color: lightsteelblue;
   background: linear-gradient(white, lightsteelblue);
-  display: grid;
-  grid-template-rows: auto auto auto;
 }
+
 .body img {
   margin-top: 1%;
   height: 100%;
@@ -36,16 +35,7 @@ body {
 .loading {
   display: block;
 }
-#display {
-  display: grid;
-  position: absolute;
-  background-color: blue;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-top: 56px;
-  width: 100%;
-  height:fit-content;
-}
+
 #WA, #SA, #NA, #CA, #EA {
   color: darkslateblue;
 }
@@ -78,10 +68,9 @@ body {
   border-right: grey 1px solid;
   height: fit-content;
   position:fixed;
-  margin-top: 57px;
-  z-index: 9;
+  top: auto;
+  z-index: 3;
   width: 30%;
-  float: right;
   text-align: center;
 }
 #wait, #oops {
@@ -150,6 +139,9 @@ body {
   border-radius: 4%;
   cursor:default;
 }
+.topnav{
+  top: 0;
+}
 
 .topnav .nav {
   float: left;
@@ -169,7 +161,14 @@ body {
   font-size: 30px;
   z-index: 0;
 }
-
+.links-and-contact {
+  background-color: rgb(41, 38, 38);
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: left;
+}
 
 @keyframes spin {
   to {
@@ -177,9 +176,7 @@ body {
   }
 }
 @media (max-width: 650px) {
-  .projects-grid {
-    grid-template-columns: 100%;
-  }
+
   .topnav {
     display: flex;
     flex-wrap: wrap;

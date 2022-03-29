@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="../css/cuisine.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <link rel='shortcut icon' href="../img/tazama_afrik.png">
@@ -259,41 +262,82 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
     </svg>
   </button>
-  <!-- CONNECT WITH US & NAVIGATE MORE -->
+  <!-- LINKS, AUTHURS AND CONTACT -->
+  <send class="send-message" id="propose">Send us a message</send>
+  <a href="https://github.com/Tazama-Afrik/tazama-afrik" id="fork">Fork On Github</a>
   <div class="links-and-contact">
-    <div class="links">
-      <h4>Useful Links</h4>
-      <ul class="link-lists">
-        <li>
-          <a href="https://github.com/Tazama-Afrik">Github</a>
-        <li>
-          <img href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
-        <li>
-          <img href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
-        <li>
-          <img href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
-        </li>
-      </ul>
-    </div>
-    <div class="contact">
-      <h2>Contact Us</h2>
-      <form action="#">
-        <label for="email">
-          <h4>Email</h4>
-          <input type="email" id="email" placeholder="Enter your email" />
-        </label>
-        <label for="message">
-          <h4>Message</h4>
-          <textarea id="message" placeholder="Your message goes here"></textarea>
-        </label>
-        <div class="submit-button-wrapper">
-          <input type="submit" valid="Send Message" id="submitbutton" />
-        </div>
-      </form>
-    </div>
 
-    </center>
-    <footer id="footer">Copyright &copy; Tazama Afrik</footer>
+    <div class="connect">
+      <h4 class="navtopic">Connect With Us!</h4>
+      <div class="links">
+        <one>
+          <a class="two" href="https://github.com/Tazama-Afrik"><img src="/img/github.png" style="width:20px"/>&nbsp;Github</a>
+        </one>
+        <one>
+          <a class="two" href="https://linkedin.com/in/tazama-afrik"><img src="/img/linkedin.png" style="width:20px" />&nbsp;Linkedin</a>
+        </one>
+        <one>
+          <a class="two" href="https://facebook.com/in/tazama-afrik"><img src="/img/facebook.png" style="width:13px" />&nbsp;Facebook</a>
+        </one>
+        <one>
+          <a class="two" href="https://twitter.com/in/tazama-afrik"><img src="/img/tw.png" style="width:20px" />&nbsp;Twitter</a>
+        </one>
+      </div>
+    </div>
+    <!------------------- NAVIGATION PANE ABOVE THE FOOTER --------------->
+    <div class="navigate">
+      <h4 class="navtopic">Walk Around</h4>
+      <a class="two" href="/#about">About Us</a>
+      <a class="two" href="countries.html">Countries</a>
+      <a class="two" href="beaches.html">Beaches</a>
+      <a class="two" href="culture.html">Culture</a>
+      <a class="two" href="reserves.html">Reserves</a>
+      <a class="two" href="cuisine.html">Cuisine</a>
+    </div>
+    <!--Class Navigate Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Beaches<br>To View</h4>
+      <a class="two" href="beaches.html#tabs-1">Belle Mare</a>
+      <a class="two" href="beaches.html#tabs-2">Anse Lazio</a>
+      <a class="two" href="beaches.html#tabs-3">Camps Bay</a>
+      <a class="two" href="beaches.html#tabs-4">Diani</a>
+      <a class="two" href="beaches.html#tabs-5">Boulders</a>
+      <a class="two" href="beaches.html#tabs-6">Bazaruto</a>
+      <a class="two" href="beaches.html#tabs-7">Idyllic</a>
+      <a class="two" href="beaches.html#tabs-8">Lekki</a>
+    </div>
+    <!--Class Navigate Beaches Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Reserve Places<br>To View</h4>
+      <a class="two" href="reserves.html#tabs-1">Maasai Mara</a>
+      <a class="two" href="reserves.html#tabs-2">Serengeti</a>
+      <a class="two" href="reserves.html#tabs-3">Chobe</a>
+      <a class="two" href="reserves.html#tabs-4">Kruger</a>
+      <a class="two" href="reserves.html#tabs-5">Etosha</a>
+      <a class="two" href="reserves.html#tabs-6">Volcanoes</a>
+      <a class="two" href="reserves.html#tabs-7">Ngorongo</a>
+      <a class="two" href="reserves.html#tabs-8">Tarangire</a>
+    </div>
+    <!--Class Navigate Reserves Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Meals And Cuisine<br>To Check out</h4>
+      <a class="two" href="cuisine.html#tabs-1">Couscous</a>
+      <a class="two" href="cuisine.html#tabs-2">Jollof Rice</a>
+      <a class="two" href="cuisine.html#tabs-3">Chakalaka</a>
+      <a class="two" href="cuisine.html#tabs-4">Biltong</a>
+      <a class="two" href="cuisine.html#tabs-5">Chermoula</a>
+      <a class="two" href="cuisine.html#tabs-6">Fufu</a>
+      <a class="two" href="cuisine.html#tabs-7">Tajine</a>
+      <a class="two" href="cuisine.html#tabs-8">Yassa</a>
+    </div>
+    <div class="navigate">
+      <h4 class="navtopic">Engineers</h4>
+      <a class="two" href="https://github.com/Obed101">Obed Amoako</a>
+      <a class="two" href="https://github.com/Faitholo">Faith Ikhidero</a>
+    </div>
+  </div>
+  <footer id="footer">Copyright &copy; Tazama Afrik <span class="counter"></span></footer>
+</body>
     <script src="../js/cuisine.js"></script>
 </body>
 

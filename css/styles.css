@@ -262,7 +262,10 @@ textarea {
   font-stretch: extra-expanded;
   text-decoration: none;
 }
-.links{
+.connect .two {
+  font-size: smaller;
+}
+.links {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3px;
@@ -407,7 +410,6 @@ form input[type="submit"] {
 #footer {
   background-color: rgb(248, 238, 238);
   text-align: center;
-  margin-top: 20px;
   padding: 5px;
   color: black;
   bottom: 0;

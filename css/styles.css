@@ -44,6 +44,22 @@ body {
 .nav .b {
   padding: 14px 16px;
 }
+#home {
+  font-size: 20px;
+  color: rgb(255, 51, 0);
+  font-weight: 900;
+  text-align: right;
+  font-family: sans-serif;
+  text-shadow: 
+  yellow -1px -1px 2px,
+  yellow -2px -2px 3px,
+  lightblue -3px -3px 1px,
+  lightblue -4px -4px 1px,
+  lightblue -5px -5px 1px,
+  lightblue -6px -6px 2px;
+  /* letter-spacing: 0.1px; */
+  transform: scale(.5, 1.5);
+}
 .nav .b:hover {
   background-color: rgb(156, 119, 165);
   color: black;

@@ -46,20 +46,17 @@ body {
 }
 #home {
   font-size: 25px;
-  color: rgb(255, 51, 0);
   font-weight: 900;
   float: left;
-  /* font-family: sans-serif; */
-  /* background-color: red; */
-  /* margin-top: 3px; */
+  color: rgb(255, 60, 0);
   text-shadow: 
   yellow -1px -1px 2px,
   yellow -2px -2px 3px,
   lightblue -3px -3px 1px,
   lightblue -4px -4px 1px,
   lightblue -5px -5px 1px,
-  lightblue -6px -6px 2px;
-  /* display: inline-block; */
+  lightblue -6px -6px 1px,
+  rgb(12, 2, 65) -7px -7px 4px;
   transform: scale(.5, 1.5);
   text-decoration: none;
 }

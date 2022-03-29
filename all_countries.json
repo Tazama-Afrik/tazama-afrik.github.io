@@ -1448,13 +1448,13 @@
             "Runyoro, Runyankole, Rukiga, Luo, Rutooro, Samia, Jopadhola, and Lusoga.</p>"
         ],
         "burundi": [
-            "Burundi, officially the Republic of Burundi, is a landlocked country in the Great Rift Valley ",
+            "<p>Burundi, officially the Republic of Burundi, is a landlocked country in the Great Rift Valley ",
             "where the African Great Lakes region and East Africa converge. It is bordered by Rwanda to the ",
             "north, Tanzania to the east and southeast, and the Democratic Republic of the Congo to the west; ",
             "Lake Tanganyika lies along its southwestern border. The capital cities are Gitega and Bujumbura, ",
             "the latter of which is the country's largest city.</p>",
 
-            "The Twa, Hutu and Tutsi peoples have lived in Burundi for at least 500 years. For more than 200 ",
+            "<p>The Twa, Hutu and Tutsi peoples have lived in Burundi for at least 500 years. For more than 200 ",
             "of those years, Burundi was an independent kingdom, until the beginning of the 20th century, ",
             "when Germany ruled the region. After the First World War and Germany's defeat, the League of ",
             "Nations mandated the territory to Belgium. After the Second World War, this transformed into ",
@@ -1462,12 +1462,125 @@
             "European colony known as Ruanda-Urundi. Burundi and Rwanda had never been under common ",
             "rule until the time of European invasion of Africa.</p>",
 
-            "One of the smallest countries in Africa, Burundi's land is used mostly for subsistence ",
+            "<p>One of the smallest countries in Africa, Burundi's land is used mostly for subsistence ",
             "agriculture and grazing. As of 2005, the country was almost completely deforested, with less than 6% ",
             "of its land covered by trees and over half of that being commercial plantations. Burundi is ",
             "densely populated, and many young people emigrate in search of opportunities elsewhere. ",
             "Burundi is a member of the African Union, Common Market for Eastern and Southern Africa, United Nations ",
             "and the Non-Aligned Movement. Burundi has the lowest GDP per capita As of 2022.</p>"
+        ],
+        "comoros": [
+            "<p>The Comoros, officially the Union of the Comoros, is an archipelagic country in the Indian ",
+            "Ocean, at the northern end of the Mozambique Channel off the eastern coast of Africa. It ",
+            "shares maritime borders with Madagascar and Mayotte to the southeast, Tanzania to the northwest, ",
+            "Mozambique to the west, and the Seychelles to the northeast. Its capital and largest city is ",
+            "Moroni. The religion of the majority of the population, and the official state religion, is ",
+            "Sunni Islam. As a member of the Arab League, it is the only country in the Arab world which ",
+            "is entirely in the Southern Hemisphere. It is also a member state of the African Union, the ",
+            "Organisation internationale de la Francophonie, the Organisation of Islamic Cooperation, and ",
+            "the Indian Ocean Commission. The country has three official languages: Comorian, French and Arabic.</p>",
+
+            "<p>At 1,861 km2 (719 square miles), excluding the contested island of Mayotte, the Comoros is ",
+            "the fourth-smallest African nation by area. Its population, excluding Mayotte, is estimated ",
+            "at 850,886 residents as of 2019. As a nation formed at a crossroads of different civilisations, ",
+            "the archipelago is noted for its diverse culture and history.</p>",
+
+            "<p>The sovereign state consists of three major islands and numerous smaller islands, all in the ",
+            "volcanic Comoro Islands. The major islands are commonly known by their French names: ",
+            "northwesternmost Grande Comore (Ngazidja), Mohéli (Mwali), and Anjouan (Ndzwani). The country ",
+            "also claims a fourth major island, southeasternmost Mayotte (Maore), although Mayotte voted ",
+            "against independence from France in 1974. Since that referendum Mayotte has never been administered ",
+            "by an independent Comoros government, and continues to be administered by France as an overseas ",
+            "department. France has vetoed United Nations Security Council resolutions that would affirm ",
+            "Comorian sovereignty over the island. In addition, Mayotte became an overseas department and a ",
+            "region of France in 2011 following a referendum which was passed overwhelmingly.</p>"
+        ],
+        "réunion": [
+            "<p>Réunion is an island in the Indian Ocean that is an overseas department and region of France. ",
+            "It is located approximately 550 km (340 miles) east of the island of Madagascar and 175 km ",
+            "(109 miles) southwest of the island of Mauritius. As of January 2022, it had a population of 868,846.</p>",
+
+            "<p>Like the other four overseas departments, Réunion also holds the status of a region of France, ",
+            "and is an integral part of the French Republic. Réunion is an outermost region of the European ",
+            "Union and is part of the eurozone. Réunion and the fellow French overseas department of Mayotte ",
+            "are the only eurozone regions located in the Southern Hemisphere.</p>",
+
+
+            "<p>Lo Mavéli or Lö Mahavéli, the unofficial flag of Réunion from 2003 used officially by various local ",
+            "authorities, like Saint-Denis and Saint-Philippe.</p>",
+
+            "<p>As in the rest of France, the official language of Réunion is French. In addition, a majority of ",
+            "the region's population speaks Réunion Creole.</p>"
+        ],
+        "ethiopia": [
+            "<p>Ethiopia, officially the Federal Democratic Republic of Ethiopia, is a landlocked country in ",
+            "the Horn of Africa. It shares borders with Eritrea and Djibouti to the north, Somalia to the east ",
+            "and northeast, Kenya to the south, South Sudan to the west, and Sudan to the northwest. Ethiopia ",
+            "has a total area of 1,100,000 square kilometres (420,000 square miles). It is home to 117 million ",
+            "inhabitants and is the 12th-most populous country in the world and the 2nd-most populous in Africa ",
+            "after Nigeria. The national capital and largest city, Addis Ababa, lies several kilometres west ",
+            "of the East African Rift that splits the country into the African and Somali tectonic plates.</p>",
+
+            "<p>Anatomically modern humans emerged from modern-day Ethiopia and set out to the Near East and ",
+            "elsewhere in the Middle Paleolithic period. Linguistics suggest that Afro-Asiatic speaking ",
+            "people reportedly settled in the Nile Valley during Neolithic age, then dispersing thereafter. ",
+            "In the 1st century, the Kingdom of Aksum emerged as a great power in what is now northern ",
+            "Ethiopia, Eritrea, and eastern Sudan. During this time, a strong assimilating culture for ",
+            "an Ethiopian national identity flourished, Orthodox Tewahedo Christianity was conceived as ",
+            "the state religion and Islam was introduced in the early 7th century Aksum suffered from ",
+            "recurring external sieges in the Early Middle Ages and collapsed in the early 10th century ",
+            "when a female pagan ruler Gudit conducted a raid. The remnant of Aksum fled southward and ",
+            "formed the Zagwe dynasty, ruling for over three centuries.</p>",
+
+            "<p>Ethiopia, officially the Federal Democratic Republic of Ethiopia, is a landlocked country ",
+            "in the Horn of Africa. It shares borders with Eritrea and Djibouti to the north, Somalia ",
+            "to the east and northeast, Kenya to the south, South Sudan to the west, and Sudan to the ",
+            "northwest. Ethiopia has a total area of 1,100,000 square kilometres (420,000 square miles). ",
+            "It is home to 117 million inhabitants and is the 12th-most populous country in the world and ",
+            "the 2nd-most populous in Africa after Nigeria. The national capital and largest city, Addis ",
+            "Ababa, lies several kilometres west of the East African Rift that splits the country into ",
+            "the African and Somali tectonic plates.</p>",
+
+            "<p>Anatomically modern humans emerged from modern-day Ethiopia and set out to the Near East ",
+            "and elsewhere in the Middle Paleolithic period. Linguistics suggest that Afro-Asiatic ",
+            "speaking people reportedly settled in the Nile Valley during Neolithic age, then dispersing ",
+            "thereafter. In the 1st century, the Kingdom of Aksum emerged as a great power in what is ",
+            "now northern Ethiopia, Eritrea, and eastern Sudan. During this time, a strong assimilating ",
+            "culture for an Ethiopian national identity flourished, Orthodox Tewahedo Christianity was ",
+            "conceived as the state religion and Islam was introduced in the early 7th century. Aksum ",
+            "suffered from recurring external sieges in the Early Middle Ages and collapsed in the early ",
+            "10th century when a female pagan ruler Gudit conducted a raid. The remnant of Aksum fled ",
+            "southward and formed the Zagwe dynasty, ruling for over three centuries.</p>"
+        ],
+        "malawi": [
+            "<p>Malawi, officially the Republic of Malawi, is a landlocked country in Southeastern Africa ",
+            "that was formerly known as Nyasaland. It is bordered by Zambia to the west, Tanzania to ",
+            "the north and northeast, and Mozambique to the east, south and southwest. Malawi spans ",
+            "over 118,484 km2 (45,747 square miles) and has an estimated population of 19,431,566 ",
+            "(as of January 2021). Malawi's capital (and largest city) is Lilongwe. Its second-largest ",
+            "is Blantyre, its third-largest is Mzuzu and its fourth-largest is its former capital, Zomba. ",
+            "The name Malawi comes from the Maravi, an old name for the Chewa people who inhabit the area. ",
+            "The country is nicknamed 'The Warm Heart of Africa' because of the friendliness of its people.</p>",
+
+            "<p>The Malawian economy is heavily based on agriculture, and it has a largely rural and rapidly growing ",
+            "population. The Malawian government depends heavily on outside aid to meet its development ",
+            "needs, although the amount needed (and the aid offered) has decreased since 2000. The ",
+            "Malawian government faces challenges in its efforts to build and expand the economy, improve ",
+            "education, healthcare, and environmental protection, and become financially independent ",
+            "despite widespread unemployment. Since 2005, Malawi has developed several programs that ",
+            "focus on addressing these issues, and the country's outlook appears to be improving: Key ",
+            "indicators of progress in the economy, education, and healthcare were seen in 2007 and 2008.</p>",
+
+            "<p>Malawi's foreign policy is pro-Western. It maintains positive diplomatic relations with ",
+            "most countries, and participates in several international organisations, including the ",
+            "United Nations, the Commonwealth of Nations, the Southern African Development Community ",
+            "(SADC), the Common Market for Eastern and Southern Africa (COMESA), and the African Union (AU).</p>",
+
+            "<p>The country has a diverse population that includes native peoples, Asians, and Europeans. ",
+            "Several languages are spoken, and there is an array of religious beliefs. Although in the ",
+            "past there was a periodic regional conflict fueled in part by ethnic divisions, by 2008 ",
+            "this internal conflict had considerably diminished, and the idea of identifying with ",
+            "one's Malawian nationality had reemerged.</p>"
         ]
     }
 ]

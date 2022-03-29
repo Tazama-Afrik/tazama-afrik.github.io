@@ -92,7 +92,11 @@
       Official Name: None | Population: None | Subregion: None
     </div>
     <div class="description">
-    <p style="text-align: left;">Select a Country To View It's Data</p>
+    <p style="text-align: left;"><b>Select a Country To View It's Data. </b>
+      <br> Note: The information provided in this section are regularly updated
+    but may not always be the most recent. Nonetheless, we assure you can trust our 
+    data and rely on it. Keep staying in touch. <br>Src: Wikipedia <br>
+    <br>Coutries not loading? <span class="reload">Refresh</a></p>
     </div>
           <!-- wait dialog that pops up -->
           <div id="wait">Loading in few seconds...</div>
@@ -170,6 +174,9 @@
       }
     });
   });
+  $('.reload').click(function() {
+    location.reload();
+  });
   ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
   $('#menu-icon').click(function () {
     $('#menu').slideToggle();
@@ -193,7 +200,7 @@
       data = data[0];
       $('#title').html('' + countryName + ' ' + data.flag + '');
       $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>" + data.population + "</u> | Region: <u>" + data.subregion +
-        "</u><br> Curency: <u>" + data.name.common + "'s Currency</u> | Languages: <u>" + data.languages[0] + "</u>");
+        "</u><br> Curency: <u>None</u> | Languages: <u>None</u> | Capital: <u>None</u>");
     }
   });
   /////////////////// API QUERY FOR ALL SUBREGIONS ///////////////////

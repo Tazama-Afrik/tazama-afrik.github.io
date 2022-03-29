@@ -140,6 +140,16 @@ body {
   text-align: center;
   background: linear-gradient(white, lightsteelblue);
 }
+/************* THE RELOAD BUTTON ***********/
+.reload {
+  color:red;
+}
+.reload:hover {
+  background-color: cornflowerblue;
+  padding: 2px;
+  border-radius: 4%;
+  cursor:default;
+}
 
 .topnav .nav {
   float: left;

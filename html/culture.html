@@ -1,233 +1,317 @@
 <!DOCTYPE html>
 <html>
 
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>African Reserves</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="../css/culture.css">
-    <link rel='shortcut icon' href="../img/tazama_afrik.png">
-  </head>
-  
-  <body>
-    <div class="hello">
-      <div class="topnav" id="topnav">
-        <a class="home" href="/"><img src="../img/tazama.jpg" alt="Home"></a>
-        <a class="b" href="../html/countries.html">Countries</a>
-        <a class="b" href="../html/beaches.html">Beaches</a>
-        <a class="b  active" href="../html/culture.html">Culture</a>
-        <a class="b" href="../html/reserves.html">Reserves</a>
-        <a class="b" href="../html/cuisine.html">Cuisine</a>
-  
-        <!------     BEGINNING OF SEARCH BAR -------->
-  
-        <div class="search" placeholder="Type here to search">
-          <input name="search bar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
-          <button type="submitbutton" id="searchSubmit">Search</button>
-        </div>
-        <!------     MENU ICON ------->
-        <img src="../img/menu.png" alt="Menu" id="menu-icon" />
-        <div id="closer-icon">&times;</div>
-      </div>
-    </div>
-    <!-- Menu For Small Size Media -->
-    <div id="menu">
-      <above class="widget-header">
-        <div>Make Your Selection Here</div>
-      </above>
-      <a class="b" href="/">&larr; &nbsp;Back To Home</a>
-      <a class="b" href="countries.html">🌍&nbsp; Countries</a>
-      <a class="b" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png" />&nbsp; Beaches</a>
-      <a class="b active" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png" />&nbsp; Culture</a>
-      <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png" /> &nbsp;Reserves</a>
-      <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg" />&nbsp; Cuisine</a>
-    </div>
-    <!-- Welcome message -->
-    <div class="welcome">
-      <h3>Come and enjoy the unique African culture through reamarkable festivals.</h3>
-    </div>
-  
-    
-    <div class="tabs">
-      <ul id="ul">
-        <li class="preview"><a href="#tabs-1">Calabar Carnival</a></li>
-        <li class="preview"><a href="#tabs-2">Kaapse Klopse</a></li>
-        <li class="preview"><a href="#tabs-3">Guérewol</a></li>
-        <li class="preview"><a href="#tabs-4">Durbar festival</a></li>
-        <li class="preview"><a href="#tabs-5"></a></li>
-        <li class="preview"><a href="#tabs-6"></a></li>
-        <li class="preview"><a href="#tabs-7"></a></li>
-        <li class="preview"><a href="#tabs-8"></a></li>
-      </ul>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="tazama afrik africa culture restaurants african countries">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>African Reserves</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/culture.css">
+  <link rel='shortcut icon' href="../img/tazama_afrik.png">
+</head>
 
-    
-      <div id="tabs-1">
-        <h3>Calabar Carnival</h3>
-        <div class="li-img"><img src="../img/culture/calabar-carnival.jpg" /></div>
-        <p>
-          Calabar Carnival festival in Nigeria, also known as "Africa's Biggest Street Party" or the "Pride of Nigeria",[1] is an annual carnival in Cross River State, South-Eastern part of Nigeria.
-          The carnival is held every December and was also declared by the then governor Mr. Donald Duke as an activity to mark Christmas celebration and he said his vision for creating the festival was to make 
-          Cross River State a home of tourism and hospitality in Nigeria and Africa.
-        </p>
-        <p>
-          Calabar Carnival officially begins with a Tree-Lightening ceremony. In the first three weeks of carnival there are musical performances, food competitions, a solidarity march, street parties, fashion shows, a prestigious essay writing competition, art shows, traditional dances and masque events.
-          Some of the main events include J’ouvert Band fetes, the crowning of the Carnival Kings and Queens for each band, the Christmas Party Cultural Carnival, the children’s carnival, the Mary Slessor Golf Charity Dinner and the Annual Ekpe masquerade festival.
-        </p>
-        <p>
-          A carnival theme guides all the carnival bands who have to interpret and then represent this theme through their costumes, music, dances, floats and displays.
-          The Calabar Carnival Parade features 50,000 costumed revellers who perform in five major carnival bands and 10 non-competing bands. The parade sees the carnival groups compete against each other in hopes of winning the title for the Best Band.
-          The parade takes place over a 12km parade route and it is quite a spectacle. It is filled will colour, sparkle, DJs, live musicians, steel bands, incredible floats and costumes. Hundreds of thousands line the streets to watch the parade and the atmosphere is electric.
-        </p>
+<body>
+  <div class="hello">
+    <div class="topnav" id="topnav">
+      <a class="home" href="/"><img src="../img/tazama.jpg" alt="Home"></a>
+      <a class="b" href="../html/countries.html">Countries</a>
+      <a class="b" href="../html/beaches.html">Beaches</a>
+      <a class="b  active" href="../html/culture.html">Culture</a>
+      <a class="b" href="../html/reserves.html">Reserves</a>
+      <a class="b" href="../html/cuisine.html">Cuisine</a>
+
+      <!------     BEGINNING OF SEARCH BAR -------->
+
+      <div class="search" placeholder="Type here to search">
+        <input name="search bar" placeholder="Type here to search" rows="1" class="put" type="search"></input>
+        <button type="submitbutton" id="searchSubmit">Search</button>
       </div>
-    
-      <div id="tabs-2">
-        <h3>Kaapse Klopse</h3>
-        <div class="li-img"><img src="../img/culture/kaapse.jpg" /></div>
-        <p>
-          The Kaapse Klopse (or simply Klopse), formerly known as the Coon Carnival and officially called Cape Town Minstrel Carnival, is a Cape coloured minstrel festival that takes place annually on 2 January in Cape Town, South Africa. 
-          It is also referred to as Tweede Nuwe jaar (Second New Year). As many as 13,000 minstrels take to the streets garbed in bright colours, either carrying colourful umbrellas or playing an array of musical instruments. 
-          The minstrels are self-organised into klopse ("clubs" in Kaapse Afrikaans, but more accurately translated as troupes in English). 
-          The custom has been preserved since the mid-19th century.
-        </p>
-        <p>
-          People consider the festival a rite of renewal that has been shaped by the Cape's history. The events that are associated with Klopse in the festive season include competitions for the Christmas choirs, Cape Malay choirs, and Cape minstrel choirs.
-          The festival was known as the Coon Carnival, but local authorities have since renamed the festival the Cape Town Minstrel Carnival as the term coon is considered an ethnic slur.
-        </p>
-      </div>
-      <div id="tabs-3">
-        <h3>Guérewol</h3>
-        <div class="li-img"><img src="../img/culture/guerewol.jpg" /></div>
-        <p>
-          The Guérewol (var. Guerewol, Gerewol) is an annual courtship ritual competition among the Wodaabe Fula people of Niger.
-          Young men dressed in elaborate ornamentation and made up in traditional face painting gather in lines to dance and sing, vying for the attentions of marriageable young women.
-          The Guérewol occurs each year as the traditionally nomadic Wodaabe cattle herders gather at the southern edge of the Sahara before dispersing south on their dry season pastures.
-        </p>
-        <p>
-          The most famous gathering point is In-Gall in northwest Niger, where a large festival, market and series of clan meetings take place for both the Wodaabe and the pastoral Tuareg people. 
-          The actual dance event is called the Yaake, while other less famous elements—bartering over dowry, competitions or camel races among suitors—make up the week-long Guérewol.
-          The Guérewol is found wherever Wodaabe gather: from Niamey, to other places the Wodaabe travel in their transhumance cycle, as far afield as northern Cameroon and Nigeria
-        </p>
-        <p>
-          At the end of the rainy season in September, the Wodaabe travel to In-Gall to gather salt and participate at the Cure Salée festival, a meeting of several nomadic groups. Here the young Wodaabe men, with elaborate make-up,
-          feathers and other adornments, perform dances and songs to impress women. The male beauty ideal of the Wodaabe stresses tallness, white eyes and teeth;
-          the men will often roll their eyes and show their teeth to emphasize these characteristics. The Wodaabe clans will then join for their week-long Guérewol celebration, a contest where the young men's beauty is judged by young women.
-        </p>
-        <p>
-          The Guérewol competitions involve the ornamented young men dancing the Yaake in a line, facing a young marriageable woman, sometimes repeatedly over a seven-day period, and for hours on end in the desert sun.
-          Suitors come to the encampment of the woman to prove their interest, stamina, and attractiveness.
-          The participants often drink a fermented bark concoction to enable them to dance for long periods, which reputedly has a hallucinogenic effect.
-        </p>
-      </div>
-      <div id="tabs-4">
-        <h3>Durbar festival</h3>
-        <div class="li-img"><img src="../img/culture/durbar.jpg" /></div>
-        <p>
-          The Durbar festival is an annual cultural, religious and equestrian festival celebrated in several northern cities of Nigeria including Kano, Katsina, Sokoto, Zazzau, Bauchi, Bida and Ilorin. The festival marks the end of Ramadan and also coincides with the Muslim festivities of Eid al-Adha and Eid al-Fitri. 
-          It begins with prayers at dawn, followed by a colourful mounted parade of the Emir and his retinue of horsemen, musicians, and artillerymen. At the Durbar festivals noblemen travel to pay homage to the Emir and reaffirm their loyalty to their various emirates.
-        </p>
-        <p>
-          The festival dates back to the 14th century in Kano, the largest city in Northern Nigeria. The Kano durbar festival is a four-day extravaganza of opulence, horsemanship, and street parades.
-        </p>
-      </div>
-      <div id="tabs-5"></div>
-        <h3></h3>
-        <div class="li-img"></div>
-      </div>
-      <div id="tabs-6"></div>
-        <h3></h3>
-        <div class="li-img"></div>
-      </div>
+      <!------     MENU ICON ------->
+      <img src="../img/menu.png" alt="Menu" id="menu-icon" />
+      <div id="closer-icon">&times;</div>
+    </div>
+  </div>
+  <!-- Menu For Small Size Media -->
+  <div id="menu">
+    <above class="widget-header">
+      <div>Make Your Selection Here</div>
+    </above>
+    <a class="b" href="/">&larr; &nbsp;Back To Home</a>
+    <a class="b" href="countries.html">🌍&nbsp; Countries</a>
+    <a class="b" href="beaches.html"><img class="slide-icon" src="../img/beaches-icon.png" />&nbsp; Beaches</a>
+    <a class="b active" href="culture.html"><img class="slide-icon" src="../img/cult-icon.png" />&nbsp; Culture</a>
+    <a class="b" href="reserves.html"><img class="slide-icon" src="../img/res-icon.png" /> &nbsp;Reserves</a>
+    <a class="b" href="cuisine.html"><img class="slide-icon" src="../img/fud-icon.jpg" />&nbsp; Cuisine</a>
+  </div>
+  <!-- Welcome message -->
+  <div class="welcome">
+    <h3>Come and enjoy the unique African culture through reamarkable festivals.</h3>
+  </div>
+
+
+  <div class="tabs">
+    <ul id="ul">
+      <li class="preview"><a href="#tabs-1">Calabar Carnival</a></li>
+      <li class="preview"><a href="#tabs-2">Kaapse Klopse</a></li>
+      <li class="preview"><a href="#tabs-3">Guérewol</a></li>
+      <li class="preview"><a href="#tabs-4">Durbar festival</a></li>
+      <li class="preview"><a href="#tabs-5"></a></li>
+      <li class="preview"><a href="#tabs-6"></a></li>
+      <li class="preview"><a href="#tabs-7"></a></li>
+      <li class="preview"><a href="#tabs-8"></a></li>
+    </ul>
+
+
+    <div id="tabs-1">
+      <h3>Calabar Carnival</h3>
+      <div class="li-img"><img src="/img/culture/calabar-carnival.jpg" /></div>
+      <p>
+        Calabar Carnival festival in Nigeria, also known as "Africa's Biggest Street Party" or the "Pride of
+        Nigeria", is an annual carnival in Cross River State, South-Eastern part of Nigeria.
+        The carnival is held every December and was also declared by the then governor Mr. Donald Duke as an activity to
+        mark Christmas celebration and he said his vision for creating the festival was to make
+        Cross River State a home of tourism and hospitality in Nigeria and Africa.
+      </p>
+      <p>
+        Calabar Carnival officially begins with a Tree-Lightening ceremony. In the first three weeks of carnival there
+        are musical performances, food competitions, a solidarity march, street parties, fashion shows, a prestigious
+        essay writing competition, art shows, traditional dances and masque events.
+        Some of the main events include J’ouvert Band fetes, the crowning of the Carnival Kings and Queens for each
+        band, the Christmas Party Cultural Carnival, the children’s carnival, the Mary Slessor Golf Charity Dinner and
+        the Annual Ekpe masquerade festival.
+      </p>
+      <p>
+        A carnival theme guides all the carnival bands who have to interpret and then represent this theme through their
+        costumes, music, dances, floats and displays.
+        The Calabar Carnival Parade features 50,000 costumed revellers who perform in five major carnival bands and 10
+        non-competing bands. The parade sees the carnival groups compete against each other in hopes of winning the
+        title for the Best Band.
+        The parade takes place over a 12km parade route and it is quite a spectacle. It is filled will colour, sparkle,
+        DJs, live musicians, steel bands, incredible floats and costumes. Hundreds of thousands line the streets to
+        watch the parade and the atmosphere is electric.
+      </p>
     </div>
 
-    <div class="links-and-contact">
-      <div class="links">
-        <h4>Useful Links</h4>
-        <ul class="link-lists">
-          <li>
-            <a href="https://github.com/Tazama-Afrik">Github</a>
-          <li>
-            <img href="https://linkedin.com/in/tazama-afrik" src="../img/linkedin.png">
-          <li>
-            <img href="https://facebook.com/in/tazama-afrik" src="../img/facebook.png">
-          <li>
-            <img href="https://twitter.com/in/tazama-afrik" src="../img/tw.png">
-          </li>
-        </ul>
-      </div>
-      <!-- </div> -->
-      <input class="send-message" type="checkbox">Send message</input>
-      <div class="contact">
-        <h2>Contact Us</h2>
-        <form action="#">
-          <label for="email">
-            <h4>Email</h4>
-            <input type="email" id="email" placeholder="Enter your email" />
-          </label>
-          <label for="message">
-            <h4>Message</h4>
-            <textarea id="message" placeholder="Your message goes here"></textarea>
-          </label>
-          <div class="submit-button-wrapper">
-            <input type="submit" valid="Send Message" id="submitbutton" />
+    <div id="tabs-2">
+      <h3>Kaapse Klopse</h3>
+      <div class="li-img"><img src="../img/culture/kaapse.jpg" /></div>
+      <p>
+        The Kaapse Klopse (or simply Klopse), formerly known as the Coon Carnival and officially called Cape Town
+        Minstrel Carnival, is a Cape coloured minstrel festival that takes place annually on 2 January in Cape Town,
+        South Africa.
+        It is also referred to as Tweede Nuwe jaar (Second New Year). As many as 13,000 minstrels take to the streets
+        garbed in bright colours, either carrying colourful umbrellas or playing an array of musical instruments.
+        The minstrels are self-organised into klopse ("clubs" in Kaapse Afrikaans, but more accurately translated as
+        troupes in English).
+        The custom has been preserved since the mid-19th century.
+      </p>
+      <p>
+        People consider the festival a rite of renewal that has been shaped by the Cape's history. The events that are
+        associated with Klopse in the festive season include competitions for the Christmas choirs, Cape Malay choirs,
+        and Cape minstrel choirs.
+        The festival was known as the Coon Carnival, but local authorities have since renamed the festival the Cape Town
+        Minstrel Carnival as the term coon is considered an ethnic slur.
+      </p>
+    </div>
+    <div id="tabs-3">
+      <h3>Guérewol</h3>
+      <div class="li-img"><img src="../img/culture/guerewol.jpg" /></div>
+      <p>
+        The Guérewol (var. Guerewol, Gerewol) is an annual courtship ritual competition among the Wodaabe Fula people of
+        Niger.
+        Young men dressed in elaborate ornamentation and made up in traditional face painting gather in lines to dance
+        and sing, vying for the attentions of marriageable young women.
+        The Guérewol occurs each year as the traditionally nomadic Wodaabe cattle herders gather at the southern edge of
+        the Sahara before dispersing south on their dry season pastures.
+      </p>
+      <p>
+        The most famous gathering point is In-Gall in northwest Niger, where a large festival, market and series of clan
+        meetings take place for both the Wodaabe and the pastoral Tuareg people.
+        The actual dance event is called the Yaake, while other less famous elements—bartering over dowry, competitions
+        or camel races among suitors—make up the week-long Guérewol.
+        The Guérewol is found wherever Wodaabe gather: from Niamey, to other places the Wodaabe travel in their
+        transhumance cycle, as far afield as northern Cameroon and Nigeria
+      </p>
+      <p>
+        At the end of the rainy season in September, the Wodaabe travel to In-Gall to gather salt and participate at the
+        Cure Salée festival, a meeting of several nomadic groups. Here the young Wodaabe men, with elaborate make-up,
+        feathers and other adornments, perform dances and songs to impress women. The male beauty ideal of the Wodaabe
+        stresses tallness, white eyes and teeth;
+        the men will often roll their eyes and show their teeth to emphasize these characteristics. The Wodaabe clans
+        will then join for their week-long Guérewol celebration, a contest where the young men's beauty is judged by
+        young women.
+      </p>
+      <p>
+        The Guérewol competitions involve the ornamented young men dancing the Yaake in a line, facing a young
+        marriageable woman, sometimes repeatedly over a seven-day period, and for hours on end in the desert sun.
+        Suitors come to the encampment of the woman to prove their interest, stamina, and attractiveness.
+        The participants often drink a fermented bark concoction to enable them to dance for long periods, which
+        reputedly has a hallucinogenic effect.
+      </p>
+    </div>
+    <div id="tabs-4">
+      <h3>Durbar festival</h3>
+      <div class="li-img"><img src="../img/culture/durbar.jpg" /></div>
+      <p>
+        The Durbar festival is an annual cultural, religious and equestrian festival celebrated in several northern
+        cities of Nigeria including Kano, Katsina, Sokoto, Zazzau, Bauchi, Bida and Ilorin. The festival marks the end
+        of Ramadan and also coincides with the Muslim festivities of Eid al-Adha and Eid al-Fitri.
+        It begins with prayers at dawn, followed by a colourful mounted parade of the Emir and his retinue of horsemen,
+        musicians, and artillerymen. At the Durbar festivals noblemen travel to pay homage to the Emir and reaffirm
+        their loyalty to their various emirates.
+      </p>
+      <p>
+        The festival dates back to the 14th century in Kano, the largest city in Northern Nigeria. The Kano durbar
+        festival is a four-day extravaganza of opulence, horsemanship, and street parades.
+      </p>
+    </div>
+      <!-- 
+          <div id="tabs-5"></div>
+          <h3></h3>
+          <div class="li-img"></div>
           </div>
-        </form>
+          <div id="tabs-6"></div>
+          <h3></h3>
+          <div class="li-img"></div> 
+      -->
+  <!----------------- Back To Top Button ----------------->
+  <button class="back-to-top" title="Back To Top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+    </svg>
+  </button>
+
+  <!------------------- NAVIGATION PANE ABOVE THE FOOTER --------------->
+
+  <send class="send-message" id="propose">Send us a message</send>
+  <a href="https://github.com/Tazama-Afrik/tazama-afrik" id="fork">Fork On Github</a>
+  <div class="links-and-contact">
+
+    <div class="connect">
+      <h4 class="navtopic">Connect With Us!</h4>
+      <div class="links">
+        <one>
+          <a class="two" href="https://github.com/Tazama-Afrik"><img src="/img/github.png"
+              style="width:20px" />&nbsp;Github</a>
+        </one>
+        <one>
+          <a class="two" href="https://linkedin.com/in/tazama-afrik"><img src="/img/linkedin.png"
+              style="width:20px" />&nbsp;Linkedin</a>
+        </one>
+        <one>
+          <a class="two" href="https://facebook.com/in/tazama-afrik"><img src="/img/facebook.png"
+              style="width:13px" />&nbsp;Facebook</a>
+        </one>
+        <one>
+          <a class="two" href="https://twitter.com/in/tazama-afrik"><img src="/img/tw.png"
+              style="width:20px" />&nbsp;Twitter</a>
+        </one>
       </div>
     </div>
-      <!----------------- Back To Top Button ----------------->
-      <button class="back-to-top" title="Back To Top">
-        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor" title="Scroll To Top">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-        </svg>
-      </button>
-      <footer id="footer">Copyright &copy; Tazama Afrik</footer>
+    <div class="navigate">
+      <h4 class="navtopic">Walk Around</h4>
+      <a class="two" href="/#about">About Us</a>
+      <a class="two" href="countries.html">Countries</a>
+      <a class="two" href="beaches.html">Beaches</a>
+      <a class="two" href="culture.html">Culture</a>
+      <a class="two" href="reserves.html">Reserves</a>
+      <a class="two" href="cuisine.html">Cuisine</a>
+    </div>
+    <!--Class Navigate Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Beaches<br>To View</h4>
+      <a class="two" href="beaches.html#tabs-1">Belle Mare</a>
+      <a class="two" href="beaches.html#tabs-2">Anse Lazio</a>
+      <a class="two" href="beaches.html#tabs-3">Camps Bay</a>
+      <a class="two" href="beaches.html#tabs-4">Diani</a>
+      <a class="two" href="beaches.html#tabs-5">Boulders</a>
+      <a class="two" href="beaches.html#tabs-6">Bazaruto</a>
+      <a class="two" href="beaches.html#tabs-7">Idyllic</a>
+      <a class="two" href="beaches.html#tabs-8">Lekki</a>
+    </div>
+    <!--Class Navigate Beaches Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Reserve Places<br>To View</h4>
+      <a class="two" href="reserves.html#tabs-1">Maasai Mara</a>
+      <a class="two" href="reserves.html#tabs-2">Serengeti</a>
+      <a class="two" href="reserves.html#tabs-3">Chobe</a>
+      <a class="two" href="reserves.html#tabs-4">Kruger</a>
+      <a class="two" href="reserves.html#tabs-5">Etosha</a>
+      <a class="two" href="reserves.html#tabs-6">Volcanoes</a>
+      <a class="two" href="reserves.html#tabs-7">Ngorongo</a>
+      <a class="two" href="reserves.html#tabs-8">Tarangire</a>
+    </div>
+    <!--Class Navigate Reserves Ends-->
+    <div class="navigate">
+      <h4 class="navtopic">Top Meals And Cuisine<br>To Check out</h4>
+      <a class="two" href="cuisine.html#tabs-1">Couscous</a>
+      <a class="two" href="cuisine.html#tabs-2">Jollof Rice</a>
+      <a class="two" href="cuisine.html#tabs-3">Chakalaka</a>
+      <a class="two" href="cuisine.html#tabs-4">Biltong</a>
+      <a class="two" href="cuisine.html#tabs-5">Chermoula</a>
+      <a class="two" href="cuisine.html#tabs-6">Fufu</a>
+      <a class="two" href="cuisine.html#tabs-7">Tajine</a>
+      <a class="two" href="cuisine.html#tabs-8">Yassa</a>
+    </div>
+    <div class="navigate">
+      <h4 class="navtopic">Engineers</h4>
+      <a class="two" href="https://github.com/Obed101">Obed Amoako</a>
+      <a class="two" href="https://github.com/Faitholo">Faith Ikhidero</a>
+    </div>
+  </div>
+  <footer id="footer">Src: wikipedia | All rights reserved | Tazama Afrik <span class="counter"></span></footer>
 
-    <script>
 
-      ////////////Scroll To Top///////////
+  <script>
 
-      $toTop = $(".back-to-top");
-      let showOnPx = 100;
-      // $pageProgressBar = $(".progress-bar"); // DOn't remove this line
+    ////////////Scroll To Top///////////
 
-      const scrollContainer = () => {
-        return document.documentElement || document.body;
-      };
+    $toTop = $(".back-to-top");
+    let showOnPx = 100;
+    // $pageProgressBar = $(".progress-bar"); // DOn't remove this line
 
-      document.addEventListener("scroll", () => {
-        if (scrollContainer().scrollTop > showOnPx) {
-          $toTop.show();
-        } else {
-          $toTop.slideUp();
-        }
+    const scrollContainer = () => {
+      return document.documentElement || document.body;
+    };
+
+    document.addEventListener("scroll", () => {
+      if (scrollContainer().scrollTop > showOnPx) {
+        $toTop.show();
+      } else {
+        $toTop.slideUp();
+      }
+    });
+
+    const goToTop = () => {
+      document.body.scrollIntoView({
+        behavior: "smooth"
       });
+    };
+    $toTop.click(goToTop);
 
-      const goToTop = () => {
-        document.body.scrollIntoView({
-          behavior: "smooth"
-        });
-      };
-      $toTop.click(goToTop);
+    ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
+    $('#menu-icon').click(function () {
+      $('#menu').slideToggle();
+      $(this).fadeOut();
+      $('#closer-icon').fadeIn();
+    });
+    $('#closer-icon').click(function () {
+      $('#menu').slideToggle();
+      $(this).fadeOut();
+      $('#menu-icon').fadeIn();
+    });
+    $('.b').click(function () {
+      $('#menu').slideUp();
+    });
+  </script>
+</body>
 
-      ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
-      $('#menu-icon').click(function () {
-        $('#menu').slideToggle();
-        $(this).fadeOut();
-        $('#closer-icon').fadeIn();
-      });
-      $('#closer-icon').click(function () {
-        $('#menu').slideToggle();
-        $(this).fadeOut();
-        $('#menu-icon').fadeIn();
-      });
-      $('.b').click(function () {
-        $('#menu').slideUp();
-      });
-    </script>
-  </body>
 </html>

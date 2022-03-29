@@ -94,44 +94,25 @@ body {
   color: rgb(44, 44, 58);
 }
 
-.h {
-  color: rgb(34, 70, 56);
-  text-align: center;
-}
-
 h2 {
   text-align: left;
   color: rgb(12, 41, 13);
 }
 
-/* pictures and descriptions */
-.tabs {
-  max-width: 80em;
-  text-align: left;
-  margin: 5px;
-}
-
 .li-img {
-  max-width: 70em;
+  max-width: 95%;
 }
 
 p {
   font-family: sans-serif Verdana, Geneva, Tahoma;
   color: rgb(36, 14, 65);
 }
-/* END OF SEARCH BAR */
 
-.links-and-contact {
-  font: bold;
-  width: 100%;
-  text-decoration: blink;
-}
-
-.link-list{
-width: fit-content;
-height: fit-content;
-padding: 4px;
-margin-bottom: 20px;
+.link-list {
+  width: fit-content;
+  height: fit-content;
+  padding: 4px;
+  margin-bottom: 20px;
 }
 
 /****************** BEGINNGING OF CONTACT **************/
@@ -142,22 +123,17 @@ textarea {
   width: 240px;
 }
 
-.links-and-contact {
-  background-color: rgb(24, 19, 19);
-  color: aliceblue;
-  padding-top: 5px;
-}
 .contact {
-    background-color: white;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 4%;
-    padding: 20px;
-    position: absolute;
-    right: 33%;
-    bottom: 1em;
-    display: none;
+  background-color: white;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4%;
+  padding: 20px;
+  position: absolute;
+  right: 33%;
+  bottom: 1em;
+  display: none;
 }
 
 form {
@@ -169,7 +145,7 @@ form input[type="submit"] {
   width: 250px;
 }
 #submitbutton:hover {
-    background-color: darkolivegreen;
+  background-color: darkolivegreen;
 }
 submit-button-wrapper {
   margin: 20px o;

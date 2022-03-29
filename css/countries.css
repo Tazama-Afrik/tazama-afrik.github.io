@@ -91,6 +91,9 @@ body {
   text-shadow: black 1px 2px;
 }
 
+.topnav #home {
+  margin-top: 10px;
+}
 .list {
   background-color: grey;
   overflow-y: scroll;
@@ -141,6 +144,7 @@ body {
 }
 .topnav{
   top: 0;
+  min-height: 55px;
 }
 
 .topnav .nav {
@@ -151,9 +155,6 @@ body {
   padding: 10px 14px;
   text-decoration: none;
   font-size: 17px;
-}
-.topnav .home {
-  margin: 0px;
 }
 
 .loading {
@@ -191,6 +192,7 @@ body {
     float:right;
     position:absolute;
     right:30px;
+    top: 0;
     font-size: 9px;
     padding-left: 4px;
     padding-right: 4px;

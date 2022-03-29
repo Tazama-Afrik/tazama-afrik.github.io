@@ -45,11 +45,13 @@ body {
   padding: 14px 16px;
 }
 #home {
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(255, 51, 0);
   font-weight: 900;
-  text-align: right;
-  font-family: sans-serif;
+  float: left;
+  /* font-family: sans-serif; */
+  /* background-color: red; */
+  /* margin-top: 3px; */
   text-shadow: 
   yellow -1px -1px 2px,
   yellow -2px -2px 3px,
@@ -57,8 +59,9 @@ body {
   lightblue -4px -4px 1px,
   lightblue -5px -5px 1px,
   lightblue -6px -6px 2px;
-  /* letter-spacing: 0.1px; */
+  /* display: inline-block; */
   transform: scale(.5, 1.5);
+  text-decoration: none;
 }
 .nav .b:hover {
   background-color: rgb(156, 119, 165);
@@ -89,14 +92,7 @@ body {
   display: none;
   cursor: default;
 }
-.nav > .home > img {
-  max-height: 45px;
-  padding: 0px;
-}
-.nav .home {
-  padding: 3px;
-  padding-top: 0;
-}
+
 
 /************** BELOW, THE SEARCH BAR *************/
 .search {
@@ -488,11 +484,13 @@ form input[type="submit"] {
   #select {
     position: absolute;
     right: 50px;
+    top: 3px;
     font-size: 12px;
     min-width: fit-content;
   }
   #menu-icon {
     display: block;
+    top: 3px;
   }
   p {
     max-width: 90%;
@@ -530,6 +528,7 @@ form input[type="submit"] {
   #menu-icon {
     display: block;
   }
+
   .search,
   .nav .b,
   .topnav .b,

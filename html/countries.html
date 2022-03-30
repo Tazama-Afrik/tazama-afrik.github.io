@@ -260,8 +260,8 @@
       countryName = 'benin';
       data = data[0];
       $('#title').html('' + countryName + ' ' + data.flag + '');
-      $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>" + data.population + "</u> | Region: <u>" + data.subregion +
-        "</u><br> Curency: <u>None</u> | Languages: <u>None</u> | Capital: <u>None</u>");
+      $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>None</u> | "+
+      "Region: <u>None</u><br> Curency: <u>None</u> | Languages: <u>None</u> | Capital: <u>None</u>");
     }
   });
   /////////////////// API QUERY FOR ALL SUBREGIONS ///////////////////
@@ -315,8 +315,12 @@
         $.each(data, function (i, item) {
           $common = item.name.common;
           if (item.region === 'Africa') {
+            if ($common == "Western Sahara") {
+              return true;
+            } else {
             $country.append('<li class="country">' + $common + '</li>')
             num += 1;
+            }
           }
         });
 

@@ -273,11 +273,12 @@
         $number = $('#WA')
         let num = 0;
         $.each(data, function (i, item) {
+          $common = item.name.common;
           if (item.region === 'Africa') {
-            if (item.name.common == "Saint Helena, Ascension and Tristan da Cunha") {
+            if ($common == "Saint Helena, Ascension and Tristan da Cunha" || $common == "Cape Verde") {
               return true;
             } else {
-              $country.append('<li class="country">' + item.name.common + '</li>')
+              $country.append('<li class="country">' + $common + '</li>')
               num += 1;
             }
           }
@@ -294,8 +295,9 @@
         $number = $('#SA')
         let num = 0;
         $.each(data, function (i, item) {
+          $common = item.name.common;
           if (item.region === 'Africa') {
-            $country.append('<li class="country">' + item.name.common + '</li>')
+            $country.append('<li class="country">' + $common + '</li>')
             num += 1;
           }
         });
@@ -311,8 +313,9 @@
         $number = $('#NA')
         let num = 0;
         $.each(data, function (i, item) {
+          $common = item.name.common;
           if (item.region === 'Africa') {
-            $country.append('<li class="country">' + item.name.common + '</li>')
+            $country.append('<li class="country">' + $common + '</li>')
             num += 1;
           }
         });
@@ -328,8 +331,9 @@
         $number = $('#CA')
         let num = 0;
         $.each(data, function (i, item) {
+          $common = item.name.common;
           if (item.region === 'Africa') {
-            $country.append('<li class="country">' + item.name.common + '</li>')
+            $country.append('<li class="country">' + $common + '</li>')
             num += 1
           }
         });
@@ -345,11 +349,12 @@
         $number = $('#EA')
         let num = 0;
         $.each(data, function (i, item) {
+          $common = item.name.common;
           if (item.region === 'Africa') {
-            if (item.name.common == "British Indian Ocean Territory") {
+            if ($common == "British Indian Ocean Territory") {
               return true;
             } else {
-                $country.append('<li class="country">' + item.name.common + '</li>')
+                $country.append('<li class="country">' + $common + '</li>')
                 num += 1;
             }
           }
@@ -388,8 +393,6 @@
     function clicked() {
       $unchanged = $(this).text();
       $name = $(this).text().toLowerCase().split(" ")[0];
-      let ignore = ["Saint Helena, Ascension and Tristan da Cunha", "British Indian Ocean Territory"]
-
         $('#wait').show();
         $.ajax({
           url: `https://restcountries.com/v3.1/name/${$name}`,

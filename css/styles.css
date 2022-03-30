@@ -442,7 +442,6 @@ form input[type="submit"] {
   text-transform: uppercase;
 }
 
-
 .li-img > img {
   width: 100%;
   max-width: 75em;
@@ -525,7 +524,6 @@ form input[type="submit"] {
   #menu-icon {
     display: block;
   }
-
   .search,
   .nav .b,
   .topnav .b,

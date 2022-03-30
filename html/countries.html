@@ -274,8 +274,12 @@
         let num = 0;
         $.each(data, function (i, item) {
           if (item.region === 'Africa') {
-            $country.append('<li class="country">' + item.name.common + '</li>')
-            num += 1;
+            if (item.name.common == "Saint Helena, Ascension and Tristan da Cunha") {
+              return true;
+            } else {
+              $country.append('<li class="country">' + item.name.common + '</li>')
+              num += 1;
+            }
           }
         });
 
@@ -342,8 +346,12 @@
         let num = 0;
         $.each(data, function (i, item) {
           if (item.region === 'Africa') {
-            $country.append('<li class="country">' + item.name.common + '</li>')
-            num += 1;
+            if (item.name.common == "British Indian Ocean Territory") {
+              return true;
+            } else {
+                $country.append('<li class="country">' + item.name.common + '</li>')
+                num += 1;
+            }
           }
         });
         $number.prepend(`${num} Countries`);
@@ -377,45 +385,45 @@
       break;
     }
   }
-  function clicked() {
-    $unchanged = $(this).text();
-    $name = $(this).text().toLowerCase().split(" ")[0];
-    $('#wait').show();
-    $.ajax({
-      url: `https://restcountries.com/v3.1/name/${$name}`,
-      success: function (data) {
-        data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
-        data = data[0];
-        console.log(data);
-        countryName = data.name.common;
-        $('#title').html('' + countryName + ' ' + data.flag + '');
-        $('.data').html("Official Name: <u>" + data.name.official + "</u> <br>Population: <u>" + data.population + "</u> <br>Region: <u>" + data.subregion +
-          "</u><br>Curency: <u>" + Object.getOwnPropertyNames(data.currencies) + "</u> <br>Language: <u>" + getFirst(data.languages) + "</u>" + "<br>Capital: <u>" + data.capital + "</u>")
-        $('#wait').fadeOut();
-        $('#accordion').slideUp();
-        $('#select').text('Show Countries');
+    function clicked() {
+      $unchanged = $(this).text();
+      $name = $(this).text().toLowerCase().split(" ")[0];
+      let ignore = ["Saint Helena, Ascension and Tristan da Cunha", "British Indian Ocean Territory"]
 
+        $('#wait').show();
         $.ajax({
-          url: '/all_countries.json',
-          success: function (desc) {
-            desc = desc[0];
-            if ($name in desc) {
-              found = desc[$name].join('\n');
-              $('.description').html(found);
-            } else {
-              $('.description').html("No description found for <b>" + $unchanged + "</b>");
-            }
+          url: `https://restcountries.com/v3.1/name/${$name}`,
+          success: function (data) {
+            data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
+            data = data[0];
+            countryName = data.name.common;
+            $('#title').html('' + countryName + ' ' + data.flag + '');
+            $('.data').html("Official Name: <u>" + data.name.official + "</u> <br>Population: <u>" + data.population + "</u> <br>Region: <u>" + data.subregion +
+              "</u><br>Curency: <u>" + Object.getOwnPropertyNames(data.currencies) + "</u> <br>Language: <u>" + getFirst(data.languages) + "</u>" + "<br>Capital: <u>" + data.capital + "</u>")
+            $('#wait').fadeOut();
+            $('#accordion').slideUp();
+            $('#select').text('Show Countries');
+              /////// READING FROM THE JSON FILE ///////////////
+              if ($name == "south") { $name = $unchanged.toLowerCase()}
+            $.ajax({
+              url: '/all_countries.json',
+              success: function (desc) {
+                desc = desc[0];
+                if ($name in desc) {
+                  found = desc[$name].join('\n');
+                  console.log($name)
+                  $('.description').html(found);
+                } else {
+                  $('.description').html("No description found for <b>" + $unchanged + "</b>");
+                }
+              }
+            });
           },
-          error: function (err) {
-            console.log("Error is: " + err.statusText + " and " + err.responseText)
+          error: function () {
+            $('#wait').hide();
+            $('#oops').show().delay(1500).fadeOut();
           }
         });
-      },
-      error: function () {
-        $('#wait').hide();
-        $('#oops').show().delay(1500).fadeOut();
-      }
-    });
   }
   ///////////////////////// SEND A MESSAGE AND SAVE (Will Be Implemented Later)///////////////////////
   // $('#submitbutton').click(function () {

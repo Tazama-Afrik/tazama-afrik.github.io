@@ -16,6 +16,17 @@
   text-align: left;
   min-height: 900px;
 }
+#title {
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(white, lightsteelblue);
+  width: 100%;
+  display:inline-block;
+}
+
 body {
   background-color: lightsteelblue;
   background: linear-gradient(white, lightsteelblue);
@@ -45,13 +56,12 @@ body {
   width: 15%;
   height: fit-content;
   color:aqua;
-  font-weight: bold;
+  font-weight: 600;
   float: right;
   text-align: center;
   margin: 5px;
-  padding: 10px;
-  border-radius: 1%;
-  box-shadow: grey 10px top;
+  padding: 1%;
+  max-height: 50px;
 }
 /* The Country Data Inn Table */
 .data {
@@ -71,10 +81,10 @@ th {
 
 th, td {
   padding: 8px;
-  border: #dddddd 2px solid;
+  border: lightsteelblue 2px solid;
 }
 tr:nth-child(even) {
-  background: #dddddd;
+  background: lightsteelblue
 }
 .nav-list {
   display: table-column;
@@ -154,12 +164,7 @@ tr:nth-child(even) {
 .country:active, .nav:active {
   opacity: 80%;
 }
-#title {
-  margin-top: 60px;
-  text-transform: uppercase;
-  text-align: center;
-  background: linear-gradient(white, lightsteelblue);
-}
+
 /************* THE RELOAD BUTTON ***********/
 .reload {
   color:red;
@@ -173,6 +178,7 @@ tr:nth-child(even) {
 .topnav{
   top: 0;
   min-height: 55px;
+  background-color: rgb(26, 18, 75);
 }
 
 .topnav .nav {
@@ -183,6 +189,12 @@ tr:nth-child(even) {
   padding: 10px 14px;
   text-decoration: none;
   font-size: 17px;
+  position: sticky;
+}
+.topnav .nav:hover {
+  background-color: lightsteelblue;
+  font-weight: 600;
+  color: black;
 }
 
 .loading {

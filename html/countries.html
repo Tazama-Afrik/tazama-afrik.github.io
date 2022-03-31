@@ -278,17 +278,14 @@
     $('#menu').slideUp();
   });
   ////////////////////// API QUERY FOR DEFAULT COUNTRY ///////////////
-  // $.ajax({
-  //   url: `https://restcountries.com/v3.1/name/benin`,
-  //   success: function (data) {
-  //     data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
-  //     countryName = 'benin';
-  //     data = data[0];
-  //     $('#title').html('' + countryName + ' ' + data.flag + '');
-  //     $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>None</u> | "+
-  //     "Region: <u>None</u><br> Curency: <u>None</u> | Languages: <u>None</u> | Capital: <u>None</u>");
-  //   }
-  // });
+  $.ajax({
+    url: `https://restcountries.com/v3.1/name/benin`,
+    success: function (data) {
+      let flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
+      countryName = 'benin';
+      $('#title').html('benin ' + flag);
+    }
+  });
   /////////////////// API QUERY FOR ALL SUBREGIONS ///////////////////
   $(function () {
     $.ajax({

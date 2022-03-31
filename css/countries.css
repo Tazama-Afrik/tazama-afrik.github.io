@@ -28,8 +28,8 @@
 }
 
 body {
-  background-color: lightsteelblue;
-  background: linear-gradient(white, lightsteelblue);
+  background-color: white;
+  /* background: linear-gradient(white, #fdf); */
 }
 
 .body img {
@@ -209,7 +209,63 @@ tr:nth-child(even) {
   height: fit-content;
   justify-content: left;
 }
-
+      /* Profiles Below */
+#engineers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+}
+.eng {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 3%;
+}
+#obed, #faith {
+  display: grid;
+  text-align: left;
+  font-size: smaller;
+  color: lightblue;
+}
+.profile {
+  width: 90%;
+  max-width: 3.5in;
+  display: grid;
+  grid-template-rows: 50% auto auto;
+  background-color: white;
+  height: 100%;
+  max-height: 4in;
+  position: fixed;
+  top: 10%;
+  right: 30%;
+  padding: 2%;
+}
+.dp {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#obed, #faith {
+  display: grid;
+  text-align: left;
+  margin-left: 30%;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4%;
+  align-items: stretch;
+  
+}
+.contacts > img {
+  height: 30px;
+  width: 40px;
+  margin: 15px;
+}
+#fth, #ob {
+  display: none;
+}
 @keyframes spin {
   to {
     transform: rotateZ(360deg);

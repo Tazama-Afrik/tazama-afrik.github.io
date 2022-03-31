@@ -529,6 +529,22 @@ form input[type="submit"] {
   .topnav .nav {
     display: none;
   }
+  #obed, #faith {
+    display: grid;
+    text-align: left;
+    margin-left: 30%;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts > img {
+    height: 4px;
+    width: 4px;
+  }
+  #fth {
+    display: none;
+  }
   .project-image {
     border-radius: 0;
   }

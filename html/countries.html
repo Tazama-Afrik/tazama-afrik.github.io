@@ -87,11 +87,36 @@
   <!------     END OF COUNTRIES LIST ------->
 
   <main class="body">
+            <!-- Header (The Country Name And Flag) -->
     <h1 id="title" style="font-size:150%">BENIN</h1>
-    <div class="data"
-      style="font-family:sans-serif; color: darkblue; font-weight: bolder; font-size: 70%; text-align: center;">
-      Official Name: None | Population: None | Subregion: None
-    </div>
+            <!-- Country Data In Table -->
+    <table class="data">
+      <tr>
+        <th> Official Name</th>
+        <td id="official">None</td>
+      </tr>
+      <tr>
+        <th>Population</th>
+        <td id="population">None</td>
+      </tr>
+      <tr>
+        <th> Region</th>
+        <td id="region">None</td>
+      </tr>
+      <tr>
+        <th>Currency</th>
+        <td id="currency">None</td>
+      </tr>
+      <tr>
+        <th>Capital</th>
+        <td id="capital">None</td>
+      </tr>
+      <tr>
+        <th>Language</th>
+        <td id="language">None</td>
+      </tr>
+    </table>
+
     <div class="description">
       <p style="text-align: left;"><b>Select a Country To View Its Data. <br></b>
         <br> Note: The information provided in this section are regularly updated,
@@ -253,17 +278,17 @@
     $('#menu').slideUp();
   });
   ////////////////////// API QUERY FOR DEFAULT COUNTRY ///////////////
-  $.ajax({
-    url: `https://restcountries.com/v3.1/name/benin`,
-    success: function (data) {
-      data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
-      countryName = 'benin';
-      data = data[0];
-      $('#title').html('' + countryName + ' ' + data.flag + '');
-      $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>None</u> | "+
-      "Region: <u>None</u><br> Curency: <u>None</u> | Languages: <u>None</u> | Capital: <u>None</u>");
-    }
-  });
+  // $.ajax({
+  //   url: `https://restcountries.com/v3.1/name/benin`,
+  //   success: function (data) {
+  //     data[0].flag = `<img src="https://flagcdn.com/h40/${data[0].cca2.toLowerCase()}.png"/>`
+  //     countryName = 'benin';
+  //     data = data[0];
+  //     $('#title').html('' + countryName + ' ' + data.flag + '');
+  //     $('.data').html("Official Name: <u>" + data.name.official + "</u> | Population: <u>None</u> | "+
+  //     "Region: <u>None</u><br> Curency: <u>None</u> | Languages: <u>None</u> | Capital: <u>None</u>");
+  //   }
+  // });
   /////////////////// API QUERY FOR ALL SUBREGIONS ///////////////////
   $(function () {
     $.ajax({
@@ -395,21 +420,21 @@
   }
      ////// Error COuntries: Mali, Nigeria, Burkina, SouthSudan, RepubCongo.
     function clicked() {
-      $unchanged = $(this).text();
-      $name = $(this).text().toLowerCase().split(" ")[0];
-      ///////// Different url for the error countries ///////
-      let api = `https://restcountries.com/v3.1/name/${$name}`;
-      if ($name == 'burkina') {
-        api = 'https://restcountries.com/v3.1/capital/Ouagadougou'
-      } else if ($name == 'nigeria') {
-        api = 'https://restcountries.com/v3.1/capital/Abuja'
-      } else if ($unchanged == 'South Sudan') {
-        api = 'https://restcountries.com/v3.1/capital/Juba'
-      } else if ($name == 'mali') {
-        api = 'https://restcountries.com/v3.1/capital/Bamako'
-      } else if ($name == 'republic') {
-        api = 'https://restcountries.com/v3.1/capital/brazzaville'
-      }
+        $unchanged = $(this).text();
+        $name = $(this).text().toLowerCase().split(" ")[0];
+        ///////// Different url for the error countries ///////
+        let api = `https://restcountries.com/v3.1/name/${$name}`;
+        if ($name == 'burkina') {
+          api = 'https://restcountries.com/v3.1/capital/Ouagadougou'
+        } else if ($name == 'nigeria') {
+          api = 'https://restcountries.com/v3.1/capital/Abuja'
+        } else if ($unchanged == 'South Sudan') {
+          api = 'https://restcountries.com/v3.1/capital/Juba'
+        } else if ($name == 'mali') {
+          api = 'https://restcountries.com/v3.1/capital/Bamako'
+        } else if ($name == 'republic') {
+          api = 'https://restcountries.com/v3.1/capital/brazzaville'
+        }
         $('#wait').show();
         $.ajax({
           url: api,
@@ -418,13 +443,17 @@
             data = data[0];
             countryName = data.name.common;
             $('#title').html('' + countryName + ' ' + data.flag + '');
-            $('.data').html("Official Name: <u>" + data.name.official + "</u> <br>Population: <u>" + data.population + "</u> <br>Region: <u>" + data.subregion +
-              "</u><br>Curency: <u>" + Object.getOwnPropertyNames(data.currencies) + "</u> <br>Language: <u>" + getFirst(data.languages) + "</u>" + "<br>Capital: <u>" + data.capital + "</u>")
+            $('#population').html(data.population);
+            $('#region').html(data.subregion);
+            $('#currency').html(Object.getOwnPropertyNames(data.currencies));
+            $('#capital').html(data.capital);
+            $('#language').html(getFirst(data.languages));
+            $('#official').html(data.name.official)
             $('#wait').fadeOut();
             $('#accordion').slideUp();
             $('#select').text('Show Countries');
-              /////// READING FROM THE JSON FILE ///////////////
-              if ($name == "south") { $name = $unchanged.toLowerCase()}
+            /////// READING FROM THE JSON FILE ///////////////
+            if ($name == "south") { $name = $unchanged.toLowerCase() }
             $.ajax({
               url: '/all_countries.json',
               success: function (desc) {
@@ -443,7 +472,7 @@
             $('#oops').show().delay(1500).fadeOut();
           }
         });
-  }
+      }
   ///////////////////////// SEND A MESSAGE AND SAVE (Will Be Implemented Later)///////////////////////
   // $('#submitbutton').click(function () {
   //   if ($('#message').val()) {

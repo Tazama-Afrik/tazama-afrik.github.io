@@ -53,6 +53,29 @@ body {
   border-radius: 1%;
   box-shadow: grey 10px top;
 }
+/* The Country Data Inn Table */
+.data {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  box-shadow: #a79ee0 1px 4px 5px,
+   #a79ee0 -1px -1px 5px;
+  color: darkslateblue;
+  font-weight: 500;
+  max-width: 8in;
+}
+th {
+  font-weight: 700;
+}
+
+th, td {
+  padding: 8px;
+  border: #dddddd 2px solid;
+}
+tr:nth-child(even) {
+  background: #dddddd;
+}
 .nav-list {
   display: table-column;
   justify-content: space-around;

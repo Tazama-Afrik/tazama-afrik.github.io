@@ -398,6 +398,7 @@
     function clicked() {
       $unchanged = $(this).text();
       $name = $(this).text().toLowerCase().split(" ")[0];
+      ///////// Different url for the error countries
       let api = `https://restcountries.com/v3.1/name/${$name}`;
       if ($name == 'burkina') {
         api = 'https://restcountries.com/v3.1/capital/Ouagadougou'
@@ -405,6 +406,8 @@
         api = 'https://restcountries.com/v3.1/capital/Abuja'
       } else if ($unchanged == 'South Sudan') {
         api = 'https://restcountries.com/v3.1/capital/Juba'
+      } else if ($name == 'mali') {
+        api = 'https://restcountries.com/v3.1/capital/Bamako'
       }
         $('#wait').show();
         $.ajax({
@@ -442,7 +445,7 @@
   }
   function burkina() {
     $.ajax({
-    url: 'https://restcountries.com/v3.1/capital/juba',
+    url: 'https://restcountries.com/v3.1/capital/bamako',
     success: function(res) {
       console.log(res);
     },

@@ -282,9 +282,7 @@
               num += 1;
             }
           }
-          $country.sort();
         });
-
         $number.append(`${num} Countries`);
         $('.country').click(clicked);
       },
@@ -399,7 +397,7 @@
     function clicked() {
       $unchanged = $(this).text();
       $name = $(this).text().toLowerCase().split(" ")[0];
-      ///////// Different url for the error countries
+      ///////// Different url for the error countries ///////
       let api = `https://restcountries.com/v3.1/name/${$name}`;
       if ($name == 'burkina') {
         api = 'https://restcountries.com/v3.1/capital/Ouagadougou'
@@ -409,6 +407,8 @@
         api = 'https://restcountries.com/v3.1/capital/Juba'
       } else if ($name == 'mali') {
         api = 'https://restcountries.com/v3.1/capital/Bamako'
+      } else if ($name == 'republic') {
+        api = 'https://restcountries.com/v3.1/capital/brazzaville'
       }
         $('#wait').show();
         $.ajax({
@@ -444,16 +444,6 @@
           }
         });
   }
-  function burkina() {
-    $.ajax({
-    url: 'https://restcountries.com/v3.1/capital/bamako',
-    success: function(res) {
-      console.log(res);
-    },
-    error: console.log('There was an error')
-  });
-}
-burkina();
   ///////////////////////// SEND A MESSAGE AND SAVE (Will Be Implemented Later)///////////////////////
   // $('#submitbutton').click(function () {
   //   if ($('#message').val()) {

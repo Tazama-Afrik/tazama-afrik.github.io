@@ -113,7 +113,12 @@ tr:nth-child(even) {
   padding: 4%;
   text-shadow: black 1px 2px;
 }
-
+.counter {
+  padding: 3px;
+}
+#footer{
+  margin-top: 0;
+}
 .topnav #home {
   margin-top: 10px;
 }

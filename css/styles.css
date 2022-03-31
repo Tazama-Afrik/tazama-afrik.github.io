@@ -224,9 +224,6 @@ body {
   font-weight: bold;
   font-size: 110%;
 }
-#footer {
-  font-family: 'Fredoka', sans-serif;
-}
 
 
 
@@ -427,6 +424,8 @@ form input[type="submit"] {
   padding: 5px;
   color: black;
   bottom: 0;
+  margin-top: 0;
+  font-family: 'Fredoka', sans-serif;
 }
 
 /* For All Table Of Contents */

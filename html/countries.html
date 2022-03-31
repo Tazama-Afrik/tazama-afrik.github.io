@@ -244,26 +244,31 @@
     </div>
   </div>
                 <!-- Profile Images Layout Below -->
-    <div class="profile" id="ob">
+    <div style="display: none;" class="profile" id="ob">
+      <div class="clos">&times;</div>
       <img src="/img/eng/Obed.jpg" alt="Obed's Image" class="dp">
-    <center>Contact Obed</center>
+    <div class="text">Obed Amoako</div>
       <div class="contacts">
-        <img src="/img/linkedin.png">
-        <img src="/img/twitter.png">
-        <img src="/img/github.png">
-        <img src="/img/tel.png">
-        <img src="/img/mail.png">
+        <img src="/img/linkedin.png" title="Linkedin">
+        <img src="/img/twitter.png" title="Twitter">
+        <img src="/img/github.png" title="Github">
+        <img src="/img/tel.png" title="Telephone">
+        <img src="/img/mail.png" title="Message">
       </div>
+      <a target="_blank" href="https://paypal.me/ericobe" class="coffee">☕ Buy Obed a coffee</a>
     </div>
-    <div class="profile" id="fth">
+    <div style="display: none;" class="profile" id="fth">
+      <div class="clos">&times;</div>
       <img src="/img/eng/Faith.jpg" alt="Faith's Image" class="dp">
-      <div class="contacts">
-        <img src="/img/linkedin.png">
-        <img src="/img/twitter.png">
-        <img src="/img/github.png">
-        <img src="/img/tel.png">
-        <img src="/img/mail.png">
+    <div class="text">Faith Ikhidero</div>
+    <div class="contacts">
+        <img src="/img/linkedin.png" title="Linkedin">
+        <img src="/img/twitter.png" title="Twitter">
+        <img src="/img/github.png" title="Github">
+        <img src="/img/tel.png" title="Telephone">
+        <img src="/img/mail.png" title="Message">
       </div>
+      <a target="_blank" href="#" class="coffee">☕ Buy Faith a coffee</a>
     </div>
   <center class="counter"></center>
   <footer id="footer">Src: wikipedia | All rights reserved | Tazama Afrik </footer>
@@ -553,6 +558,18 @@
     });
   };
   $toTop.click(goToTop);
+          ///////////// Profile Display/////////////
+      $('#obed').click(function(){
+        $('#fth').fadeOut();
+        $('#ob').fadeToggle();
+      })
+      $('#faith').click(function(){
+        $('#ob').fadeOut();
+        $('#fth').fadeIn();
+      })
+      $('.clos').click(function(){
+        $('#ob').fadeOut();
+        $('#fth').fadeOut();
+      })
 </script>
-
 </html>

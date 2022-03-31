@@ -228,23 +228,48 @@ tr:nth-child(even) {
   color: lightblue;
 }
 .profile {
-  width: 90%;
-  max-width: 3.5in;
+  max-width: 2.5in;
   display: grid;
-  grid-template-rows: 50% auto auto;
+  grid-template-rows: 50% 10% auto 6%;
   background-color: white;
   height: 100%;
   max-height: 4in;
   position: fixed;
-  top: 10%;
+  top: 15%;
   right: 30%;
   padding: 2%;
+  box-shadow: grey 0.1px 0.1px 10px;
+  color: white;
+}
+.text {
+  width: fit-content;
+  place-self: center;
+  font-weight: 600;
+  text-decoration: underline;
+  color: darkblue;
+  margin: 0;
+}
+.coffee {
+  border-radius: 11px;
+  padding: 3px 10px;
+  background-color: blue;
+  place-self:center;
+  margin-top: 0px;
+  margin-bottom: 17%;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.coffee:hover {
+  background-color: green;
 }
 .dp {
-  width: 90%;
+  width: 85%;
   height: 100%;
+  border-radius: 100%;
   margin-left: auto;
   margin-right: auto;
+  cursor: not-allowed;
 }
 #obed, #faith {
   display: grid;
@@ -254,17 +279,28 @@ tr:nth-child(even) {
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  padding: 4%;
-  align-items: stretch;
-  
+  padding: 0%;
+  width: 90%;
+  height: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
 }
 .contacts > img {
   height: 30px;
   width: 40px;
-  margin: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
-#fth, #ob {
-  display: none;
+.clos {
+  position:absolute;
+  top: 3px;
+  font-size: 30px;
+  right: 7px;
+  font-stretch: extra-expanded;
+  color: red;
+  cursor: default;
 }
 @keyframes spin {
   to {

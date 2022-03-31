@@ -403,6 +403,8 @@
         api = 'https://restcountries.com/v3.1/capital/Ouagadougou'
       } else if ($name == 'nigeria') {
         api = 'https://restcountries.com/v3.1/capital/Abuja'
+      } else if ($unchanged == 'South Sudan') {
+        api = 'https://restcountries.com/v3.1/capital/Juba'
       }
         $('#wait').show();
         $.ajax({
@@ -440,7 +442,7 @@
   }
   function burkina() {
     $.ajax({
-    url: 'https://restcountries.com/v3.1/capital/Abuja',
+    url: 'https://restcountries.com/v3.1/capital/juba',
     success: function(res) {
       console.log(res);
     },

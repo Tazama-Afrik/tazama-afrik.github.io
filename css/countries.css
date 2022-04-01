@@ -312,7 +312,7 @@ tr:nth-child(even) {
   background-image: url(/img/twitter.png);
 }
 #whatsapp {
-  background-image: url(/img/linkedin.png);
+  background-image: url(/img/whatsapp.png);
 }
 #github {
   background-image: url(/img/github.png);
@@ -321,7 +321,7 @@ tr:nth-child(even) {
   background-image: url(/img/tel.jpg);
 }
 #mail {
-  background-image: url(/img/mail.png);
+  background-image: url(/img/mail.jpg);
 }
 @keyframes spin {
   to {

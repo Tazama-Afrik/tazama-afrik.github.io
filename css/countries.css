@@ -209,18 +209,7 @@ tr:nth-child(even) {
   height: fit-content;
   justify-content: left;
 }
-      /* Profiles Below */
-#engineers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  cursor: pointer;
-}
-.eng {
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  padding: 3%;
-}
+
 
 @keyframes spin {
   to {

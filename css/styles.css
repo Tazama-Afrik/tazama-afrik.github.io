@@ -360,11 +360,23 @@ form input[type="submit"] {
 .submit-button-wrapper {
   margin: 20px o;
 }
+/* Profiles Below */
+#engineers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+}
+.eng {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 3%;
+}
 /********** ENGINEERS PROFILE DISPLAY *************/
 #obed,
 #faith {
   display: grid;
-  text-align: left;
+  text-align: center;
   font-size: smaller;
   color: lightblue;
 }
@@ -416,8 +428,9 @@ form input[type="submit"] {
 #obed,
 #faith {
   display: grid;
-  text-align: left;
+  text-align: center;
   margin-left: 30%;
+  justify-self: center;
 }
 .contacts {
   display: flex;
@@ -670,6 +683,10 @@ form input[type="submit"] {
     max-width: 100%;
     min-width: 95%;
   }
+  .coffee,
+  .text {
+    font-size: 17px;
+  }
   .contacts {
     max-width: 70%;
   }
@@ -681,10 +698,7 @@ form input[type="submit"] {
   #select {
     min-height: 25px;
   }
-  .coffee,
-  .text {
-    font-size: larger;
-  }
+
   .welcome {
     font-size: larger !important;
   }

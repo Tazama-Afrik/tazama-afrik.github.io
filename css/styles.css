@@ -427,17 +427,20 @@ form input[type="submit"] {
   height: 70%;
   margin-right: auto;
   margin-left: auto;
-  justify-content: center;
+  place-content: center;
+  justify-content:center;
 }
 .five {
   height: 30px;
   width: 40px;
-  margin-right: 15px;
+  margin-right: 10px;
   margin-left: 6px;
+  margin-bottom: 10px;
   cursor: pointer;
   margin-top: 4px;
   background-repeat: no-repeat;
   background-size: contain;
+  justify-self: center;
 }
 .clos {
   position: absolute;
@@ -671,7 +674,8 @@ form input[type="submit"] {
     max-width: 70%;
   }
   .five {
-    margin-right: 13%;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   #select {
     min-height: 25px;

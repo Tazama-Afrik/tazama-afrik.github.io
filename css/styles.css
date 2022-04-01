@@ -564,8 +564,14 @@ form input[type="submit"] {
     max-width: 100%;
     min-width: 95%;
   }
+  .contacts{
+    width: 70%;
+  }
   #select {
     min-height: 25px;
+  }
+  .coffee {
+    font-size: larger;
   }
   .welcome {
     font-size: larger !important;

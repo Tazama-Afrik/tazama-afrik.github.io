@@ -302,7 +302,7 @@ tr:nth-child(even) {
   font-size: 30px;
   right: 7px;
   font-stretch: extra-expanded;
-  color: red;
+  color: darkred;
   cursor: default;
 }
 #linkedin {

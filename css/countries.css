@@ -255,7 +255,7 @@ tr:nth-child(even) {
   background-color: blue;
   place-self:center;
   margin-top: 0px;
-  margin-bottom: 17%;
+  margin-bottom: 9%;
   cursor: pointer;
   text-decoration: none;
   color: white;
@@ -286,12 +286,15 @@ tr:nth-child(even) {
   margin-left: auto;
   justify-content: center;
 }
-.contacts > img {
+.five {
   height: 30px;
   width: 40px;
   margin-right: 10px;
-  margin-left: 10px;
+  margin-left: 6px;
   cursor: pointer;
+  margin-top: 4px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .clos {
   position:absolute;
@@ -301,6 +304,24 @@ tr:nth-child(even) {
   font-stretch: extra-expanded;
   color: red;
   cursor: default;
+}
+#linkedin {
+  background-image: url(/img/linkedin.png);
+}
+#twitter {
+  background-image: url(/img/twitter.png);
+}
+#whatsapp {
+  background-image: url(/img/linkedin.png);
+}
+#github {
+  background-image: url(/img/github.png);
+}
+#tel {
+  background-image: url(/img/tel.jpg);
+}
+#mail {
+  background-image: url(/img/mail.png);
 }
 @keyframes spin {
   to {
@@ -326,6 +347,7 @@ tr:nth-child(even) {
     right:30px;
     top: 0;
     font-size: 9px;
+    padding: 7px;
     padding-left: 4px;
     padding-right: 4px;
     margin: 20px;

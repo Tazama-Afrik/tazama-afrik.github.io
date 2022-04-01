@@ -562,9 +562,9 @@ form input[type="submit"] {
     left: 1px;
     max-width: 4in;
   }
-  /* #select {
-    padding-top: 50%;
-  } */
+  #select {
+    min-height: 25px;
+  }
   .welcome {
     font-size: larger !important;
   }

@@ -248,7 +248,7 @@ tr:nth-child(even) {
   text-decoration: underline;
   color: darkblue;
   margin: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .coffee {
   border-radius: 11px;

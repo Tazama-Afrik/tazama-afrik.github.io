@@ -565,7 +565,7 @@ form input[type="submit"] {
     min-width: 95%;
   }
   .contacts{
-    width: 60%;
+    max-width: 60%;
   }
   #select {
     min-height: 25px;

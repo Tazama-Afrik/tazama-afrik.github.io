@@ -565,12 +565,12 @@ form input[type="submit"] {
     min-width: 95%;
   }
   .contacts{
-    width: 70%;
+    width: 60%;
   }
   #select {
     min-height: 25px;
   }
-  .coffee {
+  .coffee, .text {
     font-size: larger;
   }
   .welcome {

@@ -559,10 +559,10 @@ form input[type="submit"] {
     max-width: 99%;
   }
   .profile {
-    min-height: 80%;
-    left: 0;
+    min-height: 86%;
+    left: 2%;
     max-width: 100%;
-    min-width: 100%;
+    min-width: 95%;
   }
   #select {
     min-height: 25px;

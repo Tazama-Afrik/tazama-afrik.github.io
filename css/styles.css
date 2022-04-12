@@ -144,6 +144,8 @@ body::-webkit-scrollbar-thumb {
   margin: 3px;
   padding: 4px;
   text-align: left;
+  color: slateblue;
+  text-shadow: none;
 }
 .widget-header {
   width: fit-content;

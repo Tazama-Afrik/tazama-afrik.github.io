@@ -265,11 +265,42 @@
            <a class="two" href="cuisine.html#tabs-8">Yassa</a>
          </div>
          <div class="navigate">
-           <h4 class="navtopic">Engineers</h4>
-           <a class="two" href="https://github.com/Obed101">Obed Amoako</a>
-           <a class="two" href="https://github.com/Faitholo">Faith Ikhidero</a>
-         </div>
+          <h4 class="navtopic">Engineers</h4>
+          <three id="engineers">
+            <us class="two" id="obed" title="View Obed"><img src="/img/eng/Obed.jpg" alt="Obed's image" class="eng"> Obed</us>
+            <us class="two" id="faith" title="View Faith"><img src="/img/eng/Faith.jpg" alt="Faith's image" class="eng">Faith</us>
+          </three>
+        </div>
        </div>
+                       <!-- Profile Images Layout Below -->
+    <div style="display: none;" class="profile" id="ob">
+      <div class="clos">&times;</div>
+      <img src="/img/eng/Obed.jpg" alt="Obed's Image" class="dp">
+    <div class="text">Obed Amoako</div>
+      <div class="contacts">
+        <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five"></a>
+        <a target="_blank" href="" title="Twitter" id="twitter" class="five"></a>
+        <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five"></a>
+        <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five"></a>
+        <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five"></a>
+        <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five"></a>
+      </div>
+      <a target="_blank" href="https://paypal.me/ericobe" class="coffee">☕ Buy Obed a coffee</a>
+    </div>
+    <div style="display: none;" class="profile" id="fth">
+      <div class="clos">&times;</div>
+      <img src="/img/eng/Faith.jpg" alt="Faith's Image" class="dp">
+    <div class="text">Faith Ikhidero</div>
+    <div class="contacts">
+      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five"></a>
+      <a target="_blank" href="" title="Twitter" id="twitter" class="five"></a>
+      <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five"></a>
+      <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five"></a>
+      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five"></a>
+      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five"></a>
+    </div>
+      <a target="_blank" href="#" class="coffee">☕ Buy Faith a coffee</a>
+    </div>
        <center class="counter"></center>
        <footer id="footer">Src: wikipedia | All rights reserved | Tazama Afrik </footer>
     <script>
@@ -289,28 +320,42 @@
       });
 
 
-      $toTop = $(".back-to-top");
-      let showOnPx = 100;
-      // $pageProgressBar = $(".progress-bar"); // DOn't remove this line
+  $toTop = $(".back-to-top");
+  let showOnPx = 100;
+  // $pageProgressBar = $(".progress-bar"); // DOn't remove this line
 
-      const scrollContainer = () => {
-        return document.documentElement || document.body;
-      };
+  const scrollContainer = () => {
+    return document.documentElement || document.body;
+  };
 
-      document.addEventListener("scroll", () => {
-        if (scrollContainer().scrollTop > showOnPx) {
-          $toTop.show();
-        } else {
-          $toTop.slideUp();
-        }
-      });
+  document.addEventListener("scroll", () => {
+    if (scrollContainer().scrollTop > showOnPx) {
+      $toTop.show();
+    } else {
+      $toTop.slideUp();
+    }
+  });
 
-      const goToTop = () => {
-        document.body.scrollIntoView({
-          behavior: "smooth"
-        });
-      };
-      $toTop.click(goToTop);
+  const goToTop = () => {
+    document.body.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+  $toTop.click(goToTop);
+
+        ///////////// Profile Display/////////////
+ $('#obed').click(function(){
+    $('#fth').fadeOut();
+    $('#ob').fadeIn();
+  })
+  $('#faith').click(function(){
+    $('#ob').fadeOut();
+    $('#fth').fadeIn();
+  })
+  $('.clos').click(function(){
+    $('#ob').fadeOut();
+    $('#fth').fadeOut();
+  })
     </script>
 </body>
 

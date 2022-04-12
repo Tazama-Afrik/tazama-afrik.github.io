@@ -25,7 +25,6 @@ body {
 }
 .nav a {
   float: left;
-  color: rgb(14, 38, 90);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,11 +39,6 @@ body {
   padding-top: 0;
 }
 
-.active {
-  background-color: rgb(4, 2, 34);
-  color: rgb(237, 242, 243);
-}
-
 .nav {
   overflow:visible;
   color: #edf1f1;
@@ -53,22 +47,6 @@ body {
   font-size: 17px;
 }
 
-
-.nav .b:hover {
-  background-color: rgb(156, 119, 165);
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.nav .active {
-  background-color: rgb(131, 205, 207);
-}
-
-.nav .active:hover {
-  background-color: rgb(14, 66, 16);
-  color: white;
-}
 /* BELOW, THE SEARCH BAR */
 .search {
   float: right;
@@ -90,7 +68,6 @@ body {
 #searchSubmit:hover {
   background-color: green;
 }
-/* END OF SEARCH BAR */
 
 
 /* pictures and descriptions */
@@ -214,10 +191,6 @@ h2 {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -244,58 +217,8 @@ h2 {
   max-height: 600px;
 }
 
-.links-and-contact {
-  font: bold;
-  width: 100%;
-  text-decoration: blink;
+/********** OVERRIDING CHANGES FOR NAME DISPLAY *************/
+.text {
+  position: relative;
+  color: darkblue;
 }
-
-.link-list{
-width: fit-content;
-height: fit-content;
-padding: 4px;
-margin-bottom: 20px;
-}
-
-/****************** BEGINNGING OF CONTACT **************/
-form input,
-textarea {
-  padding: 5px;
-  border-radius: 5px;
-  width: 240px;
-}
-
-.links-and-contact {
-  background-color: rgb(24, 19, 19);
-  color: aliceblue;
-  padding-top: 5px;
-}
-.contact {
-    background-color: white;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 4%;
-    padding: 20px;
-    position: absolute;
-    right: 33%;
-    bottom: 1em;
-    display: none;
-}
-
-form {
-  width: 250px;
-  margin: 0 auto;
-}
-
-form input[type="submit"] {
-  width: 250px;
-}
-#submitbutton:hover {
-    background-color: darkolivegreen;
-}
-submit-button-wrapper {
-  margin: 20px o;
-}
-
-/************ END OF CONTACT *************/

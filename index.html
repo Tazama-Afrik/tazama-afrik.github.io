@@ -25,9 +25,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Yanone+Kaffeesatz:wght@700&display=swap"
+    rel="stylesheet">
   <link rel='shortcut icon' href="img/tazama_afrik.png">
   <title>Tazama Afrik</title>
 </head>
@@ -43,7 +46,7 @@
       <a class="b" href="html/culture.html">Culture</a>
       <a class="b" href="html/reserves.html">Reserves</a>
       <a class="b" href="html/cuisine.html">Cuisine</a>
-      
+
 
       <!------     BEGINNING OF SEARCH BAR -------->
       <div class="search">
@@ -79,10 +82,16 @@
   <!---------------------------------- NAVIGATION BAR ENDS --------------------------------->
   <div class="select">
     <h2>Destination Africa</h2>
-    <h4 style="color:darkslateblue;">Make a selection below to survey our recommendations</h4>
+    <h4>Make a selection below to survey our recommendations</h4>
   </div>
 
-  <div class="container">
+  <div class="container" id="container">
+
+    <div class="project-image-wrapper">
+      <a href="html/countries.html">
+        <h1 class="hover-text">COUNTRIES</h1><img class="project-image" src="img/map.jpg" alt="Countries">
+      </a>
+    </div>
 
     <div class="project-image-wrapper">
       <a href="html/beaches.html">
@@ -105,13 +114,14 @@
     </div>
     <div class="project-image-wrapper">
       <a href="html/culture.html">
-        <h1 class="hover-text">CULTURE</h1><img class="project-image" src="img/calabar-carnival.jpg" alt="Culture">
+        <h1 class="hover-text">CULTURE</h1><img id="culture-img" class="project-image" src="img/calabar-carnival.jpg"
+          alt="Culture">
       </a>
     </div>
   </div>
   <!----------------- ABOUT US -------------->
   <div id="about">
-    <h3>About Us</h3>
+    <h3><u>ABOUT US</u></h3>
     <p>Are you searching for a nice place to spend your vacation? We've got you covered.</p>
     <blockquote>
       Here at Tazama Afrik, We provide all you need about amazing places you can visit in Africa.
@@ -124,7 +134,7 @@
       preference.
 
     </p> <br> Already an African? Learn more about <a href="html/countries.html"
-      style="color: red; text-decoration: none;">your country!</a>
+      style="color: red; text-decoration: none; text-shadow: none;">your country!</a>
 
   </div>
   <!-- LINKS, AUTHURS AND CONTACT -->
@@ -136,16 +146,20 @@
       <h4 class="navtopic">Connect With Us!</h4>
       <div class="links">
         <one>
-          <a class="two" href="https://github.com/Tazama-Afrik"><img src="img/github.png" style="width:20px"/>&nbsp;Github</a>
+          <a class="two" href="https://github.com/Tazama-Afrik"><img src="img/github.png"
+              style="width:20px" />&nbsp;Github</a>
         </one>
         <one>
-          <a class="two" href="https://linkedin.com/in/tazama-afrik"><img src="img/linkedin.png" style="width:20px" />&nbsp;Linkedin</a>
+          <a class="two" href="https://linkedin.com/in/tazama-afrik"><img src="img/linkedin.png"
+              style="width:20px" />&nbsp;Linkedin</a>
         </one>
         <one>
-          <a class="two" href="https://facebook.com/in/tazama-afrik"><img src="img/facebook.png" style="width:13px" />&nbsp;Facebook</a>
+          <a class="two" href="https://facebook.com/in/tazama-afrik"><img src="img/facebook.png"
+              style="width:13px" />&nbsp;Facebook</a>
         </one>
         <one>
-          <a class="two" href="https://twitter.com/in/tazama-afrik"><img src="img/tw.png" style="width:20px" />&nbsp;Twitter</a>
+          <a class="two" href="https://twitter.com/in/tazama-afrik"><img src="img/tw.png"
+              style="width:20px" />&nbsp;Twitter</a>
         </one>
       </div>
     </div>
@@ -197,8 +211,10 @@
     <div class="navigate">
       <h4 class="navtopic">Engineers</h4>
       <three id="engineers">
-        <us class="two" id="obed" title="View Obed"><img src="/img/eng/Obed.jpg" alt="Obed's image" class="eng"> Obed</us>
-        <us class="two" id="faith" title="View Faith"><img src="/img/eng/Faith.jpg" alt="Faith's image" class="eng">Faith</us>
+        <us class="two" id="obed" title="View Obed"><img src="/img/eng/Obed.jpg" alt="Obed's image" class="eng"> Obed
+        </us>
+        <us class="two" id="faith" title="View Faith"><img src="/img/eng/Faith.jpg" alt="Faith's image"
+            class="eng">Faith</us>
       </three>
     </div>
   </div>
@@ -233,6 +249,35 @@
       <div id="close" title="Close">&times; </div>
     </form>
   </div>
+  <!-- Profile Images Layout Below -->
+  <div style="display: none;" class="profile" id="ob">
+    <div class="clos">&times;</div>
+    <img src="/img/eng/Obed.jpg" alt="Obed's Image" class="dp">
+    <div class="text">Obed Amoako</div>
+    <div class="contacts">
+      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five"></a>
+      <a target="_blank" href="" title="Twitter" id="twitter" class="five"></a>
+      <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five"></a>
+      <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five"></a>
+      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five"></a>
+      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five"></a>
+    </div>
+    <a target="_blank" href="https://paypal.me/ericobe" class="coffee">☕ Buy Obed a coffee</a>
+  </div>
+  <div style="display: none;" class="profile" id="fth">
+    <div class="clos">&times;</div>
+    <img src="/img/eng/Faith.jpg" alt="Faith's Image" class="dp">
+    <div class="text">Faith Ikhidero</div>
+    <div class="contacts">
+      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five"></a>
+      <a target="_blank" href="" title="Twitter" id="twitter" class="five"></a>
+      <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five"></a>
+      <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five"></a>
+      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five"></a>
+      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five"></a>
+    </div>
+    <a target="_blank" href="#" class="coffee">☕ Buy Faith a coffee</a>
+  </div>
   <!----------------- Back To Top Button ----------------->
   <button class="back-to-top" title="Back To Top">
     <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
@@ -243,8 +288,7 @@
   <!----------------- End Of Back To Top ----------------------->
 
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
 <script>
   ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
   $('#menu-icon').click(function () {
@@ -290,17 +334,8 @@
     $count.html($message);
   }
   visits();
-  ////////////////////////////  SEARCH BAR FUNCTION ///////////////////////////
-  // $searchdiv = $("#searchbar");
-  // $('body').ready(function () {
-  //   $("#searchbar").on("keyup", function () {
-  //     var value = $(this).val().toLowerCase();
-  //     $filtered = $("body").filter(function () {
-  //       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-  //     });
-  //     console.log($filtered);
-  //   });
-  // });
+
+
   $('#close').click(function () {
     $('.contact').css('display', 'none');
   });
@@ -367,7 +402,32 @@
     });
   };
   $toTop.click(goToTop);
+  /////////////////// SCROLL CONTROL FOR CONTAINER IMAGES//////////////
+  let item = document.getElementById("container");
 
+  item.addEventListener("wheel", function (e) {
+    if (e.deltaY > 0) {
+      item.scrollLeft += 100;
+      e.preventDefault();
+    }
+    else {
+      item.scrollLeft -= 100;
+      e.preventDefault();
+    }
+  });
+  ///////////// Profile Display/////////////
+  $('#obed').click(function () {
+    $('#fth').fadeOut();
+    $('#ob').fadeIn();
+  })
+  $('#faith').click(function () {
+    $('#ob').fadeOut();
+    $('#fth').fadeIn();
+  })
+  $('.clos').click(function () {
+    $('#ob').fadeOut();
+    $('#fth').fadeOut();
+  })
 </script>
 
 </html>

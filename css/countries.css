@@ -191,11 +191,6 @@ tr:nth-child(even) {
   font-size: 17px;
   position: sticky;
 }
-.topnav .nav:hover {
-  background-color: lightsteelblue;
-  font-weight: 600;
-  color: black;
-}
 
 .loading {
   animation: spin 2s infinite linear;

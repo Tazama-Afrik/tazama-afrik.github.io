@@ -1,3 +1,7 @@
+html {
+  background: linear-gradient( rgb(69, 113, 156), darkslategrey);
+}
+
 body {
   background: #333;
   font-family: 'Noto Sans', sans-serif;
@@ -7,7 +11,20 @@ body {
   background-size: cover;
   margin: 0;
 }
+        /* BODY SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 17px;
+}
 
+body::-webkit-scrollbar-track {
+  background: lightsteelblue;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:darkslategrey;
+  border-radius: 20px;
+  border: 1px solid lightsteelblue;
+}
 .hello {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../img/home-image.jpg);
@@ -56,8 +73,7 @@ body {
   text-decoration: none;
 }
 .nav .b:hover {
-  background-color: rgb(156, 119, 165);
-  color: black;
+  background-color: slategrey;
   font-weight: bold;
   font-size: 16px;
 }
@@ -149,35 +165,60 @@ body {
   position: relative;
   justify-content: center;
   margin: auto;
-  width: fit-content;
-  height: fit-content;
+  min-width: 30%;
   width: 40%;
+  /* object-fit: fill; */
+  padding: 1.5rem;
+  border-radius: 16px 0 0 16px;
+  background: linear-gradient(85deg, slategrey, darkslategrey);
+  color: #fff;
+  transition: .2s;
+  margin: 0;
+  box-shadow: -4rem 0 3rem -2rem slategrey,
+  darkslategrey 3px 3px 2px,
+  darkslategrey 3px -3px 3px;
 }
 .container {
+  background-color: slategrey;
+  gap: -20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 0 3rem 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: auto;
+  max-height: 4in;
+  scroll-snap-type: x mandatory;
+}
+.container::-webkit-scrollbar {
+  width: 20px;
+}
+.container::-webkit-scrollbar-track {
+  background: slategrey;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color:darkslategrey;
+  border-radius: 20px;
+  border: 1px solid slategrey;
 }
 
 .project-image {
-  width: 100%;
-  object-fit: fill;
-  border-radius: 10%;
+  width: 110%;
+  border-radius: 5% 0 0 5% ;
   transition: all ease-in-out .2s;
-  padding: 5px;
-}
-
-.project-image-wrapper:hover > .project-image {
-  box-shadow: hsla(158, 55%, 60%, 0.535);
-  margin: 2px;
-}
-
-.project-image:hover,
-.project-image:hover + h1 {
-  filter: brightness(.95);
-  opacity: 1.0;
-  -ms-transform: scale(0.5);
-  -webkit-transform: scale(0.5);
+  height: 100%;
   transform: scale(1.05);
+}
+#culture-img {
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.project-image-wrapper:hover {
+  width: 150%;
+  transform: translateY(-1rem) rotate(2.5deg);
+  
 }
 
 .project-image-wrapper:hover .hover-text {
@@ -192,10 +233,9 @@ body {
   visibility: hidden;
   z-index: 3;
   transition: all ease-in-out .2s;
-  margin-left: 52%;
-  width: fit-content;
+  left: 50%;
   text-shadow: 1.4px 2px 3px #000, 0.9px 0.9px 10px black;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -204,19 +244,36 @@ body {
 .select {
   font-size: larger;
   text-align: center;
-  background-color: rgb(250, 255, 253);
-  color: rgb(53, 53, 102);
+  color: rgb(55, 55, 201);
   margin: 0;
+  color: white;
+  text-shadow: black 1px 1px 5px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 150%;
 }
 
 #about {
-  background-color: azure;
   text-align: center;
   margin-bottom: 1%;
-  color: rgb(67, 12, 129);
+  color: lightgreen;
+  text-shadow: black 1px 1px 5px;
   font-family: 'Fredoka', sans-serif;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 120%;
+}
+.active {
+  background-color: slategrey;
+  color: white;
+}
+.b, .topnav .nav {
+  color: white;
+  text-shadow: black 1px 2px 4px;
+  font-weight: 600;
+}
+.b:hover, .topnav .nav:hover {
+  background-color: slategrey;
+  color: white;
+  font-weight: 600;
 }
 
 /****************** BEGINNGING OF CONTACT **************/
@@ -309,7 +366,7 @@ textarea {
 }
 #fork:hover,
 #propose:hover {
-  background: linear-gradient(purple, white);
+  background: linear-gradient(darkslategrey, slategrey);
 }
 #propose {
   position: sticky;
@@ -441,7 +498,7 @@ form input[type="submit"] {
   margin-right: auto;
   margin-left: auto;
   place-content: center;
-  justify-content:center;
+  justify-content: center;
 }
 .five {
   height: 30px;
@@ -624,7 +681,28 @@ form input[type="submit"] {
 @media (max-width: 650px) {
   .project-image-wrapper {
     display: block;
-    width: 98%;
+    width: 100%;
+    border-radius: 5%;
+    margin-left: 0;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+  .project-image-wrapper:hover {
+    transform: rotate(0);
+  }
+  .project-image {
+    border-radius: 5%;
+    width: 100%;
+  }
+  .container {
+    /* position: absolute; */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    left: auto;
+    right: auto;
+    height: fit-content;
   }
   .links-and-contact {
     flex-wrap: wrap;
@@ -656,11 +734,7 @@ form input[type="submit"] {
     visibility: visible;
     top: 40%;
   }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 98%;
-  }
+
   .description {
     font-weight: 600;
     font-size: 17px;

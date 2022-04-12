@@ -63,3 +63,17 @@ const goToTop = () => {
   });
 };
 $toTop.click(goToTop);
+
+///////////// Profile Display/////////////
+$('#obed').click(function(){
+  $('#fth').fadeOut();
+  $('#ob').fadeIn();
+})
+$('#faith').click(function(){
+  $('#ob').fadeOut();
+  $('#fth').fadeIn();
+})
+$('.clos').click(function(){
+  $('#ob').fadeOut();
+  $('#fth').fadeOut();
+})

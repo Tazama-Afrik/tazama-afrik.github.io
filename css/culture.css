@@ -27,32 +27,12 @@ body {
 
 .topnav a {
   float: left;
-  color: rgb(0, 2, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav .b:hover {
-  background-color: rgb(177, 153, 184);
-  color: black;
-}
-
-.topnav a.active {
-  background-color: rgb(11, 107, 11);
-  color: rgb(227, 236, 230);
-}
-.topnav .b:hover {
-  background-color: rgb(156, 119, 165);
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-}
-.topnav .active:hover {
-  background-color: rgb(14, 66, 16);
-  color: white;
-}
 .topnav > .home > img {
   max-height: 45px;
 }
@@ -151,4 +131,8 @@ submit-button-wrapper {
   margin: 20px o;
 }
 
-/************ END OF CONTACT *************/
+/********** OVERRIDING CHANGES FOR NAME DISPLAY *************/
+.text {
+  position: relative;
+  color: darkblue;
+}

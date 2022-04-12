@@ -17,5 +17,5 @@ def message():
     message = request.form['message']
     return render_template('index.html', name=name, message=message)
 
-if __name__ == '__maicd tan__':
+if __name__ == '__main__':
     app.run(debug=true, port=5000)

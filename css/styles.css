@@ -707,6 +707,7 @@ form input[type="submit"] {
     max-width: 100%;
     left: auto;
     right: auto;
+	overflow-x: hidden;
     height: fit-content;
   }
   .links-and-contact {

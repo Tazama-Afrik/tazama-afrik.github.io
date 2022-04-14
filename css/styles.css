@@ -581,7 +581,7 @@ form input[type="submit"] {
   right: 3rem;
   bottom: 2rem;
   border-radius: 100%;
-  background: #895499;
+  background: slateblue;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -688,7 +688,7 @@ form input[type="submit"] {
     margin-left: 0;
     margin-right: auto;
     overflow: hidden;
-    margin-top: 3px;
+    margin: 5px;
   }
   .project-image-wrapper:hover {
     transform: rotate(0);
@@ -698,9 +698,9 @@ form input[type="submit"] {
     width: 100%;
   }
   .container {
-    /* position: absolute; */
     display: flex;
     flex-wrap: wrap;
+	justify-content: space-between;
     max-width: 100%;
     left: auto;
     right: auto;

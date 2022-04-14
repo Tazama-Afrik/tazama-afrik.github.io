@@ -690,6 +690,9 @@ form input[type="submit"] {
     overflow: hidden;
     margin: 5px;
   }
+.container::-webkit-scrollbar-thumb {
+  visibility:hidden;
+  }
   .project-image-wrapper:hover {
     transform: rotate(0);
   }

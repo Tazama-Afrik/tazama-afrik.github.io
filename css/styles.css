@@ -303,7 +303,7 @@ textarea {
 .navigate,
 .connect {
   width: 1.5in;
-  box-shadow: 0px 1px 5px yellow;
+  /*box-shadow: 0px 1px 5px black;*/
   height: fit-content;
   margin: 4px;
   padding: 3px;
@@ -333,7 +333,6 @@ textarea {
   width: 55%;
   height: auto;
   margin: 3px;
-  /* background-color: #000; */
 }
 .connect {
   width: fit-content;
@@ -450,7 +449,7 @@ form input[type="submit"] {
   top: 15%;
   right: 30%;
   padding: 2%;
-  box-shadow: lightseagreen 0.1px 0.1px 10px;
+  box-shadow: lightblue 0.1px 0.1px 10px;
   color: white;
 }
 .text {

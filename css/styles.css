@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   background-size: cover;
   margin: 0;
+  min-height: 120%;
 }
         /* BODY SCROLLBAR */
 body::-webkit-scrollbar {

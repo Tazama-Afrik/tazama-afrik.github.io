@@ -38,24 +38,8 @@
 <body>
   <!---------- TOP NAVIGATION ------------->
   <div class="hello">
-    <div class="nav">
-      <a id="home" href="/">Tazama Afrik</a>
-      <a class="b" href="#about">About</a>
-      <a class="b" href="/pages/countries">Countries</a>
-      <a class="b" href="/pages/beaches">Beaches</a>
-      <a class="b" href="/pages/culture">Culture</a>
-      <a class="b" href="/pages/reserves">Reserves</a>
-      <a class="b" href="/pages/cuisine">Cuisine</a>
-
-
-      <!------     BEGINNING OF SEARCH BAR -------->
-      <div class="search">
-        <input name="search bar" id="searchbar" placeholder="Type here to search" rows="1" class="put"
-          type="search"></input>
-        <button type="submitbutton" id="searchSubmit">Search</button>
-      </div>
-      <!------     END OF SEARCH BAR ------->
-      <img src="img/menu.png" alt="Menu" id="menu-icon" />
+     <div class="topnav" id="topnav">
+      <img src="/img/menu.png" alt="Menu" id="menu-icon" />
       <div id="closer-icon">&times;</div>
     </div>
     <!-- MENU FOR SMALL SIZE MEDIA -->
@@ -64,83 +48,62 @@
         <div>Make Your Selection Here</div>
       </above>
       <a class="b" href="#about">🧑 About</a>
-      <a class="b" href="/pages/countries">🌍&nbsp; Countries</a>
-      <a class="b" href="/pages/beaches"><img class="slide-icon" src="img/beaches-icon.png" />&nbsp; Beaches</a>
-      <a class="b" href="/pages/culture"><img class="slide-icon" src="img/cult-icon.png" />&nbsp; Culture</a>
-      <a class="b" href="/pages/reserves"><img class="slide-icon" src="img/res-icon.png" /> &nbsp;Reserves</a>
-      <a class="b" href="/pages/cuisine"><img class="slide-icon" src="img/fud-icon.jpg" />&nbsp; Cuisine</a>
+      <a class="b" href="countries">🌍&nbsp; Countries</a>
+      <a class="b" href="beaches"><img class="slide-icon" src="/img/beaches-icon.png" />&nbsp; Beaches</a>
+      <a class="b" href="culture"><img class="slide-icon" src="/img/cult-icon.png" />&nbsp; Culture</a>
+      <a class="b" href="reserves"><img class="slide-icon" src="/img/res-icon.png" /> &nbsp;Reserves</a>
+      <a class="b" href="cuisine"><img class="slide-icon" src="/img/fud-icon.jpg" />&nbsp; Cuisine</a>
     </div>
 
-    <div class="welcome" id="welcome">
+    <div class="welcome" id="welcome" style="position: absolute;top: 0;padding: 100px;">
       <h2>Welcome To Tazama Afrik</h2>
-      <h4>
-        Explore the world of Africa!
-      </h4>
+
     </div>
   </div>
 
   <!---------------------------------- NAVIGATION BAR ENDS --------------------------------->
   <div class="select">
-    <h2>Destination Africa</h2>
-    <h4>Make a selection below to survey our recommendations</h4>
+    <!-- <h2>Destination Africa</h2> -->
+    <h2>Make a selection below to survey our recommendations</h2>
   </div>
 
   <div class="container" id="container">
 
     <div class="project-image-wrapper">
       <a href="/pages/countries">
-        <h1 class="hover-text">COUNTRIES</h1><img class="project-image" src="img/map.jpg" alt="Countries">
+        <h1 class="hover-text">COUNTRIES</h1><img class="project-image" src="/img/map.jpg" alt="Countries">
       </a>
     </div>
 
     <div class="project-image-wrapper">
       <a href="/pages/beaches">
-        <h1 class="hover-text">BEACHES</h1><img class="project-image" src="img/beach/idyllic-beach-ghambia.jpg"
+        <h1 class="hover-text">BEACHES</h1><img class="project-image" src="/img/beach/idyllic-beach-ghambia.jpg"
           alt="Image">
       </a>
     </div>
     <div class="project-image-wrapper">
       <a href="/pages/reserves">
-        <h1 class="hover-text">RESERVES</h1><img class="project-image" src="img/zebras.jpeg" alt="Reserves">
+        <h1 class="hover-text">RESERVES</h1><img class="project-image" src="/img/zebras.jpeg" alt="Reserves">
       </a>
     </div>
 
 
     <div class="project-image-wrapper">
-      <a href="/pages/cuisine">
-        <h1 class="hover-text">CUISINE</h1><img class="project-image" src="img/jollof-rice/fine-jollof1.jpg"
+      <a href="/pages/cuisine/">
+        <h1 class="hover-text">CUISINE</h1><img class="project-image" src="/img/jollof-rice/fine-jollof1.jpg"
           alt="Restaurants">
       </a>
     </div>
     <div class="project-image-wrapper">
-      <a href="/pages/culture">
-        <h1 class="hover-text">CULTURE</h1><img id="culture-img" class="project-image" src="img/calabar-carnival.jpg"
+      <a href="culture">
+        <h1 class="hover-text">CULTURE</h1><img id="culture-img" class="project-image" src="/img/calabar-carnival.jpg"
           alt="Culture">
       </a>
     </div>
   </div>
-  <!----------------- ABOUT US -------------->
-  <div id="about">
-    <h3><u>ABOUT US</u></h3>
-    <p>Are you searching for a nice place to spend your vacation? We've got you covered.</p>
-    <blockquote>
-      Here at Tazama Afrik, We provide all you need about amazing places you can visit in Africa.
-      Learn more about all Afican countries, African tourism, and visit Africa online.
-      We help you experience the rich diversity in African cultural heritage, animal and natural reserves,
-      breath-taking beaches and delicious delicacies that will make your visit to Africa a memorable one.
-    </blockquote>
-    <p>
-      We understand that individuals have their preferences. We therefore make our recommendations to suit your
-      preference.
 
-    </p> <br> Already an African? Learn more about <a href="/pages/countries"
-      style="color: red; text-decoration: none; text-shadow: none;">your country!</a>
-
-  </div>
   <!-- LINKS, AUTHURS AND CONTACT -->
-  <send class="send-message" id="propose">Send us a message</send>
-  <a href="https://github.com/Tazama-Afrik/tazama-afrik" id="fork">Fork On Github</a>
-  <div class="links-and-contact">
+    <div class="links-and-contact" style="margin-top: 100px;">
 
     <div class="connect">
       <h4 class="navtopic">Connect With Us!</h4>
@@ -163,52 +126,7 @@
         </one>
       </div>
     </div>
-    <!------------------- NAVIGATION PANE ABOVE THE FOOTER --------------->
-    <div class="navigate">
-      <h4 class="navtopic">Walk Around</h4>
-      <a class="two" href="/#about">About Us</a>
-      <a class="two" href="/pages/countries">Countries</a>
-      <a class="two" href="/pages/beaches">Beaches</a>
-      <a class="two" href="/pages/culture">Culture</a>
-      <a class="two" href="/pages/reserves">Reserves</a>
-      <a class="two" href="/pages/cuisine">Cuisine</a>
-    </div>
-    <!--Class Navigate Ends-->
-    <div class="navigate">
-      <h4 class="navtopic">Top Beaches<br>To View</h4>
-      <a class="two" href="/pages/beaches#tabs-1">Belle Mare</a>
-      <a class="two" href="/pages/beaches#tabs-2">Anse Lazio</a>
-      <a class="two" href="/pages/beaches#tabs-3">Camps Bay</a>
-      <a class="two" href="/pages/beaches#tabs-4">Diani</a>
-      <a class="two" href="/pages/beaches#tabs-5">Boulders</a>
-      <a class="two" href="/pages/beachesl#tabs-6">Bazaruto</a>
-      <a class="two" href="/pages/beaches#tabs-7">Idyllic</a>
-      <a class="two" href="/pages/beaches#tabs-8">Lekki</a>
-    </div>
-    <!--Class Navigate Beaches Ends-->
-    <div class="navigate">
-      <h4 class="navtopic">Top Reserve Places<br>To View</h4>
-      <a class="two" href="/pages/reserves#tabs-1">Maasai Mara</a>
-      <a class="two" href="/pages/reserves#tabs-2">Serengeti</a>
-      <a class="two" href="/pages/reserves#tabs-3">Chobe</a>
-      <a class="two" href="/pages/reserves#tabs-4">Kruger</a>
-      <a class="two" href="/pages/reserves#tabs-5">Etosha</a>
-      <a class="two" href="/pages/reserves#tabs-6">Volcanoes</a>
-      <a class="two" href="/pages/reserves#tabs-7">Ngorongo</a>
-      <a class="two" href="/pages/reserves#tabs-8">Tarangire</a>
-    </div>
-    <!--Class Navigate Reserves Ends-->
-    <div class="navigate">
-      <h4 class="navtopic">Top Meals And Cuisine<br>To Check out</h4>
-      <a class="two" href="/pages/cuisine#tabs-1">Couscous</a>
-      <a class="two" href="/pages/cuisine#tabs-2">Jollof Rice</a>
-      <a class="two" href="/pages/cuisine#tabs-3">Chakalaka</a>
-      <a class="two" href="/pages/cuisine#tabs-4">Biltong</a>
-      <a class="two" href="/pages/cuisine#tabs-5">Chermoula</a>
-      <a class="two" href="/pages/cuisine#tabs-6">Fufu</a>
-      <a class="two" href="/pages/cuisine#tabs-7">Tajine</a>
-      <a class="two" href="/pages/cuisine#tabs-8">Yassa</a>
-    </div>
+
     <div class="navigate">
       <h4 class="navtopic">Engineers</h4>
       <three id="engineers">
@@ -308,18 +226,7 @@
     $('#menu-icon').show();
     $('#closer-icon').fadeOut();
   });
-  ////////////// LIST OF RECOMMENDED SEARCH ITEMS /////////////
-  $(function () {
-    var availableTags = [
-      "Countries", "Beaches", "Restaurants", "Reserves", "Culture", "West Africa", "Africa", "Tazama",
-      "North Africa", "South Africa", "East", "East Africa", "South", "West", "Central", "Central Africa",
-      "Afrik", "North", "Dishes", "Zebra", "Nigeria", "Ghana"
-    ];
-    $("#searchbar").autocomplete({
-      source: availableTags
-    });
-  });
-
+ 
 
   function visits() {
     $count = $(".counter");
@@ -345,39 +252,6 @@
     $('.contact').show().delay(400).fadeOut();
   })
 
-  // $(document).on('click', function (e) {
-  //   if ($(e.target).closest(".hideable").length === 0) {
-  //       // $(".hideable").css('display', 'none');
-  //       $("#success").hide();
-  //   }
-  // });
-  ////////////////////// WRITE MESSAGE AND SAVE (Will Be Implemented Later)///////////////////
-  // $('#submitbutton').click(function () {
-  //   if ($('#message').val()) {
-  //     $('.contact').css('display', 'none');
-  //     $name = $('#name').val();
-  //     $email = $('#email').val();
-  //     $message = $('#message').val() + " ";
-  //     $info = $('#user-messages');
-  //     $info.append("<br> <span class='red'>Name:</span><br> " + $name + "");
-  //     $info.append("<br><span class='red'>Email:</span><br> " + $email + "");
-  //     $info.append("<br> <span class='red'>Message:</span><br> " + $message + "");
-  //     $info.append("<br>_____________________________________");
-  //     updateItem('user-messages', $info.text());
-  //     // $info.show().delay(10).fadeOut();
-  //     $('#success').css('display', 'block');
-  //     $("#success").show().delay(3000).fadeOut();
-  //     // console.log($info.text());
-  //     updateItem('user-messages', $info.text());
-  //     let check = localStorage.getItem('user-messages');
-  //     console.log(check);
-  //   }
-  // });
-  // function updateItem(item, data) {
-  //   var old = localStorage.getItem(item);
-  //   if (old === null) { localStorage.setItem(old, "") }
-  //   localStorage.setItem(item, old + data);
-  // }
 
 
   ////////////Scroll To Top///////////

@@ -48,12 +48,12 @@
       <a class="b" href="/pages/cuisine">Cuisine</a>
 
 
-      <!------     BEGINNING OF SEARCH BAR -------->
+      <!-- ----     BEGINNING OF SEARCH BAR ------
       <div class="search">
         <input name="search bar" id="searchbar" placeholder="Type here to search" rows="1" class="put"
           type="search"></input>
         <button type="submitbutton" id="searchSubmit">Search</button>
-      </div>
+      </div> -->
       <!------     END OF SEARCH BAR ------->
       <img src="img/menu.png" alt="Menu" id="menu-icon" />
       <div id="closer-icon">&times;</div>
@@ -143,7 +143,7 @@
   <div class="links-and-contact">
 
     <div class="connect">
-      <h4 class="navtopic">Connect With Us!</h4>
+      <h4 class="navtopic">Connect With Us</h4>
       <div class="links">
         <one>
           <a class="two" href="https://github.com/Tazama-Afrik"><img src="/img/github.png"
@@ -231,7 +231,7 @@
   <div class="hideable" id="user-messages"></div>
   <!-- POP UP FORM -->
   <div class="contact">
-    <h2>Feel Free To <br>Tell Us Something</h2>
+    <h2>Please fill in your feedback</h2>
     <form>
       <label for="name">
         <h4>Name:</h4>
@@ -243,12 +243,10 @@
       </label>
       <label for="message">
         <h4>Your Message:</h4>
-        <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
+        <span id="message" role="textbox"contenteditable>Your message</span>
       </label>
-      <div class="submit-button-wrapper">
-        <div title="Send Message" id="submitbutton">Submit</div>
-      </div>
-      <div id="close" title="Close">&times; </div>
+        <div title="Submit your feedback" id="submitbutton">Submit</div>
+      <div id="close" title="Close">&times;</div>
     </form>
   </div>
   <!-- Profile Images Layout Below -->
@@ -342,7 +340,7 @@
     $('.contact').css('display', 'none');
   });
   $('#propose').click(function () {
-    $('.contact').show().delay(400).fadeOut();
+    $('.contact').show()//.delay(400).fadeOut();
   })
 
   // $(document).on('click', function (e) {

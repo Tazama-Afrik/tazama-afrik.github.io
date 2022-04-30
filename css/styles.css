@@ -102,8 +102,8 @@ body::-webkit-scrollbar-thumb {
   cursor: default;
 }
 
-/************** BELOW, THE SEARCH BAR *************/
-.search {
+/************* BELOW, THE SEARCH BAR ************/
+/* .search {
   float: right;
   padding: 6px;
   border: none;
@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb {
 }
 #searchSubmit:hover {
   background-color: green;
-}
+} */
 
 /*************** MENU FOR SMALL MEDIA QUERY *****************/
 
@@ -192,15 +192,18 @@ body::-webkit-scrollbar-thumb {
   -webkit-overflow-scrolling: touch;
   height: auto;
   max-height: 4in;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory; */
 }
-.container::-webkit-scrollbar {
+.container::-webkit-scrollbar,
+.contact::-webkit-scrollbar {
   width: 20px;
 }
-.container::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track,
+.contact::-webkit-scrollbar {
   background: slategrey;
 }
-.container::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb,
+.contact::-webkit-scrollbar {
   background-color:darkslategrey;
   border-radius: 20px;
   border: 1px solid slategrey;
@@ -258,7 +261,7 @@ body::-webkit-scrollbar-thumb {
 #about {
   text-align: center;
   margin-bottom: 1%;
-  color: lightgreen;
+  color: white;
   text-shadow: black 1px 1px 5px;
   font-family: 'Fredoka', sans-serif;
   font-weight: bold;
@@ -304,17 +307,19 @@ textarea {
 .navigate,
 .connect {
   width: 1.5in;
-  /*box-shadow: 0px 1px 5px black;*/
   height: fit-content;
   margin: 4px;
   padding: 3px;
   background-color: rgb(29, 25, 25);
 }
+.navigate > .two:hover {
+  color: slategrey;
+}
 /* Each Link Item Below */
 .two {
   display: block;
   text-align: center;
-  color: yellowgreen;
+  color: white;
   font-family: 'Fredoka', sans-serif;
   margin-bottom: 2px;
   font-weight: 500;
@@ -340,36 +345,47 @@ textarea {
 }
 
 .contact {
-  background-color: rgb(68, 71, 78);
+  background-color:azure;
   z-index: 5;
   width: calc(1px + fit-content);
   height: calc(1px + fit-content);
   border-radius: 4%;
   padding: 2%;
   position: fixed;
-  left: 23%;
-  bottom: 10%;
+  left: 30%;
+  bottom: 15%;
   display: none;
   align-self: center;
   border: 10px grey solid;
+  overflow-y: scroll;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 #email,
 #message {
   margin-top: 0;
+  display: block;
+}
+#message {
+  background-color: white;
+  border: #333 1px dotted;
+}
+#message:active {
+  border: #333 1px dotted;
 }
 #propose,
 #fork {
-  background-color: rgb(94, 8, 134);
+  background: linear-gradient(rgb(7, 87, 87), slategrey);
   border-radius: 5%;
+  border-bottom: rgb(41, 73, 73) 4px solid;
   color: white;
   cursor: pointer;
   padding: 0.5%;
 }
-#fork:hover,
-#propose:hover {
-  background: linear-gradient(darkslategrey, slategrey);
-}
+
 #propose {
   position: sticky;
   right: 100%;
@@ -382,16 +398,15 @@ textarea {
   padding-right: 1.5%;
 }
 #close {
-  background-color: darkred;
-  border-radius: 0;
-  width: fit-content;
-  margin: 2px;
-  padding: 0 2%;
+  color: darkred;
+  font-weight: 500;
+  font-size: xx-large;
+  margin: 5px 10px;
   position: absolute;
+  text-align: right;
   top: 0;
   right: 0;
   cursor: pointer;
-  float: right;
 }
 
 form {
@@ -409,9 +424,13 @@ form input[type="submit"] {
 #submitbutton {
   text-align: center;
   background-color: darkgreen;
+  color: #fff;
   font-weight: bold;
-  padding: 1%;
+  padding: 6px 20px 6px 20px;
+  margin: 10px 0px;
+  width: fit-content;
   cursor: pointer;
+  float: right;
 }
 #submitbutton:hover {
   background-color: darkolivegreen;
@@ -625,7 +644,7 @@ form input[type="submit"] {
 }
 
 /* For Larger Screens */
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   p,
   .description {
     max-width: 90%;
@@ -646,6 +665,12 @@ form input[type="submit"] {
   #closer-icon {
     display: none;
   }
+  .contact {
+    width: 60%;
+  max-height: 70%;
+  left: 17%;
+  }
+
 }
 /***************** SMALL MEDIA STYLES BEGIN *****************/
 @media (max-width: 800px) and (min-width: 650px) {
@@ -665,6 +690,10 @@ form input[type="submit"] {
   #menu-icon {
     display: block;
     top: 3px;
+  }
+  .contact {
+    width: 60%;
+  max-height: 70%;
   }
   p {
     max-width: 90%;
@@ -749,10 +778,10 @@ form input[type="submit"] {
   .hello-beach {
     max-height: 3.5in;
   }
-  .nav .search {
+  /* .nav .search {
     position: absolute;
     right: 5%;
-  }
+  } */
   body {
     font-size: small;
     max-width: 99%;

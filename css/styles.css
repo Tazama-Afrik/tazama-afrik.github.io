@@ -92,7 +92,8 @@ body::-webkit-scrollbar-thumb {
   width: fit-content;
   height: fit-content;
   position: fixed;
-  color: red;
+  color: #faa500;
+  text-shadow: black 1px 1px, black -1px -1px;
   font-weight: 700;
   font-size: 50px;
   right: 10px;
@@ -194,9 +195,11 @@ body::-webkit-scrollbar-thumb {
   max-height: 4in;
   /* scroll-snap-type: x mandatory; */
 }
-.container::-webkit-scrollbar,
-.contact::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   width: 20px;
+}
+.contact::-webkit-scrollbar {
+  width: 1px;
 }
 .container::-webkit-scrollbar-track,
 .contact::-webkit-scrollbar {
@@ -347,12 +350,10 @@ textarea {
 .contact {
   background-color:azure;
   z-index: 5;
-  width: calc(1px + fit-content);
-  height: calc(1px + fit-content);
-  border-radius: 4%;
+  width: fit-content;
+  height: fit-content;
   padding: 2%;
   position: fixed;
-  left: 30%;
   bottom: 15%;
   display: none;
   align-self: center;
@@ -372,6 +373,7 @@ textarea {
 #message {
   background-color: white;
   border: #333 1px dotted;
+  min-width: 70%;
 }
 #message:active {
   border: #333 1px dotted;
@@ -667,7 +669,7 @@ form input[type="submit"] {
   }
   .contact {
     width: 60%;
-  max-height: 70%;
+  max-height: 65%;
   left: 17%;
   }
 
@@ -694,6 +696,7 @@ form input[type="submit"] {
   .contact {
     width: 60%;
   max-height: 70%;
+  left: 15%;
   }
   p {
     max-width: 90%;
@@ -718,6 +721,12 @@ form input[type="submit"] {
     margin-right: auto;
     overflow: hidden;
     margin: 5px;
+  }
+  .contact {
+    width: 100%;
+    height: 80%;
+    bottom: 3%;
+    z-index: 6;
   }
 .container::-webkit-scrollbar-thumb {
   visibility:hidden;

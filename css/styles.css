@@ -628,8 +628,8 @@ form input[type="submit"] {
   font-family: 'Fredoka', sans-serif;
 }
 
-.welcome + .tabs {
-  margin: auto 1cm 1cm 1cm ;
+.tabs {
+  margin: auto 1cm 0cm 1cm ;
 }
 /* For All Table Of Contents */
 .preview,
@@ -825,6 +825,9 @@ form input[type="submit"] {
     min-height: 25px;
   }
 
+  .tabs h2 {
+    margin-left: 10px;
+  }
   .welcome {
     font-size: larger !important;
   }

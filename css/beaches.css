@@ -78,8 +78,8 @@ body {
 }
 
 h2 {
-  text-align: center;
-  color: rgb(12, 41, 13);
+  text-align: left;
+  margin-left: 60px;
 }
 
 /* pictures and descriptions */
@@ -89,7 +89,12 @@ h2 {
   margin: 5px;
 }
 
+.welcome .p {
+  color: black;
+  text-align: left;
+  width: 80%;
 
+}
 
 li .p {
   font-family: sans-serif Verdana, Geneva, Tahoma;
@@ -115,7 +120,6 @@ li .p {
     min-height: 2.9in;
   }
 }
-
 
 .welcome {
   text-align: center;
@@ -179,6 +183,9 @@ li .p {
 }
 #tabs {
   max-width: 100%!important;
+}
+.tabs p {
+  font-size: large;
 }
 /* The dots/bullets/indicators */
 .dot {

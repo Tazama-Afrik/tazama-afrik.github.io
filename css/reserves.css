@@ -191,7 +191,9 @@ p {
   max-height: 600px;
 }
 */
-
+.tabs .name {
+  margin-top: 1.5cm;
+}
 .links-and-contact {
   font: bold;
   width: 100%;

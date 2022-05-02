@@ -590,6 +590,7 @@ form input[type="submit"] {
 .red {
   color: red;
 }
+
 /********** BACK TO TOP BUTTON *************/
 .back-to-top-icon {
   width: 1rem;
@@ -624,6 +625,9 @@ form input[type="submit"] {
   font-family: 'Fredoka', sans-serif;
 }
 
+.welcome + .tabs {
+  margin: auto 2cm auto 1cm ;
+}
 /* For All Table Of Contents */
 .preview,
 #ul {
@@ -757,6 +761,7 @@ form input[type="submit"] {
     margin-left: auto;
     width: 90%;
   }
+ 
   .two {
     font-size: larger;
   }

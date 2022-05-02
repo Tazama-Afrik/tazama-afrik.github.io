@@ -124,7 +124,9 @@ body::-webkit-scrollbar-thumb {
 #searchSubmit:hover {
   background-color: green;
 } */
-
+.search{
+  display: none;
+}
 /*************** MENU FOR SMALL MEDIA QUERY *****************/
 
 #menu {
@@ -372,6 +374,7 @@ textarea {
 }
 #message {
   background-color: white;
+  min-height: 2cm;
   border: #333 1px dotted;
   min-width: 70%;
 }
@@ -626,7 +629,7 @@ form input[type="submit"] {
 }
 
 .welcome + .tabs {
-  margin: auto 2cm auto 1cm ;
+  margin: auto 1cm 1cm 1cm ;
 }
 /* For All Table Of Contents */
 .preview,
@@ -727,7 +730,7 @@ form input[type="submit"] {
     margin: 5px;
   }
   .contact {
-    width: 100%;
+    width: 90%;
     height: 80%;
     bottom: 3%;
     z-index: 6;

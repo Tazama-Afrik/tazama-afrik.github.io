@@ -91,11 +91,12 @@ h2 {
 
 
 
-.p {
+li .p {
   font-family: sans-serif Verdana, Geneva, Tahoma;
   color: rgb(36, 14, 65);
-  font-size: medium;
+  font-size: 23px;
   margin: 1%;
+  background: linear-gradient();
 }
 
 /* For small screens */

@@ -85,7 +85,8 @@ h2 {
 
 p {
   font-family: sans-serif Verdana, Geneva, Tahoma;
-  color: rgb(36, 14, 65);
+  text-align: left;
+  font-size: large;
 }
 
 .link-list {

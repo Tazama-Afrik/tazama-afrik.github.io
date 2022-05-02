@@ -22,8 +22,10 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  // dots[slideIndex-1].addClass(" active");
+
 }
+let change = plusSlides;
+setInterval("change(1)", 3000);
 
 ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
 $('#menu-icon').click(function(){

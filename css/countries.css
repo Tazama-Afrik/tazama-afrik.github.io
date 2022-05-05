@@ -110,7 +110,7 @@ tr:nth-child(even) {
   width: 30%;
   text-align: center;
 }
-#wait,
+
 #oops {
   display: none;
   position: fixed;
@@ -134,6 +134,7 @@ tr:nth-child(even) {
   top: 10%;
   left: 35%;
   display: none;
+  z-index: 5;
   cursor: progress;
 }
 #waiting::before {
@@ -141,10 +142,10 @@ tr:nth-child(even) {
   content: '';
   width: 70px;
   height: 70px;
-  z-index: 10;
+  z-index: 5;
   border-radius: 100%;
   transform: translate(50%, 50%);
-  border: 6px dashed darkslateblue;
+  border: 6px dashed rgb(51, 16, 61);
   animation: rotate 1.5s linear infinite;
 }
 

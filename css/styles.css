@@ -258,7 +258,7 @@ body::-webkit-scrollbar-thumb {
   color: rgb(55, 55, 201);
   margin: 0;
   color: rgb(7, 36, 68);
-  text-shadow: black 1px 1px 5px;
+  text-shadow: lightblue 1px 1px 1px;
   font-family: 'Fredoka', sans-serif;
   font-size: 150%;
 }
@@ -267,7 +267,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   margin-bottom: 1%;
   color: rgb(7, 36, 68);
-  text-shadow: black 1px 1px 5px;
+  text-shadow: lightblue 1px 1px 1px;
   font-family: 'Fredoka', sans-serif;
   font-weight: bold;
   font-size: 120%;

@@ -480,7 +480,6 @@
         $('#capital').html(...data.capital);
         $('#language').html(getFirst(data.languages));
         $('#official').html(data.name.official)
-        $('#accordion').slideUp();
         $('#select').text('Show Countries');
         goToTop();
         /////// READING FROM THE JSON FILE ///////////////
@@ -492,6 +491,7 @@
             if ($name in desc) {
               found = desc[$name].join('\n');
               $('.description').html(found);
+              $('#accordion').slideUp();
               $('#waiting').fadeOut();
             } else {
               $('.description').html(`Check your connection to

@@ -477,7 +477,7 @@
         const currency = Object.entries(data.currencies);
         const all = [...currency.map(x => x[1]["name"]), ...currency[0]]
         $('#currency').html(`${all[0]} (${all[1]})`);
-        $('#capital').html(data.capital);
+        $('#capital').html(...data.capital);
         $('#language').html(getFirst(data.languages));
         $('#official').html(data.name.official)
         $('#accordion').slideUp();

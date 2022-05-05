@@ -141,7 +141,7 @@ tr:nth-child(even) {
   content: '';
   width: 70px;
   height: 70px;
-  z-index: -1;
+  z-index: 10;
   border-radius: 100%;
   transform: translate(50%, 50%);
   border: 6px dashed darkslateblue;

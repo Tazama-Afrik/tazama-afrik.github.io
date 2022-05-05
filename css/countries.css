@@ -145,7 +145,7 @@ tr:nth-child(even) {
   z-index: 5;
   border-radius: 100%;
   transform: translate(50%, 50%);
-  border: 6px dashed rgb(51, 16, 61);
+  border: 6px dashed rgb(5, 79, 245);
   animation: rotate 1.5s linear infinite;
 }
 

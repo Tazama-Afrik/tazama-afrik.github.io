@@ -1,6 +1,6 @@
 @import url(styles.css);
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .description {
   margin-top: 3%;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
   background: linear-gradient(white, lightsteelblue);
   width: 100%;
-  display:inline-block;
+  display: inline-block;
 }
 
 body {
@@ -47,7 +47,11 @@ body {
   display: block;
 }
 
-#WA, #SA, #NA, #CA, #EA {
+#WA,
+#SA,
+#NA,
+#CA,
+#EA {
   color: darkslateblue;
 }
 
@@ -55,7 +59,7 @@ body {
   background-color: darkslateblue;
   width: 15%;
   height: fit-content;
-  color:aqua;
+  color: aqua;
   font-weight: 600;
   float: right;
   text-align: center;
@@ -69,8 +73,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  box-shadow: #a79ee0 1px 4px 5px,
-   #a79ee0 -1px -1px 5px;
+  box-shadow: #a79ee0 1px 4px 5px, #a79ee0 -1px -1px 5px;
   color: darkslateblue;
   font-weight: 500;
   max-width: 8in;
@@ -79,12 +82,13 @@ th {
   font-weight: 700;
 }
 
-th, td {
+th,
+td {
   padding: 8px;
   border: lightsteelblue 2px solid;
 }
 tr:nth-child(even) {
-  background: lightsteelblue
+  background: lightsteelblue;
 }
 .nav-list {
   display: table-column;
@@ -100,13 +104,14 @@ tr:nth-child(even) {
   max-width: 3in;
   border-right: grey 1px solid;
   height: fit-content;
-  position:fixed;
+  position: fixed;
   top: auto;
   z-index: 3;
   width: 30%;
   text-align: center;
 }
-#wait, #oops {
+#wait,
+#oops {
   display: none;
   position: fixed;
   font-weight: 700;
@@ -123,10 +128,36 @@ tr:nth-child(even) {
   padding: 4%;
   text-shadow: black 1px 2px;
 }
+/* Rotating circle when loading country */
+#waiting {
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  display: none;
+  cursor: progress;
+}
+#waiting::before {
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+  border-radius: 100%;
+  transform: translate(50%, 50%);
+  border: 6px dashed darkslateblue;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(50%, 50%) rotate(360deg);
+  }
+}
+
 .counter {
   padding: 3px;
 }
-#footer{
+#footer {
   margin-top: 0;
 }
 .topnav #home {
@@ -157,25 +188,27 @@ tr:nth-child(even) {
   border: 1px solid black;
   display: block;
 }
-.country:hover, #select:hover {
+.country:hover,
+#select:hover {
   opacity: 90%;
   cursor: pointer;
 }
-.country:active, .nav:active {
+.country:active,
+.nav:active {
   opacity: 80%;
 }
 
 /************* THE RELOAD BUTTON ***********/
 .reload {
-  color:red;
+  color: red;
 }
 .reload:hover {
   border: red 1px solid;
   padding: 2px;
   border-radius: 4%;
-  cursor:default;
+  cursor: default;
 }
-.topnav{
+.topnav {
   top: 0;
   min-height: 55px;
   background-color: rgb(26, 18, 75);
@@ -205,15 +238,14 @@ tr:nth-child(even) {
   justify-content: left;
 }
 
-
 @keyframes spin {
   to {
     transform: rotateZ(360deg);
   }
 }
 @media (max-width: 650px) {
-
-  .topnav, .links-and-contact {
+  .topnav,
+  .links-and-contact {
     display: flex;
     flex-wrap: wrap;
   }
@@ -225,19 +257,21 @@ tr:nth-child(even) {
   }
   #select {
     z-index: 5;
-    float:right;
-    position:absolute;
-    right:30px;
+    float: right;
+    position: absolute;
+    right: 30px;
     top: 0;
     font-size: 9px;
     padding: 7px;
     padding-left: 4px;
     padding-right: 4px;
     margin: 20px;
-    width:fit-content;
+    width: fit-content;
   }
-  #accordion {width: 80%;}
-  #menu-icon{
+  #accordion {
+    width: 80%;
+  }
+  #menu-icon {
     position: fixed;
     top: 10px;
   }

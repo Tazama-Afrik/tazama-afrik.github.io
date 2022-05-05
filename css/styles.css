@@ -646,9 +646,10 @@ form input[type="submit"] {
 
 .li-img > img {
   width: 100%;
-  max-width: 75em;
+  max-width: 60em;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 1%;
   right: auto;
 }
 
@@ -666,9 +667,9 @@ form input[type="submit"] {
   .li-img,
   .li-img > img {
     right: auto;
-    margin-left: auto;
+    margin-left: 0.5in;
     margin-right: auto;
-    max-width: 90%;
+    max-width: 6in;
   }
   #menu-icon,
   #closer-icon {
@@ -734,6 +735,17 @@ form input[type="submit"] {
     height: 80%;
     bottom: 3%;
     z-index: 6;
+  }
+  .li-img {
+    /* height: auto; */
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .li-img ~ p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 .container::-webkit-scrollbar-thumb {
   visibility:hidden;
@@ -834,8 +846,5 @@ form input[type="submit"] {
   .project-image-wrapper > a {
     max-height: 20px;
   }
-  .li-img > img {
-    height: auto;
-    max-width: 100%;
-  }
+
 }

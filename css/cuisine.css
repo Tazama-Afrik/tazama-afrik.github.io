@@ -185,14 +185,14 @@ p {
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+/* .numbertext {
   color: #f2f2f2;
   text-shadow: #333 1px 1px 1px;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
+} */
 
 /* The dots/bullets/indicators */
 .dot {
@@ -236,7 +236,8 @@ p {
 
 .mySlides > img {
   max-height: 600px;
-  /* max-width: 90%; */
+  border-radius: 5%;
+  border-top: brown 10px solid;
 }
 
 .links-and-contact {

@@ -377,9 +377,7 @@ textarea {
   min-height: 2cm;
   border: #333 1px dotted;
   min-width: 70%;
-}
-#message:active {
-  border: #333 1px dotted;
+  cursor: text;
 }
 #propose,
 #fork {

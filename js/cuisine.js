@@ -79,3 +79,10 @@ $('.clos').click(function(){
   $('#ob').fadeOut();
   $('#fth').fadeOut();
 })
+// FEEDBACK //
+$('#close').click(function () {
+  $('.contact').css('display', 'none');
+});
+$('#propose').click(function () {
+  $('.contact').show();
+})

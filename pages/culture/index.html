@@ -190,9 +190,30 @@
     </svg>
   </button>
 
+  <!--------- POP UP FORM ---------->
+  <div class="contact">
+    <h2>Please fill in your feedback</h2>
+    <form>
+      <label for="name">
+        <h4>Name:</h4>
+        <input type=name id="name" placeholder="John Doe" required />
+      </label>
+      <label for="email">
+        <h4>Email:</h4>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="message">
+        <h4>Your Message:</h4>
+        <span id="message" role="textbox"contenteditable></span>
+      </label>
+        <div title="Submit your feedback" id="submitbutton">Submit</div>
+      <div id="close" title="Close">&times;</div>
+    </form>
+  </div>
+
   <!------------------- NAVIGATION PANE ABOVE THE FOOTER --------------->
 
-  <send class="send-message" id="propose">Send us a message</send>
+  <send class="send-message" id="propose">Send a feedback</send>
   <a href="https://github.com/Tazama-Afrik/tazama-afrik" id="fork">Fork On Github</a>
   <div class="links-and-contact">
 
@@ -355,6 +376,14 @@
   $('.clos').click(function(){
     $('#ob').fadeOut();
     $('#fth').fadeOut();
+  })
+
+        // FEEDBACK //
+  $('#close').click(function () {
+    $('.contact').css('display', 'none');
+  });
+  $('#propose').click(function () {
+    $('.contact').show();
   })
   </script>
 </body>

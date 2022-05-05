@@ -266,18 +266,7 @@ textarea {
   color: aliceblue;
   padding-top: 5px;
 }
-.contact {
-    background-color: white;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 4%;
-    padding: 20px;
-    position: absolute;
-    right: 33%;
-    bottom: 1em;
-    display: none;
-}
+
 .send-message:checked + .contact {
   display: block;
 }

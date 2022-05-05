@@ -24,8 +24,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
 
 }
+// Automatically changing the images in slide show
 let change = plusSlides;
-setInterval("change(1)", 3000);
+$('document').ready(setInterval("change(1)", 3000));
 
 ////////////// HANDLING CLICKS AND DISPLAY OF MENU /////////////
 $('#menu-icon').click(function(){

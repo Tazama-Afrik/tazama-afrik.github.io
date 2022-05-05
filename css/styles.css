@@ -665,7 +665,7 @@ form input[type="submit"] {
   .li-img,
   .li-img > img {
     right: auto;
-    margin-left: 0.5in;
+    margin-left: 0.4in;
     margin-right: auto;
     max-width: 6in;
   }
@@ -735,7 +735,6 @@ form input[type="submit"] {
     z-index: 6;
   }
   .li-img {
-    /* height: auto; */
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;

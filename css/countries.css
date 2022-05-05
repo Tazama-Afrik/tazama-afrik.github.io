@@ -170,7 +170,7 @@ tr:nth-child(even) {
   color:red;
 }
 .reload:hover {
-  background-color: cornflowerblue;
+  border: red 1px solid;
   padding: 2px;
   border-radius: 4%;
   cursor:default;

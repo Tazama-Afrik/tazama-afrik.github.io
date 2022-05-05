@@ -24,10 +24,10 @@
   <div class="topnav" id="navtop">
     <a id="home" href="/">Tazama Afrik</a>
     <a class="nav active" href="countries.html">Countries</a>
-    <a class="nav" href="beaches.html">Beaches</a>
-    <a class="nav" href="culture.html">Culture</a>
-    <a class="nav" href="reserves.html">Reserves</a>
-    <a class="nav" href="cuisine.html">Cuisine</a>
+    <a class="nav" href="/pages/beaches">Beaches</a>
+    <a class="nav" href="/pages/culture">Culture</a>
+    <a class="nav" href="/pages/reserves">Reserves</a>
+    <a class="nav" href="/pages/cuisine">Cuisine</a>
     <div id="select">Hide Countries</div>
     <img src="/img/menu.png" alt="Menu" id="menu-icon" />
     <div id="closer-icon">&times;</div>
@@ -135,7 +135,7 @@
 
   <!--------- POP UP FORM ---------->
   <div class="contact">
-    <h2>Feel Free To <br>Tell Us Something</h2>
+    <h2>Please fill in your feedback</h2>
     <form>
       <label for="name">
         <h4>Name:</h4>
@@ -147,13 +147,12 @@
       </label>
       <label for="message">
         <h4>Your Message:</h4>
-        <textarea id="message" placeholder="You can resize this for long message" minlength="2" required></textarea>
+        <span id="message" role="textbox"contenteditable></span>
       </label>
-      <div class="submit-button-wrapper">
-        <div title="Send Message" id="submitbutton">Submit</div>
-      </div>
-      <div id="close" title="Close">&times; </div>
+        <div title="Submit your feedback" id="submitbutton">Submit</div>
+      <div id="close" title="Close">&times;</div>
     </form>
+  </div>
   </div>
   <!----------------- Back To Top Button ----------------->
   <button class="back-to-top" title="Back To Top">
@@ -165,7 +164,7 @@
 
       <!------------------- NAVIGATION PANE ABOVE THE FOOTER --------------->
 
-  <send class="send-message" id="propose">Send us a message</send>
+  <send class="send-message" id="propose">Send a feedback</send>
   <a href="https://github.com/Tazama-Afrik/tazama-afrik" id="fork">Fork On Github</a>
   <div class="links-and-contact">
 
@@ -501,47 +500,20 @@
           }
         });
       }
-  ///////////////////////// SEND A MESSAGE AND SAVE (Will Be Implemented Later)///////////////////////
-  // $('#submitbutton').click(function () {
-  //   if ($('#message').val()) {
-  //   $('.contact').css('display', 'none');
-  //   $name = $('#name').val();
-  //   $email = $('#email').val();
-  //   $message = $('#message').val() + " ";
-  //   $info = $('#user-messages');
-  //   $info.append("<br> <span class='red'>Name:</span><br> "+$name+"");
-  //   $info.append("<br><span class='red'>Email:</span><br> "+$email+"");
-  //   $info.append("<br> <span class='red'>Message:</span><br> "+$message+"");
-  //   $info.append("<br>____________________________________");
-  //   updateItem('user-messages', $info.text());
-  //   // $info.css('display', 'block');
-  //   $('#success').css('display', 'block');
-  //   $("#success").show().delay(4000).fadeOut();
-  //   // console.log($info.text());
-  //   updateItem('user-messages', $info.text());
-  //   let check = localStorage.getItem('user-messages');
-  //   console.log(check);
-  // }
-  // });
-  // function updateItem(item, data){
-  //   var old = localStorage.getItem(item);
-  //   if(old === null) {localStorage.setItem(old, "")}
-  //   localStorage.setItem(item, old + data);
-  // }
 
   //////////////// CLICKS FOR CLOSE BUTTON AND SEND MESSAGE ////////////
   $('#close').click(function () {
     $('.contact').css('display', 'none');
   });
   $('#propose').click(function () {
-    $('.contact').show().delay(400).fadeOut();
+    $('.contact').show();
   })
 
   ////////////Scroll To Top///////////
 
   $toTop = $(".back-to-top");
   let showOnPx = 100;
-  // $pageProgressBar = $(".progress-bar"); // DOn't remove this line
+  // $pageProgressBar = $(".progress-bar"); // Later implementation
 
   const scrollContainer = () => {
     return document.documentElement || document.body;
@@ -561,6 +533,7 @@
     });
   };
   $toTop.click(goToTop);
+
           ///////////// Profile Display/////////////
   $('#obed').click(function(){
     $('#fth').fadeOut();

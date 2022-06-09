@@ -135,24 +135,9 @@ tr:nth-child(even) {
   left: 35%;
   display: none;
   z-index: 5;
-  cursor: progress;
-}
-#waiting::before {
-  position: absolute;
-  content: '';
-  width: 70px;
-  height: 70px;
-  z-index: 5;
-  border-radius: 100%;
-  transform: translate(50%, 50%);
-  border: 6px dashed rgb(5, 79, 245);
-  animation: rotate 1.5s linear infinite;
-}
-
-@keyframes rotate {
-  to {
-    transform: translate(50%, 50%) rotate(360deg);
-  }
+  width: fit-content;
+  height: fit-content;
+  color: blue;
 }
 
 .counter {
@@ -227,23 +212,18 @@ tr:nth-child(even) {
 }
 
 .loading {
-  animation: spin 2s infinite linear;
   font-size: 30px;
   z-index: 0;
 }
 .links-and-contact {
-  background-color: rgb(41, 38, 38);
+  background-color: black;
   padding: 5px;
   display: flex;
   height: fit-content;
   justify-content: left;
 }
 
-@keyframes spin {
-  to {
-    transform: rotateZ(360deg);
-  }
-}
+
 @media (max-width: 650px) {
   .topnav,
   .links-and-contact {

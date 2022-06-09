@@ -14,7 +14,7 @@
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/countries.css" />
   <link rel='shortcut icon' href="/img/tazama_afrik.png" />
@@ -30,7 +30,7 @@
     <a class="nav" href="/pages/reserves">Reserves</a>
     <a class="nav" href="/pages/cuisine">Cuisine</a>
     <div id="select">Hide Countries</div>
-    <img src="/img/menu.png" alt="Menu" id="menu-icon" />
+    <div class="fa fa-bars fa-2x" id="menu-icon"></div>
     <div id="closer-icon">&times;</div>
   </div>
   <!--------- For Small Size Media --------------->
@@ -39,13 +39,13 @@
     <above class="widget-header">
       <div>Make Your Selection Here</div>
     </above>
-    <a class="b" href="/">&larr; &nbsp;Back To Home</a>
-    <a class="b active" href="">🌍&nbsp; Countries</a>
-    <a class="b" href="/pages/beaches"><img class="slide-icon" src="/img/beaches-icon.png" />&nbsp; Beaches</a>
-    <a class="b" href="/pages/culture"><img class="slide-icon" src="/img/cult-icon.png" />&nbsp; Culture</a>
-    <a class="b" href="/pages/reserves"><img class="slide-icon" src="/img/res-icon.png" /> &nbsp;Reserves</a>
-    <a class="b" href="/pages/cuisine"><img class="slide-icon" src="/img/fud-icon.jpg" />&nbsp; Cuisine</a>
-  </div>
+    <a class="b fa fa-medal" href="/#about">&nbsp; About</a>
+      <a class="b fa fa-globe-africa" href="/pages/countries">&nbsp; Countries</a>
+      <a class="b fa fa-umbrella-beach" href="/pages/beaches">&nbsp; Beaches</a>
+      <a class="b fa fa-street-view" href="/pages/culture">&nbsp; Culture</a>
+      <a class="b fa fa-tree" href="/pages/reserves">&nbsp; Reserves</a>
+      <a class="b fa fa-utensil-spoon" href="/pages/cuisine">&nbsp; Cuisine</a>
+    </div>
 
   <!--------------------- BEGINNING OF COUNTRIES LIST -------->
 
@@ -54,34 +54,34 @@
     <div class="list">
       <h2 id="WA"></h2>
       <center>
-        <div id="west"><span class="loading show"> 🌍 </span></div>
+        <div id="west"><span class="loading fa-spin"> 🌍 </span></div>
       </center>
     </div>
     <h3>Southern Africa</h3>
     <div class="list">
       <h2 id="SA"></h2>
       <center>
-        <div id="south"><span class="loading">🌍</span></div>
+        <div id="south"><span class="loading fa-spin">🌍</span></div>
       </center>
     </div>
     <h3>Northern Africa</h3>
     <div class="list">
       <h2 id="NA"></h2>
       <center>
-        <div id="north"><span class="loading">🌍</span></div>
+        <div id="north"><span class="loading fa-spin">🌍</span></div>
       </center>
     </div>
     <h3>Central Africa</h3>
     <div class="list">
       <h2 id="CA"></h2>
       <center>
-        <div id="central"><span class="loading">🌍</span></div>
+        <div id="central"><span class="loading fa-spin">🌍</span></div>
       </center>
     </div>
     <h3>Eastern Africa</h3>
     <div class="list">
       <h2 id="EA"></h2>
-      <div id="east"><span class="loading">🌍</span></div>
+      <div id="east"><span class="loading fa-spin">🌍</span></div>
     </div>
   </div>
   <!------     END OF COUNTRIES LIST ------->
@@ -126,7 +126,7 @@
       </p>
     </div>
     <!-- Rotator that shows when loading country-->
-    <div id="waiting"></div>
+    <div id="waiting" class="fas fa-spinner fa-pulse fa-4x"></div>
     <div id="oops">Oops! There was an Error. Please try again</div>
   </main>
 
@@ -170,23 +170,19 @@
   <div class="links-and-contact">
 
     <div class="connect">
-      <h4 class="navtopic">Connect With Us!</h4>
+      <h4 class="navtopic">Connect With Us</h4>
       <div class="links">
         <one>
-          <a class="two" href="https://github.com/Tazama-Afrik"><img src="/img/github.png"
-              style="width:20px" />&nbsp;Github</a>
+          <a class="zero fab fa-github fa-2x" href="https://github.com/Tazama-Afrik"></a>
         </one>
         <one>
-          <a class="two" href="https://linkedin.com/in/tazama-afrik"><img src="/img/linkedin.png"
-              style="width:20px" />&nbsp;Linkedin</a>
+          <a class="zero fab fa-linkedin fa-2x" href="https://linkedin.com/in/tazama-afrik"></a>
         </one>
         <one>
-          <a class="two" href="https://facebook.com/in/tazama-afrik"><img src="/img/facebook.png"
-              style="width:13px" />&nbsp;Facebook</a>
+          <a class="zero fab fa-facebook fa-2x" href="https://facebook.com/in/tazama-afrik"></a>
         </one>
         <one>
-          <a class="two" href="https://twitter.com/in/tazama-afrik"><img src="/img/tw.png"
-              style="width:20px" />&nbsp;Twitter</a>
+          <a class="zero fab fa-twitter fa-2x" href="https://twitter.com/in/tazama-afrik"></a>
         </one>
       </div>
     </div>

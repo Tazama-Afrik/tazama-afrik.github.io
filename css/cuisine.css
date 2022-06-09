@@ -261,12 +261,6 @@ textarea {
   width: 240px;
 }
 
-.links-and-contact {
-  background-color: rgb(24, 19, 19);
-  color: aliceblue;
-  padding-top: 5px;
-}
-
 .send-message:checked + .contact {
   display: block;
 }

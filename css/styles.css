@@ -80,20 +80,19 @@ body::-webkit-scrollbar-thumb {
 }
 /*******************NAVIGATION MENU***************/
 #menu-icon {
-  width: 40px;
-  height: 40px;
   position: fixed;
   right: 4px;
   margin-top: 5px;
   z-index: 10;
+  text-shadow: #333 0 0 5px;
   display: none;
 }
 #closer-icon {
   width: fit-content;
   height: fit-content;
   position: fixed;
-  color: #faa500;
-  text-shadow: black 1px 1px, black -1px -1px;
+  color: #fff;
+  text-shadow: #333 0 0 5px;
   font-weight: 700;
   font-size: 50px;
   right: 10px;
@@ -158,10 +157,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
   text-decoration: underline;
   text-decoration-style: double;
-}
-.slide-icon {
-  width: 30px;
-  height: 30px;
 }
 
 /************* NAVIGATION IMAGES (Home page) ***************/
@@ -312,6 +307,7 @@ textarea {
 .navigate,
 .connect {
   width: 5.5in;
+  color:white;
   height: fit-content;
   margin: 4px;
   padding: 3px;
@@ -323,6 +319,14 @@ textarea {
   color: slategrey;
 }
 /* Each Link Item Below */
+.zero {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+.zero:hover {
+  color: lightslategrey
+}
 .two {
   display: block;
   text-align: center;
@@ -332,9 +336,6 @@ textarea {
   font-weight: 500;
   font-stretch: extra-expanded;
   text-decoration: none;
-}
-.connect .two {
-  font-size: small;
 }
 .links {
   display: grid;
@@ -535,8 +536,11 @@ form input[type="submit"] {
   cursor: pointer;
   margin-top: 4px;
   background-repeat: no-repeat;
-  background-size: contain;
   justify-self: center;
+  text-decoration: none;
+}
+.five:visited {
+  color:blue;
 }
 .clos {
   position: absolute;
@@ -546,24 +550,6 @@ form input[type="submit"] {
   font-stretch: extra-expanded;
   color: darkred;
   cursor: default;
-}
-#linkedin {
-  background-image: url(/img/linkedin.png);
-}
-#twitter {
-  background-image: url(/img/twitter.png);
-}
-#whatsapp {
-  background-image: url(/img/whatsapp.png);
-}
-#github {
-  background-image: url(/img/github.png);
-}
-#tel {
-  background-image: url(/img/tel.jpg);
-}
-#mail {
-  background-image: url(/img/mail.jpg);
 }
 
 /************ POP UP MESSAGE BEGINS **************/

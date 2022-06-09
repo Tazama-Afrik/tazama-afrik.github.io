@@ -73,6 +73,9 @@ body::-webkit-scrollbar-thumb {
   transform: scale(.5, 1.5);
   text-decoration: none;
 }
+#home:hover {
+  color: darkslateblue;
+}
 .nav .b:hover {
   background-color: slategrey;
   font-weight: bold;

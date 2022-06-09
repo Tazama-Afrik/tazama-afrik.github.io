@@ -29,6 +29,7 @@
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Yanone+Kaffeesatz:wght@700&display=swap"
     rel="stylesheet">
   <link rel='shortcut icon' href="/img/tazama_afrik.png">
@@ -39,7 +40,7 @@
   <!---------- TOP NAVIGATION ------------->
   <div class="hello">
      <div class="topnav" id="topnav">
-      <img src="/img/menu.png" alt="Menu" id="menu-icon" />
+      <div class="fa fa-bars fa-2x" id="menu-icon"></div>
       <div id="closer-icon">&times;</div>
     </div>
     <!-- MENU FOR SMALL SIZE MEDIA -->
@@ -47,12 +48,12 @@
       <above class="widget-header">
         <div>Make Your Selection Here</div>
       </above>
-      <a class="b" href="#about">🧑 About</a>
-      <a class="b" href="countries">🌍&nbsp; Countries</a>
-      <a class="b" href="beaches"><img class="slide-icon" src="/img/beaches-icon.png" />&nbsp; Beaches</a>
-      <a class="b" href="culture"><img class="slide-icon" src="/img/cult-icon.png" />&nbsp; Culture</a>
-      <a class="b" href="reserves"><img class="slide-icon" src="/img/res-icon.png" /> &nbsp;Reserves</a>
-      <a class="b" href="cuisine"><img class="slide-icon" src="/img/fud-icon.jpg" />&nbsp; Cuisine</a>
+      <a class="b fa fa-medal" href="/#about">&nbsp; About</a>
+      <a class="b fa fa-globe-africa" href="/pages/countries">&nbsp; Countries</a>
+      <a class="b fa fa-umbrella-beach" href="/pages/beaches">&nbsp; Beaches</a>
+      <a class="b fa fa-street-view" href="/pages/culture">&nbsp; Culture</a>
+      <a class="b fa fa-tree" href="/pages/reserves">&nbsp; Reserves</a>
+      <a class="b fa fa-utensil-spoon" href="/pages/cuisine">&nbsp; Cuisine</a>
     </div>
 
     <div class="welcome" id="welcome" style="position: absolute;top: 0;padding: 100px;">
@@ -105,27 +106,23 @@
   <!-- LINKS, AUTHURS AND CONTACT -->
     <div class="links-and-contact" style="margin-top: 100px;">
 
-    <div class="connect">
-      <h4 class="navtopic">Connect With Us!</h4>
-      <div class="links">
-        <one>
-          <a class="two" href="https://github.com/Tazama-Afrik"><img src="/img/github.png"
-              style="width:20px" />&nbsp;Github</a>
-        </one>
-        <one>
-          <a class="two" href="https://linkedin.com/in/tazama-afrik"><img src="/img/linkedin.png"
-              style="width:20px" />&nbsp;Linkedin</a>
-        </one>
-        <one>
-          <a class="two" href="https://facebook.com/in/tazama-afrik"><img src="/img/facebook.png"
-              style="width:13px" />&nbsp;Facebook</a>
-        </one>
-        <one>
-          <a class="two" href="https://twitter.com/in/tazama-afrik"><img src="/img/tw.png"
-              style="width:20px" />&nbsp;Twitter</a>
-        </one>
+      <div class="connect">
+        <h4 class="navtopic">Connect With Us</h4>
+        <div class="links">
+          <one>
+            <a class="zero fab fa-github fa-2x" href="https://github.com/Tazama-Afrik"></a>
+          </one>
+          <one>
+            <a class="zero fab fa-linkedin fa-2x" href="https://linkedin.com/in/tazama-afrik"></a>
+          </one>
+          <one>
+            <a class="zero fab fa-facebook fa-2x" href="https://facebook.com/in/tazama-afrik"></a>
+          </one>
+          <one>
+            <a class="zero fab fa-twitter fa-2x" href="https://twitter.com/in/tazama-afrik"></a>
+          </one>
+        </div>
       </div>
-    </div>
 
     <div class="navigate">
       <h4 class="navtopic">Engineers</h4>
@@ -173,14 +170,14 @@
   <div style="display: none;" class="profile" id="ob">
     <div class="clos">&times;</div>
     <img src="/img/eng/Obed.jpg" alt="Obed's Image" class="dp">
-    <div class="text">Obed Amoako</div>
+    <a href="https://ericob.sytes.net" target="_blank" class="text">Obed Amoako</a>
     <div class="contacts">
-      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five"></a>
-      <a target="_blank" href="" title="Twitter" id="twitter" class="five"></a>
-      <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five"></a>
-      <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five"></a>
-      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five"></a>
-      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five"></a>
+      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five fab fa-linkedin fa-2x"></a>
+      <a target="_blank" href="https://twitter.com/obedamoako8" title="Twitter" id="twitter" class="five fab fa-twitter fa-2x"></a>
+      <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five fab fa-github fa-2x"></a>
+      <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five fa fa-phone-alt fa-2x"></a>
+      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five fa fa-envelope fa-2x"></a>
+      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five fab fa-whatsapp fa-2x"></a>
     </div>
     <a target="_blank" href="https://paypal.me/ericobe" class="coffee">☕ Buy Obed a coffee</a>
   </div>
@@ -189,15 +186,16 @@
     <img src="/img/eng/Faith.jpg" alt="Faith's Image" class="dp">
     <div class="text">Faith Ikhidero</div>
     <div class="contacts">
-      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" id="linkedin" class="five"></a>
-      <a target="_blank" href="" title="Twitter" id="twitter" class="five"></a>
-      <a target="_blank" href="https://github.com/Obed101" title="Github" id="github" class="five"></a>
-      <a target="_blank" href="tel://+233593124570" title="Telephone" id="tel" class="five"></a>
-      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" id="mail" class="five"></a>
-      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" id="whatsapp" class="five"></a>
+      <a target="_blank" href="https:/linkedin.com/ericob3d" title="Linkedin" class="five fab fa-linkedin fa-2x"></a>
+      <a target="_blank" href="" title="Twitter" class="five fab fa-twitter fa-2x"></a>
+      <a target="_blank" href="https://github.com/Obed101" title="Github" class="five fab fa-github fa-2x"></a>
+      <a target="_blank" href="tel://+233593124570" title="Telephone" class="five fa fa-phone-alt fa-2x"></a>
+      <a target="_blank" href="mailto:obedamoako92@gmail.com" title="Message" class="five fa fa-envelope fa-2x"></a>
+      <a target="_blank" href="https://wa.me/233274097985" title="WhatsApp" class="five fab fa-whatsapp fa-2x"></a>
     </div>
     <a target="_blank" href="#" class="coffee">☕ Buy Faith a coffee</a>
   </div>
+
   <!----------------- Back To Top Button ----------------->
   <button class="back-to-top" title="Back To Top">
     <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"

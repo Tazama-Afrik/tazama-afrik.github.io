@@ -392,7 +392,7 @@ textarea {
 #propose,
 #fork {
   background: linear-gradient(rgb(7, 87, 87), slategrey);
-  border-radius: 5%;
+  border-radius: 8px;
   border-bottom: rgb(41, 73, 73) 4px solid;
   color: white;
   cursor: pointer;

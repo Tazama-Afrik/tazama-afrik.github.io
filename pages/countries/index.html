@@ -415,7 +415,6 @@
         $number.prepend(`${num} Countries`);
         $('.country').click(clicked);
       },
-      // error: alert('Hey, There was an error. Check the URL and try again')
     });
   });
 
@@ -443,7 +442,7 @@
       break;
     }
   }
-  ////// Error Countries: Mali, Nigeria, Burkina, SouthSudan, RepubCongo.
+  ////// Error Countries: Mali, Nigeria, Burkina, SouthSudan, RepubCongo, SAfrica, Guinea, Sudan.
   function clicked() {
     $unchanged = $(this).text();
     $name = $(this).text().toLowerCase().split(" ")[0];
@@ -455,6 +454,12 @@
       api = 'https://restcountries.com/v3.1/capital/Abuja'
     } else if ($unchanged == 'South Sudan') {
       api = 'https://restcountries.com/v3.1/capital/Juba'
+    } else if ($unchanged == 'South Africa') {
+      api = 'https://restcountries.com/v3.1/capital/cape'
+    } else if ($unchanged == 'Guinea') {
+      api = 'https://restcountries.com/v3.1/capital/conakry'
+    } else if ($unchanged == 'Sudan') {
+      api = 'https://restcountries.com/v3.1/capital/khartoum'
     } else if ($name == 'mali') {
       api = 'https://restcountries.com/v3.1/capital/Bamako'
     } else if ($name == 'republic') {

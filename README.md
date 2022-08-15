@@ -13,6 +13,7 @@ We have all you need about:
 - [🎶🎵🌺Check out the rest by yourself 🤗](http://tazama-afrik.github.io)  
  Stay in touch. You'll soon convert your currency, get a complete showroom, and read the most popular news in reliable detail at Tazama Afrik
 
+![homepage](/img/reserves/Screenshot%20(25).png)
 
 #### Engineers are:  
 

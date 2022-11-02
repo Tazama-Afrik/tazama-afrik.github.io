@@ -1,5 +1,7 @@
 # Tazama Afrik
 
+Completed In: March 2022
+
 ![git-profile](https://user-images.githubusercontent.com/84608830/160656229-27cb5b34-1764-40dc-a4f0-d30a3a5b71a5.png)
 
 [Tazama Afrik](tazama-afrik.github.io) is a one-stop website for anyone willing to research about Africa or wants to spend some moments in the continent.
